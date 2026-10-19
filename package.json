@@ -1,0 +1,24 @@
+{
+  "name": "miru-topk-benchmark",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible benchmark of how Miru's requested topK changes its top-3 hybrid code-search results.",
+  "scripts": {
+    "setup:corpus": "git clone https://github.com/kubernetes/client-go eval-repos/client-go && git -C eval-repos/client-go checkout 2761958e61dbfe479992e21e1320ca462f556b99",
+    "index": "tsx scripts/index_repo.ts client-go",
+    "benchmark": "tsx benchmark/topk_eval.ts",
+    "embed-server": "tsx src/local-embedding-server.ts",
+    "test": "tsx tests/run.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@takara-ai/miru-code": "^1.12.2",
+    "@xenova/transformers": "^2.17.2",
+    "bun": "^1.1.0"
+  }
+}
