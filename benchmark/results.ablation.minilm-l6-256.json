@@ -1,0 +1,2075 @@
+{
+  "repo": "kubernetes/client-go",
+  "commit": "2761958e61dbfe479992e21e1320ca462f556b99",
+  "chunks": 13471,
+  "queries": 150,
+  "embedder": "minilm-l6-256",
+  "runtime": "bun 1.4.3",
+  "miru": {
+    "rrfK": 10,
+    "candidateMultiplier": 5,
+    "exactStemBoost": 0.75,
+    "definitionBoost": 3,
+    "fileSaturationDecay": 0.5
+  },
+  "fidelity": {
+    "topK3": {
+      "identical": 150,
+      "total": 150,
+      "mismatches": []
+    },
+    "topK5": {
+      "identical": 150,
+      "total": 150,
+      "mismatches": []
+    },
+    "topK50": {
+      "identical": 150,
+      "total": 150,
+      "mismatches": []
+    }
+  },
+  "locationQueries": [],
+  "sweep": [
+    {
+      "depth": 3,
+      "id": "sym_d3",
+      "hits": 122,
+      "hitAt3": 0.8133333333333334,
+      "ci95": [
+        0.7434428010905826,
+        0.8675758455313943
+      ],
+      "mrrAt3": 0.7666666666666667,
+      "meanPool": 5.6466666666666665,
+      "vsDepth250": {
+        "delta": 0.05333333333333334,
+        "ci95": [
+          0,
+          0.10666666666666667
+        ],
+        "wins": 12,
+        "losses": 4,
+        "p": 0.076812744140625
+      }
+    },
+    {
+      "depth": 5,
+      "id": "sym_d5",
+      "hits": 128,
+      "hitAt3": 0.8533333333333334,
+      "ci95": [
+        0.7879153988575498,
+        0.901105628184254
+      ],
+      "mrrAt3": 0.8077777777777776,
+      "meanPool": 9.166666666666666,
+      "vsDepth250": {
+        "delta": 0.09333333333333334,
+        "ci95": [
+          0.04666666666666667,
+          0.14
+        ],
+        "wins": 14,
+        "losses": 0,
+        "p": 0.0001220703125
+      }
+    },
+    {
+      "depth": 10,
+      "id": "sym_d10",
+      "hits": 128,
+      "hitAt3": 0.8533333333333334,
+      "ci95": [
+        0.7879153988575498,
+        0.901105628184254
+      ],
+      "mrrAt3": 0.7911111111111111,
+      "meanPool": 17.866666666666667,
+      "vsDepth250": {
+        "delta": 0.09333333333333334,
+        "ci95": [
+          0.04666666666666667,
+          0.14
+        ],
+        "wins": 14,
+        "losses": 0,
+        "p": 0.0001220703125
+      }
+    },
+    {
+      "depth": 15,
+      "id": "sym_d15",
+      "hits": 125,
+      "hitAt3": 0.8333333333333334,
+      "ci95": [
+        0.7655341352365811,
+        0.8844857015953093
+      ],
+      "mrrAt3": 0.7699999999999999,
+      "meanPool": 26.4,
+      "vsDepth250": {
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      }
+    },
+    {
+      "depth": 25,
+      "id": "sym_d25",
+      "hits": 119,
+      "hitAt3": 0.7933333333333333,
+      "ci95": [
+        0.72160639757297,
+        0.8504110588390935
+      ],
+      "mrrAt3": 0.7233333333333334,
+      "meanPool": 42.67333333333333,
+      "vsDepth250": {
+        "delta": 0.03333333333333333,
+        "ci95": [
+          0.006666666666666667,
+          0.06666666666666667
+        ],
+        "wins": 5,
+        "losses": 0,
+        "p": 0.0625
+      }
+    },
+    {
+      "depth": 50,
+      "id": "sym_d50",
+      "hits": 117,
+      "hitAt3": 0.78,
+      "ci95": [
+        0.7071768995518571,
+        0.8388397633869308
+      ],
+      "mrrAt3": 0.7166666666666667,
+      "meanPool": 83.41333333333333,
+      "vsDepth250": {
+        "delta": 0.02,
+        "ci95": [
+          0,
+          0.04666666666666667
+        ],
+        "wins": 3,
+        "losses": 0,
+        "p": 0.25
+      }
+    },
+    {
+      "depth": 75,
+      "id": "sym_d75",
+      "hits": 117,
+      "hitAt3": 0.78,
+      "ci95": [
+        0.7071768995518571,
+        0.8388397633869308
+      ],
+      "mrrAt3": 0.7099999999999999,
+      "meanPool": 122.53333333333333,
+      "vsDepth250": {
+        "delta": 0.02,
+        "ci95": [
+          0,
+          0.04666666666666667
+        ],
+        "wins": 3,
+        "losses": 0,
+        "p": 0.25
+      }
+    },
+    {
+      "depth": 100,
+      "id": "sym_d100",
+      "hits": 115,
+      "hitAt3": 0.7666666666666667,
+      "ci95": [
+        0.6928421841602659,
+        0.8271736853052465
+      ],
+      "mrrAt3": 0.7044444444444444,
+      "meanPool": 162.39333333333335,
+      "vsDepth250": {
+        "delta": 0.006666666666666667,
+        "ci95": [
+          0,
+          0.02
+        ],
+        "wins": 1,
+        "losses": 0,
+        "p": 1
+      }
+    },
+    {
+      "depth": 150,
+      "id": "sym_d150",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6988888888888889,
+      "meanPool": 242.39333333333335,
+      "vsDepth250": {
+        "delta": 0,
+        "ci95": [
+          0,
+          0
+        ],
+        "wins": 0,
+        "losses": 0,
+        "p": 1
+      }
+    },
+    {
+      "depth": 250,
+      "id": "sym_d250",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6922222222222222,
+      "meanPool": 400.97333333333336,
+      "vsDepth250": null
+    },
+    {
+      "depth": 500,
+      "id": "sym_d500",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6866666666666668,
+      "meanPool": 797.1666666666666,
+      "vsDepth250": {
+        "delta": 0,
+        "ci95": [
+          0,
+          0
+        ],
+        "wins": 0,
+        "losses": 0,
+        "p": 1
+      }
+    }
+  ],
+  "grid": [
+    {
+      "denseDepth": 15,
+      "bm25Depth": 15,
+      "id": "grid_D15_B15",
+      "hits": 125,
+      "hitAt3": 0.8333333333333334,
+      "ci95": [
+        0.7655341352365811,
+        0.8844857015953093
+      ],
+      "mrrAt3": 0.7699999999999999,
+      "meanPool": 26.4
+    },
+    {
+      "denseDepth": 15,
+      "bm25Depth": 30,
+      "id": "grid_D15_B30",
+      "hits": 119,
+      "hitAt3": 0.7933333333333333,
+      "ci95": [
+        0.72160639757297,
+        0.8504110588390935
+      ],
+      "mrrAt3": 0.7233333333333334,
+      "meanPool": 39.38
+    },
+    {
+      "denseDepth": 15,
+      "bm25Depth": 75,
+      "id": "grid_D15_B75",
+      "hits": 117,
+      "hitAt3": 0.78,
+      "ci95": [
+        0.7071768995518571,
+        0.8388397633869308
+      ],
+      "mrrAt3": 0.7099999999999999,
+      "meanPool": 81.09333333333333
+    },
+    {
+      "denseDepth": 15,
+      "bm25Depth": 150,
+      "id": "grid_D15_B150",
+      "hits": 116,
+      "hitAt3": 0.7733333333333333,
+      "ci95": [
+        0.6999980600587085,
+        0.8330182061434416
+      ],
+      "mrrAt3": 0.7066666666666666,
+      "meanPool": 154.05333333333334
+    },
+    {
+      "denseDepth": 15,
+      "bm25Depth": 250,
+      "id": "grid_D15_B250",
+      "hits": 116,
+      "hitAt3": 0.7733333333333333,
+      "ci95": [
+        0.6999980600587085,
+        0.8330182061434416
+      ],
+      "mrrAt3": 0.7,
+      "meanPool": 252
+    },
+    {
+      "denseDepth": 30,
+      "bm25Depth": 15,
+      "id": "grid_D30_B15",
+      "hits": 124,
+      "hitAt3": 0.8266666666666667,
+      "ci95": [
+        0.75814007201182,
+        0.8788793680834325
+      ],
+      "mrrAt3": 0.7677777777777777,
+      "meanPool": 39.63333333333333
+    },
+    {
+      "denseDepth": 30,
+      "bm25Depth": 30,
+      "id": "grid_D30_B30",
+      "hits": 119,
+      "hitAt3": 0.7933333333333333,
+      "ci95": [
+        0.72160639757297,
+        0.8504110588390935
+      ],
+      "mrrAt3": 0.7233333333333334,
+      "meanPool": 51.08
+    },
+    {
+      "denseDepth": 30,
+      "bm25Depth": 75,
+      "id": "grid_D30_B75",
+      "hits": 116,
+      "hitAt3": 0.7733333333333333,
+      "ci95": [
+        0.6999980600587085,
+        0.8330182061434416
+      ],
+      "mrrAt3": 0.7022222222222222,
+      "meanPool": 89.93333333333334
+    },
+    {
+      "denseDepth": 30,
+      "bm25Depth": 150,
+      "id": "grid_D30_B150",
+      "hits": 115,
+      "hitAt3": 0.7666666666666667,
+      "ci95": [
+        0.6928421841602659,
+        0.8271736853052465
+      ],
+      "mrrAt3": 0.6977777777777777,
+      "meanPool": 160.57333333333332
+    },
+    {
+      "denseDepth": 30,
+      "bm25Depth": 250,
+      "id": "grid_D30_B250",
+      "hits": 115,
+      "hitAt3": 0.7666666666666667,
+      "ci95": [
+        0.6928421841602659,
+        0.8271736853052465
+      ],
+      "mrrAt3": 0.691111111111111,
+      "meanPool": 256.82
+    },
+    {
+      "denseDepth": 75,
+      "bm25Depth": 15,
+      "id": "grid_D75_B15",
+      "hits": 125,
+      "hitAt3": 0.8333333333333334,
+      "ci95": [
+        0.7655341352365811,
+        0.8844857015953093
+      ],
+      "mrrAt3": 0.7699999999999999,
+      "meanPool": 81.48666666666666
+    },
+    {
+      "denseDepth": 75,
+      "bm25Depth": 30,
+      "id": "grid_D75_B30",
+      "hits": 120,
+      "hitAt3": 0.8,
+      "ci95": [
+        0.7288586685904683,
+        0.856159184558233
+      ],
+      "mrrAt3": 0.7288888888888888,
+      "meanPool": 90.42666666666666
+    },
+    {
+      "denseDepth": 75,
+      "bm25Depth": 75,
+      "id": "grid_D75_B75",
+      "hits": 117,
+      "hitAt3": 0.78,
+      "ci95": [
+        0.7071768995518571,
+        0.8388397633869308
+      ],
+      "mrrAt3": 0.7099999999999999,
+      "meanPool": 122.53333333333333
+    },
+    {
+      "denseDepth": 75,
+      "bm25Depth": 150,
+      "id": "grid_D75_B150",
+      "hits": 115,
+      "hitAt3": 0.7666666666666667,
+      "ci95": [
+        0.6928421841602659,
+        0.8271736853052465
+      ],
+      "mrrAt3": 0.7044444444444444,
+      "meanPool": 186.66
+    },
+    {
+      "denseDepth": 75,
+      "bm25Depth": 250,
+      "id": "grid_D75_B250",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6955555555555555,
+      "meanPool": 277.97333333333336
+    },
+    {
+      "denseDepth": 150,
+      "bm25Depth": 15,
+      "id": "grid_D150_B15",
+      "hits": 125,
+      "hitAt3": 0.8333333333333334,
+      "ci95": [
+        0.7655341352365811,
+        0.8844857015953093
+      ],
+      "mrrAt3": 0.7655555555555555,
+      "meanPool": 153.14
+    },
+    {
+      "denseDepth": 150,
+      "bm25Depth": 30,
+      "id": "grid_D150_B30",
+      "hits": 120,
+      "hitAt3": 0.8,
+      "ci95": [
+        0.7288586685904683,
+        0.856159184558233
+      ],
+      "mrrAt3": 0.7255555555555555,
+      "meanPool": 159.99333333333334
+    },
+    {
+      "denseDepth": 150,
+      "bm25Depth": 75,
+      "id": "grid_D150_B75",
+      "hits": 117,
+      "hitAt3": 0.78,
+      "ci95": [
+        0.7071768995518571,
+        0.8388397633869308
+      ],
+      "mrrAt3": 0.7066666666666666,
+      "meanPool": 185.98
+    },
+    {
+      "denseDepth": 150,
+      "bm25Depth": 150,
+      "id": "grid_D150_B150",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6988888888888889,
+      "meanPool": 242.39333333333335
+    },
+    {
+      "denseDepth": 150,
+      "bm25Depth": 250,
+      "id": "grid_D150_B250",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6922222222222222,
+      "meanPool": 325.1
+    },
+    {
+      "denseDepth": 250,
+      "bm25Depth": 15,
+      "id": "grid_D250_B15",
+      "hits": 125,
+      "hitAt3": 0.8333333333333334,
+      "ci95": [
+        0.7655341352365811,
+        0.8844857015953093
+      ],
+      "mrrAt3": 0.7644444444444445,
+      "meanPool": 249.53333333333333
+    },
+    {
+      "denseDepth": 250,
+      "bm25Depth": 30,
+      "id": "grid_D250_B30",
+      "hits": 120,
+      "hitAt3": 0.8,
+      "ci95": [
+        0.7288586685904683,
+        0.856159184558233
+      ],
+      "mrrAt3": 0.7255555555555555,
+      "meanPool": 254.98
+    },
+    {
+      "denseDepth": 250,
+      "bm25Depth": 75,
+      "id": "grid_D250_B75",
+      "hits": 117,
+      "hitAt3": 0.78,
+      "ci95": [
+        0.7071768995518571,
+        0.8388397633869308
+      ],
+      "mrrAt3": 0.7066666666666666,
+      "meanPool": 276.8066666666667
+    },
+    {
+      "denseDepth": 250,
+      "bm25Depth": 150,
+      "id": "grid_D250_B150",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6988888888888889,
+      "meanPool": 326.5
+    },
+    {
+      "denseDepth": 250,
+      "bm25Depth": 250,
+      "id": "grid_D250_B250",
+      "hits": 114,
+      "hitAt3": 0.76,
+      "ci95": [
+        0.6857086056184724,
+        0.8213068671104021
+      ],
+      "mrrAt3": 0.6922222222222222,
+      "meanPool": 400.97333333333336
+    }
+  ],
+  "gridEffects": {
+    "deepenBm25AtFixedDense": [
+      {
+        "fixedAt": 15,
+        "delta": 0.06,
+        "ci95": [
+          0.02666666666666667,
+          0.1
+        ],
+        "wins": 9,
+        "losses": 0,
+        "p": 0.00390625
+      },
+      {
+        "fixedAt": 30,
+        "delta": 0.06,
+        "ci95": [
+          0.02666666666666667,
+          0.1
+        ],
+        "wins": 9,
+        "losses": 0,
+        "p": 0.00390625
+      },
+      {
+        "fixedAt": 75,
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      },
+      {
+        "fixedAt": 150,
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      },
+      {
+        "fixedAt": 250,
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      }
+    ],
+    "deepenDenseAtFixedBm25": [
+      {
+        "fixedAt": 15,
+        "delta": 0,
+        "ci95": [
+          -0.02,
+          0.02
+        ],
+        "wins": 1,
+        "losses": 1,
+        "p": 1
+      },
+      {
+        "fixedAt": 30,
+        "delta": -0.006666666666666667,
+        "ci95": [
+          -0.02,
+          0
+        ],
+        "wins": 0,
+        "losses": 1,
+        "p": 1
+      },
+      {
+        "fixedAt": 75,
+        "delta": 0,
+        "ci95": [
+          -0.02,
+          0.02
+        ],
+        "wins": 1,
+        "losses": 1,
+        "p": 1
+      },
+      {
+        "fixedAt": 150,
+        "delta": 0.013333333333333334,
+        "ci95": [
+          0,
+          0.03333333333333333
+        ],
+        "wins": 2,
+        "losses": 0,
+        "p": 0.5
+      },
+      {
+        "fixedAt": 250,
+        "delta": 0.013333333333333334,
+        "ci95": [
+          0,
+          0.03333333333333333
+        ],
+        "wins": 2,
+        "losses": 0,
+        "p": 0.5
+      }
+    ]
+  },
+  "factorial": {
+    "cells": {
+      "d15k3": {
+        "id": "fact_d15_k3",
+        "hits": 125,
+        "hitAt3": 0.8333333333333334,
+        "ci95": [
+          0.7655341352365811,
+          0.8844857015953093
+        ],
+        "mrrAt3": 0.7699999999999999,
+        "meanPool": 26.4
+      },
+      "d250k3": {
+        "id": "fact_d250_k3",
+        "hits": 114,
+        "hitAt3": 0.76,
+        "ci95": [
+          0.6857086056184724,
+          0.8213068671104021
+        ],
+        "mrrAt3": 0.6922222222222222,
+        "meanPool": 400.97333333333336
+      },
+      "d15k50": {
+        "id": "fact_d15_k50",
+        "hits": 125,
+        "hitAt3": 0.8333333333333334,
+        "ci95": [
+          0.7655341352365811,
+          0.8844857015953093
+        ],
+        "mrrAt3": 0.7699999999999999,
+        "meanPool": 26.4
+      },
+      "d250k50": {
+        "id": "fact_d250_k50",
+        "hits": 114,
+        "hitAt3": 0.76,
+        "ci95": [
+          0.6857086056184724,
+          0.8213068671104021
+        ],
+        "mrrAt3": 0.6922222222222222,
+        "meanPool": 400.97333333333336
+      }
+    },
+    "depthEffectAtTopK3": {
+      "delta": 0.07333333333333333,
+      "ci95": [
+        0.03333333333333333,
+        0.12
+      ],
+      "wins": 11,
+      "losses": 0,
+      "p": 0.0009765625
+    },
+    "depthEffectAtTopK50": {
+      "delta": 0.07333333333333333,
+      "ci95": [
+        0.03333333333333333,
+        0.12
+      ],
+      "wins": 11,
+      "losses": 0,
+      "p": 0.0009765625
+    },
+    "topKEffectAtDepth15": {
+      "delta": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "wins": 0,
+      "losses": 0,
+      "p": 1
+    },
+    "topKEffectAtDepth250": {
+      "delta": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "wins": 0,
+      "losses": 0,
+      "p": 1
+    },
+    "optimizedVsLegacy": {
+      "delta": 0.07333333333333333,
+      "ci95": [
+        0.03333333333333333,
+        0.12
+      ],
+      "wins": 11,
+      "losses": 0,
+      "p": 0.0009765625
+    }
+  },
+  "alpha": [
+    {
+      "alpha": "0",
+      "d15": {
+        "id": "alpha_0_d15",
+        "hits": 127,
+        "hitAt3": 0.8466666666666667,
+        "ci95": [
+          0.7804201676905895,
+          0.8956004626145764
+        ],
+        "mrrAt3": 0.7899999999999999,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "alpha_0_d250",
+        "hits": 117,
+        "hitAt3": 0.78,
+        "ci95": [
+          0.7071768995518571,
+          0.8388397633869308
+        ],
+        "mrrAt3": 0.721111111111111,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.06666666666666667,
+        "ci95": [
+          0.02666666666666667,
+          0.10666666666666667
+        ],
+        "wins": 10,
+        "losses": 0,
+        "p": 0.001953125
+      }
+    },
+    {
+      "alpha": "default",
+      "d15": {
+        "id": "alpha_default_d15",
+        "hits": 125,
+        "hitAt3": 0.8333333333333334,
+        "ci95": [
+          0.7655341352365811,
+          0.8844857015953093
+        ],
+        "mrrAt3": 0.7699999999999999,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "alpha_default_d250",
+        "hits": 114,
+        "hitAt3": 0.76,
+        "ci95": [
+          0.6857086056184724,
+          0.8213068671104021
+        ],
+        "mrrAt3": 0.6922222222222222,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      }
+    },
+    {
+      "alpha": "0.5",
+      "d15": {
+        "id": "alpha_0.5_d15",
+        "hits": 113,
+        "hitAt3": 0.7533333333333333,
+        "ci95": [
+          0.678596705111784,
+          0.8154183708804525
+        ],
+        "mrrAt3": 0.6511111111111111,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "alpha_0.5_d250",
+        "hits": 104,
+        "hitAt3": 0.6933333333333334,
+        "ci95": [
+          0.6154815480392916,
+          0.7615299573232049
+        ],
+        "mrrAt3": 0.5933333333333334,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.06,
+        "ci95": [
+          0.013333333333333334,
+          0.10666666666666667
+        ],
+        "wins": 11,
+        "losses": 2,
+        "p": 0.0224609375
+      }
+    },
+    {
+      "alpha": "1",
+      "d15": {
+        "id": "alpha_1_d15",
+        "hits": 78,
+        "hitAt3": 0.52,
+        "ci95": [
+          0.4405523684282958,
+          0.5984488217816176
+        ],
+        "mrrAt3": 0.42111111111111116,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "alpha_1_d250",
+        "hits": 69,
+        "hitAt3": 0.46,
+        "ci95": [
+          0.38223583360562274,
+          0.5397617859745504
+        ],
+        "mrrAt3": 0.35444444444444445,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.06,
+        "ci95": [
+          0.02666666666666667,
+          0.1
+        ],
+        "wins": 9,
+        "losses": 0,
+        "p": 0.00390625
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage": "full",
+      "label": "Full Miru pipeline",
+      "d15": {
+        "id": "stage_full_d15",
+        "hits": 125,
+        "hitAt3": 0.8333333333333334,
+        "ci95": [
+          0.7655341352365811,
+          0.8844857015953093
+        ],
+        "mrrAt3": 0.7699999999999999,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "stage_full_d250",
+        "hits": 114,
+        "hitAt3": 0.76,
+        "ci95": [
+          0.6857086056184724,
+          0.8213068671104021
+        ],
+        "mrrAt3": 0.6922222222222222,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      }
+    },
+    {
+      "stage": "nostem",
+      "label": "No path-stem boosts (EXACT_STEM_BOOST=0)",
+      "d15": {
+        "id": "stage_nostem_d15",
+        "hits": 129,
+        "hitAt3": 0.86,
+        "ci95": [
+          0.7954479116637174,
+          0.906573512114724
+        ],
+        "mrrAt3": 0.7988888888888888,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "stage_nostem_d250",
+        "hits": 129,
+        "hitAt3": 0.86,
+        "ci95": [
+          0.7954479116637174,
+          0.906573512114724
+        ],
+        "mrrAt3": 0.7988888888888889,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0,
+        "ci95": [
+          0,
+          0
+        ],
+        "wins": 0,
+        "losses": 0,
+        "p": 1
+      }
+    },
+    {
+      "stage": "nopenalty",
+      "label": "No path penalties",
+      "d15": {
+        "id": "stage_nopenalty_d15",
+        "hits": 124,
+        "hitAt3": 0.8266666666666667,
+        "ci95": [
+          0.75814007201182,
+          0.8788793680834325
+        ],
+        "mrrAt3": 0.76,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "stage_nopenalty_d250",
+        "hits": 113,
+        "hitAt3": 0.7533333333333333,
+        "ci95": [
+          0.678596705111784,
+          0.8154183708804525
+        ],
+        "mrrAt3": 0.6811111111111111,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      }
+    },
+    {
+      "stage": "fusiononly",
+      "label": "Fusion only (no boosts, no rerank)",
+      "d15": {
+        "id": "stage_fusiononly_d15",
+        "hits": 128,
+        "hitAt3": 0.8533333333333334,
+        "ci95": [
+          0.7879153988575498,
+          0.901105628184254
+        ],
+        "mrrAt3": 0.7888888888888888,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "stage_fusiononly_d250",
+        "hits": 127,
+        "hitAt3": 0.8466666666666667,
+        "ci95": [
+          0.7804201676905895,
+          0.8956004626145764
+        ],
+        "mrrAt3": 0.7855555555555556,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.006666666666666667,
+        "ci95": [
+          0,
+          0.02
+        ],
+        "wins": 1,
+        "losses": 0,
+        "p": 1
+      }
+    }
+  ],
+  "beta": [
+    {
+      "beta": 0,
+      "d15": {
+        "id": "beta_0_d15",
+        "hits": 129,
+        "hitAt3": 0.86,
+        "ci95": [
+          0.7954479116637174,
+          0.906573512114724
+        ],
+        "mrrAt3": 0.7988888888888888,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "beta_0_d250",
+        "hits": 129,
+        "hitAt3": 0.86,
+        "ci95": [
+          0.7954479116637174,
+          0.906573512114724
+        ],
+        "mrrAt3": 0.7988888888888889,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0,
+        "ci95": [
+          0,
+          0
+        ],
+        "wins": 0,
+        "losses": 0,
+        "p": 1
+      }
+    },
+    {
+      "beta": 0.1,
+      "d15": {
+        "id": "beta_0.1_d15",
+        "hits": 130,
+        "hitAt3": 0.8666666666666667,
+        "ci95": [
+          0.8030198249305082,
+          0.9120019955845712
+        ],
+        "mrrAt3": 0.8044444444444443,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "beta_0.1_d250",
+        "hits": 130,
+        "hitAt3": 0.8666666666666667,
+        "ci95": [
+          0.8030198249305082,
+          0.9120019955845712
+        ],
+        "mrrAt3": 0.8044444444444444,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0,
+        "ci95": [
+          -0.02,
+          0.02
+        ],
+        "wins": 1,
+        "losses": 1,
+        "p": 1
+      }
+    },
+    {
+      "beta": 0.25,
+      "d15": {
+        "id": "beta_0.25_d15",
+        "hits": 131,
+        "hitAt3": 0.8733333333333333,
+        "ci95": [
+          0.8106335118514264,
+          0.9173887054002906
+        ],
+        "mrrAt3": 0.8166666666666665,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "beta_0.25_d250",
+        "hits": 131,
+        "hitAt3": 0.8733333333333333,
+        "ci95": [
+          0.8106335118514264,
+          0.9173887054002906
+        ],
+        "mrrAt3": 0.8133333333333332,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0,
+        "ci95": [
+          0,
+          0
+        ],
+        "wins": 0,
+        "losses": 0,
+        "p": 1
+      }
+    },
+    {
+      "beta": 0.5,
+      "d15": {
+        "id": "beta_0.5_d15",
+        "hits": 131,
+        "hitAt3": 0.8733333333333333,
+        "ci95": [
+          0.8106335118514264,
+          0.9173887054002906
+        ],
+        "mrrAt3": 0.8166666666666665,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "beta_0.5_d250",
+        "hits": 128,
+        "hitAt3": 0.8533333333333334,
+        "ci95": [
+          0.7879153988575498,
+          0.901105628184254
+        ],
+        "mrrAt3": 0.8033333333333333,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.02,
+        "ci95": [
+          0,
+          0.04666666666666667
+        ],
+        "wins": 3,
+        "losses": 0,
+        "p": 0.25
+      }
+    },
+    {
+      "beta": 0.75,
+      "d15": {
+        "id": "beta_0.75_d15",
+        "hits": 125,
+        "hitAt3": 0.8333333333333334,
+        "ci95": [
+          0.7655341352365811,
+          0.8844857015953093
+        ],
+        "mrrAt3": 0.7699999999999999,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "beta_0.75_d250",
+        "hits": 114,
+        "hitAt3": 0.76,
+        "ci95": [
+          0.6857086056184724,
+          0.8213068671104021
+        ],
+        "mrrAt3": 0.6922222222222222,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.07333333333333333,
+        "ci95": [
+          0.03333333333333333,
+          0.12
+        ],
+        "wins": 11,
+        "losses": 0,
+        "p": 0.0009765625
+      }
+    },
+    {
+      "beta": 1.5,
+      "d15": {
+        "id": "beta_1.5_d15",
+        "hits": 116,
+        "hitAt3": 0.7733333333333333,
+        "ci95": [
+          0.6999980600587085,
+          0.8330182061434416
+        ],
+        "mrrAt3": 0.6988888888888889,
+        "meanPool": 26.4
+      },
+      "d250": {
+        "id": "beta_1.5_d250",
+        "hits": 75,
+        "hitAt3": 0.5,
+        "ci95": [
+          0.42099011968088357,
+          0.5790098803191165
+        ],
+        "mrrAt3": 0.4111111111111112,
+        "meanPool": 400.97333333333336
+      },
+      "depthEffect": {
+        "delta": 0.2733333333333333,
+        "ci95": [
+          0.2,
+          0.3466666666666667
+        ],
+        "wins": 41,
+        "losses": 0,
+        "p": 9.094947017729282e-13
+      }
+    }
+  ],
+  "attribution": {
+    "flippedQueries": 11,
+    "intruders": 33,
+    "byPathway": {
+      "admission (absent from depth-15 pool)": 15,
+      "present at equal fused score": 3,
+      "accumulation (extra RRF credit from 2nd list)": 15
+    },
+    "byAdmission": {
+      "deep tail of both lists": 10,
+      "deep tail of BM25 list": 4,
+      "deep tail of dense list": 1,
+      "already in depth-15 pool": 18
+    },
+    "byLists": {
+      "both lists": 28,
+      "BM25 only": 4,
+      "dense only": 1
+    },
+    "deepIntruders": 15,
+    "deepIntrudersWithStemBoost": 15,
+    "intrudersWithStemBoost": 33,
+    "intrudersExactStemMatch": 28,
+    "exactStems": {
+      "interface.go": 8,
+      "eviction.go": 3,
+      "endpoint.go": 2,
+      "role.go": 8,
+      "scale.go": 3,
+      "event.go": 3,
+      "pod.go": 1
+    },
+    "intrudersSameBasenameAsTarget": 4,
+    "medianIntruderBoost": 0.07972873900293255,
+    "medianIntruderFused": 0.028409090909090908,
+    "medianTargetBoost": 0.018998579545454544,
+    "targetFusedHigherInOptimized": 0,
+    "stemBoostEffect": {
+      "depth15": {
+        "delta": -0.02666666666666667,
+        "ci95": [
+          -0.06666666666666667,
+          0.013333333333333334
+        ],
+        "wins": 3,
+        "losses": 7,
+        "p": 0.34375
+      },
+      "depth250": {
+        "delta": -0.1,
+        "ci95": [
+          -0.16,
+          -0.04666666666666667
+        ],
+        "wins": 3,
+        "losses": 18,
+        "p": 0.0014896392822265625
+      }
+    },
+    "perQuery": [
+      {
+        "id": "S14",
+        "query": "storage class interface",
+        "intruders": [
+          {
+            "file": "informers/storage/v1alpha1/interface.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 63,
+            "bm25Rank": 23,
+            "fused": 0.026151930261519303,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08901515151515152,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/storage/v1/interface.go",
+            "lists": "BM25 only",
+            "admittedBy": "deep tail of BM25 list",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": null,
+            "bm25Rank": 19,
+            "fused": 0.02586206896551724,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08901515151515152,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/storage/interface.go",
+            "lists": "dense only",
+            "admittedBy": "deep tail of dense list",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 73,
+            "bm25Rank": null,
+            "fused": 0.0030120481927710845,
+            "fusedInOptimizedPool": null,
+            "boost": 0.11126893939393939,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "kubernetes/typed/storage/v1/storageclass.go",
+          "line": 40,
+          "denseRank": 2,
+          "bm25Rank": 1,
+          "fused": 0.0890151515151515,
+          "boosted": 0.11126893939393938
+        },
+        "targetInOptimized": {
+          "file": "kubernetes/typed/storage/v1/storageclass.go",
+          "line": 40,
+          "denseRank": 2,
+          "bm25Rank": 1,
+          "fused": 0.0890151515151515,
+          "boosted": 0.11126893939393938
+        }
+      },
+      {
+        "id": "S41",
+        "query": "eviction expansion",
+        "intruders": [
+          {
+            "file": "kubernetes/typed/lifecycle/v1alpha1/eviction.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "present at equal fused score",
+            "denseRank": 11,
+            "bm25Rank": 12,
+            "fused": 0.04599567099567099,
+            "fusedInOptimizedPool": 0.04599567099567099,
+            "boost": 0.07972873900293252,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "listers/policy/v1/eviction.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 3,
+            "bm25Rank": 19,
+            "fused": 0.04509283819628647,
+            "fusedInOptimizedPool": 0.019230769230769232,
+            "boost": 0.07972873900293254,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "listers/policy/v1beta1/eviction.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 4,
+            "bm25Rank": 21,
+            "fused": 0.04205069124423963,
+            "fusedInOptimizedPool": 0.017857142857142856,
+            "boost": 0.07972873900293255,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "kubernetes/typed/policy/v1/eviction_expansion.go",
+          "line": 1,
+          "denseRank": 51,
+          "bm25Rank": 2,
+          "fused": 0.06659836065573771,
+          "boosted": 0.1197508533243594
+        },
+        "targetInOptimized": {
+          "file": "kubernetes/typed/policy/v1/eviction_expansion.go",
+          "line": 1,
+          "denseRank": null,
+          "bm25Rank": 2,
+          "fused": 0.0625,
+          "boosted": 0.11363636363636363
+        }
+      },
+      {
+        "id": "S46",
+        "query": "endpoint slices",
+        "intruders": [
+          {
+            "file": "applyconfigurations/discovery/v1/endpoint.go",
+            "lists": "BM25 only",
+            "admittedBy": "deep tail of BM25 list",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": null,
+            "bm25Rank": 22,
+            "fused": 0.0234375,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08948863636363637,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "applyconfigurations/discovery/v1beta1/endpoint.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 18,
+            "bm25Rank": 53,
+            "fused": 0.020833333333333332,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08948863636363637,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "kubernetes/typed/discovery/v1/endpointslice.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "present at equal fused score",
+            "denseRank": 12,
+            "bm25Rank": 1,
+            "fused": 0.07954545454545454,
+            "fusedInOptimizedPool": 0.07954545454545454,
+            "boost": 0.029829545454545456,
+            "exactStemMatch": false,
+            "sameBasenameAsTarget": true
+          }
+        ],
+        "targetInLegacy": {
+          "file": "listers/discovery/v1beta1/endpointslice.go",
+          "line": 44,
+          "denseRank": 5,
+          "bm25Rank": 4,
+          "fused": 0.07023809523809524,
+          "boosted": 0.1000676406926407
+        },
+        "targetInOptimized": {
+          "file": "listers/discovery/v1beta1/endpointslice.go",
+          "line": 44,
+          "denseRank": 5,
+          "bm25Rank": 4,
+          "fused": 0.07023809523809524,
+          "boosted": 0.1000676406926407
+        }
+      },
+      {
+        "id": "S47",
+        "query": "typed role binding informer",
+        "intruders": [
+          {
+            "file": "informers/rbac/v1alpha1/role.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 4,
+            "bm25Rank": 76,
+            "fused": 0.026578073089700997,
+            "fusedInOptimizedPool": 0.017857142857142856,
+            "boost": 0.07508116883116883,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1beta1/role.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 5,
+            "bm25Rank": 75,
+            "fused": 0.025490196078431372,
+            "fusedInOptimizedPool": 0.016666666666666666,
+            "boost": 0.07508116883116883,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1/role.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 6,
+            "bm25Rank": 73,
+            "fused": 0.024661144578313254,
+            "fusedInOptimizedPool": 0.015625,
+            "boost": 0.07508116883116882,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "informers/rbac/v1/rolebinding.go",
+          "line": 181,
+          "denseRank": 11,
+          "bm25Rank": 1,
+          "fused": 0.08008658008658008,
+          "boosted": 0.09510281385281384
+        },
+        "targetInOptimized": {
+          "file": "informers/rbac/v1/rolebinding.go",
+          "line": 181,
+          "denseRank": 11,
+          "bm25Rank": 1,
+          "fused": 0.08008658008658008,
+          "boosted": 0.09510281385281384
+        }
+      },
+      {
+        "id": "S53",
+        "query": "new typed role binding informer",
+        "intruders": [
+          {
+            "file": "informers/rbac/v1/role.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 2,
+            "bm25Rank": 89,
+            "fused": 0.028409090909090908,
+            "fusedInOptimizedPool": 0.020833333333333332,
+            "boost": 0.07386363636363635,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1alpha1/role.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 3,
+            "bm25Rank": 94,
+            "fused": 0.026442307692307696,
+            "fusedInOptimizedPool": 0.019230769230769232,
+            "boost": 0.07386363636363637,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1beta1/role.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 4,
+            "bm25Rank": 93,
+            "fused": 0.02513869625520111,
+            "fusedInOptimizedPool": 0.017857142857142856,
+            "boost": 0.07386363636363637,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "informers/rbac/v1/rolebinding.go",
+          "line": 181,
+          "denseRank": 8,
+          "bm25Rank": 1,
+          "fused": 0.08207070707070707,
+          "boosted": 0.09438131313131314
+        },
+        "targetInOptimized": {
+          "file": "informers/rbac/v1/rolebinding.go",
+          "line": 181,
+          "denseRank": 8,
+          "bm25Rank": 1,
+          "fused": 0.08207070707070707,
+          "boosted": 0.09438131313131314
+        }
+      },
+      {
+        "id": "S55",
+        "query": "role binding interface",
+        "intruders": [
+          {
+            "file": "informers/rbac/v1/interface.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 141,
+            "bm25Rank": 16,
+            "fused": 0.030501782985226697,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08603896103896103,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1beta1/interface.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 149,
+            "bm25Rank": 17,
+            "fused": 0.029350104821802933,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08603896103896103,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1alpha1/interface.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 161,
+            "bm25Rank": 18,
+            "fused": 0.02824770258980785,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08603896103896103,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "kubernetes/typed/rbac/v1/rolebinding.go",
+          "line": 40,
+          "denseRank": 4,
+          "bm25Rank": 1,
+          "fused": 0.08603896103896103,
+          "boosted": 0.10754870129870128
+        },
+        "targetInOptimized": {
+          "file": "kubernetes/typed/rbac/v1/rolebinding.go",
+          "line": 40,
+          "denseRank": 4,
+          "bm25Rank": 1,
+          "fused": 0.08603896103896103,
+          "boosted": 0.10754870129870128
+        }
+      },
+      {
+        "id": "S66",
+        "query": "apply scale",
+        "intruders": [
+          {
+            "file": "applyconfigurations/autoscaling/v1/scale.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 25,
+            "bm25Rank": 10,
+            "fused": 0.04464285714285715,
+            "fusedInOptimizedPool": 0.037500000000000006,
+            "boost": 0.09588068181818182,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "applyconfigurations/apps/v1beta2/scale.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 31,
+            "bm25Rank": 13,
+            "fused": 0.03870625662778367,
+            "fusedInOptimizedPool": 0.03260869565217391,
+            "boost": 0.09588068181818184,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "applyconfigurations/extensions/v1beta1/scale.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 19,
+            "bm25Rank": 16,
+            "fused": 0.03746684350132626,
+            "fusedInOptimizedPool": null,
+            "boost": 0.09588068181818185,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "kubernetes/typed/apps/v1/fake/fake_statefulset.go",
+          "line": 73,
+          "denseRank": 1,
+          "bm25Rank": 2,
+          "fused": 0.08522727272727273,
+          "boosted": 0.08522727272727273
+        },
+        "targetInOptimized": {
+          "file": "kubernetes/typed/apps/v1/fake/fake_statefulset.go",
+          "line": 73,
+          "denseRank": 1,
+          "bm25Rank": 2,
+          "fused": 0.08522727272727273,
+          "boosted": 0.08522727272727273
+        }
+      },
+      {
+        "id": "S71",
+        "query": "new filtered cluster role informer",
+        "intruders": [
+          {
+            "file": "informers/rbac/v1/clusterrolebinding.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 18,
+            "bm25Rank": 1,
+            "fused": 0.0771103896103896,
+            "fusedInOptimizedPool": 0.06818181818181818,
+            "boost": 0.011566558441558433,
+            "exactStemMatch": false,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1beta1/role.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 47,
+            "bm25Rank": 41,
+            "fused": 0.019091847265221878,
+            "fusedInOptimizedPool": null,
+            "boost": 0.06939935064935064,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/rbac/v1alpha1/role.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 44,
+            "bm25Rank": 42,
+            "fused": 0.019052706552706553,
+            "fusedInOptimizedPool": null,
+            "boost": 0.06939935064935064,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "informers/rbac/v1/clusterrole.go",
+          "line": 92,
+          "denseRank": 4,
+          "bm25Rank": 4,
+          "fused": 0.07142857142857142,
+          "boosted": 0.08299512987012986
+        },
+        "targetInOptimized": {
+          "file": "informers/rbac/v1/clusterrole.go",
+          "line": 92,
+          "denseRank": 4,
+          "bm25Rank": 4,
+          "fused": 0.07142857142857142,
+          "boosted": 0.08214285714285714
+        }
+      },
+      {
+        "id": "S89",
+        "query": "daemon set interface",
+        "intruders": [
+          {
+            "file": "listers/apps/v1/daemonset.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "present at equal fused score",
+            "denseRank": 9,
+            "bm25Rank": 1,
+            "fused": 0.08133971291866028,
+            "fusedInOptimizedPool": 0.08133971291866028,
+            "boost": 0.020334928229665067,
+            "exactStemMatch": false,
+            "sameBasenameAsTarget": true
+          },
+          {
+            "file": "informers/apps/v1/interface.go",
+            "lists": "BM25 only",
+            "admittedBy": "deep tail of BM25 list",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": null,
+            "bm25Rank": 37,
+            "fused": 0.015957446808510637,
+            "fusedInOptimizedPool": null,
+            "boost": 0.0813397129186603,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "informers/apps/v1beta2/interface.go",
+            "lists": "BM25 only",
+            "admittedBy": "deep tail of BM25 list",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": null,
+            "bm25Rank": 38,
+            "fused": 0.015625,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08133971291866028,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "kubernetes/typed/apps/v1/daemonset.go",
+          "line": 54,
+          "denseRank": 4,
+          "bm25Rank": 4,
+          "fused": 0.07142857142857142,
+          "boosted": 0.09176349965823649
+        },
+        "targetInOptimized": {
+          "file": "kubernetes/typed/apps/v1/daemonset.go",
+          "line": 54,
+          "denseRank": 4,
+          "bm25Rank": 4,
+          "fused": 0.07142857142857142,
+          "boosted": 0.09176349965823649
+        }
+      },
+      {
+        "id": "S97",
+        "query": "create with event namespace with context",
+        "intruders": [
+          {
+            "file": "kubernetes/typed/events/v1/event.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 31,
+            "bm25Rank": 13,
+            "fused": 0.03870625662778367,
+            "fusedInOptimizedPool": 0.03260869565217391,
+            "boost": 0.08522727272727272,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "kubernetes/typed/events/v1beta1/event.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 42,
+            "bm25Rank": 16,
+            "fused": 0.03365384615384616,
+            "fusedInOptimizedPool": null,
+            "boost": 0.08522727272727272,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          },
+          {
+            "file": "kubernetes/typed/core/v1/event.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 142,
+            "bm25Rank": 14,
+            "fused": 0.03289473684210526,
+            "fusedInOptimizedPool": 0.03125,
+            "boost": 0.08522727272727273,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "kubernetes/typed/core/v1/event_expansion.go",
+          "line": 62,
+          "denseRank": 1,
+          "bm25Rank": 1,
+          "fused": 0.09090909090909091,
+          "boosted": 0.10795454545454546
+        },
+        "targetInOptimized": {
+          "file": "kubernetes/typed/core/v1/event_expansion.go",
+          "line": 62,
+          "denseRank": 1,
+          "bm25Rank": 1,
+          "fused": 0.09090909090909091,
+          "boosted": 0.10795454545454546
+        }
+      },
+      {
+        "id": "S147",
+        "query": "horizontal pod autoscalers",
+        "intruders": [
+          {
+            "file": "kubernetes/typed/autoscaling/v2/horizontalpodautoscaler.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 22,
+            "bm25Rank": 1,
+            "fused": 0.07599431818181818,
+            "fusedInOptimizedPool": 0.06818181818181818,
+            "boost": 0.018998579545454544,
+            "exactStemMatch": false,
+            "sameBasenameAsTarget": true
+          },
+          {
+            "file": "kubernetes/typed/autoscaling/v1/horizontalpodautoscaler.go",
+            "lists": "both lists",
+            "admittedBy": "already in depth-15 pool",
+            "inShallow": true,
+            "pathway": "accumulation (extra RRF credit from 2nd list)",
+            "denseRank": 23,
+            "bm25Rank": 2,
+            "fused": 0.07007575757575757,
+            "fusedInOptimizedPool": 0.0625,
+            "boost": 0.018998579545454544,
+            "exactStemMatch": false,
+            "sameBasenameAsTarget": true
+          },
+          {
+            "file": "applyconfigurations/core/v1/pod.go",
+            "lists": "both lists",
+            "admittedBy": "deep tail of both lists",
+            "inShallow": false,
+            "pathway": "admission (absent from depth-15 pool)",
+            "denseRank": 31,
+            "bm25Rank": 190,
+            "fused": 0.009847560975609756,
+            "fusedInOptimizedPool": null,
+            "boost": 0.07599431818181819,
+            "exactStemMatch": true,
+            "sameBasenameAsTarget": false
+          }
+        ],
+        "targetInLegacy": {
+          "file": "listers/autoscaling/v2/horizontalpodautoscaler.go",
+          "line": 40,
+          "denseRank": 27,
+          "bm25Rank": 3,
+          "fused": 0.06444906444906445,
+          "boosted": 0.083447643994519
+        },
+        "targetInOptimized": {
+          "file": "listers/autoscaling/v2/horizontalpodautoscaler.go",
+          "line": 40,
+          "denseRank": null,
+          "bm25Rank": 3,
+          "fused": 0.057692307692307696,
+          "boosted": 0.07473776223776224
+        }
+      }
+    ]
+  }
+}

@@ -9,6 +9,7 @@
     "setup:corpus": "git clone https://github.com/kubernetes/client-go eval-repos/client-go && git -C eval-repos/client-go checkout 2761958e61dbfe479992e21e1320ca462f556b99",
     "index": "tsx scripts/index_repo.ts client-go",
     "benchmark": "tsx benchmark/topk_eval.ts",
+    "ablation": "tsx benchmark/depth_ablation.ts",
     "embed-server": "tsx src/local-embedding-server.ts",
     "test": "tsx tests/run.ts"
   },

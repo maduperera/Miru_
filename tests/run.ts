@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { hitAt3, paired, percentile, signTestP } from "../benchmark/metrics.ts";
+import { bootstrapDeltaCI, hitAt3, paired, percentile, rrAt3, signTestP, wilson } from "../benchmark/metrics.ts";
 import { MINILM_DIM, truncateNormalize } from "../src/minilm.ts";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -33,6 +33,25 @@ await test("sign test matches exact binomial values", () => {
 });
 await test("paired counts wins and losses, ignoring ties", () => {
   assert.deepEqual(paired([true, true, false, false], [false, true, true, false]), { wins: 1, losses: 1, p: 1 });
+});
+await test("rrAt3 is the reciprocal rank of the first target within the top 3", () => {
+  assert.equal(rrAt3(["t.go", "a.go"], ["t.go"]), 1);
+  assert.equal(rrAt3(["a.go", "b.go", "t.go"], ["t.go"]), 1 / 3);
+  assert.equal(rrAt3(["a.go", "b.go", "c.go", "t.go"], ["t.go"]), 0);
+});
+await test("wilson interval matches a reference value and brackets p", () => {
+  const [lo, hi] = wilson(125, 150); // reference (hand-computed): 0.7655–0.8845
+  assert.ok(Math.abs(lo - 0.7655) < 5e-4 && Math.abs(hi - 0.8845) < 5e-4, `${lo} ${hi}`);
+  const [l0, h0] = wilson(0, 10);
+  assert.ok(l0 <= 1e-12 && h0 > 0);
+});
+await test("bootstrapDeltaCI is deterministic and brackets the observed delta", () => {
+  const a = Array.from({ length: 150 }, (_, i) => (i < 125 ? 1 : 0));
+  const b = Array.from({ length: 150 }, (_, i) => (i < 114 ? 1 : 0));
+  const c1 = bootstrapDeltaCI(a, b), c2 = bootstrapDeltaCI(a, b);
+  assert.deepEqual(c1, c2);
+  assert.ok(c1[0] < 11 / 150 && 11 / 150 < c1[1] && c1[0] > 0);
+  assert.deepEqual(bootstrapDeltaCI(a, a), [0, 0]);
 });
 
 console.log("embedder");
