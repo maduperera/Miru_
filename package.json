@@ -2,6 +2,7 @@
   "name": "miru-topk-benchmark",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Reproducible benchmark of how Miru's requested topK changes its top-3 hybrid code-search results.",
   "scripts": {

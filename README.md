@@ -108,3 +108,9 @@ tests/
 - **Embedder.** The published numbers use the local MiniLM-256 embedder. The candidate-depth mechanism does not depend on the embedder, but absolute Hit@3 under DS1 will differ, so run with `TAKARA_API_KEY` to get production figures.
 - **Single corpus.** Results come from one Go repository. Corpora of other sizes and languages may show different effect sizes.
 - **Query style.** The queries are identifier phrases that target named definitions. Free-form conceptual or multi-file queries were not measured.
+
+## License
+
+The benchmark code and query set in this repository are released under the [MIT License](LICENSE).
+
+This repository does not include or redistribute the corpus: `npm run setup:corpus` clones it from upstream, and [`kubernetes/client-go`](https://github.com/kubernetes/client-go) is licensed under Apache-2.0. [`@takara-ai/miru-code`](https://www.npmjs.com/package/@takara-ai/miru-code) and the other dependencies remain under their own licences.
