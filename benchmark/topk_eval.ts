@@ -1,7 +1,9 @@
 /**
  * Miru Top-K benchmark: does requesting fewer results from Miru change which 3 results come back?
  *
- *   npm run benchmark                 # = tsx benchmark/topk_eval.ts [--reps 5] [--index .miru/client-go/index]
+ *   npm run benchmark                 # = tsx benchmark/topk_eval.ts [--reps 5] [--index .miru/client-go/index] [--multiplier N]
+ *
+ * --multiplier N overrides MIRU_RANK_CANDIDATE_MULTIPLIER (Miru default 5, max 50) as a candidate-depth control.
  *
  * Arms (Hit@3 = a file that defines the queried identifier is among the top 3):
  *   Legacy     topK=50, sliced to the first 3
@@ -25,6 +27,7 @@ const flag = (name: string, fallback: string) => (args.includes(name) ? args[arg
 const REPS = Number(flag("--reps", "5"));
 const INDEX = path.resolve(ROOT, flag("--index", ".miru/client-go/index"));
 const WORK = path.join(ROOT, ".bench", "topk");
+const MULT = flag("--multiplier", "");
 
 interface Query { id: string; query: string; identifier: string; definedIn: string[] }
 const spec = JSON.parse(readFileSync(path.join(ROOT, "benchmark", "queries.topk.json"), "utf-8")) as { repo: string; commit: string; queries: Query[] };
@@ -49,7 +52,8 @@ const queriesPath = path.join(WORK, "queries.json");
 writeFileSync(queriesPath, JSON.stringify({ queries: spec.queries.map(({ id, query }) => ({ id, query })) }));
 
 // 2. Run the three arms against Miru under Bun.
-const rawPath = path.join(WORK, `raw.${emb.name}.json`);
+const tag = MULT ? `${emb.name}.mult${MULT}` : emb.name;
+const rawPath = path.join(WORK, `raw.${tag}.json`);
 console.log(`Running ${spec.queries.length} queries × 3 arms × ${REPS} reps against Miru…`);
 await new Promise<void>((resolve, reject) => {
   const env: NodeJS.ProcessEnv = {
@@ -58,7 +62,8 @@ await new Promise<void>((resolve, reject) => {
     MIRU_FLOAT_VECTORS: "1", MIRU_NO_UPDATE_CHECK: "1", MIRU_QUIET: "1",
     MIRU_CACHE_HOME: path.join(ROOT, ".miru", "_cache"), MIRU_CREDENTIALS_DIR: path.join(ROOT, ".miru", "_creds"),
   };
-  delete env.MIRU_RANK_CANDIDATE_MULTIPLIER; // benchmark Miru's shipped default (5)
+  if (MULT) env.MIRU_RANK_CANDIDATE_MULTIPLIER = MULT;
+  else delete env.MIRU_RANK_CANDIDATE_MULTIPLIER; // benchmark Miru's shipped default (5)
   const child = spawn(path.join(ROOT, "node_modules", ".bin", "bun"),
     ["scripts/miru_topk.ts", INDEX, queriesPath, rawPath, String(REPS), ...(useLocal ? [vecPath] : [])],
     { cwd: ROOT, env, stdio: ["ignore", "inherit", "inherit"] });
@@ -101,13 +106,13 @@ const body = rows.map((r) => {
     r.p95.toFixed(1),
   ];
 });
-console.log(`\nMiru Top-K benchmark · ${spec.repo}@${spec.commit.slice(0, 7)} (${raw.chunks.toLocaleString("en-US")} chunks) · ${n} queries · embedder ${emb.name} · ${raw.runtime} · ${REPS} reps\n`);
+console.log(`\nMiru Top-K benchmark · ${spec.repo}@${spec.commit.slice(0, 7)} (${raw.chunks.toLocaleString("en-US")} chunks) · ${n} queries · embedder ${emb.name} · ${raw.runtime} · ${REPS} reps · candidate multiplier ${MULT || "5 (default)"}\n`);
 console.log(table(["Configuration", "Hit@3", "Correct", "Δ vs Legacy", "W/L vs Legacy (sign test)", "p50 ms", "p95 ms"], body, ["l", "r", "r", "r", "r", "r", "r"]));
 console.log(`\nHit@3: a file defining the queried identifier is in the top 3. Latency: Miru search time per query (median of ${REPS} reps), ${useLocal ? "query embedding excluded (precomputed)" : "including the DS1 query-embedding call"}.`);
 
-const outFile = path.join(ROOT, "benchmark", `results.${emb.name}.json`);
+const outFile = path.join(ROOT, "benchmark", `results.${tag}.json`);
 writeFileSync(outFile, JSON.stringify({
-  repo: spec.repo, commit: spec.commit, chunks: raw.chunks, queries: n, embedder: emb.name, runtime: raw.runtime, reps: REPS,
+  repo: spec.repo, commit: spec.commit, chunks: raw.chunks, queries: n, embedder: emb.name, runtime: raw.runtime, reps: REPS, candidateMultiplier: MULT ? Number(MULT) : 5,
   arms: rows.map((r) => ({ name: r.name, topK: r.k, hitAt3: r.hits / n, hits: r.hits, p50Ms: r.p50, p95Ms: r.p95, vsLegacy: r === legacy ? null : paired(r.hitVec, legacy.hitVec) })),
   perQuery: raw.queries.map((q, i) => ({ id: q.id, ...Object.fromEntries(rows.map((r) => [`hit_topK${r.k}`, r.hitVec[i]])) })),
 }, null, 2));

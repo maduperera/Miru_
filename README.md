@@ -30,26 +30,34 @@ npm run benchmark
 | **Optimized** | `topK=3` | **83.3%** | **125 / 150** | **+7.3 pts** | **11 / 0 (p < 0.001)** | **21.2 ms** | **30.6 ms** |
 
 - **Accuracy rises as K falls.** The Optimized arm fixes 11 queries that Legacy misses and breaks none of the queries Legacy gets right.
-- **Faster.** Smaller candidate pools mean less fusion and reranking work per query.
+- **Faster.** Median search time drops by 33%. It doesn't drop by 94% because Miru scores the whole corpus (BM25 over every chunk, dense similarity over the full index) on every query, whatever `topK` is. Only candidate selection, fusion, boosting and reranking get cheaper.
 - The machine-readable output is written to `benchmark/results.<embedder>.json`.
 
 ## How It Works
 
-For each query, Miru's `hybridSearch` does the following:
+For each query, Miru's `hybridSearch` (`@takara-ai/miru-code` v1.12.2, `src/search.ts`) does the following:
 
-1. Fetches `topK × MIRU_RANK_CANDIDATE_MULTIPLIER` candidates (default multiplier **5**) from **both** BM25 and the dense vector index.
-2. Fuses the two lists with Reciprocal Rank Fusion (k = 10) and blends that with the dense score (`alpha` = 0.25 for natural-language queries, 0.30 for symbol-like queries).
-3. Applies definition and stem boosts, then reranks and returns the top `topK`.
+1. **Fetch.** It scores every chunk with BM25 and with dense cosine similarity, then keeps the top `topK × MIRU_RANK_CANDIDATE_MULTIPLIER` from **each** list. The multiplier defaults to **5**; location-style queries use a separate multiplier of 10.
+2. **Fuse.** Each list is converted to rank scores, `1 / (10 + rank)` (Reciprocal Rank Fusion, k = 10). They're combined as `α · dense + (1 − α) · BM25`, where `α` = 0.25 for natural-language queries and 0.30 for symbol-like queries. A chunk missing from a list gets 0 from that list.
+3. **Boost and rerank.** It applies definition and exact-stem boosts, then path penalties and per-file saturation, and returns the top `topK`.
 
-| Request | Candidates per retriever | Candidates entering fusion |
+| Request | Candidates per list | Unique candidates entering fusion |
 |---|---:|---:|
 | `topK=3` | 15 | ≤ 30 |
 | `topK=5` | 25 | ≤ 50 |
 | `topK=50` | 250 | ≤ 500 |
 
-With 250 candidates per retriever, many weakly relevant chunks enter fusion. Some of them pick up boosts or partial rank agreement and push the true definition out of the top 3. With `topK=3`, the 15-deep pool per retriever only lets in candidates that both retrievers already rank highly. The multiplier therefore acts as a relevance filter before fusion.
+Fusion works on ranks, not raw scores, and anything outside the cut-off scores 0. Deepening the lists therefore changes the outcome. With 250 candidates per list, many mediocre chunks show up in **both** lists and collect partial scores from each, plus boosts. Together these can push a strong match that sits high in only one list out of the top 3. With `topK=3`, a chunk has to rank in the top 15 of at least one list to be considered at all. The multiplier therefore acts as a relevance filter before fusion.
 
-Retrieval quality depends on **candidate depth**, not on post-hoc slicing. Running `topK=3` with `MIRU_RANK_CANDIDATE_MULTIPLIER=50` (250 candidates per retriever) reproduces the `topK=50` top 3 exactly. The benchmark unsets this variable so that it measures Miru's shipped default.
+**Control: depth, not slicing.** Keep `topK=3` but raise the multiplier to 50, Miru's maximum (`npm run benchmark -- --multiplier 50`). Each list then fetches 150 candidates, and the Optimized arm loses its advantage completely:
+
+| Run | Candidates per list | Hit@3 |
+|---|---:|---:|
+| `topK=50`, default multiplier (Legacy) | 250 | 76.0% (114 / 150) |
+| `topK=3`, multiplier 50 | 150 | 76.0% (114 / 150) |
+| `topK=3`, default multiplier (Optimized) | 15 | 83.3% (125 / 150) |
+
+146 of the 150 top-3 lists from `topK=3 × 50` are identical to Legacy's. In the same `--multiplier 50` run, all three arms score 76.0% (114 / 150). Once each list is at least 150 deep, requesting fewer results no longer helps. So the accuracy depends on how deep Miru fetches **before** fusion, not on how many results the caller keeps. The default `npm run benchmark` unsets this variable so that it measures Miru's shipped default; the control output is in `benchmark/results.minilm-l6-256.mult50.json`.
 
 ### Recommendation
 
@@ -71,7 +79,7 @@ Request the number of results you actually need. Fetching a large pool and slici
 npm install
 npm run setup:corpus   # clone client-go and check out the pinned commit
 npm run index          # build the Miru index at .miru/client-go/index
-npm run benchmark      # run the three arms (options: --reps <n>, --index <path>)
+npm run benchmark      # run the three arms (options: --reps <n>, --index <path>, --multiplier <n>)
 npm test               # metric, query-set and corpus integrity checks
 ```
 
