@@ -21,7 +21,7 @@ Each code chunk becomes a set of *(role, identifier)* pairs, for example `ROLE_F
 |---|---|---|
 | Install / run | `bun add -g @takara-ai/miru-code`, `miru setup`, then `miru` CLI / MCP | `npm install` + `pip install -r requirements.txt`, then Python scripts |
 | Where reranking happens | Inside Miru | **Outside Miru, afterwards.** Miru is used unmodified. |
-| Languages | Many | Go chunks (regex extractor used in the benchmark). `kalpana_rif` also has a Python-AST extractor. |
+| Languages | Many | Go benchmarked (regex and tree-sitter extractors). Tree-sitter extractor ([scripts/extract_roles.ts](scripts/extract_roles.ts)) uses Miru's own grammars; multi-language benchmark in progress. |
 | Index | Any repo | Scripts are wired to `eval-repos/client-go` |
 
 ### How it fits together
@@ -71,7 +71,7 @@ This example builds chunk tensors on the fly for clarity. In production, build t
 
 * A `miru-kalpana search <repo> "<query>"` command, or an MCP tool for agents.
 * Indexing an arbitrary repository through these scripts (they target `client-go`).
-* Languages other than Go (and Python via `kalpana_rif.extract_ast_pairs`).
+* Benchmarked results for languages other than Go (tree-sitter extraction works for Python, TypeScript, Java, Rust, Ruby and more; evaluation in progress).
 
 ---
 
@@ -136,6 +136,29 @@ Ceiling (defining chunk anywhere in Miru's top-5): 67.1% for the new 350, 64.6% 
 
 Offline (index time): tensors for the 1,366 unique pooled chunks are built in about 33 s on CPU. Each tensor is 384 × float64 (3 KB), about 41 MB for the full 13,471-chunk corpus. Loading the model takes about 19 s, once.
 
+### Tree-sitter extractor (language-independent parsing)
+
+To move beyond Go, the regex extractor was replaced by [scripts/extract_roles.ts](scripts/extract_roles.ts). It parses chunks with `web-tree-sitter` and **Miru's own vendored grammars**, mapping AST nodes to the same five roles. It was checked first on the same 500 Go queries and the same topK=5 pools (`benchmark/results.kalpana.minilm-l6-256.all500.k5.ts.json`):
+
+| All 500, RRF (topK=5 → 3) | Regex extractor | Tree-sitter extractor |
+|---|---:|---:|
+| Chunk@3 | 59.8% | **60.4%** |
+| File@3 | 85.8% | 85.8% |
+| Chunk W/L vs same K=5 pool (do-no-harm) | 32 / 1 | **35 / 1** |
+| File W/L vs same K=5 pool | 28 / 4 | 28 / 4 |
+| Chunks with ≥1 extracted pair | 98.4% | 98.4% |
+| Overhead above Miru, cached phrase (p50) | 0.12 ms | 0.13 ms |
+
+The tree-sitter extractor matches or slightly beats the regex extractor, so the language-specific layer can now be swapped per language without hand-written patterns.
+
+```bash
+npx tsx scripts/extract_roles.ts pool .bench/kalpana/candidates.minilm-l6-256.all500.k5.json \
+  .bench/kalpana/candidates.minilm-l6-256.all500.k5.ts.json
+python3 miru_kalpana/benchmark_kalpana_fusion.py --extractor treesitter \
+  --candidates .bench/kalpana/candidates.minilm-l6-256.all500.k5.ts.json \
+  --queries benchmark/queries.topk.all500.json
+```
+
 ### How we got here (development history, frozen 150 queries)
 
 | Step | Pool | Result |
@@ -148,7 +171,7 @@ Offline (index time): tensors for the 1,366 unique pooled chunks are built in ab
 
 * **One repository and one embedder:** `kubernetes/client-go` with local MiniLM-L6 truncated to 256-D (a stand-in for Takara DS1). Other repositories and languages are untested.
 * **The new 350 queries come from a re-implementation** ([gen_queries.py](miru_kalpana/gen_queries.py)) of the sampling rule documented in `queries.topk.json`. The original sampler isn't available. The new set is somewhat easier (native Chunk@3 56.9% vs 50.0%).
-* **Go chunks are parsed with a regex extractor,** not a full AST. It finds at least one pair in 96.6–98.9% of pooled chunks.
+* **Go chunks are parsed with a regex extractor** in the headline results. A tree-sitter extractor gives equal or slightly better numbers on the same queries (see above).
 * **Kalpana alone, without fusion, is worse than Miru** (K=25 pool: Top-1 64.7% → 49.3%). It's useful as a fused reranker, not as a replacement ranker.
 * **The reranker scores with cosine similarity** against bundled tensors. `unbind` exists in `kalpana_rif.vsa_core` but is not used in the ranking path.
 

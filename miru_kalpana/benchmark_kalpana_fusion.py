@@ -112,6 +112,22 @@ def go_pairs(content: str) -> List[ASTPair]:
     return out[:MAX_PAIRS]
 
 
+_SKIP_ARGS = {"self", "cls", "_"}
+
+
+def treesitter_pairs(c: dict) -> List[ASTPair]:
+    """Roles precomputed by scripts/extract_roles.ts; same normalisation as go_pairs."""
+    seen, out = set(), []
+    for role, ident in c.get("roles") or []:
+        if role == "ROLE_ARG" and ident in _SKIP_ARGS:
+            continue
+        tok = split_ident(ident)
+        if tok and (role, tok) not in seen:
+            seen.add((role, tok))
+            out.append((role, tok))
+    return out[:MAX_PAIRS]
+
+
 def query_pairs(query: str) -> List[ASTPair]:
     q = query.strip().lower()
     return [("ROLE_FUNC", q), ("ROLE_CLASS", q)]
@@ -257,7 +273,8 @@ def load_candidates(k: int, path: Optional[str]) -> Tuple[dict, Path]:
     return json.loads(p.read_text()), p
 
 
-def build_tensor_cache(rr: KalpanaReranker, data: dict, path: Path, rebuild: bool) -> Tuple[Dict[str, int], np.ndarray, np.ndarray, dict]:
+def build_tensor_cache(rr: KalpanaReranker, data: dict, path: Path, rebuild: bool,
+                       extractor: str = "regex") -> Tuple[Dict[str, int], np.ndarray, np.ndarray, dict]:
     """OFFLINE: tensorize every unique pool chunk once and serialize (simulated index time)."""
     if path.exists() and not rebuild:
         z = np.load(path, allow_pickle=False)
@@ -275,7 +292,7 @@ def build_tensor_cache(rr: KalpanaReranker, data: dict, path: Path, rebuild: boo
     print(f"Offline: tensorizing {len(keys)} unique pool chunks…", flush=True)
     t0 = time.perf_counter()
     for i, k in enumerate(keys):
-        pairs = go_pairs(uniq[k]["content"])
+        pairs = treesitter_pairs(uniq[k]) if extractor == "treesitter" else go_pairs(uniq[k]["content"])
         if pairs:
             mat[i] = rr.index_chunk(pairs)
             valid[i] = True
@@ -298,12 +315,16 @@ def main() -> None:
     ap.add_argument("--rebuild-tensors", action="store_true", help="ignore the serialized tensor cache")
     ap.add_argument("--folds", type=int, default=5, help="cross-validation folds for alpha selection")
     ap.add_argument("--queries", default="benchmark/queries.topk.json", help="query spec (must cover the pools)")
+    ap.add_argument("--extractor", choices=["regex", "treesitter"], default="regex",
+                    help="chunk role source: Go regex, or 'roles' from scripts/extract_roles.ts")
     args = ap.parse_args()
 
     spec = json.loads((ROOT / args.queries).read_text())
     qby = {q["id"]: q for q in spec["queries"]}
     data, cpath = load_candidates(args.k, args.candidates)
     tag = cpath.stem.replace("candidates.", "")
+    if args.extractor == "treesitter" and not tag.endswith(".ts"):
+        tag += ".ts"  # never share a cache/results file with the regex extractor
 
     print("Loading Kalpana-RIF (MiniLM codebook)…", flush=True)
     t0 = time.perf_counter()
@@ -312,7 +333,7 @@ def main() -> None:
 
     # ---- OFFLINE: pre-computed pool tensors (index time) -------------------
     kidx, mat, valid, cache_info = build_tensor_cache(
-        rr, data, ROOT / ".bench" / "kalpana" / f"tensors.{tag}.npz", args.rebuild_tensors)
+        rr, data, ROOT / ".bench" / "kalpana" / f"tensors.{tag}.npz", args.rebuild_tensors, args.extractor)
     norms = np.linalg.norm(mat, axis=1)
     norms[norms == 0] = 1.0
     unit = mat / norms[:, None]  # row-normalized once, offline
