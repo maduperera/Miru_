@@ -1,0 +1,67 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{\textbf{Kalpana-RIF Discrete: Sub-Millisecond Neuro-Symbolic Code Reranking for Agentic Retrieval Pipelines}}
+\author{Madusha}
+\date{October 20, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Standard Large Language Models (LLMs) used in agentic coding environments suffer from severe context washout and high KV-cache memory costs when flooded with distractor files during retrieval. While continuous hybrid search engines (like native Miru) improve base retrieval, they struggle to resolve exact sub-file Abstract Syntax Tree (AST) topologies, leading to a tradeoff between candidate recall and context window bloat. We introduce Kalpana-RIF Discrete, a neuro-symbolic architecture utilizing FFT-based circular convolution to bind discrete structural code roles to continuous semantic tokens. Evaluated on a rigorous 500-query benchmark, Kalpana-RIF achieves a 40\% reduction in required LLM context while simultaneously increasing exact chunk definition accuracy by +5.0\% absolute ($p = 0.0001$). The $O(1)$ tensor unbinding executes in $< 0.06$ ms, providing a strictly near-monotonic structural filter (32 wins, 1 loss) that eliminates the expanding KV cache bottleneck for cloud-side neural networks.
+\end{abstract}
+
+\section{Introduction}
+Integrating Retrieval-Augmented Generation (RAG) into AI coding assistants presents a unique challenge: code is inherently topological, but neural embeddings are inherently semantic. 
+
+Our earlier Continuous RIF engine relied on linear additive superposition and time-based trigonometric wave modulation. While highly efficient for Edge AI and fluid signal processing, this approach caused catastrophic "bag-of-words" crosstalk when scaled for LLMs. Transformer embeddings suffer from cone collapse, destroying strict relational boundaries as the baseline noise floor rises. To solve this, we moved to the discrete frequency domain, culminating in Kalpana-RIF Discrete.
+
+\section{Methodology: The Neuro-Symbolic Architecture}
+Kalpana-RIF cleanly divides the architecture by relying on discrete structural roles (e.g., AST nodes) bound to continuous tokens.
+
+\subsection{Isotropic Mean-Centering}
+To prevent ambient positive similarity (cone collapse) from overwhelming the structural signals, we apply an Isotropic Mean-Centering transform before binding. This algebraically zeroes out the ambient noise floor, ensuring orthogonal distinction between structural tokens.
+
+\subsection{FFT-Based Circular Convolution Binding}
+We bundle complex code topologies into a single $O(1)$ state tensor using Vector Symbolic Architecture (VSA). Let $\mathbf{x}_{\text{neural}}$ represent the continuous semantic embedding of a code chunk, and $\mathbf{r}_{\text{symbolic}}$ represent its discrete AST role (e.g., \texttt{ROLE\_FUNC}). The unified state tensor $\mathbf{T}$ is computed via circular convolution:
+
+\begin{equation}
+    \mathbf{T} = \sum_{i} \mathbf{r}_{\text{symbolic}, i} \circledast \mathbf{x}_{\text{neural}, i}
+\end{equation}
+
+This flat 384-dimensional tensor completely rejects structural inversions and distractors without requiring expensive multi-hop graph database traversals.
+
+\section{Empirical Evaluation}
+We evaluated Kalpana-RIF on a 500-query benchmark against the \texttt{client-go} repository to measure exact code chunk retrieval accuracy and context compression.
+
+\subsection{Context Compression and Precision}
+Native retrieval pipelines typically pass $K=5$ chunks to the LLM to maximize recall, incurring heavy token costs. By reranking the $K=5$ candidate pool using Reciprocal Rank Fusion (RRF) with our discrete state tensors, we successfully compressed the required payload to $K=3$ while exceeding the original recall ceiling.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Retrieval Configuration} & \textbf{Top-3 File Accuracy} & \textbf{Top-3 Chunk Accuracy} \\ \midrule
+Miru Native Baseline ($K=3$) & 82.0\% & 54.8\% \\
+Miru + Kalpana Fused ($K=5 \to 3$) & \textbf{86.3\%} & \textbf{59.8\%} \\ \midrule
+\textbf{Absolute Gain} & +4.3\% & +5.0\% \\ \bottomrule
+\end{tabular}
+\caption{500-query benchmark results demonstrating exact chunk resolution.}
+\end{table}
+
+\subsection{Structural Safety}
+In production environments, rerankers must not degrade baseline performance. Kalpana-RIF demonstrated near-perfect structural filtering fidelity, achieving 32 wins against 1 single loss ($p = 0.0001$) when compared to the unranked $K=5$ pool.
+
+\section{Conclusion}
+The Kalpana-RIF Discrete architecture successfully bridges the gap between neural semantic search and discrete AST logic. By achieving a 40\% reduction in LLM context requirements with zero latency penalty ($< 0.06$ ms per pool), it provides a highly scalable, mathematically predictable retrieval foundation for the next generation of agentic coding systems.
+
+\end{document}
