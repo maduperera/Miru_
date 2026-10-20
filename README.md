@@ -10,6 +10,69 @@ Each code chunk becomes a set of *(role, identifier)* pairs, for example `ROLE_F
 
 ---
 
+## What this is (and isn't)
+
+> [!IMPORTANT]
+> This repository is a **research benchmark and reference implementation**. It is **not** a drop-in replacement for Miru. Miru ships as a `miru` CLI and an MCP server that gives Claude Code, Cursor and other agents a `search` tool. This repo has **no CLI and no MCP tool yet**. Kalpana runs *after* Miru, in Python, on Miru's exported results.
+
+| | Miru | Miru + Kalpana (this repo) |
+|---|---|---|
+| Install / run | `bun add -g @takara-ai/miru-code`, `miru setup`, then `miru` CLI / MCP | `npm install` + `pip install -r requirements.txt`, then Python scripts |
+| Where reranking happens | Inside Miru | **Outside Miru, afterwards.** Miru is used unmodified. |
+| Languages | Many | Go chunks (regex extractor used in the benchmark). `kalpana_rif` also has a Python-AST extractor. |
+| Index | Any repo | Scripts are wired to `eval-repos/client-go` |
+
+### How it fits together
+
+```
+your query ──► Miru search (topK=5, unmodified, Bun)
+                 │  scripts/miru_candidates.ts → candidates JSON (path, lines, content, score)
+                 ▼
+             Kalpana (Python)
+                 ├─ offline: chunk → (role, identifier) pairs → 384-D tensor   (once, at index time)
+                 ├─ online:  query → structural tensor → dot product vs pool   (~0.035 ms + query encode)
+                 └─ fuse Miru order + Kalpana order with RRF → top-3 to the LLM
+```
+
+### Using the reranker on Miru output
+
+After step 3 of [Reproduce](#reproduce-the-500-query-benchmark) has produced a candidates file, run this from the repo root:
+
+```python
+import json
+import numpy as np
+from miru_kalpana_reranker import KalpanaReranker
+from miru_kalpana.benchmark_kalpana_fusion import go_pairs, query_pairs
+
+rr = KalpanaReranker()                       # loads MiniLM once (~20 s)
+pools = json.load(open(".bench/kalpana/candidates.minilm-l6-256.all500.k5.json"))
+row = pools["queries"][0]                    # one query's Miru topK=5 result
+cands = row["candidates"]                    # [{file_path, start_line, content, score}, ...] in Miru order
+
+query = "resource slice indexers"            # identifier words, as in the benchmark
+q_t = rr.index_chunk(query_pairs(query))
+c_t = [rr.index_chunk(p) if (p := go_pairs(c["content"])) else np.zeros(384) for c in cands]
+k_rank = {i: r for r, (i, _) in enumerate(rr.rerank(q_t, c_t))}
+
+# RRF fusion of Miru's order and Kalpana's order (c = 60), keep the top 3
+fused = sorted(range(len(cands)), key=lambda i: -(1 / (61 + i) + 1 / (61 + k_rank[i])))
+for i in fused[:3]:
+    print(f'{cands[i]["file_path"]}:{cands[i]["start_line"]}')
+# informers/resource/v1/resourceslice.go:69
+# informers/resource/v1beta1/resourceslice.go:69
+# informers/resource/v1beta2/resourceslice.go:69
+```
+
+This example builds chunk tensors on the fly for clarity. In production, build them at index time and store them (as `benchmark_kalpana_fusion.py` does with its `.npz` cache), so the per-query cost is only the query encode plus a dot product.
+
+### Not yet supported
+
+* A `miru-kalpana search <repo> "<query>"` command, or an MCP tool for agents.
+* Indexing an arbitrary repository through these scripts (they target `client-go`).
+* Languages other than Go (and Python via `kalpana_rif.extract_ast_pairs`).
+
+---
+
 ## 🚀 Benchmark Results: 40% LLM Context Savings with Sub-Millisecond Scoring
 
 Kalpana Discrete RIF was evaluated on a 500-query benchmark against the `kubernetes/client-go` repository. It narrows the trade-off between search precision and how much context is sent to the LLM.
