@@ -1,0 +1,5 @@
+# Python side of the Miru + Kalpana Discrete RIF benchmark (tested on Python 3.9).
+# Miru itself is a Node/Bun package: see package.json (`npm install`).
+numpy>=1.21
+sentence-transformers>=2.2   # MiniLM (all-MiniLM-L6-v2) token vectors in kalpana_rif.NeuroVocab
+torch>=2.0                   # backend for sentence-transformers

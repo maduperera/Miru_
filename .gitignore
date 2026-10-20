@@ -1,5 +1,35 @@
+# --- dependencies / environments ---
 node_modules/
+.venv/
+venv/
+env/
+
+# --- corpora, indexes and caches (rebuilt by the scripts) ---
 eval-repos/
 .miru/
 .bench/
+*.npz
+*.npy
+*.pkl
+*.bin
+
+# --- compiled / binary artifacts (source is published instead) ---
+dist/
+build/
+*.whl
+*.so
+*.pyd
+*.egg-info/
+*.c
+
+# --- Python bytecode ---
+__pycache__/
+*.pyc
+
+# --- OS / editor / logs ---
+.DS_Store
 *.log
+
+# Kept on purpose (not ignored):
+#   benchmark/queries.topk*.json   frozen + generated query sets
+#   benchmark/results*.json        summary reports behind every number in the README

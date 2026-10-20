@@ -1,153 +1,137 @@
-# Miru Hybrid Search Benchmark: The Top-K Illusion
+# Miru + Kalpana Discrete RIF: Sub-Millisecond Neuro-Symbolic Code Reranking
 
-This repository contains an isolated, reproducible benchmark demonstrating a critical candidate-depth anomaly in hybrid code retrieval.
+Kalpana Discrete RIF is a structural reranker that runs on top of [Miru](https://www.npmjs.com/package/@takara-ai/miru-code)'s hybrid (BM25 + dense) code search. Miru itself is not modified.
 
-By running this benchmark against the Miru Code Search Engine, we empirically demonstrate that deep-pool fetching (`topK=50`) actively degrades search accuracy, because a deeper candidate pool lets more generically named files into a file-path boost that outweighs fused relevance (see [Root cause](#root-cause-bm25-depth--path-stem-boost)). Restricting the native query to `topK=3` leverages Miru's internal $5 \times K$ fetch multiplier as an early-exit relevance filter, boosting Hit@3 by **7.3 points (76.0% → 83.3%)** with zero regressions and ~33% lower median latency.
+Each code chunk becomes a set of *(role, identifier)* pairs, for example `ROLE_FUNC ⊛ "resource slice indexers"`. Those pairs are bound with FFT circular convolution and bundled into a single 384-D tensor at index time. At query time, Miru's candidates are rescored by a dot product against a structural query tensor ("where is *X* **defined**"). The two rankings are then fused.
 
-> [!IMPORTANT]
-> **Embedder status:** all results below were produced with Miru running on a **local MiniLM-L6 embedder (256-d)** as a stand-in for Takara's production **DS1** embedder, pending a DS1 API key. Miru's search pipeline (BM25, dense retrieval, RRF fusion, boosts, reranking) is unchanged; only the embedding model differs. Absolute Hit@3 and the size of the gap are expected to differ under DS1. The benchmark switches to DS1 automatically when `TAKARA_API_KEY` is set, and DS1 results will be added here once available.
+![Miru + Kalpana Discrete RIF pipeline](docs/architecture.jpeg)
 
-## Quick Start
+*Pipeline overview. The figures in the diagram's "Performance Evolution" box come from different runs (150- and 500-query sets, K=25 and K=5 pools). The tables below are the authoritative 500-query numbers. The final pipeline reranks Miru's native topK=5 candidates rather than a top-25 pool.*
 
-```bash
-# Install dependencies
-npm install
+---
 
-# Run the comparative benchmark
-npm run benchmark
-```
+## 🚀 Benchmark Results: 40% LLM Context Savings with Sub-Millisecond Scoring
 
-`npm run benchmark` expects a Miru index of the pinned corpus at `.miru/client-go/index`. On a fresh clone, build it first (see [Reproducing from scratch](#reproducing-from-scratch)).
+Kalpana Discrete RIF was evaluated on a 500-query benchmark against the `kubernetes/client-go` repository. It narrows the trade-off between search precision and how much context is sent to the LLM.
 
-## Results
+Kalpana reranks Miru's K=5 candidates with structural role-bound tensors and promotes the exact defining chunk into the top 3. Three chunks then hold **92.6%** of the defining chunks that five chunks would have held, while the prompt carries 40% fewer chunks.
 
-`kubernetes/client-go@2761958` · 13,471 chunks · 150 queries · 5 interleaved repetitions per arm · embedder: **local MiniLM-L6-256 (DS1 stand-in)**
+### 📊 The 500-Query Efficacy Report
 
-| Configuration | Request | Hit@3 | Correct | Δ vs Legacy | Wins / Losses vs Legacy | p50 latency | p95 latency |
-|---|---|---:|---:|---:|---:|---:|---:|
-| Legacy | `topK=50`, sliced to top 3 | 76.0% | 114 / 150 | — | — | 31.5 ms | 39.7 ms |
-| Mid-bound | `topK=5`, sliced to top 3 | 79.3% | 119 / 150 | +3.3 pts | 5 / 0 (p = 0.063) | 21.6 ms | 30.6 ms |
-| **Optimized** | `topK=3` | **83.3%** | **125 / 150** | **+7.3 pts** | **11 / 0 (p < 0.001)** | **21.2 ms** | **30.6 ms** |
+| Metric (500 queries) | Miru native topK=3 | **Miru topK=5 → Kalpana RRF → top-3** | Δ | Wins / Losses | p |
+|---|---:|---:|---:|---:|---:|
+| Defining chunk in top-3 | 54.8% | **59.8%** | +5.0 pts (+9.1% rel.) | 32 / 7 | 0.0001 |
+| Defining file in top-3 | 82.4% | **85.8%** | +3.4 pts (+4.1% rel.) | 24 / 7 | 0.003 |
 
-- **Accuracy rises as K falls.** The Optimized arm fixes 11 queries that Legacy misses and breaks none of the queries Legacy gets right.
-- **Faster.** Median search time drops by 33%. It doesn't drop by 94% because Miru scores the whole corpus (BM25 over every chunk, dense similarity over the full index) on every query, whatever `topK` is. Only candidate selection, fusion, boosting and reranking get cheaper.
-- The machine-readable output is written to `benchmark/results.<embedder>.json`.
+* **Context compression (40% fewer chunks):** with all 5 chunks, the defining chunk is present for **64.6%** of queries. Kalpana's top 3 reach **59.8%**, so **3 chunks recover 92.6% of 5-chunk recall**, and they beat Miru's own 3-chunk result (54.8%).
+* **Chunk-level precision (the "needle"):** the exact defining chunk in the top 3 rises from **54.8% to 59.8%** (+5.0 pts absolute / +9.1% relative; 32 wins vs 7 losses, p = 0.0001).
+* **File-level precision (the "haystack"):** the defining file in the top 3 rises from **82.4% to 85.8%** (+3.4 pts / +4.1% relative; 24 wins vs 7 losses, p = 0.003).
+* **Sub-millisecond scoring:** reranking a pool from pre-computed tensors takes **0.035 ms p50 / 0.055 ms p95** (one matrix-vector product plus a sort). A *new* query also needs one MiniLM encode of the query phrase, which takes **9.3 ms p50 / 12.5 ms p95** on CPU. That's below Miru's own search time (19.6 ms p50), so the two could overlap. Running them in parallel is not implemented yet. If the query phrase is cached, the total overhead is **0.12 ms p50 / 0.26 ms p95**.
 
-## How It Works
+### 🛡️ "Do No Harm" Reliability
 
-For each query, Miru's `hybridSearch` (`@takara-ai/miru-code` v1.12.2, `src/search.ts`) does the following:
+Production pipelines need a reranker that doesn't break what already works. Compared with **the same Miru topK=5 candidates before reranking**, Kalpana almost never removes a correct defining chunk from the top 3:
 
-1. **Fetch.** It scores every chunk with BM25 and with dense cosine similarity, then keeps the top `topK × MIRU_RANK_CANDIDATE_MULTIPLIER` from **each** list. The multiplier defaults to **5**; location-style queries use a separate multiplier of 10.
-2. **Fuse.** Each list is converted to rank scores, `1 / (10 + rank)` (Reciprocal Rank Fusion, k = 10). They're combined as `α · dense + (1 − α) · BM25`, where `α` = 0.25 for natural-language queries and 0.30 for symbol-like queries. A chunk missing from a list gets 0 from that list.
-3. **Boost and rerank.** For natural-language queries it adds file-path *stem boosts* to every pool member. A partial boost of `β · maxScore · (fraction of query words found in the file name or parent directory)` is added, plus a further `β · maxScore` if the file name equals a query word. `β` = `MIRU_RANK_EXACT_STEM_BOOST`, default 0.75. It then applies path penalties and per-file saturation and returns the top `topK`.
+* **Chunk: 32 wins vs 1 loss** (p = 7.9 × 10⁻⁹). **File: 28 wins vs 4 losses** (p = 1.9 × 10⁻⁵).
+* *Note: the single loss is N50 `create token` → `CreateToken`. The defining chunk sat at rank 3 in a test double (`kubernetes/typed/core/v1/fake/fake_serviceaccount.go`), and Kalpana moved it to rank 4 in favour of `transport/token_source.go`. The benchmark counts `fake/` implementations as valid definitions, so this is a genuine loss.*
 
-| Request | Candidates per list | Unique candidates entering fusion |
+---
+
+## Full results
+
+All numbers come from `benchmark/results.kalpana.minilm-l6-256.all500.k5.json`. *File@3* means a file that defines the identifier is in the top 3. *Chunk@3* means the chunk containing the definition itself is in the top 3. Significance uses an exact two-sided sign test on paired per-query outcomes.
+
+### 500 queries, split by query set
+
+The 350 new queries were generated **after** the method was developed on the frozen 150, and the primary test was fixed **before** running them (RRF on topK=5 vs native topK=3, Chunk@3, new 350 only).
+
+| Query set | Arm | File@3 | Chunk@3 | Chunk W/L vs native K=3 | p | Chunk W/L vs same K=5 pool |
+|---|---|---:|---:|---:|---:|---:|
+| **New 350 (primary, confirmatory)** | Miru native topK=3 | 82.0% | 56.9% | — | — | — |
+| | Kalpana RRF (topK=5 → 3) | **86.3%** | **62.3%** | **23 / 4** | **0.0003** | 21 / 1 |
+| | Kalpana linear, held-out α | 85.4% | 60.6% | 21 / 8 | 0.024 | 19 / 5 |
+| **All 500** | Miru native topK=3 | 82.4% | 54.8% | — | — | — |
+| | Miru topK=5, first 3 (no rerank) | 81.0% | 53.6% | 4 / 10 | 0.18 | — |
+| | Kalpana RRF (topK=5 → 3) | **85.8%** | **59.8%** | **32 / 7** | **0.0001** | **32 / 1** |
+| | Kalpana linear, held-out α | 85.2% | 58.4% | 29 / 11 | 0.0064 | 30 / 6 |
+| **Frozen 150 (development)** | Miru native topK=3 | 83.3% | 50.0% | — | — | — |
+| | Kalpana RRF (topK=5 → 3) | 84.7% | 54.0% | 9 / 3 | 0.15 | 11 / 0 |
+| | Kalpana linear, held-out α | 84.7% | 53.3% | 8 / 3 | 0.23 | 11 / 1 |
+
+Ceiling (defining chunk anywhere in Miru's top-5): 67.1% for the new 350, 64.6% for all 500, 58.7% for the frozen 150. RRF needs no tuning. For the linear fusion `(1−α)·minmax(miru) + α·minmax(kalpana)`, α was chosen by 5-fold cross-validation (per-fold α = 0.5, 0.6, 0.5, 0.5, 0.5) and scored on the held-out fold.
+
+### Latency per query (500 queries, topK=5, pool tensors pre-computed offline)
+
+| Stage | p50 | p95 |
 |---|---:|---:|
-| `topK=3` | 15 | ≤ 30 |
-| `topK=5` | 25 | ≤ 50 |
-| `topK=50` | 250 | ≤ 500 |
+| Miru search (topK=5) | 19.6 ms | 30.9 ms |
+| Kalpana query tensor, new phrase (MiniLM encode) | 9.3 ms | 12.5 ms |
+| Kalpana query tensor, cached phrase | 0.09 ms | 0.19 ms |
+| Kalpana pool scoring (mat-vec + sort) | **0.035 ms** | **0.055 ms** |
 
-Fused scores are small and tightly packed (at most 1/11 ≈ 0.091), while a single exact-stem match adds `0.75 × maxScore`. A boosted file therefore only has to be *in* the pool to compete, and pool depth decides which boosted files are there. With `topK=3`, a chunk must rank in the top 15 of at least one list to be considered at all. The multiplier therefore acts as a relevance filter before boosting.
+Offline (index time): tensors for the 1,366 unique pooled chunks are built in about 33 s on CPU. Each tensor is 384 × float64 (3 KB), about 41 MB for the full 13,471-chunk corpus. Loading the model takes about 19 s, once.
 
-**Control: depth, not slicing.** Keep `topK=3` but raise the multiplier to 50, Miru's maximum (`npm run benchmark -- --multiplier 50`). Each list then fetches 150 candidates, and the Optimized arm loses its advantage completely:
+### How we got here (development history, frozen 150 queries)
 
-| Run | Candidates per list | Hit@3 |
-|---|---:|---:|
-| `topK=50`, default multiplier (Legacy) | 250 | 76.0% (114 / 150) |
-| `topK=3`, multiplier 50 | 150 | 76.0% (114 / 150) |
-| `topK=3`, default multiplier (Optimized) | 15 | 83.3% (125 / 150) |
-
-146 of the 150 top-3 lists from `topK=3 × 50` are identical to Legacy's. In the same `--multiplier 50` run, all three arms score 76.0% (114 / 150). Once each list is at least 150 deep, requesting fewer results no longer helps. So the accuracy depends on how deep Miru fetches **before** fusion, not on how many results the caller keeps. The default `npm run benchmark` unsets this variable so that it measures Miru's shipped default; the control output is in `benchmark/results.minilm-l6-256.mult50.json`.
-
-### Root cause: BM25 depth × path-stem boost
-
-`npm run ablation` runs a split-depth copy of Miru's `hybridSearch`, built from Miru's own exported ranking functions. It is verified **output-identical to `MiruIndex.search` on 150/150 queries at topK 3, 5 and 50**. With it, the dense and BM25 depths, the final cut-off, the fusion weight and each post-fusion stage can be varied independently. Results are written to `benchmark/results.ablation.minilm-l6-256.json`.
-
-| Experiment (depth 15 vs 250 per list) | Depth 15 | Depth 250 | Depth penalty | W/L |
-|---|---:|---:|---:|---:|
-| Full Miru pipeline | 83.3% | 76.0% | **+7.3** (p < 0.001) | 11/0 |
-| Final cut-off 3 vs 50 at fixed depth | — | — | **0.0** | 0/0 |
-| Deepen **BM25 only** (dense fixed at 75) | 83.3% | 76.0% | **+7.3** (p < 0.001) | 11/0 |
-| Deepen **dense only** (BM25 fixed at 75) | 78.0% | 78.0% | 0.0 (p = 1.0) | 1/1 |
-| Path-stem boosts off (`β = 0`) | 86.0% | 86.0% | **0.0** | 0/0 |
-| No boosts, no rerank (fusion only) | 85.3% | 84.7% | +0.7 (n.s.) | 1/0 |
-| `β = 0.25 / 0.5 / 0.75 / 1.5` | 87.3 / 87.3 / 83.3 / 77.3% | 87.3 / 85.3 / 76.0 / 50.0% | 0.0 / +2.0 / +7.3 / **+27.3** | — |
-
-The full dense × BM25 grid and all confidence intervals are in the paper.
-
-- **It's depth, not truncation.** The final cut-off changes nothing.
-- **It's not semantic noise.** Deepening the dense list alone has no effect, and the penalty persists even when dense scores carry all the fusion weight (`α = 1`).
-- **The boost is necessary.** Without it, depth doesn't matter. With it, the penalty grows monotonically with its strength.
-- **The culprits.** On the 11 queries Optimized fixes, all 33 results that displaced the answer carried the stem boost, and 28 are files whose name equals a query word: `interface.go`, `role.go`, `eviction.go`, `scale.go`, `event.go`, `endpoint.go`, `pod.go`. Their median boost is 2.8× their own fused score. Depth helps them in two ways: 15 are admitted only by deep lists, and 15 gain a second list's RRF credit.
-
-The full write-up is in [paper/topk_anomaly.tex](paper/topk_anomaly.tex).
-
-### Recommendation
-
-Request the number of results you actually need. Fetching a large pool and slicing it client-side costs both accuracy and latency. For engine designers: make path boosts rank-aware, for example by applying them only within the top-N fused candidates or scaling them by each candidate's own score, or decouple candidate depth from `topK`. A weaker `β` (0.25–0.5) scored 87.3% here, but it was not tuned on held-out data, so treat it as a hypothesis.
-
-## Methodology
-
-- **Corpus:** [`kubernetes/client-go`](https://github.com/kubernetes/client-go) pinned to commit `2761958e61dbfe479992e21e1320ca462f556b99`.
-- **Query set:** [`benchmark/queries.topk.json`](benchmark/queries.topk.json) holds 150 frozen queries. Each query is a Go identifier split into lowercase words (for example, `LeaseCandidateInterface` becomes `lease candidate interface`) and lists every file in the corpus that defines that identifier (`definedIn`, always at least two files). The test suite checks that every listed file really defines its identifier at the pinned commit.
-- **Metric:** **Hit@3** counts a query as a hit when any `definedIn` file appears among the top 3 results returned.
-- **Arms:** all three arms query the same index with the same query vectors. Only the requested `topK` changes.
-- **Repetitions:** each query gets one warm-up call, then runs 5 times per arm, with the arms interleaved. Arm order rotates from query to query so that no arm gets a systematic cache or warm-up advantage. Latency is the per-query median over repetitions, summarised as p50 and p95 across queries.
-- **Significance:** an exact two-sided sign test on paired per-query outcomes (wins vs. losses against Legacy).
-- **Latency scope:** Miru search time only. With the local embedder, query vectors are precomputed and injected. With DS1, latency includes Miru's own query-embedding call.
-
-## Reproducing from Scratch
-
-```bash
-npm install
-npm run setup:corpus   # clone client-go and check out the pinned commit
-npm run index          # build the Miru index at .miru/client-go/index
-npm run benchmark      # run the three arms (options: --reps <n>, --index <path>, --multiplier <n>)
-npm run ablation       # root-cause ablation, about 4 min (option: --reuse to re-score saved output)
-npm test               # metric, query-set and corpus integrity checks
-```
-
-**Embedder selection:**
-
-| Environment | Embedder | Notes |
+| Step | Pool | Result |
 |---|---|---|
-| `TAKARA_API_KEY` set | Takara DS1 (`ds1-miru-int8`) | Production configuration |
-| unset (default) | Local MiniLM-L6, 256-d (`@xenova/transformers`) | Offline; fully reproducible without credentials |
+| Contribution 1: Miru topK tuning ([paper/topk_anomaly.tex](paper/topk_anomaly.tex), `benchmark/results.minilm-l6-256.json`) | — | Requesting topK=3 instead of 50 raises Miru's Hit@3 from 76.0% to 83.3% (11 wins / 0 losses, p = 0.001). The cause is BM25 depth combined with the file-path stem boost. |
+| Kalpana reranks a top-25 slice | K=25 | Chunk@3 46.0% → 54.7% (RRF) and 52.7% (held-out α) vs the K=25 slice. **Against native topK=3 the gain was not significant** (chunk 15/8, p = 0.21). |
+| Kalpana reranks native topK=5 | K=5 | Chunk@3 50.0% → 54.0% vs native topK=3 (9/3, p = 0.15, underpowered); 11/0 vs the same pool. This motivated the 500-query run. |
 
-You can force either embedder with `EMBEDDER=ds1` or `EMBEDDER=minilm`. The index and the benchmark must use the same embedder, so re-run `npm run index` if you switch. Indexing with the local embedder is CPU-bound and can take 1–2 hours.
+### Limitations
 
-## Repository Layout
+* **One repository and one embedder:** `kubernetes/client-go` with local MiniLM-L6 truncated to 256-D (a stand-in for Takara DS1). Other repositories and languages are untested.
+* **The new 350 queries come from a re-implementation** ([gen_queries.py](miru_kalpana/gen_queries.py)) of the sampling rule documented in `queries.topk.json`. The original sampler isn't available. The new set is somewhat easier (native Chunk@3 56.9% vs 50.0%).
+* **Go chunks are parsed with a regex extractor,** not a full AST. It finds at least one pair in 96.6–98.9% of pooled chunks.
+* **Kalpana alone, without fusion, is worse than Miru** (K=25 pool: Top-1 64.7% → 49.3%). It's useful as a fused reranker, not as a replacement ranker.
+* **The reranker scores with cosine similarity** against bundled tensors. `unbind` exists in `kalpana_rif.vsa_core` but is not used in the ranking path.
 
+---
+
+## How it works
+
+| Component | File | Role |
+|---|---|---|
+| HRR tensor algebra | [kalpana_rif/vsa_core.py](kalpana_rif/vsa_core.py) | `bind` (FFT circular convolution), `unbind` (circular correlation), `bundle`, `cosine_similarity` |
+| Codebook | [kalpana_rif/neuro_vocab.py](kalpana_rif/neuro_vocab.py) | Deterministic **unitary** role vectors (`ROLE_CLASS`, `ROLE_FUNC`, `ROLE_ARG`, `ROLE_CALL`, `ROLE_VAR`), so binding preserves token geometry. MiniLM token vectors with **isotropic mean-centering**. |
+| Tensorizer | [kalpana_rif/neuro_tensorizer.py](kalpana_rif/neuro_tensorizer.py) | `build_tensor(pairs, vocab)` = bundle of bind(role, token) |
+| Miru bridge | [miru_kalpana_reranker.py](miru_kalpana_reranker.py) | `KalpanaReranker.index_chunk / score_candidates / rerank` |
+| Benchmark | [miru_kalpana/benchmark_kalpana_fusion.py](miru_kalpana/benchmark_kalpana_fusion.py) | Go regex extractor, offline tensor cache, Baseline / Kalpana / RRF / linear-α arms, cross-validated α, latency |
+| Paired tests | [miru_kalpana/rerank_vs_native.py](miru_kalpana/rerank_vs_native.py) | Rerank vs native topK=3 and vs the same pool (do-no-harm); new / all / frozen splits |
+| K comparison | [miru_kalpana/baseline_k_compare.py](miru_kalpana/baseline_k_compare.py) | Miru baseline at K=3 / K=5, sliced vs native, on the frozen 150 |
+| Query generator | [miru_kalpana/gen_queries.py](miru_kalpana/gen_queries.py) | Draws new ambiguous-symbol queries from `client-go` with the documented rule |
+| Miru exporter | [scripts/miru_candidates.ts](scripts/miru_candidates.ts), [benchmark/dump_candidates.ts](benchmark/dump_candidates.ts) | Dumps Miru's unmodified top-K candidates (with chunk text) to JSON |
+
+## Reproduce the 500-query benchmark
+
+```bash
+# 0. Dependencies (Node >= 18, Python 3.9+)
+npm install
+pip install -r requirements.txt
+
+# 1. Corpus + Miru index (client-go @ 2761958; indexing embeds 13,471 chunks locally, ~2 h on CPU)
+npm run setup:corpus
+npm run index
+
+# 2. Query set: frozen 150 + 350 new (writes benchmark/queries.topk.{new350,all500}.json)
+python3 miru_kalpana/gen_queries.py --n 350
+
+# 3. Miru's unmodified candidate pools at topK=3 and topK=5
+npx tsx benchmark/dump_candidates.ts --k 3 --queries benchmark/queries.topk.all500.json
+npx tsx benchmark/dump_candidates.ts --k 5 --queries benchmark/queries.topk.all500.json
+
+# 4. Kalpana rerank (offline tensors -> online scoring, all arms, alpha sweep + CV, latency)
+python3 miru_kalpana/benchmark_kalpana_fusion.py \
+  --candidates .bench/kalpana/candidates.minilm-l6-256.all500.k5.json \
+  --queries benchmark/queries.topk.all500.json
+
+# 5. Paired tests vs Miru native topK=3 and do-no-harm (new 350 / all 500 / frozen 150)
+python3 miru_kalpana/rerank_vs_native.py --pool k5 --set all500
 ```
-benchmark/
-  topk_eval.ts          # benchmark driver: embeds queries, runs arms, prints table
-  depth_ablation.ts     # root-cause ablation: six experiments + per-query attribution
-  metrics.ts            # Hit@3, MRR@3, percentiles, sign test, Wilson CI, paired bootstrap
-  queries.topk.json     # frozen 150-query test set
-  results.*.json        # saved outputs behind every number in this README and the paper
-scripts/
-  miru_topk.ts          # Bun worker that runs MiruIndex.search for each arm
-  miru_depth_ablation.ts  # Bun worker: fidelity-checked split-depth copy of Miru's hybridSearch
-  index_repo.ts         # builds the Miru index for the pinned corpus
-  miru_index_runner.ts  # Bun-side indexing helper
-src/
-  embedder.ts           # DS1 / local MiniLM embedder selection
-  minilm.ts             # local MiniLM-L6 embedder (256-d)
-  local-embedding-server.ts  # OpenAI-compatible endpoint for local indexing
-paper/
-  topk_anomaly.tex      # paper (LaTeX source; build with pdflatex or Overleaf)
-tests/
-  run.ts                # test suite
-```
 
-## Caveats
-
-- **Embedder.** The published numbers use the local MiniLM-256 embedder. The candidate-depth mechanism does not depend on the embedder, but absolute Hit@3 under DS1 will differ, so run with `TAKARA_API_KEY` to get production figures.
-- **Single corpus.** Results come from one Go repository. Corpora of other sizes and languages may show different effect sizes.
-- **Query style.** The queries are identifier phrases that target named definitions. Free-form conceptual or multi-file queries were not measured.
+Miru returned identical candidate pools for the frozen 150 queries across separate runs (150/150 at topK=3 and topK=5). The pure-Python `kalpana_rif` package reproduces the original compiled build's metrics and per-query rankings exactly. Run `npm test` to check the frozen query set against the corpus.
 
 ## License
 
-The benchmark code and query set in this repository are released under the [MIT License](LICENSE).
-
-This repository does not include or redistribute the corpus: `npm run setup:corpus` clones it from upstream, and [`kubernetes/client-go`](https://github.com/kubernetes/client-go) is licensed under Apache-2.0. [`@takara-ai/miru-code`](https://www.npmjs.com/package/@takara-ai/miru-code) and the other dependencies remain under their own licences.
+[MIT](LICENSE) © 2026 Madusha Perera

@@ -1,0 +1,3467 @@
+{
+ "repo": "kubernetes/client-go",
+ "commit": "2761958e61dbfe479992e21e1320ca462f556b99",
+ "metric": "Hit@3 = at least one of the top-3 results comes from a file in `definedIn`.",
+ "description": "350 NEW ambiguous-symbol lookups drawn by miru_kalpana/gen_queries.py with the rule documented in queries.topk.json (seed 0x5e5511); frozen identifiers excluded. Fresh confirmatory set.",
+ "queries": [
+  {
+   "id": "N0",
+   "query": "deployment namespace lister",
+   "identifier": "DeploymentNamespaceLister",
+   "definedIn": [
+    "listers/apps/v1/deployment.go",
+    "listers/apps/v1beta1/deployment.go",
+    "listers/apps/v1beta2/deployment.go",
+    "listers/extensions/v1beta1/deployment.go"
+   ]
+  },
+  {
+   "id": "N1",
+   "query": "new ip address informer with options",
+   "identifier": "NewIPAddressInformerWithOptions",
+   "definedIn": [
+    "informers/networking/v1/ipaddress.go",
+    "informers/networking/v1beta1/ipaddress.go"
+   ]
+  },
+  {
+   "id": "N2",
+   "query": "resource claim template namespace lister",
+   "identifier": "ResourceClaimTemplateNamespaceLister",
+   "definedIn": [
+    "listers/resource/v1/resourceclaimtemplate.go",
+    "listers/resource/v1beta1/resourceclaimtemplate.go",
+    "listers/resource/v1beta2/resourceclaimtemplate.go"
+   ]
+  },
+  {
+   "id": "N3",
+   "query": "role binding index informer",
+   "identifier": "RoleBindingIndexInformer",
+   "definedIn": [
+    "informers/rbac/v1/rolebinding.go",
+    "informers/rbac/v1alpha1/rolebinding.go",
+    "informers/rbac/v1beta1/rolebinding.go"
+   ]
+  },
+  {
+   "id": "N4",
+   "query": "pod disruption budget lister expansion",
+   "identifier": "PodDisruptionBudgetListerExpansion",
+   "definedIn": [
+    "listers/policy/v1/poddisruptionbudget_expansion.go",
+    "listers/policy/v1beta1/poddisruptionbudget_expansion.go"
+   ]
+  },
+  {
+   "id": "N5",
+   "query": "mutating admission policy detailed handler funcs",
+   "identifier": "MutatingAdmissionPolicyDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N6",
+   "query": "stateful set index informer",
+   "identifier": "StatefulSetIndexInformer",
+   "definedIn": [
+    "informers/apps/v1/statefulset.go",
+    "informers/apps/v1beta1/statefulset.go",
+    "informers/apps/v1beta2/statefulset.go"
+   ]
+  },
+  {
+   "id": "N7",
+   "query": "round tripper for",
+   "identifier": "RoundTripperFor",
+   "definedIn": [
+    "transport/spdy/spdy.go",
+    "transport/websocket/roundtripper.go"
+   ]
+  },
+  {
+   "id": "N8",
+   "query": "pod disruption budget filtering handler",
+   "identifier": "PodDisruptionBudgetFilteringHandler",
+   "definedIn": [
+    "informers/policy/v1/poddisruptionbudget.go",
+    "informers/policy/v1beta1/poddisruptionbudget.go"
+   ]
+  },
+  {
+   "id": "N9",
+   "query": "new resource slice informer with options",
+   "identifier": "NewResourceSliceInformerWithOptions",
+   "definedIn": [
+    "informers/resource/v1/resourceslice.go",
+    "informers/resource/v1beta1/resourceslice.go",
+    "informers/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N10",
+   "query": "csi driver lister expansion",
+   "identifier": "CSIDriverListerExpansion",
+   "definedIn": [
+    "listers/storage/v1/expansion_generated.go",
+    "listers/storage/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N11",
+   "query": "new eviction lister",
+   "identifier": "NewEvictionLister",
+   "definedIn": [
+    "listers/lifecycle/v1alpha1/eviction.go",
+    "listers/policy/v1/eviction.go",
+    "listers/policy/v1beta1/eviction.go"
+   ]
+  },
+  {
+   "id": "N12",
+   "query": "tweak list options func",
+   "identifier": "TweakListOptionsFunc",
+   "definedIn": [
+    "dynamic/dynamicinformer/interface.go",
+    "informers/internalinterfaces/factory_interfaces.go",
+    "metadata/metadatainformer/interface.go"
+   ]
+  },
+  {
+   "id": "N13",
+   "query": "apps v1beta2",
+   "identifier": "AppsV1beta2",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N14",
+   "query": "load from file",
+   "identifier": "LoadFromFile",
+   "definedIn": [
+    "tools/auth/clientauth.go",
+    "tools/clientcmd/loader.go"
+   ]
+  },
+  {
+   "id": "N15",
+   "query": "deleted endpoint slice",
+   "identifier": "DeletedEndpointSlice",
+   "definedIn": [
+    "informers/discovery/v1/endpointslice.go",
+    "informers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N16",
+   "query": "new volume attributes class lister",
+   "identifier": "NewVolumeAttributesClassLister",
+   "definedIn": [
+    "listers/storage/v1/volumeattributesclass.go",
+    "listers/storage/v1alpha1/volumeattributesclass.go",
+    "listers/storage/v1beta1/volumeattributesclass.go"
+   ]
+  },
+  {
+   "id": "N17",
+   "query": "update status",
+   "identifier": "UpdateStatus",
+   "definedIn": [
+    "dynamic/fake/simple.go",
+    "dynamic/simple.go",
+    "gentype/fake.go",
+    "gentype/type.go",
+    "metadata/fake/simple.go"
+   ]
+  },
+  {
+   "id": "N18",
+   "query": "event informer",
+   "identifier": "EventInformer",
+   "definedIn": [
+    "informers/core/v1/event.go",
+    "informers/events/v1/event.go",
+    "informers/events/v1beta1/event.go"
+   ]
+  },
+  {
+   "id": "N19",
+   "query": "new typed resource claim informer with options",
+   "identifier": "NewTypedResourceClaimInformerWithOptions",
+   "definedIn": [
+    "informers/resource/v1/resourceclaim.go",
+    "informers/resource/v1beta1/resourceclaim.go",
+    "informers/resource/v1beta2/resourceclaim.go"
+   ]
+  },
+  {
+   "id": "N20",
+   "query": "validating admission policy detailed handler funcs",
+   "identifier": "ValidatingAdmissionPolicyDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N21",
+   "query": "horizontal pod autoscaler lister",
+   "identifier": "HorizontalPodAutoscalerLister",
+   "definedIn": [
+    "listers/autoscaling/v1/horizontalpodautoscaler.go",
+    "listers/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N22",
+   "query": "new typed resource slice informer",
+   "identifier": "NewTypedResourceSliceInformer",
+   "definedIn": [
+    "informers/resource/v1/resourceslice.go",
+    "informers/resource/v1beta1/resourceslice.go",
+    "informers/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N23",
+   "query": "new typed deployment informer",
+   "identifier": "NewTypedDeploymentInformer",
+   "definedIn": [
+    "informers/apps/v1/deployment.go",
+    "informers/apps/v1beta1/deployment.go",
+    "informers/apps/v1beta2/deployment.go",
+    "informers/extensions/v1beta1/deployment.go"
+   ]
+  },
+  {
+   "id": "N24",
+   "query": "impersonation config",
+   "identifier": "ImpersonationConfig",
+   "definedIn": [
+    "rest/config.go",
+    "transport/config.go"
+   ]
+  },
+  {
+   "id": "N25",
+   "query": "to cluster role index informer",
+   "identifier": "ToClusterRoleIndexInformer",
+   "definedIn": [
+    "informers/rbac/v1/clusterrole.go",
+    "informers/rbac/v1alpha1/clusterrole.go",
+    "informers/rbac/v1beta1/clusterrole.go"
+   ]
+  },
+  {
+   "id": "N26",
+   "query": "ingress class filtering handler",
+   "identifier": "IngressClassFilteringHandler",
+   "definedIn": [
+    "informers/networking/v1/ingressclass.go",
+    "informers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N27",
+   "query": "typed runtime class informer",
+   "identifier": "TypedRuntimeClassInformer",
+   "definedIn": [
+    "informers/node/v1/runtimeclass.go",
+    "informers/node/v1alpha1/runtimeclass.go",
+    "informers/node/v1beta1/runtimeclass.go"
+   ]
+  },
+  {
+   "id": "N28",
+   "query": "new ingress class lister",
+   "identifier": "NewIngressClassLister",
+   "definedIn": [
+    "listers/networking/v1/ingressclass.go",
+    "listers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N29",
+   "query": "validating webhook configuration index informer",
+   "identifier": "ValidatingWebhookConfigurationIndexInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N30",
+   "query": "new stateful set informer",
+   "identifier": "NewStatefulSetInformer",
+   "definedIn": [
+    "informers/apps/v1/statefulset.go",
+    "informers/apps/v1beta1/statefulset.go",
+    "informers/apps/v1beta2/statefulset.go"
+   ]
+  },
+  {
+   "id": "N31",
+   "query": "resource slice informer",
+   "identifier": "ResourceSliceInformer",
+   "definedIn": [
+    "informers/resource/v1/resourceslice.go",
+    "informers/resource/v1beta1/resourceslice.go",
+    "informers/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N32",
+   "query": "new replica set informer with options",
+   "identifier": "NewReplicaSetInformerWithOptions",
+   "definedIn": [
+    "informers/apps/v1/replicaset.go",
+    "informers/apps/v1beta2/replicaset.go",
+    "informers/extensions/v1beta1/replicaset.go"
+   ]
+  },
+  {
+   "id": "N33",
+   "query": "typed ingress informer",
+   "identifier": "TypedIngressInformer",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N34",
+   "query": "certificate signing request lister expansion",
+   "identifier": "CertificateSigningRequestListerExpansion",
+   "definedIn": [
+    "listers/certificates/v1/expansion_generated.go",
+    "listers/certificates/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N35",
+   "query": "new typed validating webhook configuration informer with options",
+   "identifier": "NewTypedValidatingWebhookConfigurationInformerWithOptions",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N36",
+   "query": "event lister",
+   "identifier": "EventLister",
+   "definedIn": [
+    "listers/core/v1/event.go",
+    "listers/events/v1/event.go",
+    "listers/events/v1beta1/event.go"
+   ]
+  },
+  {
+   "id": "N37",
+   "query": "new dialer",
+   "identifier": "NewDialer",
+   "definedIn": [
+    "transport/spdy/spdy.go",
+    "util/connrotation/connrotation.go"
+   ]
+  },
+  {
+   "id": "N38",
+   "query": "to csi driver index informer",
+   "identifier": "ToCSIDriverIndexInformer",
+   "definedIn": [
+    "informers/storage/v1/csidriver.go",
+    "informers/storage/v1beta1/csidriver.go"
+   ]
+  },
+  {
+   "id": "N39",
+   "query": "config maps",
+   "identifier": "ConfigMaps",
+   "definedIn": [
+    "informers/core/v1/interface.go",
+    "kubernetes/typed/core/v1/core_client.go",
+    "kubernetes/typed/core/v1/fake/fake_core_client.go",
+    "listers/core/v1/configmap.go"
+   ]
+  },
+  {
+   "id": "N40",
+   "query": "deleted cluster trust bundle",
+   "identifier": "DeletedClusterTrustBundle",
+   "definedIn": [
+    "informers/certificates/v1/clustertrustbundle.go",
+    "informers/certificates/v1alpha1/clustertrustbundle.go",
+    "informers/certificates/v1beta1/clustertrustbundle.go"
+   ]
+  },
+  {
+   "id": "N41",
+   "query": "cron job handler funcs",
+   "identifier": "CronJobHandlerFuncs",
+   "definedIn": [
+    "informers/batch/v1/cronjob.go",
+    "informers/batch/v1beta1/cronjob.go"
+   ]
+  },
+  {
+   "id": "N42",
+   "query": "ingress lister",
+   "identifier": "IngressLister",
+   "definedIn": [
+    "listers/extensions/v1beta1/ingress.go",
+    "listers/networking/v1/ingress.go",
+    "listers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N43",
+   "query": "register defaults",
+   "identifier": "RegisterDefaults",
+   "definedIn": [
+    "pkg/apis/clientauthentication/v1/zz_generated.defaults.go",
+    "pkg/apis/clientauthentication/v1beta1/zz_generated.defaults.go",
+    "tools/clientcmd/api/v1/zz_generated.defaults.go"
+   ]
+  },
+  {
+   "id": "N44",
+   "query": "typed controller revision informer",
+   "identifier": "TypedControllerRevisionInformer",
+   "definedIn": [
+    "informers/apps/v1/controllerrevision.go",
+    "informers/apps/v1beta1/controllerrevision.go",
+    "informers/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N45",
+   "query": "pod disruption budget indexers",
+   "identifier": "PodDisruptionBudgetIndexers",
+   "definedIn": [
+    "informers/policy/v1/poddisruptionbudget.go",
+    "informers/policy/v1beta1/poddisruptionbudget.go"
+   ]
+  },
+  {
+   "id": "N46",
+   "query": "pod group interface",
+   "identifier": "PodGroupInterface",
+   "definedIn": [
+    "kubernetes/typed/scheduling/v1alpha3/podgroup.go",
+    "kubernetes/typed/scheduling/v1beta1/podgroup.go"
+   ]
+  },
+  {
+   "id": "N47",
+   "query": "new typed runtime class informer with options",
+   "identifier": "NewTypedRuntimeClassInformerWithOptions",
+   "definedIn": [
+    "informers/node/v1/runtimeclass.go",
+    "informers/node/v1alpha1/runtimeclass.go",
+    "informers/node/v1beta1/runtimeclass.go"
+   ]
+  },
+  {
+   "id": "N48",
+   "query": "get rate limiter",
+   "identifier": "GetRateLimiter",
+   "definedIn": [
+    "rest/client.go",
+    "rest/fake/fake.go"
+   ]
+  },
+  {
+   "id": "N49",
+   "query": "new typed volume attributes class informer with options",
+   "identifier": "NewTypedVolumeAttributesClassInformerWithOptions",
+   "definedIn": [
+    "informers/storage/v1/volumeattributesclass.go",
+    "informers/storage/v1alpha1/volumeattributesclass.go",
+    "informers/storage/v1beta1/volumeattributesclass.go"
+   ]
+  },
+  {
+   "id": "N50",
+   "query": "create token",
+   "identifier": "CreateToken",
+   "definedIn": [
+    "kubernetes/typed/core/v1/fake/fake_serviceaccount.go",
+    "kubernetes/typed/core/v1/serviceaccount.go"
+   ]
+  },
+  {
+   "id": "N51",
+   "query": "typed pod disruption budget informer",
+   "identifier": "TypedPodDisruptionBudgetInformer",
+   "definedIn": [
+    "informers/policy/v1/poddisruptionbudget.go",
+    "informers/policy/v1beta1/poddisruptionbudget.go"
+   ]
+  },
+  {
+   "id": "N52",
+   "query": "new typed role informer with options",
+   "identifier": "NewTypedRoleInformerWithOptions",
+   "definedIn": [
+    "informers/rbac/v1/role.go",
+    "informers/rbac/v1alpha1/role.go",
+    "informers/rbac/v1beta1/role.go"
+   ]
+  },
+  {
+   "id": "N53",
+   "query": "workload interface",
+   "identifier": "WorkloadInterface",
+   "definedIn": [
+    "kubernetes/typed/scheduling/v1alpha3/workload.go",
+    "kubernetes/typed/scheduling/v1beta1/workload.go"
+   ]
+  },
+  {
+   "id": "N54",
+   "query": "new typed deployment informer with options",
+   "identifier": "NewTypedDeploymentInformerWithOptions",
+   "definedIn": [
+    "informers/apps/v1/deployment.go",
+    "informers/apps/v1beta1/deployment.go",
+    "informers/apps/v1beta2/deployment.go",
+    "informers/extensions/v1beta1/deployment.go"
+   ]
+  },
+  {
+   "id": "N55",
+   "query": "new typed certificate signing request informer",
+   "identifier": "NewTypedCertificateSigningRequestInformer",
+   "definedIn": [
+    "informers/certificates/v1/certificatesigningrequest.go",
+    "informers/certificates/v1beta1/certificatesigningrequest.go"
+   ]
+  },
+  {
+   "id": "N56",
+   "query": "ip addresses getter",
+   "identifier": "IPAddressesGetter",
+   "definedIn": [
+    "kubernetes/typed/networking/v1/ipaddress.go",
+    "kubernetes/typed/networking/v1beta1/ipaddress.go"
+   ]
+  },
+  {
+   "id": "N57",
+   "query": "cron job lister expansion",
+   "identifier": "CronJobListerExpansion",
+   "definedIn": [
+    "listers/batch/v1/expansion_generated.go",
+    "listers/batch/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N58",
+   "query": "storage version migrations getter",
+   "identifier": "StorageVersionMigrationsGetter",
+   "definedIn": [
+    "kubernetes/typed/storagemigration/v1/storageversionmigration.go",
+    "kubernetes/typed/storagemigration/v1beta1/storageversionmigration.go"
+   ]
+  },
+  {
+   "id": "N59",
+   "query": "device taint rule index informer",
+   "identifier": "DeviceTaintRuleIndexInformer",
+   "definedIn": [
+    "informers/resource/v1/devicetaintrule.go",
+    "informers/resource/v1alpha3/devicetaintrule.go",
+    "informers/resource/v1beta2/devicetaintrule.go"
+   ]
+  },
+  {
+   "id": "N60",
+   "query": "coordination v1beta1",
+   "identifier": "CoordinationV1beta1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N61",
+   "query": "new typed filtered replica set informer",
+   "identifier": "NewTypedFilteredReplicaSetInformer",
+   "definedIn": [
+    "informers/apps/v1/replicaset.go",
+    "informers/apps/v1beta2/replicaset.go",
+    "informers/extensions/v1beta1/replicaset.go"
+   ]
+  },
+  {
+   "id": "N62",
+   "query": "service accounts",
+   "identifier": "ServiceAccounts",
+   "definedIn": [
+    "informers/core/v1/interface.go",
+    "kubernetes/typed/core/v1/core_client.go",
+    "kubernetes/typed/core/v1/fake/fake_core_client.go",
+    "listers/core/v1/serviceaccount.go"
+   ]
+  },
+  {
+   "id": "N63",
+   "query": "ingress class informer",
+   "identifier": "IngressClassInformer",
+   "definedIn": [
+    "informers/networking/v1/ingressclass.go",
+    "informers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N64",
+   "query": "new typed filtered csi node informer",
+   "identifier": "NewTypedFilteredCSINodeInformer",
+   "definedIn": [
+    "informers/storage/v1/csinode.go",
+    "informers/storage/v1beta1/csinode.go"
+   ]
+  },
+  {
+   "id": "N65",
+   "query": "wrapped round tripper",
+   "identifier": "WrappedRoundTripper",
+   "definedIn": [
+    "discovery/cached/disk/round_tripper.go",
+    "plugin/pkg/client/auth/exec/exec.go",
+    "plugin/pkg/client/auth/oidc/oidc.go",
+    "transport/ca_rotation.go",
+    "transport/cache.go",
+    "transport/round_trippers.go",
+    "transport/token_source.go"
+   ]
+  },
+  {
+   "id": "N66",
+   "query": "new validating webhook configuration informer",
+   "identifier": "NewValidatingWebhookConfigurationInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N67",
+   "query": "to csi storage capacity index informer",
+   "identifier": "ToCSIStorageCapacityIndexInformer",
+   "definedIn": [
+    "informers/storage/v1/csistoragecapacity.go",
+    "informers/storage/v1alpha1/csistoragecapacity.go",
+    "informers/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N68",
+   "query": "workloads getter",
+   "identifier": "WorkloadsGetter",
+   "definedIn": [
+    "kubernetes/typed/scheduling/v1alpha3/workload.go",
+    "kubernetes/typed/scheduling/v1beta1/workload.go"
+   ]
+  },
+  {
+   "id": "N69",
+   "query": "stateful set detailed handler funcs",
+   "identifier": "StatefulSetDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/apps/v1/statefulset.go",
+    "informers/apps/v1beta1/statefulset.go",
+    "informers/apps/v1beta2/statefulset.go"
+   ]
+  },
+  {
+   "id": "N70",
+   "query": "certificate signing request lister",
+   "identifier": "CertificateSigningRequestLister",
+   "definedIn": [
+    "listers/certificates/v1/certificatesigningrequest.go",
+    "listers/certificates/v1beta1/certificatesigningrequest.go"
+   ]
+  },
+  {
+   "id": "N71",
+   "query": "cron job interface",
+   "identifier": "CronJobInterface",
+   "definedIn": [
+    "kubernetes/typed/batch/v1/cronjob.go",
+    "kubernetes/typed/batch/v1beta1/cronjob.go"
+   ]
+  },
+  {
+   "id": "N72",
+   "query": "deleted device class",
+   "identifier": "DeletedDeviceClass",
+   "definedIn": [
+    "informers/resource/v1/deviceclass.go",
+    "informers/resource/v1beta1/deviceclass.go",
+    "informers/resource/v1beta2/deviceclass.go"
+   ]
+  },
+  {
+   "id": "N73",
+   "query": "resource slice lister",
+   "identifier": "ResourceSliceLister",
+   "definedIn": [
+    "listers/resource/v1/resourceslice.go",
+    "listers/resource/v1beta1/resourceslice.go",
+    "listers/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N74",
+   "query": "endpoint slice namespace lister",
+   "identifier": "EndpointSliceNamespaceLister",
+   "definedIn": [
+    "listers/discovery/v1/endpointslice.go",
+    "listers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N75",
+   "query": "ingress class index informer",
+   "identifier": "IngressClassIndexInformer",
+   "definedIn": [
+    "informers/networking/v1/ingressclass.go",
+    "informers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N76",
+   "query": "pod disruption budget namespace lister",
+   "identifier": "PodDisruptionBudgetNamespaceLister",
+   "definedIn": [
+    "listers/policy/v1/poddisruptionbudget.go",
+    "listers/policy/v1beta1/poddisruptionbudget.go"
+   ]
+  },
+  {
+   "id": "N77",
+   "query": "to cron job index informer",
+   "identifier": "ToCronJobIndexInformer",
+   "definedIn": [
+    "informers/batch/v1/cronjob.go",
+    "informers/batch/v1beta1/cronjob.go"
+   ]
+  },
+  {
+   "id": "N78",
+   "query": "resource claim template expansion",
+   "identifier": "ResourceClaimTemplateExpansion",
+   "definedIn": [
+    "kubernetes/typed/resource/v1/generated_expansion.go",
+    "kubernetes/typed/resource/v1beta1/generated_expansion.go",
+    "kubernetes/typed/resource/v1beta2/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N79",
+   "query": "new csi node lister",
+   "identifier": "NewCSINodeLister",
+   "definedIn": [
+    "listers/storage/v1/csinode.go",
+    "listers/storage/v1beta1/csinode.go"
+   ]
+  },
+  {
+   "id": "N80",
+   "query": "typed csi storage capacity informer",
+   "identifier": "TypedCSIStorageCapacityInformer",
+   "definedIn": [
+    "informers/storage/v1/csistoragecapacity.go",
+    "informers/storage/v1alpha1/csistoragecapacity.go",
+    "informers/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N81",
+   "query": "network policy namespace lister",
+   "identifier": "NetworkPolicyNamespaceLister",
+   "definedIn": [
+    "listers/extensions/v1beta1/networkpolicy.go",
+    "listers/networking/v1/networkpolicy.go"
+   ]
+  },
+  {
+   "id": "N82",
+   "query": "new service cidr informer",
+   "identifier": "NewServiceCIDRInformer",
+   "definedIn": [
+    "informers/networking/v1/servicecidr.go",
+    "informers/networking/v1beta1/servicecidr.go"
+   ]
+  },
+  {
+   "id": "N83",
+   "query": "policy v1",
+   "identifier": "PolicyV1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N84",
+   "query": "new typed filtered priority class informer",
+   "identifier": "NewTypedFilteredPriorityClassInformer",
+   "definedIn": [
+    "informers/scheduling/v1/priorityclass.go",
+    "informers/scheduling/v1beta1/priorityclass.go"
+   ]
+  },
+  {
+   "id": "N85",
+   "query": "new validating webhook configuration informer with options",
+   "identifier": "NewValidatingWebhookConfigurationInformerWithOptions",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N86",
+   "query": "set provider",
+   "identifier": "SetProvider",
+   "definedIn": [
+    "tools/leaderelection/metrics.go",
+    "util/workqueue/metrics.go"
+   ]
+  },
+  {
+   "id": "N87",
+   "query": "events v1beta1",
+   "identifier": "EventsV1beta1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N88",
+   "query": "resource slice interface",
+   "identifier": "ResourceSliceInterface",
+   "definedIn": [
+    "kubernetes/typed/resource/v1/resourceslice.go",
+    "kubernetes/typed/resource/v1beta1/resourceslice.go",
+    "kubernetes/typed/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N89",
+   "query": "new ingress informer with options",
+   "identifier": "NewIngressInformerWithOptions",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N90",
+   "query": "pod certificate request interface",
+   "identifier": "PodCertificateRequestInterface",
+   "definedIn": [
+    "kubernetes/typed/certificates/v1/podcertificaterequest.go",
+    "kubernetes/typed/certificates/v1beta1/podcertificaterequest.go"
+   ]
+  },
+  {
+   "id": "N91",
+   "query": "new typed priority level configuration informer",
+   "identifier": "NewTypedPriorityLevelConfigurationInformer",
+   "definedIn": [
+    "informers/flowcontrol/v1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta2/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta3/prioritylevelconfiguration.go"
+   ]
+  },
+  {
+   "id": "N92",
+   "query": "cron job index informer",
+   "identifier": "CronJobIndexInformer",
+   "definedIn": [
+    "informers/batch/v1/cronjob.go",
+    "informers/batch/v1beta1/cronjob.go"
+   ]
+  },
+  {
+   "id": "N93",
+   "query": "validating admission policy binding index informer",
+   "identifier": "ValidatingAdmissionPolicyBindingIndexInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N94",
+   "query": "deployment interface",
+   "identifier": "DeploymentInterface",
+   "definedIn": [
+    "kubernetes/typed/apps/v1/deployment.go",
+    "kubernetes/typed/apps/v1beta1/deployment.go",
+    "kubernetes/typed/apps/v1beta2/deployment.go",
+    "kubernetes/typed/extensions/v1beta1/deployment.go"
+   ]
+  },
+  {
+   "id": "N95",
+   "query": "persistent volumes",
+   "identifier": "PersistentVolumes",
+   "definedIn": [
+    "informers/core/v1/interface.go",
+    "kubernetes/typed/core/v1/core_client.go",
+    "kubernetes/typed/core/v1/fake/fake_core_client.go"
+   ]
+  },
+  {
+   "id": "N96",
+   "query": "exec interactive mode",
+   "identifier": "ExecInteractiveMode",
+   "definedIn": [
+    "tools/clientcmd/api/types.go",
+    "tools/clientcmd/api/v1/types.go"
+   ]
+  },
+  {
+   "id": "N97",
+   "query": "self subject access review interface",
+   "identifier": "SelfSubjectAccessReviewInterface",
+   "definedIn": [
+    "kubernetes/typed/authorization/v1/selfsubjectaccessreview.go",
+    "kubernetes/typed/authorization/v1beta1/selfsubjectaccessreview.go"
+   ]
+  },
+  {
+   "id": "N98",
+   "query": "storage version migrations",
+   "identifier": "StorageVersionMigrations",
+   "definedIn": [
+    "informers/storagemigration/v1/interface.go",
+    "informers/storagemigration/v1beta1/interface.go",
+    "kubernetes/typed/storagemigration/v1/fake/fake_storagemigration_client.go",
+    "kubernetes/typed/storagemigration/v1/storagemigration_client.go",
+    "kubernetes/typed/storagemigration/v1beta1/fake/fake_storagemigration_client.go",
+    "kubernetes/typed/storagemigration/v1beta1/storagemigration_client.go"
+   ]
+  },
+  {
+   "id": "N99",
+   "query": "endpoint slice expansion",
+   "identifier": "EndpointSliceExpansion",
+   "definedIn": [
+    "kubernetes/typed/discovery/v1/generated_expansion.go",
+    "kubernetes/typed/discovery/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N100",
+   "query": "to typed csi storage capacity informer",
+   "identifier": "ToTypedCSIStorageCapacityInformer",
+   "definedIn": [
+    "informers/storage/v1/csistoragecapacity.go",
+    "informers/storage/v1alpha1/csistoragecapacity.go",
+    "informers/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N101",
+   "query": "cluster role binding interface",
+   "identifier": "ClusterRoleBindingInterface",
+   "definedIn": [
+    "kubernetes/typed/rbac/v1/clusterrolebinding.go",
+    "kubernetes/typed/rbac/v1alpha1/clusterrolebinding.go",
+    "kubernetes/typed/rbac/v1beta1/clusterrolebinding.go"
+   ]
+  },
+  {
+   "id": "N102",
+   "query": "new typed filtered csi storage capacity informer",
+   "identifier": "NewTypedFilteredCSIStorageCapacityInformer",
+   "definedIn": [
+    "informers/storage/v1/csistoragecapacity.go",
+    "informers/storage/v1alpha1/csistoragecapacity.go",
+    "informers/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N103",
+   "query": "new typed horizontal pod autoscaler informer with options",
+   "identifier": "NewTypedHorizontalPodAutoscalerInformerWithOptions",
+   "definedIn": [
+    "informers/autoscaling/v1/horizontalpodautoscaler.go",
+    "informers/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N104",
+   "query": "flow schema detailed handler funcs",
+   "identifier": "FlowSchemaDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/flowcontrol/v1/flowschema.go",
+    "informers/flowcontrol/v1beta1/flowschema.go",
+    "informers/flowcontrol/v1beta2/flowschema.go",
+    "informers/flowcontrol/v1beta3/flowschema.go"
+   ]
+  },
+  {
+   "id": "N105",
+   "query": "new typed filtered ingress informer",
+   "identifier": "NewTypedFilteredIngressInformer",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N106",
+   "query": "discovery v1beta1",
+   "identifier": "DiscoveryV1beta1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N107",
+   "query": "flow schemas getter",
+   "identifier": "FlowSchemasGetter",
+   "definedIn": [
+    "kubernetes/typed/flowcontrol/v1/flowschema.go",
+    "kubernetes/typed/flowcontrol/v1beta1/flowschema.go",
+    "kubernetes/typed/flowcontrol/v1beta2/flowschema.go",
+    "kubernetes/typed/flowcontrol/v1beta3/flowschema.go"
+   ]
+  },
+  {
+   "id": "N108",
+   "query": "lease candidate index informer",
+   "identifier": "LeaseCandidateIndexInformer",
+   "definedIn": [
+    "informers/coordination/v1alpha2/leasecandidate.go",
+    "informers/coordination/v1beta1/leasecandidate.go"
+   ]
+  },
+  {
+   "id": "N109",
+   "query": "replica set handler funcs",
+   "identifier": "ReplicaSetHandlerFuncs",
+   "definedIn": [
+    "informers/apps/v1/replicaset.go",
+    "informers/apps/v1beta2/replicaset.go",
+    "informers/extensions/v1beta1/replicaset.go"
+   ]
+  },
+  {
+   "id": "N110",
+   "query": "new typed lease candidate informer",
+   "identifier": "NewTypedLeaseCandidateInformer",
+   "definedIn": [
+    "informers/coordination/v1alpha2/leasecandidate.go",
+    "informers/coordination/v1beta1/leasecandidate.go"
+   ]
+  },
+  {
+   "id": "N111",
+   "query": "to service cidr index informer",
+   "identifier": "ToServiceCIDRIndexInformer",
+   "definedIn": [
+    "informers/networking/v1/servicecidr.go",
+    "informers/networking/v1beta1/servicecidr.go"
+   ]
+  },
+  {
+   "id": "N112",
+   "query": "pod certificate requests",
+   "identifier": "PodCertificateRequests",
+   "definedIn": [
+    "informers/certificates/v1/interface.go",
+    "informers/certificates/v1beta1/interface.go",
+    "kubernetes/typed/certificates/v1/certificates_client.go",
+    "kubernetes/typed/certificates/v1/fake/fake_certificates_client.go",
+    "kubernetes/typed/certificates/v1beta1/certificates_client.go",
+    "kubernetes/typed/certificates/v1beta1/fake/fake_certificates_client.go",
+    "listers/certificates/v1/podcertificaterequest.go",
+    "listers/certificates/v1beta1/podcertificaterequest.go"
+   ]
+  },
+  {
+   "id": "N113",
+   "query": "storage version migration handler funcs",
+   "identifier": "StorageVersionMigrationHandlerFuncs",
+   "definedIn": [
+    "informers/storagemigration/v1/storageversionmigration.go",
+    "informers/storagemigration/v1beta1/storageversionmigration.go"
+   ]
+  },
+  {
+   "id": "N114",
+   "query": "volume attributes class indexers",
+   "identifier": "VolumeAttributesClassIndexers",
+   "definedIn": [
+    "informers/storage/v1/volumeattributesclass.go",
+    "informers/storage/v1alpha1/volumeattributesclass.go",
+    "informers/storage/v1beta1/volumeattributesclass.go"
+   ]
+  },
+  {
+   "id": "N115",
+   "query": "new deployment informer with options",
+   "identifier": "NewDeploymentInformerWithOptions",
+   "definedIn": [
+    "informers/apps/v1/deployment.go",
+    "informers/apps/v1beta1/deployment.go",
+    "informers/apps/v1beta2/deployment.go",
+    "informers/extensions/v1beta1/deployment.go"
+   ]
+  },
+  {
+   "id": "N116",
+   "query": "tls client config",
+   "identifier": "TLSClientConfig",
+   "definedIn": [
+    "rest/config.go",
+    "transport/websocket/roundtripper.go"
+   ]
+  },
+  {
+   "id": "N117",
+   "query": "horizontal pod autoscaler detailed handler funcs",
+   "identifier": "HorizontalPodAutoscalerDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/autoscaling/v1/horizontalpodautoscaler.go",
+    "informers/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N118",
+   "query": "new controller revision informer with options",
+   "identifier": "NewControllerRevisionInformerWithOptions",
+   "definedIn": [
+    "informers/apps/v1/controllerrevision.go",
+    "informers/apps/v1beta1/controllerrevision.go",
+    "informers/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N119",
+   "query": "new volume attributes class informer with options",
+   "identifier": "NewVolumeAttributesClassInformerWithOptions",
+   "definedIn": [
+    "informers/storage/v1/volumeattributesclass.go",
+    "informers/storage/v1alpha1/volumeattributesclass.go",
+    "informers/storage/v1beta1/volumeattributesclass.go"
+   ]
+  },
+  {
+   "id": "N120",
+   "query": "ingress filtering handler",
+   "identifier": "IngressFilteringHandler",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N121",
+   "query": "server version",
+   "identifier": "ServerVersion",
+   "definedIn": [
+    "discovery/cached/disk/cached_discovery.go",
+    "discovery/cached/memory/memcache.go",
+    "discovery/discovery_client.go",
+    "discovery/fake/discovery.go"
+   ]
+  },
+  {
+   "id": "N122",
+   "query": "stateful set handler funcs",
+   "identifier": "StatefulSetHandlerFuncs",
+   "definedIn": [
+    "informers/apps/v1/statefulset.go",
+    "informers/apps/v1beta1/statefulset.go",
+    "informers/apps/v1beta2/statefulset.go"
+   ]
+  },
+  {
+   "id": "N123",
+   "query": "new typed stateful set informer with options",
+   "identifier": "NewTypedStatefulSetInformerWithOptions",
+   "definedIn": [
+    "informers/apps/v1/statefulset.go",
+    "informers/apps/v1beta1/statefulset.go",
+    "informers/apps/v1beta2/statefulset.go"
+   ]
+  },
+  {
+   "id": "N124",
+   "query": "mutating admission policy binding interface",
+   "identifier": "MutatingAdmissionPolicyBindingInterface",
+   "definedIn": [
+    "kubernetes/typed/admissionregistration/v1/mutatingadmissionpolicybinding.go",
+    "kubernetes/typed/admissionregistration/v1alpha1/mutatingadmissionpolicybinding.go",
+    "kubernetes/typed/admissionregistration/v1beta1/mutatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N125",
+   "query": "to typed lease informer",
+   "identifier": "ToTypedLeaseInformer",
+   "definedIn": [
+    "informers/coordination/v1/lease.go",
+    "informers/coordination/v1beta1/lease.go"
+   ]
+  },
+  {
+   "id": "N126",
+   "query": "shared informer factory",
+   "identifier": "SharedInformerFactory",
+   "definedIn": [
+    "informers/factory.go",
+    "informers/internalinterfaces/factory_interfaces.go",
+    "metadata/metadatainformer/interface.go"
+   ]
+  },
+  {
+   "id": "N127",
+   "query": "endpoint slice lister",
+   "identifier": "EndpointSliceLister",
+   "definedIn": [
+    "listers/discovery/v1/endpointslice.go",
+    "listers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N128",
+   "query": "flow schema lister",
+   "identifier": "FlowSchemaLister",
+   "definedIn": [
+    "listers/flowcontrol/v1/flowschema.go",
+    "listers/flowcontrol/v1beta1/flowschema.go",
+    "listers/flowcontrol/v1beta2/flowschema.go",
+    "listers/flowcontrol/v1beta3/flowschema.go"
+   ]
+  },
+  {
+   "id": "N129",
+   "query": "pod disruption budget interface",
+   "identifier": "PodDisruptionBudgetInterface",
+   "definedIn": [
+    "kubernetes/typed/policy/v1/poddisruptionbudget.go",
+    "kubernetes/typed/policy/v1beta1/poddisruptionbudget.go"
+   ]
+  },
+  {
+   "id": "N130",
+   "query": "typed device class informer",
+   "identifier": "TypedDeviceClassInformer",
+   "definedIn": [
+    "informers/resource/v1/deviceclass.go",
+    "informers/resource/v1beta1/deviceclass.go",
+    "informers/resource/v1beta2/deviceclass.go"
+   ]
+  },
+  {
+   "id": "N131",
+   "query": "mutating webhook configurations getter",
+   "identifier": "MutatingWebhookConfigurationsGetter",
+   "definedIn": [
+    "kubernetes/typed/admissionregistration/v1/mutatingwebhookconfiguration.go",
+    "kubernetes/typed/admissionregistration/v1beta1/mutatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N132",
+   "query": "ip address lister",
+   "identifier": "IPAddressLister",
+   "definedIn": [
+    "listers/networking/v1/ipaddress.go",
+    "listers/networking/v1beta1/ipaddress.go"
+   ]
+  },
+  {
+   "id": "N133",
+   "query": "to typed event informer",
+   "identifier": "ToTypedEventInformer",
+   "definedIn": [
+    "informers/core/v1/event.go",
+    "informers/events/v1/event.go",
+    "informers/events/v1beta1/event.go"
+   ]
+  },
+  {
+   "id": "N134",
+   "query": "to typed horizontal pod autoscaler informer",
+   "identifier": "ToTypedHorizontalPodAutoscalerInformer",
+   "definedIn": [
+    "informers/autoscaling/v1/horizontalpodautoscaler.go",
+    "informers/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N135",
+   "query": "csi nodes",
+   "identifier": "CSINodes",
+   "definedIn": [
+    "informers/storage/v1/interface.go",
+    "informers/storage/v1beta1/interface.go",
+    "kubernetes/typed/storage/v1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1/storage_client.go",
+    "kubernetes/typed/storage/v1beta1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1beta1/storage_client.go"
+   ]
+  },
+  {
+   "id": "N136",
+   "query": "endpoint slice detailed handler funcs",
+   "identifier": "EndpointSliceDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/discovery/v1/endpointslice.go",
+    "informers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N137",
+   "query": "to resource slice index informer",
+   "identifier": "ToResourceSliceIndexInformer",
+   "definedIn": [
+    "informers/resource/v1/resourceslice.go",
+    "informers/resource/v1beta1/resourceslice.go",
+    "informers/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N138",
+   "query": "new filtered validating admission policy binding informer",
+   "identifier": "NewFilteredValidatingAdmissionPolicyBindingInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N139",
+   "query": "new typed filtered mutating admission policy binding informer",
+   "identifier": "NewTypedFilteredMutatingAdmissionPolicyBindingInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N140",
+   "query": "new filtered priority level configuration informer",
+   "identifier": "NewFilteredPriorityLevelConfigurationInformer",
+   "definedIn": [
+    "informers/flowcontrol/v1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta2/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta3/prioritylevelconfiguration.go"
+   ]
+  },
+  {
+   "id": "N141",
+   "query": "new filtered volume attachment informer",
+   "identifier": "NewFilteredVolumeAttachmentInformer",
+   "definedIn": [
+    "informers/storage/v1/volumeattachment.go",
+    "informers/storage/v1alpha1/volumeattachment.go",
+    "informers/storage/v1beta1/volumeattachment.go"
+   ]
+  },
+  {
+   "id": "N142",
+   "query": "new filtered ingress class informer",
+   "identifier": "NewFilteredIngressClassInformer",
+   "definedIn": [
+    "informers/networking/v1/ingressclass.go",
+    "informers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N143",
+   "query": "flow schema index informer",
+   "identifier": "FlowSchemaIndexInformer",
+   "definedIn": [
+    "informers/flowcontrol/v1/flowschema.go",
+    "informers/flowcontrol/v1beta1/flowschema.go",
+    "informers/flowcontrol/v1beta2/flowschema.go",
+    "informers/flowcontrol/v1beta3/flowschema.go"
+   ]
+  },
+  {
+   "id": "N144",
+   "query": "new certificate signing request lister",
+   "identifier": "NewCertificateSigningRequestLister",
+   "definedIn": [
+    "listers/certificates/v1/certificatesigningrequest.go",
+    "listers/certificates/v1beta1/certificatesigningrequest.go"
+   ]
+  },
+  {
+   "id": "N145",
+   "query": "typed volume attachment informer",
+   "identifier": "TypedVolumeAttachmentInformer",
+   "definedIn": [
+    "informers/storage/v1/volumeattachment.go",
+    "informers/storage/v1alpha1/volumeattachment.go",
+    "informers/storage/v1beta1/volumeattachment.go"
+   ]
+  },
+  {
+   "id": "N146",
+   "query": "new endpoint slice informer",
+   "identifier": "NewEndpointSliceInformer",
+   "definedIn": [
+    "informers/discovery/v1/endpointslice.go",
+    "informers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N147",
+   "query": "new typed filtered mutating admission policy informer",
+   "identifier": "NewTypedFilteredMutatingAdmissionPolicyInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N148",
+   "query": "to typed storage class informer",
+   "identifier": "ToTypedStorageClassInformer",
+   "definedIn": [
+    "informers/storage/v1/storageclass.go",
+    "informers/storage/v1beta1/storageclass.go"
+   ]
+  },
+  {
+   "id": "N149",
+   "query": "controller revision handler funcs",
+   "identifier": "ControllerRevisionHandlerFuncs",
+   "definedIn": [
+    "informers/apps/v1/controllerrevision.go",
+    "informers/apps/v1beta1/controllerrevision.go",
+    "informers/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N150",
+   "query": "authorization v1",
+   "identifier": "AuthorizationV1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N151",
+   "query": "cluster roles",
+   "identifier": "ClusterRoles",
+   "definedIn": [
+    "informers/rbac/v1/interface.go",
+    "informers/rbac/v1alpha1/interface.go",
+    "informers/rbac/v1beta1/interface.go",
+    "kubernetes/typed/rbac/v1/fake/fake_rbac_client.go",
+    "kubernetes/typed/rbac/v1/rbac_client.go",
+    "kubernetes/typed/rbac/v1alpha1/fake/fake_rbac_client.go",
+    "kubernetes/typed/rbac/v1alpha1/rbac_client.go",
+    "kubernetes/typed/rbac/v1beta1/fake/fake_rbac_client.go",
+    "kubernetes/typed/rbac/v1beta1/rbac_client.go"
+   ]
+  },
+  {
+   "id": "N152",
+   "query": "mutating admission policy informer",
+   "identifier": "MutatingAdmissionPolicyInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N153",
+   "query": "storage class lister expansion",
+   "identifier": "StorageClassListerExpansion",
+   "definedIn": [
+    "listers/storage/v1/expansion_generated.go",
+    "listers/storage/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N154",
+   "query": "to storage version migration index informer",
+   "identifier": "ToStorageVersionMigrationIndexInformer",
+   "definedIn": [
+    "informers/storagemigration/v1/storageversionmigration.go",
+    "informers/storagemigration/v1beta1/storageversionmigration.go"
+   ]
+  },
+  {
+   "id": "N155",
+   "query": "new cluster trust bundle informer with options",
+   "identifier": "NewClusterTrustBundleInformerWithOptions",
+   "definedIn": [
+    "informers/certificates/v1/clustertrustbundle.go",
+    "informers/certificates/v1alpha1/clustertrustbundle.go",
+    "informers/certificates/v1beta1/clustertrustbundle.go"
+   ]
+  },
+  {
+   "id": "N156",
+   "query": "device class lister expansion",
+   "identifier": "DeviceClassListerExpansion",
+   "definedIn": [
+    "listers/resource/v1/expansion_generated.go",
+    "listers/resource/v1beta1/expansion_generated.go",
+    "listers/resource/v1beta2/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N157",
+   "query": "deleted ingress class",
+   "identifier": "DeletedIngressClass",
+   "definedIn": [
+    "informers/networking/v1/ingressclass.go",
+    "informers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N158",
+   "query": "deep copy into",
+   "identifier": "DeepCopyInto",
+   "definedIn": [
+    "pkg/apis/clientauthentication/v1/zz_generated.deepcopy.go",
+    "pkg/apis/clientauthentication/v1beta1/zz_generated.deepcopy.go",
+    "pkg/apis/clientauthentication/zz_generated.deepcopy.go",
+    "rest/zz_generated.deepcopy.go",
+    "scale/scheme/zz_generated.deepcopy.go",
+    "tools/clientcmd/api/v1/zz_generated.deepcopy.go",
+    "tools/clientcmd/api/zz_generated.deepcopy.go"
+   ]
+  },
+  {
+   "id": "N159",
+   "query": "authorization v1alpha1",
+   "identifier": "AuthorizationV1alpha1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N160",
+   "query": "new filtered validating webhook configuration informer",
+   "identifier": "NewFilteredValidatingWebhookConfigurationInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N161",
+   "query": "cron jobs",
+   "identifier": "CronJobs",
+   "definedIn": [
+    "informers/batch/v1/interface.go",
+    "informers/batch/v1beta1/interface.go",
+    "kubernetes/typed/batch/v1/batch_client.go",
+    "kubernetes/typed/batch/v1/fake/fake_batch_client.go",
+    "kubernetes/typed/batch/v1beta1/batch_client.go",
+    "kubernetes/typed/batch/v1beta1/fake/fake_batch_client.go",
+    "listers/batch/v1/cronjob.go",
+    "listers/batch/v1beta1/cronjob.go"
+   ]
+  },
+  {
+   "id": "N162",
+   "query": "new typed filtered validating admission policy informer",
+   "identifier": "NewTypedFilteredValidatingAdmissionPolicyInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N163",
+   "query": "event recorder",
+   "identifier": "EventRecorder",
+   "definedIn": [
+    "tools/events/interfaces.go",
+    "tools/internal/events/interfaces.go",
+    "tools/leaderelection/resourcelock/interface.go",
+    "tools/record/event.go"
+   ]
+  },
+  {
+   "id": "N164",
+   "query": "new filtered lease candidate informer",
+   "identifier": "NewFilteredLeaseCandidateInformer",
+   "definedIn": [
+    "informers/coordination/v1alpha2/leasecandidate.go",
+    "informers/coordination/v1beta1/leasecandidate.go"
+   ]
+  },
+  {
+   "id": "N165",
+   "query": "resource claim detailed handler funcs",
+   "identifier": "ResourceClaimDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/resource/v1/resourceclaim.go",
+    "informers/resource/v1beta1/resourceclaim.go",
+    "informers/resource/v1beta2/resourceclaim.go"
+   ]
+  },
+  {
+   "id": "N166",
+   "query": "http wrappers for config",
+   "identifier": "HTTPWrappersForConfig",
+   "definedIn": [
+    "rest/transport.go",
+    "transport/round_trippers.go"
+   ]
+  },
+  {
+   "id": "N167",
+   "query": "subject access reviews",
+   "identifier": "SubjectAccessReviews",
+   "definedIn": [
+    "kubernetes/typed/authorization/v1/authorization_client.go",
+    "kubernetes/typed/authorization/v1/fake/fake_authorization_client.go",
+    "kubernetes/typed/authorization/v1beta1/authorization_client.go",
+    "kubernetes/typed/authorization/v1beta1/fake/fake_authorization_client.go"
+   ]
+  },
+  {
+   "id": "N168",
+   "query": "new runtime class informer with options",
+   "identifier": "NewRuntimeClassInformerWithOptions",
+   "definedIn": [
+    "informers/node/v1/runtimeclass.go",
+    "informers/node/v1alpha1/runtimeclass.go",
+    "informers/node/v1beta1/runtimeclass.go"
+   ]
+  },
+  {
+   "id": "N169",
+   "query": "self subject rules review expansion",
+   "identifier": "SelfSubjectRulesReviewExpansion",
+   "definedIn": [
+    "kubernetes/typed/authorization/v1/generated_expansion.go",
+    "kubernetes/typed/authorization/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N170",
+   "query": "mutating admission policy binding lister",
+   "identifier": "MutatingAdmissionPolicyBindingLister",
+   "definedIn": [
+    "listers/admissionregistration/v1/mutatingadmissionpolicybinding.go",
+    "listers/admissionregistration/v1alpha1/mutatingadmissionpolicybinding.go",
+    "listers/admissionregistration/v1beta1/mutatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N171",
+   "query": "priority class indexers",
+   "identifier": "PriorityClassIndexers",
+   "definedIn": [
+    "informers/scheduling/v1/priorityclass.go",
+    "informers/scheduling/v1beta1/priorityclass.go"
+   ]
+  },
+  {
+   "id": "N172",
+   "query": "daemon set filtering handler",
+   "identifier": "DaemonSetFilteringHandler",
+   "definedIn": [
+    "informers/apps/v1/daemonset.go",
+    "informers/apps/v1beta2/daemonset.go",
+    "informers/extensions/v1beta1/daemonset.go"
+   ]
+  },
+  {
+   "id": "N173",
+   "query": "resource claim lister expansion",
+   "identifier": "ResourceClaimListerExpansion",
+   "definedIn": [
+    "listers/resource/v1/expansion_generated.go",
+    "listers/resource/v1beta1/expansion_generated.go",
+    "listers/resource/v1beta2/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N174",
+   "query": "to lease index informer",
+   "identifier": "ToLeaseIndexInformer",
+   "definedIn": [
+    "informers/coordination/v1/lease.go",
+    "informers/coordination/v1beta1/lease.go"
+   ]
+  },
+  {
+   "id": "N175",
+   "query": "new typed resource claim template informer with options",
+   "identifier": "NewTypedResourceClaimTemplateInformerWithOptions",
+   "definedIn": [
+    "informers/resource/v1/resourceclaimtemplate.go",
+    "informers/resource/v1beta1/resourceclaimtemplate.go",
+    "informers/resource/v1beta2/resourceclaimtemplate.go"
+   ]
+  },
+  {
+   "id": "N176",
+   "query": "ingress index informer",
+   "identifier": "IngressIndexInformer",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N177",
+   "query": "search with context",
+   "identifier": "SearchWithContext",
+   "definedIn": [
+    "kubernetes/typed/core/v1/event_expansion.go",
+    "kubernetes/typed/core/v1/fake/fake_event_expansion.go"
+   ]
+  },
+  {
+   "id": "N178",
+   "query": "network policy expansion",
+   "identifier": "NetworkPolicyExpansion",
+   "definedIn": [
+    "kubernetes/typed/extensions/v1beta1/generated_expansion.go",
+    "kubernetes/typed/networking/v1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N179",
+   "query": "new filtered csi driver informer",
+   "identifier": "NewFilteredCSIDriverInformer",
+   "definedIn": [
+    "informers/storage/v1/csidriver.go",
+    "informers/storage/v1beta1/csidriver.go"
+   ]
+  },
+  {
+   "id": "N180",
+   "query": "new typed ip address informer with options",
+   "identifier": "NewTypedIPAddressInformerWithOptions",
+   "definedIn": [
+    "informers/networking/v1/ipaddress.go",
+    "informers/networking/v1beta1/ipaddress.go"
+   ]
+  },
+  {
+   "id": "N181",
+   "query": "pod certificate request detailed handler funcs",
+   "identifier": "PodCertificateRequestDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/certificates/v1/podcertificaterequest.go",
+    "informers/certificates/v1beta1/podcertificaterequest.go"
+   ]
+  },
+  {
+   "id": "N182",
+   "query": "mutating webhook configuration lister expansion",
+   "identifier": "MutatingWebhookConfigurationListerExpansion",
+   "definedIn": [
+    "listers/admissionregistration/v1/expansion_generated.go",
+    "listers/admissionregistration/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N183",
+   "query": "volume attachment detailed handler funcs",
+   "identifier": "VolumeAttachmentDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/storage/v1/volumeattachment.go",
+    "informers/storage/v1alpha1/volumeattachment.go",
+    "informers/storage/v1beta1/volumeattachment.go"
+   ]
+  },
+  {
+   "id": "N184",
+   "query": "storage class detailed handler funcs",
+   "identifier": "StorageClassDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/storage/v1/storageclass.go",
+    "informers/storage/v1beta1/storageclass.go"
+   ]
+  },
+  {
+   "id": "N185",
+   "query": "new typed filtered event informer",
+   "identifier": "NewTypedFilteredEventInformer",
+   "definedIn": [
+    "informers/core/v1/event.go",
+    "informers/events/v1/event.go",
+    "informers/events/v1beta1/event.go"
+   ]
+  },
+  {
+   "id": "N186",
+   "query": "to volume attachment index informer",
+   "identifier": "ToVolumeAttachmentIndexInformer",
+   "definedIn": [
+    "informers/storage/v1/volumeattachment.go",
+    "informers/storage/v1alpha1/volumeattachment.go",
+    "informers/storage/v1beta1/volumeattachment.go"
+   ]
+  },
+  {
+   "id": "N187",
+   "query": "namespace lister",
+   "identifier": "NamespaceLister",
+   "definedIn": [
+    "dynamic/dynamiclister/interface.go",
+    "listers/core/v1/namespace.go",
+    "metadata/metadatalister/interface.go"
+   ]
+  },
+  {
+   "id": "N188",
+   "query": "csi storage capacity detailed handler funcs",
+   "identifier": "CSIStorageCapacityDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/storage/v1/csistoragecapacity.go",
+    "informers/storage/v1alpha1/csistoragecapacity.go",
+    "informers/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N189",
+   "query": "to workload index informer",
+   "identifier": "ToWorkloadIndexInformer",
+   "definedIn": [
+    "informers/scheduling/v1alpha3/workload.go",
+    "informers/scheduling/v1beta1/workload.go"
+   ]
+  },
+  {
+   "id": "N190",
+   "query": "new cluster role binding informer with options",
+   "identifier": "NewClusterRoleBindingInformerWithOptions",
+   "definedIn": [
+    "informers/rbac/v1/clusterrolebinding.go",
+    "informers/rbac/v1alpha1/clusterrolebinding.go",
+    "informers/rbac/v1beta1/clusterrolebinding.go"
+   ]
+  },
+  {
+   "id": "N191",
+   "query": "typed workload informer",
+   "identifier": "TypedWorkloadInformer",
+   "definedIn": [
+    "informers/scheduling/v1alpha3/workload.go",
+    "informers/scheduling/v1beta1/workload.go"
+   ]
+  },
+  {
+   "id": "N192",
+   "query": "delete with result",
+   "identifier": "DeleteWithResult",
+   "definedIn": [
+    "dynamic/fake/simple.go",
+    "dynamic/simple.go",
+    "gentype/fake.go",
+    "gentype/type.go",
+    "metadata/fake/simple.go",
+    "metadata/metadata.go"
+   ]
+  },
+  {
+   "id": "N193",
+   "query": "flowcontrol v1beta3",
+   "identifier": "FlowcontrolV1beta3",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N194",
+   "query": "runtime class expansion",
+   "identifier": "RuntimeClassExpansion",
+   "definedIn": [
+    "kubernetes/typed/node/v1/generated_expansion.go",
+    "kubernetes/typed/node/v1alpha1/generated_expansion.go",
+    "kubernetes/typed/node/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N195",
+   "query": "get pod daemon sets",
+   "identifier": "GetPodDaemonSets",
+   "definedIn": [
+    "listers/apps/v1/daemonset_expansion.go",
+    "listers/apps/v1beta2/daemonset_expansion.go",
+    "listers/extensions/v1beta1/daemonset_expansion.go"
+   ]
+  },
+  {
+   "id": "N196",
+   "query": "new typed mutating admission policy informer with options",
+   "identifier": "NewTypedMutatingAdmissionPolicyInformerWithOptions",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N197",
+   "query": "controller revision index informer",
+   "identifier": "ControllerRevisionIndexInformer",
+   "definedIn": [
+    "informers/apps/v1/controllerrevision.go",
+    "informers/apps/v1beta1/controllerrevision.go",
+    "informers/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N198",
+   "query": "role informer",
+   "identifier": "RoleInformer",
+   "definedIn": [
+    "informers/rbac/v1/role.go",
+    "informers/rbac/v1alpha1/role.go",
+    "informers/rbac/v1beta1/role.go"
+   ]
+  },
+  {
+   "id": "N199",
+   "query": "by namespace",
+   "identifier": "ByNamespace",
+   "definedIn": [
+    "dynamic/dynamiclister/shim.go",
+    "metadata/metadatalister/shim.go",
+    "tools/cache/listers.go"
+   ]
+  },
+  {
+   "id": "N200",
+   "query": "typed pod group informer",
+   "identifier": "TypedPodGroupInformer",
+   "definedIn": [
+    "informers/scheduling/v1alpha3/podgroup.go",
+    "informers/scheduling/v1beta1/podgroup.go"
+   ]
+  },
+  {
+   "id": "N201",
+   "query": "lease detailed handler funcs",
+   "identifier": "LeaseDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/coordination/v1/lease.go",
+    "informers/coordination/v1beta1/lease.go"
+   ]
+  },
+  {
+   "id": "N202",
+   "query": "typed resource claim template informer",
+   "identifier": "TypedResourceClaimTemplateInformer",
+   "definedIn": [
+    "informers/resource/v1/resourceclaimtemplate.go",
+    "informers/resource/v1beta1/resourceclaimtemplate.go",
+    "informers/resource/v1beta2/resourceclaimtemplate.go"
+   ]
+  },
+  {
+   "id": "N203",
+   "query": "new typed filtered daemon set informer",
+   "identifier": "NewTypedFilteredDaemonSetInformer",
+   "definedIn": [
+    "informers/apps/v1/daemonset.go",
+    "informers/apps/v1beta2/daemonset.go",
+    "informers/extensions/v1beta1/daemonset.go"
+   ]
+  },
+  {
+   "id": "N204",
+   "query": "to event index informer",
+   "identifier": "ToEventIndexInformer",
+   "definedIn": [
+    "informers/core/v1/event.go",
+    "informers/events/v1/event.go",
+    "informers/events/v1beta1/event.go"
+   ]
+  },
+  {
+   "id": "N205",
+   "query": "auth info",
+   "identifier": "AuthInfo",
+   "definedIn": [
+    "tools/clientcmd/api/types.go",
+    "tools/clientcmd/api/v1/types.go"
+   ]
+  },
+  {
+   "id": "N206",
+   "query": "local subject access review interface",
+   "identifier": "LocalSubjectAccessReviewInterface",
+   "definedIn": [
+    "kubernetes/typed/authorization/v1/localsubjectaccessreview.go",
+    "kubernetes/typed/authorization/v1beta1/localsubjectaccessreview.go"
+   ]
+  },
+  {
+   "id": "N207",
+   "query": "new typed filtered runtime class informer",
+   "identifier": "NewTypedFilteredRuntimeClassInformer",
+   "definedIn": [
+    "informers/node/v1/runtimeclass.go",
+    "informers/node/v1alpha1/runtimeclass.go",
+    "informers/node/v1beta1/runtimeclass.go"
+   ]
+  },
+  {
+   "id": "N208",
+   "query": "deleted controller revision",
+   "identifier": "DeletedControllerRevision",
+   "definedIn": [
+    "informers/apps/v1/controllerrevision.go",
+    "informers/apps/v1beta1/controllerrevision.go",
+    "informers/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N209",
+   "query": "new replica set informer",
+   "identifier": "NewReplicaSetInformer",
+   "definedIn": [
+    "informers/apps/v1/replicaset.go",
+    "informers/apps/v1beta2/replicaset.go",
+    "informers/extensions/v1beta1/replicaset.go"
+   ]
+  },
+  {
+   "id": "N210",
+   "query": "cron job detailed handler funcs",
+   "identifier": "CronJobDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/batch/v1/cronjob.go",
+    "informers/batch/v1beta1/cronjob.go"
+   ]
+  },
+  {
+   "id": "N211",
+   "query": "cluster role expansion",
+   "identifier": "ClusterRoleExpansion",
+   "definedIn": [
+    "kubernetes/typed/rbac/v1/generated_expansion.go",
+    "kubernetes/typed/rbac/v1alpha1/generated_expansion.go",
+    "kubernetes/typed/rbac/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N212",
+   "query": "new runtime object shim",
+   "identifier": "NewRuntimeObjectShim",
+   "definedIn": [
+    "dynamic/dynamiclister/shim.go",
+    "metadata/metadatalister/shim.go"
+   ]
+  },
+  {
+   "id": "N213",
+   "query": "priority level configuration handler funcs",
+   "identifier": "PriorityLevelConfigurationHandlerFuncs",
+   "definedIn": [
+    "informers/flowcontrol/v1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta2/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta3/prioritylevelconfiguration.go"
+   ]
+  },
+  {
+   "id": "N214",
+   "query": "deleted validating admission policy binding",
+   "identifier": "DeletedValidatingAdmissionPolicyBinding",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N215",
+   "query": "new filtered flow schema informer",
+   "identifier": "NewFilteredFlowSchemaInformer",
+   "definedIn": [
+    "informers/flowcontrol/v1/flowschema.go",
+    "informers/flowcontrol/v1beta1/flowschema.go",
+    "informers/flowcontrol/v1beta2/flowschema.go",
+    "informers/flowcontrol/v1beta3/flowschema.go"
+   ]
+  },
+  {
+   "id": "N216",
+   "query": "typed ip address informer",
+   "identifier": "TypedIPAddressInformer",
+   "definedIn": [
+    "informers/networking/v1/ipaddress.go",
+    "informers/networking/v1beta1/ipaddress.go"
+   ]
+  },
+  {
+   "id": "N217",
+   "query": "new mutating webhook configuration informer",
+   "identifier": "NewMutatingWebhookConfigurationInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/mutatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N218",
+   "query": "csi storage capacities",
+   "identifier": "CSIStorageCapacities",
+   "definedIn": [
+    "informers/storage/v1/interface.go",
+    "informers/storage/v1alpha1/interface.go",
+    "informers/storage/v1beta1/interface.go",
+    "kubernetes/typed/storage/v1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1/storage_client.go",
+    "kubernetes/typed/storage/v1alpha1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1alpha1/storage_client.go",
+    "kubernetes/typed/storage/v1beta1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1beta1/storage_client.go",
+    "listers/storage/v1/csistoragecapacity.go",
+    "listers/storage/v1alpha1/csistoragecapacity.go",
+    "listers/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N219",
+   "query": "new typed endpoint slice informer",
+   "identifier": "NewTypedEndpointSliceInformer",
+   "definedIn": [
+    "informers/discovery/v1/endpointslice.go",
+    "informers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N220",
+   "query": "resource claim informer",
+   "identifier": "ResourceClaimInformer",
+   "definedIn": [
+    "informers/resource/v1/resourceclaim.go",
+    "informers/resource/v1beta1/resourceclaim.go",
+    "informers/resource/v1beta2/resourceclaim.go"
+   ]
+  },
+  {
+   "id": "N221",
+   "query": "self subject access reviews",
+   "identifier": "SelfSubjectAccessReviews",
+   "definedIn": [
+    "kubernetes/typed/authorization/v1/authorization_client.go",
+    "kubernetes/typed/authorization/v1/fake/fake_authorization_client.go",
+    "kubernetes/typed/authorization/v1beta1/authorization_client.go",
+    "kubernetes/typed/authorization/v1beta1/fake/fake_authorization_client.go"
+   ]
+  },
+  {
+   "id": "N222",
+   "query": "new lease candidate informer with options",
+   "identifier": "NewLeaseCandidateInformerWithOptions",
+   "definedIn": [
+    "informers/coordination/v1alpha2/leasecandidate.go",
+    "informers/coordination/v1beta1/leasecandidate.go"
+   ]
+  },
+  {
+   "id": "N223",
+   "query": "volume attributes classes",
+   "identifier": "VolumeAttributesClasses",
+   "definedIn": [
+    "informers/storage/v1/interface.go",
+    "informers/storage/v1alpha1/interface.go",
+    "informers/storage/v1beta1/interface.go",
+    "kubernetes/typed/storage/v1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1/storage_client.go",
+    "kubernetes/typed/storage/v1alpha1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1alpha1/storage_client.go",
+    "kubernetes/typed/storage/v1beta1/fake/fake_storage_client.go",
+    "kubernetes/typed/storage/v1beta1/storage_client.go"
+   ]
+  },
+  {
+   "id": "N224",
+   "query": "csi nodes getter",
+   "identifier": "CSINodesGetter",
+   "definedIn": [
+    "kubernetes/typed/storage/v1/csinode.go",
+    "kubernetes/typed/storage/v1beta1/csinode.go"
+   ]
+  },
+  {
+   "id": "N225",
+   "query": "role binding informer",
+   "identifier": "RoleBindingInformer",
+   "definedIn": [
+    "informers/rbac/v1/rolebinding.go",
+    "informers/rbac/v1alpha1/rolebinding.go",
+    "informers/rbac/v1beta1/rolebinding.go"
+   ]
+  },
+  {
+   "id": "N226",
+   "query": "controller revision filtering handler",
+   "identifier": "ControllerRevisionFilteringHandler",
+   "definedIn": [
+    "informers/apps/v1/controllerrevision.go",
+    "informers/apps/v1beta1/controllerrevision.go",
+    "informers/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N227",
+   "query": "priority level configurations",
+   "identifier": "PriorityLevelConfigurations",
+   "definedIn": [
+    "informers/flowcontrol/v1/interface.go",
+    "informers/flowcontrol/v1beta1/interface.go",
+    "informers/flowcontrol/v1beta2/interface.go",
+    "informers/flowcontrol/v1beta3/interface.go",
+    "kubernetes/typed/flowcontrol/v1/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1/flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta1/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta1/flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta2/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta2/flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta3/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta3/flowcontrol_client.go"
+   ]
+  },
+  {
+   "id": "N228",
+   "query": "open api schema with context",
+   "identifier": "OpenAPISchemaWithContext",
+   "definedIn": [
+    "discovery/cached/disk/cached_discovery.go",
+    "discovery/cached/memory/memcache.go",
+    "discovery/discovery_client.go",
+    "discovery/fake/discovery.go"
+   ]
+  },
+  {
+   "id": "N229",
+   "query": "new shared informer factory",
+   "identifier": "NewSharedInformerFactory",
+   "definedIn": [
+    "informers/factory.go",
+    "metadata/metadatainformer/informer.go"
+   ]
+  },
+  {
+   "id": "N230",
+   "query": "mutating admission policy bindings",
+   "identifier": "MutatingAdmissionPolicyBindings",
+   "definedIn": [
+    "informers/admissionregistration/v1/interface.go",
+    "informers/admissionregistration/v1alpha1/interface.go",
+    "informers/admissionregistration/v1beta1/interface.go",
+    "kubernetes/typed/admissionregistration/v1/admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1/fake/fake_admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1alpha1/admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1alpha1/fake/fake_admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1beta1/admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1beta1/fake/fake_admissionregistration_client.go"
+   ]
+  },
+  {
+   "id": "N231",
+   "query": "ingress informer",
+   "identifier": "IngressInformer",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N232",
+   "query": "deleted volume attributes class",
+   "identifier": "DeletedVolumeAttributesClass",
+   "definedIn": [
+    "informers/storage/v1/volumeattributesclass.go",
+    "informers/storage/v1alpha1/volumeattributesclass.go",
+    "informers/storage/v1beta1/volumeattributesclass.go"
+   ]
+  },
+  {
+   "id": "N233",
+   "query": "validating webhook configurations",
+   "identifier": "ValidatingWebhookConfigurations",
+   "definedIn": [
+    "informers/admissionregistration/v1/interface.go",
+    "informers/admissionregistration/v1beta1/interface.go",
+    "kubernetes/typed/admissionregistration/v1/admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1/fake/fake_admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1beta1/admissionregistration_client.go",
+    "kubernetes/typed/admissionregistration/v1beta1/fake/fake_admissionregistration_client.go"
+   ]
+  },
+  {
+   "id": "N234",
+   "query": "annotated event recorder",
+   "identifier": "AnnotatedEventRecorder",
+   "definedIn": [
+    "tools/events/interfaces.go",
+    "tools/internal/events/interfaces.go"
+   ]
+  },
+  {
+   "id": "N235",
+   "query": "controller revision indexers",
+   "identifier": "ControllerRevisionIndexers",
+   "definedIn": [
+    "informers/apps/v1/controllerrevision.go",
+    "informers/apps/v1beta1/controllerrevision.go",
+    "informers/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N236",
+   "query": "pod certificate request namespace lister expansion",
+   "identifier": "PodCertificateRequestNamespaceListerExpansion",
+   "definedIn": [
+    "listers/certificates/v1/expansion_generated.go",
+    "listers/certificates/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N237",
+   "query": "mutating admission policy handler funcs",
+   "identifier": "MutatingAdmissionPolicyHandlerFuncs",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N238",
+   "query": "to typed mutating admission policy binding informer",
+   "identifier": "ToTypedMutatingAdmissionPolicyBindingInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N239",
+   "query": "new lease lister",
+   "identifier": "NewLeaseLister",
+   "definedIn": [
+    "listers/coordination/v1/lease.go",
+    "listers/coordination/v1beta1/lease.go"
+   ]
+  },
+  {
+   "id": "N240",
+   "query": "scheduling v1beta1",
+   "identifier": "SchedulingV1beta1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N241",
+   "query": "open apiv3 with context",
+   "identifier": "OpenAPIV3WithContext",
+   "definedIn": [
+    "discovery/cached/disk/cached_discovery.go",
+    "discovery/cached/memory/memcache.go",
+    "discovery/discovery_client.go",
+    "discovery/fake/discovery.go"
+   ]
+  },
+  {
+   "id": "N242",
+   "query": "new resource slice informer",
+   "identifier": "NewResourceSliceInformer",
+   "definedIn": [
+    "informers/resource/v1/resourceslice.go",
+    "informers/resource/v1beta1/resourceslice.go",
+    "informers/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N243",
+   "query": "new typed service cidr informer with options",
+   "identifier": "NewTypedServiceCIDRInformerWithOptions",
+   "definedIn": [
+    "informers/networking/v1/servicecidr.go",
+    "informers/networking/v1beta1/servicecidr.go"
+   ]
+  },
+  {
+   "id": "N244",
+   "query": "pod group handler funcs",
+   "identifier": "PodGroupHandlerFuncs",
+   "definedIn": [
+    "informers/scheduling/v1alpha3/podgroup.go",
+    "informers/scheduling/v1beta1/podgroup.go"
+   ]
+  },
+  {
+   "id": "N245",
+   "query": "deleted volume attachment",
+   "identifier": "DeletedVolumeAttachment",
+   "definedIn": [
+    "informers/storage/v1/volumeattachment.go",
+    "informers/storage/v1alpha1/volumeattachment.go",
+    "informers/storage/v1beta1/volumeattachment.go"
+   ]
+  },
+  {
+   "id": "N246",
+   "query": "event handler funcs",
+   "identifier": "EventHandlerFuncs",
+   "definedIn": [
+    "informers/core/v1/event.go",
+    "informers/events/v1/event.go",
+    "informers/events/v1beta1/event.go"
+   ]
+  },
+  {
+   "id": "N247",
+   "query": "mutating webhook configuration filtering handler",
+   "identifier": "MutatingWebhookConfigurationFilteringHandler",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/mutatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N248",
+   "query": "new typed filtered lease informer",
+   "identifier": "NewTypedFilteredLeaseInformer",
+   "definedIn": [
+    "informers/coordination/v1/lease.go",
+    "informers/coordination/v1beta1/lease.go"
+   ]
+  },
+  {
+   "id": "N249",
+   "query": "role bindings",
+   "identifier": "RoleBindings",
+   "definedIn": [
+    "informers/rbac/v1/interface.go",
+    "informers/rbac/v1alpha1/interface.go",
+    "informers/rbac/v1beta1/interface.go",
+    "kubernetes/typed/rbac/v1/fake/fake_rbac_client.go",
+    "kubernetes/typed/rbac/v1/rbac_client.go",
+    "kubernetes/typed/rbac/v1alpha1/fake/fake_rbac_client.go",
+    "kubernetes/typed/rbac/v1alpha1/rbac_client.go",
+    "kubernetes/typed/rbac/v1beta1/fake/fake_rbac_client.go",
+    "kubernetes/typed/rbac/v1beta1/rbac_client.go",
+    "listers/rbac/v1/rolebinding.go",
+    "listers/rbac/v1alpha1/rolebinding.go",
+    "listers/rbac/v1beta1/rolebinding.go"
+   ]
+  },
+  {
+   "id": "N250",
+   "query": "csi driver handler funcs",
+   "identifier": "CSIDriverHandlerFuncs",
+   "definedIn": [
+    "informers/storage/v1/csidriver.go",
+    "informers/storage/v1beta1/csidriver.go"
+   ]
+  },
+  {
+   "id": "N251",
+   "query": "endpoint slice handler funcs",
+   "identifier": "EndpointSliceHandlerFuncs",
+   "definedIn": [
+    "informers/discovery/v1/endpointslice.go",
+    "informers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N252",
+   "query": "volume attachment indexers",
+   "identifier": "VolumeAttachmentIndexers",
+   "definedIn": [
+    "informers/storage/v1/volumeattachment.go",
+    "informers/storage/v1alpha1/volumeattachment.go",
+    "informers/storage/v1beta1/volumeattachment.go"
+   ]
+  },
+  {
+   "id": "N253",
+   "query": "service cidr expansion",
+   "identifier": "ServiceCIDRExpansion",
+   "definedIn": [
+    "kubernetes/typed/networking/v1/generated_expansion.go",
+    "kubernetes/typed/networking/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N254",
+   "query": "new typed certificate signing request informer with options",
+   "identifier": "NewTypedCertificateSigningRequestInformerWithOptions",
+   "definedIn": [
+    "informers/certificates/v1/certificatesigningrequest.go",
+    "informers/certificates/v1beta1/certificatesigningrequest.go"
+   ]
+  },
+  {
+   "id": "N255",
+   "query": "to typed validating admission policy binding informer",
+   "identifier": "ToTypedValidatingAdmissionPolicyBindingInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N256",
+   "query": "new deployment lister",
+   "identifier": "NewDeploymentLister",
+   "definedIn": [
+    "listers/apps/v1/deployment.go",
+    "listers/apps/v1beta1/deployment.go",
+    "listers/apps/v1beta2/deployment.go",
+    "listers/extensions/v1beta1/deployment.go"
+   ]
+  },
+  {
+   "id": "N257",
+   "query": "volume attributes class lister",
+   "identifier": "VolumeAttributesClassLister",
+   "definedIn": [
+    "listers/storage/v1/volumeattributesclass.go",
+    "listers/storage/v1alpha1/volumeattributesclass.go",
+    "listers/storage/v1beta1/volumeattributesclass.go"
+   ]
+  },
+  {
+   "id": "N258",
+   "query": "horizontal pod autoscaler interface",
+   "identifier": "HorizontalPodAutoscalerInterface",
+   "definedIn": [
+    "kubernetes/typed/autoscaling/v1/horizontalpodautoscaler.go",
+    "kubernetes/typed/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N259",
+   "query": "new priority level configuration informer",
+   "identifier": "NewPriorityLevelConfigurationInformer",
+   "definedIn": [
+    "informers/flowcontrol/v1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta2/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta3/prioritylevelconfiguration.go"
+   ]
+  },
+  {
+   "id": "N260",
+   "query": "update with event namespace",
+   "identifier": "UpdateWithEventNamespace",
+   "definedIn": [
+    "kubernetes/typed/core/v1/event_expansion.go",
+    "kubernetes/typed/core/v1/fake/fake_event_expansion.go",
+    "kubernetes/typed/events/v1beta1/event_expansion.go",
+    "kubernetes/typed/events/v1beta1/fake/fake_event_expansion.go"
+   ]
+  },
+  {
+   "id": "N261",
+   "query": "storage class indexers",
+   "identifier": "StorageClassIndexers",
+   "definedIn": [
+    "informers/storage/v1/storageclass.go",
+    "informers/storage/v1beta1/storageclass.go"
+   ]
+  },
+  {
+   "id": "N262",
+   "query": "cluster role binding indexers",
+   "identifier": "ClusterRoleBindingIndexers",
+   "definedIn": [
+    "informers/rbac/v1/clusterrolebinding.go",
+    "informers/rbac/v1alpha1/clusterrolebinding.go",
+    "informers/rbac/v1beta1/clusterrolebinding.go"
+   ]
+  },
+  {
+   "id": "N263",
+   "query": "deleted certificate signing request",
+   "identifier": "DeletedCertificateSigningRequest",
+   "definedIn": [
+    "informers/certificates/v1/certificatesigningrequest.go",
+    "informers/certificates/v1beta1/certificatesigningrequest.go"
+   ]
+  },
+  {
+   "id": "N264",
+   "query": "cluster role lister expansion",
+   "identifier": "ClusterRoleListerExpansion",
+   "definedIn": [
+    "listers/rbac/v1/expansion_generated.go",
+    "listers/rbac/v1alpha1/expansion_generated.go",
+    "listers/rbac/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N265",
+   "query": "get namespace",
+   "identifier": "GetNamespace",
+   "definedIn": [
+    "gentype/type.go",
+    "tools/cache/controller.go",
+    "tools/cache/mutation_cache.go"
+   ]
+  },
+  {
+   "id": "N266",
+   "query": "csi storage capacities getter",
+   "identifier": "CSIStorageCapacitiesGetter",
+   "definedIn": [
+    "kubernetes/typed/storage/v1/csistoragecapacity.go",
+    "kubernetes/typed/storage/v1alpha1/csistoragecapacity.go",
+    "kubernetes/typed/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N267",
+   "query": "autoscaling v2",
+   "identifier": "AutoscalingV2",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N268",
+   "query": "new stateful set lister",
+   "identifier": "NewStatefulSetLister",
+   "definedIn": [
+    "listers/apps/v1/statefulset.go",
+    "listers/apps/v1beta1/statefulset.go",
+    "listers/apps/v1beta2/statefulset.go"
+   ]
+  },
+  {
+   "id": "N269",
+   "query": "new cluster role informer with options",
+   "identifier": "NewClusterRoleInformerWithOptions",
+   "definedIn": [
+    "informers/rbac/v1/clusterrole.go",
+    "informers/rbac/v1alpha1/clusterrole.go",
+    "informers/rbac/v1beta1/clusterrole.go"
+   ]
+  },
+  {
+   "id": "N270",
+   "query": "to daemon set index informer",
+   "identifier": "ToDaemonSetIndexInformer",
+   "definedIn": [
+    "informers/apps/v1/daemonset.go",
+    "informers/apps/v1beta2/daemonset.go",
+    "informers/extensions/v1beta1/daemonset.go"
+   ]
+  },
+  {
+   "id": "N271",
+   "query": "gauge metric",
+   "identifier": "GaugeMetric",
+   "definedIn": [
+    "tools/cache/reflector_metrics.go",
+    "util/workqueue/metrics.go"
+   ]
+  },
+  {
+   "id": "N272",
+   "query": "internal v1alpha1",
+   "identifier": "InternalV1alpha1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N273",
+   "query": "to ingress class index informer",
+   "identifier": "ToIngressClassIndexInformer",
+   "definedIn": [
+    "informers/networking/v1/ingressclass.go",
+    "informers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N274",
+   "query": "role interface",
+   "identifier": "RoleInterface",
+   "definedIn": [
+    "kubernetes/typed/rbac/v1/role.go",
+    "kubernetes/typed/rbac/v1alpha1/role.go",
+    "kubernetes/typed/rbac/v1beta1/role.go"
+   ]
+  },
+  {
+   "id": "N275",
+   "query": "new typed mutating webhook configuration informer",
+   "identifier": "NewTypedMutatingWebhookConfigurationInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/mutatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N276",
+   "query": "controller revision interface",
+   "identifier": "ControllerRevisionInterface",
+   "definedIn": [
+    "kubernetes/typed/apps/v1/controllerrevision.go",
+    "kubernetes/typed/apps/v1beta1/controllerrevision.go",
+    "kubernetes/typed/apps/v1beta2/controllerrevision.go"
+   ]
+  },
+  {
+   "id": "N277",
+   "query": "new pod disruption budget informer",
+   "identifier": "NewPodDisruptionBudgetInformer",
+   "definedIn": [
+    "informers/policy/v1/poddisruptionbudget.go",
+    "informers/policy/v1beta1/poddisruptionbudget.go"
+   ]
+  },
+  {
+   "id": "N278",
+   "query": "priority level configuration filtering handler",
+   "identifier": "PriorityLevelConfigurationFilteringHandler",
+   "definedIn": [
+    "informers/flowcontrol/v1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta1/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta2/prioritylevelconfiguration.go",
+    "informers/flowcontrol/v1beta3/prioritylevelconfiguration.go"
+   ]
+  },
+  {
+   "id": "N279",
+   "query": "new typed role informer",
+   "identifier": "NewTypedRoleInformer",
+   "definedIn": [
+    "informers/rbac/v1/role.go",
+    "informers/rbac/v1alpha1/role.go",
+    "informers/rbac/v1beta1/role.go"
+   ]
+  },
+  {
+   "id": "N280",
+   "query": "new typed network policy informer with options",
+   "identifier": "NewTypedNetworkPolicyInformerWithOptions",
+   "definedIn": [
+    "informers/extensions/v1beta1/networkpolicy.go",
+    "informers/networking/v1/networkpolicy.go"
+   ]
+  },
+  {
+   "id": "N281",
+   "query": "ingress namespace lister expansion",
+   "identifier": "IngressNamespaceListerExpansion",
+   "definedIn": [
+    "listers/extensions/v1beta1/expansion_generated.go",
+    "listers/networking/v1/expansion_generated.go",
+    "listers/networking/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N282",
+   "query": "typed resource slice informer",
+   "identifier": "TypedResourceSliceInformer",
+   "definedIn": [
+    "informers/resource/v1/resourceslice.go",
+    "informers/resource/v1beta1/resourceslice.go",
+    "informers/resource/v1beta2/resourceslice.go"
+   ]
+  },
+  {
+   "id": "N283",
+   "query": "to typed ingress class informer",
+   "identifier": "ToTypedIngressClassInformer",
+   "definedIn": [
+    "informers/networking/v1/ingressclass.go",
+    "informers/networking/v1beta1/ingressclass.go"
+   ]
+  },
+  {
+   "id": "N284",
+   "query": "new horizontal pod autoscaler informer with options",
+   "identifier": "NewHorizontalPodAutoscalerInformerWithOptions",
+   "definedIn": [
+    "informers/autoscaling/v1/horizontalpodautoscaler.go",
+    "informers/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N285",
+   "query": "authentication v1beta1",
+   "identifier": "AuthenticationV1beta1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N286",
+   "query": "flow schemas",
+   "identifier": "FlowSchemas",
+   "definedIn": [
+    "informers/flowcontrol/v1/interface.go",
+    "informers/flowcontrol/v1beta1/interface.go",
+    "informers/flowcontrol/v1beta2/interface.go",
+    "informers/flowcontrol/v1beta3/interface.go",
+    "kubernetes/typed/flowcontrol/v1/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1/flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta1/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta1/flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta2/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta2/flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta3/fake/fake_flowcontrol_client.go",
+    "kubernetes/typed/flowcontrol/v1beta3/flowcontrol_client.go"
+   ]
+  },
+  {
+   "id": "N287",
+   "query": "runtime class informer",
+   "identifier": "RuntimeClassInformer",
+   "definedIn": [
+    "informers/node/v1/runtimeclass.go",
+    "informers/node/v1alpha1/runtimeclass.go",
+    "informers/node/v1beta1/runtimeclass.go"
+   ]
+  },
+  {
+   "id": "N288",
+   "query": "new lease informer",
+   "identifier": "NewLeaseInformer",
+   "definedIn": [
+    "informers/coordination/v1/lease.go",
+    "informers/coordination/v1beta1/lease.go"
+   ]
+  },
+  {
+   "id": "N289",
+   "query": "network policy interface",
+   "identifier": "NetworkPolicyInterface",
+   "definedIn": [
+    "kubernetes/typed/extensions/v1beta1/networkpolicy.go",
+    "kubernetes/typed/networking/v1/networkpolicy.go"
+   ]
+  },
+  {
+   "id": "N290",
+   "query": "new typed filtered flow schema informer",
+   "identifier": "NewTypedFilteredFlowSchemaInformer",
+   "definedIn": [
+    "informers/flowcontrol/v1/flowschema.go",
+    "informers/flowcontrol/v1beta1/flowschema.go",
+    "informers/flowcontrol/v1beta2/flowschema.go",
+    "informers/flowcontrol/v1beta3/flowschema.go"
+   ]
+  },
+  {
+   "id": "N291",
+   "query": "new pod certificate request informer",
+   "identifier": "NewPodCertificateRequestInformer",
+   "definedIn": [
+    "informers/certificates/v1/podcertificaterequest.go",
+    "informers/certificates/v1beta1/podcertificaterequest.go"
+   ]
+  },
+  {
+   "id": "N292",
+   "query": "ingress handler funcs",
+   "identifier": "IngressHandlerFuncs",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N293",
+   "query": "set idle timeout",
+   "identifier": "SetIdleTimeout",
+   "definedIn": [
+    "tools/portforward/portforward.go",
+    "transport/spdy/spdy.go"
+   ]
+  },
+  {
+   "id": "N294",
+   "query": "invalidate with context",
+   "identifier": "InvalidateWithContext",
+   "definedIn": [
+    "discovery/cached/disk/cached_discovery.go",
+    "discovery/cached/memory/memcache.go",
+    "discovery/discovery_client.go"
+   ]
+  },
+  {
+   "id": "N295",
+   "query": "role binding namespace lister",
+   "identifier": "RoleBindingNamespaceLister",
+   "definedIn": [
+    "listers/rbac/v1/rolebinding.go",
+    "listers/rbac/v1alpha1/rolebinding.go",
+    "listers/rbac/v1beta1/rolebinding.go"
+   ]
+  },
+  {
+   "id": "N296",
+   "query": "new typed validating admission policy binding informer",
+   "identifier": "NewTypedValidatingAdmissionPolicyBindingInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N297",
+   "query": "typed priority class informer",
+   "identifier": "TypedPriorityClassInformer",
+   "definedIn": [
+    "informers/scheduling/v1/priorityclass.go",
+    "informers/scheduling/v1beta1/priorityclass.go"
+   ]
+  },
+  {
+   "id": "N298",
+   "query": "to typed mutating admission policy informer",
+   "identifier": "ToTypedMutatingAdmissionPolicyInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N299",
+   "query": "storage version migration expansion",
+   "identifier": "StorageVersionMigrationExpansion",
+   "definedIn": [
+    "kubernetes/typed/storagemigration/v1/generated_expansion.go",
+    "kubernetes/typed/storagemigration/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N300",
+   "query": "deleted mutating admission policy",
+   "identifier": "DeletedMutatingAdmissionPolicy",
+   "definedIn": [
+    "informers/admissionregistration/v1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1alpha1/mutatingadmissionpolicy.go",
+    "informers/admissionregistration/v1beta1/mutatingadmissionpolicy.go"
+   ]
+  },
+  {
+   "id": "N301",
+   "query": "token reviews getter",
+   "identifier": "TokenReviewsGetter",
+   "definedIn": [
+    "kubernetes/typed/authentication/v1/tokenreview.go",
+    "kubernetes/typed/authentication/v1beta1/tokenreview.go"
+   ]
+  },
+  {
+   "id": "N302",
+   "query": "deleted workload",
+   "identifier": "DeletedWorkload",
+   "definedIn": [
+    "informers/scheduling/v1alpha3/workload.go",
+    "informers/scheduling/v1beta1/workload.go"
+   ]
+  },
+  {
+   "id": "N303",
+   "query": "cancel request",
+   "identifier": "CancelRequest",
+   "definedIn": [
+    "discovery/cached/disk/round_tripper.go",
+    "transport/round_trippers.go",
+    "transport/token_source.go"
+   ]
+  },
+  {
+   "id": "N304",
+   "query": "lease candidate lister",
+   "identifier": "LeaseCandidateLister",
+   "definedIn": [
+    "listers/coordination/v1alpha2/leasecandidate.go",
+    "listers/coordination/v1beta1/leasecandidate.go"
+   ]
+  },
+  {
+   "id": "N305",
+   "query": "volume attributes class lister expansion",
+   "identifier": "VolumeAttributesClassListerExpansion",
+   "definedIn": [
+    "listers/storage/v1/expansion_generated.go",
+    "listers/storage/v1alpha1/expansion_generated.go",
+    "listers/storage/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N306",
+   "query": "resource quotas",
+   "identifier": "ResourceQuotas",
+   "definedIn": [
+    "informers/core/v1/interface.go",
+    "kubernetes/typed/core/v1/core_client.go",
+    "kubernetes/typed/core/v1/fake/fake_core_client.go",
+    "listers/core/v1/resourcequota.go"
+   ]
+  },
+  {
+   "id": "N307",
+   "query": "eviction lister",
+   "identifier": "EvictionLister",
+   "definedIn": [
+    "listers/lifecycle/v1alpha1/eviction.go",
+    "listers/policy/v1/eviction.go",
+    "listers/policy/v1beta1/eviction.go"
+   ]
+  },
+  {
+   "id": "N308",
+   "query": "new ingress lister",
+   "identifier": "NewIngressLister",
+   "definedIn": [
+    "listers/extensions/v1beta1/ingress.go",
+    "listers/networking/v1/ingress.go",
+    "listers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N309",
+   "query": "pod certificate request informer",
+   "identifier": "PodCertificateRequestInformer",
+   "definedIn": [
+    "informers/certificates/v1/podcertificaterequest.go",
+    "informers/certificates/v1beta1/podcertificaterequest.go"
+   ]
+  },
+  {
+   "id": "N310",
+   "query": "resource slices",
+   "identifier": "ResourceSlices",
+   "definedIn": [
+    "informers/resource/v1/interface.go",
+    "informers/resource/v1beta1/interface.go",
+    "informers/resource/v1beta2/interface.go",
+    "kubernetes/typed/resource/v1/fake/fake_resource_client.go",
+    "kubernetes/typed/resource/v1/resource_client.go",
+    "kubernetes/typed/resource/v1beta1/fake/fake_resource_client.go",
+    "kubernetes/typed/resource/v1beta1/resource_client.go",
+    "kubernetes/typed/resource/v1beta2/fake/fake_resource_client.go",
+    "kubernetes/typed/resource/v1beta2/resource_client.go"
+   ]
+  },
+  {
+   "id": "N311",
+   "query": "authorization conditions reviews",
+   "identifier": "AuthorizationConditionsReviews",
+   "definedIn": [
+    "kubernetes/typed/authorization/v1alpha1/authorization_client.go",
+    "kubernetes/typed/authorization/v1alpha1/fake/fake_authorization_client.go"
+   ]
+  },
+  {
+   "id": "N312",
+   "query": "cluster role handler funcs",
+   "identifier": "ClusterRoleHandlerFuncs",
+   "definedIn": [
+    "informers/rbac/v1/clusterrole.go",
+    "informers/rbac/v1alpha1/clusterrole.go",
+    "informers/rbac/v1beta1/clusterrole.go"
+   ]
+  },
+  {
+   "id": "N313",
+   "query": "pod group lister",
+   "identifier": "PodGroupLister",
+   "definedIn": [
+    "listers/scheduling/v1alpha3/podgroup.go",
+    "listers/scheduling/v1beta1/podgroup.go"
+   ]
+  },
+  {
+   "id": "N314",
+   "query": "authentication v1alpha1",
+   "identifier": "AuthenticationV1alpha1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N315",
+   "query": "resource claim template namespace lister expansion",
+   "identifier": "ResourceClaimTemplateNamespaceListerExpansion",
+   "definedIn": [
+    "listers/resource/v1/expansion_generated.go",
+    "listers/resource/v1beta1/expansion_generated.go",
+    "listers/resource/v1beta2/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N316",
+   "query": "new csi storage capacity informer with options",
+   "identifier": "NewCSIStorageCapacityInformerWithOptions",
+   "definedIn": [
+    "informers/storage/v1/csistoragecapacity.go",
+    "informers/storage/v1alpha1/csistoragecapacity.go",
+    "informers/storage/v1beta1/csistoragecapacity.go"
+   ]
+  },
+  {
+   "id": "N317",
+   "query": "validating admission policy binding detailed handler funcs",
+   "identifier": "ValidatingAdmissionPolicyBindingDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1alpha1/validatingadmissionpolicybinding.go",
+    "informers/admissionregistration/v1beta1/validatingadmissionpolicybinding.go"
+   ]
+  },
+  {
+   "id": "N318",
+   "query": "volume attributes classes getter",
+   "identifier": "VolumeAttributesClassesGetter",
+   "definedIn": [
+    "kubernetes/typed/storage/v1/volumeattributesclass.go",
+    "kubernetes/typed/storage/v1alpha1/volumeattributesclass.go",
+    "kubernetes/typed/storage/v1beta1/volumeattributesclass.go"
+   ]
+  },
+  {
+   "id": "N319",
+   "query": "workload namespace lister",
+   "identifier": "WorkloadNamespaceLister",
+   "definedIn": [
+    "listers/scheduling/v1alpha3/workload.go",
+    "listers/scheduling/v1beta1/workload.go"
+   ]
+  },
+  {
+   "id": "N320",
+   "query": "horizontal pod autoscaler handler funcs",
+   "identifier": "HorizontalPodAutoscalerHandlerFuncs",
+   "definedIn": [
+    "informers/autoscaling/v1/horizontalpodautoscaler.go",
+    "informers/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N321",
+   "query": "to typed validating webhook configuration informer",
+   "identifier": "ToTypedValidatingWebhookConfigurationInformer",
+   "definedIn": [
+    "informers/admissionregistration/v1/validatingwebhookconfiguration.go",
+    "informers/admissionregistration/v1beta1/validatingwebhookconfiguration.go"
+   ]
+  },
+  {
+   "id": "N322",
+   "query": "apps v1beta1",
+   "identifier": "AppsV1beta1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N323",
+   "query": "new device class lister",
+   "identifier": "NewDeviceClassLister",
+   "definedIn": [
+    "listers/resource/v1/deviceclass.go",
+    "listers/resource/v1beta1/deviceclass.go",
+    "listers/resource/v1beta2/deviceclass.go"
+   ]
+  },
+  {
+   "id": "N324",
+   "query": "to typed endpoint slice informer",
+   "identifier": "ToTypedEndpointSliceInformer",
+   "definedIn": [
+    "informers/discovery/v1/endpointslice.go",
+    "informers/discovery/v1beta1/endpointslice.go"
+   ]
+  },
+  {
+   "id": "N325",
+   "query": "new cron job informer with options",
+   "identifier": "NewCronJobInformerWithOptions",
+   "definedIn": [
+    "informers/batch/v1/cronjob.go",
+    "informers/batch/v1beta1/cronjob.go"
+   ]
+  },
+  {
+   "id": "N326",
+   "query": "role indexers",
+   "identifier": "RoleIndexers",
+   "definedIn": [
+    "informers/rbac/v1/role.go",
+    "informers/rbac/v1alpha1/role.go",
+    "informers/rbac/v1beta1/role.go"
+   ]
+  },
+  {
+   "id": "N327",
+   "query": "cluster role index informer",
+   "identifier": "ClusterRoleIndexInformer",
+   "definedIn": [
+    "informers/rbac/v1/clusterrole.go",
+    "informers/rbac/v1alpha1/clusterrole.go",
+    "informers/rbac/v1beta1/clusterrole.go"
+   ]
+  },
+  {
+   "id": "N328",
+   "query": "new typed pod group informer",
+   "identifier": "NewTypedPodGroupInformer",
+   "definedIn": [
+    "informers/scheduling/v1alpha3/podgroup.go",
+    "informers/scheduling/v1beta1/podgroup.go"
+   ]
+  },
+  {
+   "id": "N329",
+   "query": "ip address handler funcs",
+   "identifier": "IPAddressHandlerFuncs",
+   "definedIn": [
+    "informers/networking/v1/ipaddress.go",
+    "informers/networking/v1beta1/ipaddress.go"
+   ]
+  },
+  {
+   "id": "N330",
+   "query": "validating admission policy expansion",
+   "identifier": "ValidatingAdmissionPolicyExpansion",
+   "definedIn": [
+    "kubernetes/typed/admissionregistration/v1/generated_expansion.go",
+    "kubernetes/typed/admissionregistration/v1alpha1/generated_expansion.go",
+    "kubernetes/typed/admissionregistration/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N331",
+   "query": "deleted csi driver",
+   "identifier": "DeletedCSIDriver",
+   "definedIn": [
+    "informers/storage/v1/csidriver.go",
+    "informers/storage/v1beta1/csidriver.go"
+   ]
+  },
+  {
+   "id": "N332",
+   "query": "events getter",
+   "identifier": "EventsGetter",
+   "definedIn": [
+    "kubernetes/typed/core/v1/event.go",
+    "kubernetes/typed/events/v1/event.go",
+    "kubernetes/typed/events/v1beta1/event.go"
+   ]
+  },
+  {
+   "id": "N333",
+   "query": "subject access review interface",
+   "identifier": "SubjectAccessReviewInterface",
+   "definedIn": [
+    "kubernetes/typed/authorization/v1/subjectaccessreview.go",
+    "kubernetes/typed/authorization/v1beta1/subjectaccessreview.go"
+   ]
+  },
+  {
+   "id": "N334",
+   "query": "transform func",
+   "identifier": "TransformFunc",
+   "definedIn": [
+    "tools/cache/delta_fifo.go",
+    "util/consistencydetector/data_consistency_detector.go"
+   ]
+  },
+  {
+   "id": "N335",
+   "query": "exec credential spec",
+   "identifier": "ExecCredentialSpec",
+   "definedIn": [
+    "pkg/apis/clientauthentication/types.go",
+    "pkg/apis/clientauthentication/v1/types.go",
+    "pkg/apis/clientauthentication/v1beta1/types.go"
+   ]
+  },
+  {
+   "id": "N336",
+   "query": "cluster role detailed handler funcs",
+   "identifier": "ClusterRoleDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/rbac/v1/clusterrole.go",
+    "informers/rbac/v1alpha1/clusterrole.go",
+    "informers/rbac/v1beta1/clusterrole.go"
+   ]
+  },
+  {
+   "id": "N337",
+   "query": "typed horizontal pod autoscaler informer",
+   "identifier": "TypedHorizontalPodAutoscalerInformer",
+   "definedIn": [
+    "informers/autoscaling/v1/horizontalpodautoscaler.go",
+    "informers/autoscaling/v2/horizontalpodautoscaler.go"
+   ]
+  },
+  {
+   "id": "N338",
+   "query": "daemon set expansion",
+   "identifier": "DaemonSetExpansion",
+   "definedIn": [
+    "kubernetes/typed/apps/v1/generated_expansion.go",
+    "kubernetes/typed/apps/v1beta2/generated_expansion.go",
+    "kubernetes/typed/extensions/v1beta1/generated_expansion.go"
+   ]
+  },
+  {
+   "id": "N339",
+   "query": "typed csi node informer",
+   "identifier": "TypedCSINodeInformer",
+   "definedIn": [
+    "informers/storage/v1/csinode.go",
+    "informers/storage/v1beta1/csinode.go"
+   ]
+  },
+  {
+   "id": "N340",
+   "query": "deleted replica set",
+   "identifier": "DeletedReplicaSet",
+   "definedIn": [
+    "informers/apps/v1/replicaset.go",
+    "informers/apps/v1beta2/replicaset.go",
+    "informers/extensions/v1beta1/replicaset.go"
+   ]
+  },
+  {
+   "id": "N341",
+   "query": "server preferred namespaced resources with context",
+   "identifier": "ServerPreferredNamespacedResourcesWithContext",
+   "definedIn": [
+    "discovery/cached/disk/cached_discovery.go",
+    "discovery/cached/memory/memcache.go",
+    "discovery/discovery_client.go",
+    "discovery/fake/discovery.go"
+   ]
+  },
+  {
+   "id": "N342",
+   "query": "to typed csi driver informer",
+   "identifier": "ToTypedCSIDriverInformer",
+   "definedIn": [
+    "informers/storage/v1/csidriver.go",
+    "informers/storage/v1beta1/csidriver.go"
+   ]
+  },
+  {
+   "id": "N343",
+   "query": "tls config for",
+   "identifier": "TLSConfigFor",
+   "definedIn": [
+    "rest/transport.go",
+    "transport/transport.go"
+   ]
+  },
+  {
+   "id": "N344",
+   "query": "autoscaling v1",
+   "identifier": "AutoscalingV1",
+   "definedIn": [
+    "kubernetes/clientset.go",
+    "kubernetes/fake/clientset_generated.go"
+   ]
+  },
+  {
+   "id": "N345",
+   "query": "runtime class handler funcs",
+   "identifier": "RuntimeClassHandlerFuncs",
+   "definedIn": [
+    "informers/node/v1/runtimeclass.go",
+    "informers/node/v1alpha1/runtimeclass.go",
+    "informers/node/v1beta1/runtimeclass.go"
+   ]
+  },
+  {
+   "id": "N346",
+   "query": "to storage class index informer",
+   "identifier": "ToStorageClassIndexInformer",
+   "definedIn": [
+    "informers/storage/v1/storageclass.go",
+    "informers/storage/v1beta1/storageclass.go"
+   ]
+  },
+  {
+   "id": "N347",
+   "query": "priority class lister expansion",
+   "identifier": "PriorityClassListerExpansion",
+   "definedIn": [
+    "listers/scheduling/v1/expansion_generated.go",
+    "listers/scheduling/v1beta1/expansion_generated.go"
+   ]
+  },
+  {
+   "id": "N348",
+   "query": "ingress detailed handler funcs",
+   "identifier": "IngressDetailedHandlerFuncs",
+   "definedIn": [
+    "informers/extensions/v1beta1/ingress.go",
+    "informers/networking/v1/ingress.go",
+    "informers/networking/v1beta1/ingress.go"
+   ]
+  },
+  {
+   "id": "N349",
+   "query": "new lease candidate lister",
+   "identifier": "NewLeaseCandidateLister",
+   "definedIn": [
+    "listers/coordination/v1alpha2/leasecandidate.go",
+    "listers/coordination/v1beta1/leasecandidate.go"
+   ]
+  }
+ ]
+}
