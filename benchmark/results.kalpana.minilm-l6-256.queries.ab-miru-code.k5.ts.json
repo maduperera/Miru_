@@ -1,0 +1,880 @@
+{
+ "candidates": ".bench/kalpana/candidates.minilm-l6-256.queries.ab-miru-code.k5.ts.json",
+ "queries": 3,
+ "poolRecallAtK": 1.0,
+ "rrfC": 60,
+ "alphas": [
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7
+ ],
+ "bestAlphaInSample": 0.1,
+ "argmaxDef3": 0.1,
+ "argmaxMRR": 0.1,
+ "cv": {
+  "folds": 5,
+  "seed": 6182160,
+  "alphas": [
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1
+  ]
+ },
+ "arms": {
+  "baseline": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "kalpana": {
+   "hit1": 0.3333333333333333,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.6111111111111112,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "rrf": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.1": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.2": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.3": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.4": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.5": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.6": {
+   "hit1": 0.6666666666666666,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.8333333333333334,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.7": {
+   "hit1": 0.6666666666666666,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.7777777777777778,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "cv": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.4444444444444444,
+   "mrr": 1.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  }
+ },
+ "latencyMs": {
+  "miru": {
+   "p50": 9.761086000000006,
+   "p95": 9.891172000000012
+  },
+  "queryTensorCold": {
+   "p50": 13.942782000000875,
+   "p95": 20.004000000000133
+  },
+  "queryTensorWarm": {
+   "p50": 0.13357599999963554,
+   "p95": 0.15520799999890755
+  },
+  "poolScoring": {
+   "p50": 0.055319000001219365,
+   "p95": 0.1334649999975568
+  },
+  "overheadCold": {
+   "p50": 13.990673999998648,
+   "p95": 20.059319000001352
+  },
+  "overheadWarm": {
+   "p50": 0.21052700000012692,
+   "p95": 0.22756499999943003
+  },
+  "offlineBuildS": 0.997953128999999,
+  "modelLoadS": 16.541671806
+ },
+ "perQuery": [
+  {
+   "id": "AB_MIRUCODE0",
+   "query": "CLI entry point main command line interface",
+   "identifier": "",
+   "poolRecall": true,
+   "parsed": 0.8,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli.ts:494",
+     "package.json:1",
+     "scripts/vendor-grammars.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "scripts/create-sagemaker-invoke-user.ts:1",
+     "scripts/render-crane-art.ts:1",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli.ts:494",
+     "package.json:1",
+     "scripts/create-sagemaker-invoke-user.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli.ts:494",
+     "package.json:1",
+     "scripts/create-sagemaker-invoke-user.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli.ts:494",
+     "package.json:1",
+     "scripts/create-sagemaker-invoke-user.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli.ts:494",
+     "package.json:1",
+     "scripts/create-sagemaker-invoke-user.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     true,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli.ts:494",
+     "scripts/create-sagemaker-invoke-user.ts:1",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.6666666666666666,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli.ts:494",
+     "scripts/create-sagemaker-invoke-user.ts:1",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "scripts/create-sagemaker-invoke-user.ts:1",
+     "src/cli.ts:494",
+     "scripts/render-crane-art.ts:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "scripts/create-sagemaker-invoke-user.ts:1",
+     "scripts/render-crane-art.ts:1",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   }
+  },
+  {
+   "id": "AB_MIRUCODE1",
+   "query": "hybrid search ranking BM25 embedding score fusion",
+   "identifier": "",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-queries.ts:24"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/index/bm25.ts:1",
+     "src/search.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-queries.ts:24"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/search.ts:1",
+     "src/index/bm25.ts:1",
+     "scripts/search-ab-local.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "AB_MIRUCODE2",
+   "query": "where is cli-ui terminal output formatting",
+   "identifier": "",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "src/terminal.ts:1",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "scripts/tokenizer-ab.ts:30",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "package.json:1",
+     "src/terminal.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "src/terminal.ts:1",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "src/terminal.ts:1",
+     "scripts/tokenizer-ab.ts:30"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "src/terminal.ts:1",
+     "scripts/tokenizer-ab.ts:30"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "scripts/tokenizer-ab.ts:30",
+     "src/terminal.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "scripts/tokenizer-ab.ts:30",
+     "src/terminal.ts:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "scripts/tokenizer-ab.ts:30",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": true,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 1.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "src/cli-ui.ts:1",
+     "scripts/tokenizer-ab.ts:30",
+     "package.json:1"
+    ],
+    "top3_hit": [
+     true,
+     false,
+     false
+    ]
+   }
+  }
+ ]
+}

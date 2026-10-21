@@ -1,0 +1,4509 @@
+{
+ "repo": "csn-go",
+ "dataset": "code-search-net/code_search_net",
+ "split": "test",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "Miru's CodeSearchNet protocol: first 500 usable test rows, docstring -> function, one function per file.",
+ "queries": [
+  {
+   "id": "CSN_GO0",
+   "query": "// mustWaitPinReady waits up to 3-second until connection is up (pin endpoint).\n// Fatal on time-out.",
+   "identifier": "mustWaitPinReady",
+   "definedIn": [
+    "0000.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO1",
+   "query": "// newGatewayCommand returns the cobra command for \"gateway\".",
+   "identifier": "newGatewayCommand",
+   "definedIn": [
+    "0001.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO2",
+   "query": "// NewLimitedBufferReader returns a reader that reads from the given reader\n// but limits the amount of data returned to at most n bytes.",
+   "identifier": "NewLimitedBufferReader",
+   "definedIn": [
+    "0002.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO3",
+   "query": "// WithAbortContext specifies the context for permanently aborting the transaction.",
+   "identifier": "WithAbortContext",
+   "definedIn": [
+    "0003.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO4",
+   "query": "// WithPrefetch is a hint to prefetch a list of keys before trying to apply.\n// If an STM transaction will unconditionally fetch a set of keys, prefetching\n// those keys will save the round-trip cost from requesting each key one by one\n// with Get().",
+   "identifier": "WithPrefetch",
+   "definedIn": [
+    "0004.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO5",
+   "query": "// NewSTM initiates a new STM instance, using serializable snapshot isolation by default.",
+   "identifier": "NewSTM",
+   "definedIn": [
+    "0005.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO6",
+   "query": "// first returns the store revision from the first fetch",
+   "identifier": "first",
+   "definedIn": [
+    "0006.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO7",
+   "query": "// cmps guards the txn from updates to read set",
+   "identifier": "cmps",
+   "definedIn": [
+    "0007.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO8",
+   "query": "// cmps returns a cmp list testing no writes have happened past rev",
+   "identifier": "cmps",
+   "definedIn": [
+    "0008.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO9",
+   "query": "// puts is the list of ops for all pending writes",
+   "identifier": "puts",
+   "definedIn": [
+    "0009.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO10",
+   "query": "// NewSTMRepeatable is deprecated.",
+   "identifier": "NewSTMRepeatable",
+   "definedIn": [
+    "0010.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO11",
+   "query": "// NewSTMSerializable is deprecated.",
+   "identifier": "NewSTMSerializable",
+   "definedIn": [
+    "0011.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO12",
+   "query": "// NewSTMReadCommitted is deprecated.",
+   "identifier": "NewSTMReadCommitted",
+   "definedIn": [
+    "0012.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO13",
+   "query": "// NewCertPool creates x509 certPool with provided CA files.",
+   "identifier": "NewCertPool",
+   "definedIn": [
+    "0013.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO14",
+   "query": "// NewCert generates TLS cert by using the given cert,key and parse function.",
+   "identifier": "NewCert",
+   "definedIn": [
+    "0014.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO15",
+   "query": "// NewGRPCLoggerV2 converts \"*zap.Logger\" to \"grpclog.LoggerV2\".\n// It discards all INFO level logging in gRPC, if debug level\n// is not enabled in \"*zap.Logger\".",
+   "identifier": "NewGRPCLoggerV2",
+   "definedIn": [
+    "0015.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO16",
+   "query": "// NewGRPCLoggerV2FromZapCore creates \"grpclog.LoggerV2\" from \"zap.Core\"\n// and \"zapcore.WriteSyncer\". It discards all INFO level logging in gRPC,\n// if debug level is not enabled in \"*zap.Logger\".",
+   "identifier": "NewGRPCLoggerV2FromZapCore",
+   "definedIn": [
+    "0016.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO17",
+   "query": "// Pause pauses the peer. The peer will simply drops all incoming\n// messages without returning an error.",
+   "identifier": "Pause",
+   "definedIn": [
+    "0017.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO18",
+   "query": "// Resume resumes a paused peer.",
+   "identifier": "Resume",
+   "definedIn": [
+    "0018.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO19",
+   "query": "// pick picks a chan for sending the given message. The picked chan and the picked chan\n// string name are returned.",
+   "identifier": "pick",
+   "definedIn": [
+    "0019.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO20",
+   "query": "// post posts the given request.\n// It returns nil when request is sent out and processed successfully.",
+   "identifier": "post",
+   "definedIn": [
+    "0020.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO21",
+   "query": "// newTxnResp allocates a txn response for a txn request given a path.",
+   "identifier": "newTxnResp",
+   "definedIn": [
+    "0021.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO22",
+   "query": "// applyCompare applies the compare request.\n// If the comparison succeeds, it returns true. Otherwise, returns false.",
+   "identifier": "applyCompare",
+   "definedIn": [
+    "0022.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO23",
+   "query": "// OpCompact wraps slice CompactOption to create a CompactOp.",
+   "identifier": "OpCompact",
+   "definedIn": [
+    "0023.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO24",
+   "query": "// NewPriorityQueue creates an etcd priority queue.",
+   "identifier": "NewPriorityQueue",
+   "definedIn": [
+    "0024.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO25",
+   "query": "// Enqueue puts a value into a queue with a given priority.",
+   "identifier": "Enqueue",
+   "definedIn": [
+    "0025.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO26",
+   "query": "// NewLeaderStats generates a new LeaderStats with the given id as leader",
+   "identifier": "NewLeaderStats",
+   "definedIn": [
+    "0026.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO27",
+   "query": "// Succ updates the FollowerStats with a successful send",
+   "identifier": "Succ",
+   "definedIn": [
+    "0027.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO28",
+   "query": "// Fail updates the FollowerStats with an unsuccessful send",
+   "identifier": "Fail",
+   "definedIn": [
+    "0028.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO29",
+   "query": "// delete removes a watcher and returns the number of remaining watchers.",
+   "identifier": "delete",
+   "definedIn": [
+    "0029.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO30",
+   "query": "// startStreamWriter creates a streamWrite and starts a long running go-routine that accepts\n// messages and writes to the attached outgoing connection.",
+   "identifier": "startStreamWriter",
+   "definedIn": [
+    "0030.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO31",
+   "query": "// checkStreamSupport checks whether the stream type is supported in the\n// given version.",
+   "identifier": "checkStreamSupport",
+   "definedIn": [
+    "0031.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO32",
+   "query": "// maybeUpdate returns false if the given n index comes from an outdated message.\n// Otherwise it updates the progress and returns true.",
+   "identifier": "maybeUpdate",
+   "definedIn": [
+    "0032.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO33",
+   "query": "// maybeDecrTo returns false if the given to index comes from an out of order message.\n// Otherwise it decreases the progress next index to min(rejected, last) and returns true.",
+   "identifier": "maybeDecrTo",
+   "definedIn": [
+    "0033.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO34",
+   "query": "// IsPaused returns whether sending log entries to this node has been\n// paused. A node may be paused because it has rejected recent\n// MsgApps, is currently waiting for a snapshot, or has reached the\n// MaxInflightMsgs limit.",
+   "identifier": "IsPaused",
+   "definedIn": [
+    "0034.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO35",
+   "query": "// needSnapshotAbort returns true if snapshot progress's Match\n// is equal or higher than the pendingSnapshot.",
+   "identifier": "needSnapshotAbort",
+   "definedIn": [
+    "0035.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO36",
+   "query": "// add adds an inflight into inflights",
+   "identifier": "add",
+   "definedIn": [
+    "0036.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO37",
+   "query": "// grow the inflight buffer by doubling up to inflights.size. We grow on demand\n// instead of preallocating to inflights.size to handle systems which have\n// thousands of Raft groups per process.",
+   "identifier": "growBuf",
+   "definedIn": [
+    "0037.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO38",
+   "query": "// freeTo frees the inflights smaller or equal to the given `to` flight.",
+   "identifier": "freeTo",
+   "definedIn": [
+    "0038.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO39",
+   "query": "// CanonicalURLPath returns the canonical url path for p, which follows the rules:\n// 1. the path always starts with \"/\"\n// 2. replace multiple slashes with a single slash\n// 3. replace each '.' '..' path name element with equivalent one\n// 4. keep the trailing slash\n// The function is borrowed from stdlib http.cleanPath in server.go.",
+   "identifier": "CanonicalURLPath",
+   "definedIn": [
+    "0039.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO40",
+   "query": "// SaveDBFrom saves snapshot of the database from the given reader. It\n// guarantees the save operation is atomic.",
+   "identifier": "SaveDBFrom",
+   "definedIn": [
+    "0040.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO41",
+   "query": "// DBFilePath returns the file path for the snapshot of the database with\n// given id. If the snapshot does not exist, it returns error.",
+   "identifier": "DBFilePath",
+   "definedIn": [
+    "0041.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO42",
+   "query": "// Set parses a command line set of strings, separated by comma.\n// Implements \"flag.Value\" interface.\n// The values are set in order.",
+   "identifier": "Set",
+   "definedIn": [
+    "0042.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO43",
+   "query": "// NewUniqueStringsValue implements string slice as \"flag.Value\" interface.\n// Given value is to be separated by comma.\n// The values are set in order.",
+   "identifier": "NewUniqueStringsValue",
+   "definedIn": [
+    "0043.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO44",
+   "query": "// UniqueStringsFromFlag returns a string slice from the flag.",
+   "identifier": "UniqueStringsFromFlag",
+   "definedIn": [
+    "0044.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO45",
+   "query": "// UniqueStringsMapFromFlag returns a map of strings from the flag.",
+   "identifier": "UniqueStringsMapFromFlag",
+   "definedIn": [
+    "0045.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO46",
+   "query": "// Percentiles returns percentile distribution of float64 slice.",
+   "identifier": "Percentiles",
+   "definedIn": [
+    "0046.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO47",
+   "query": "// VerifyBootstrap sanity-checks the initial config for bootstrap case\n// and returns an error for things that should never happen.",
+   "identifier": "VerifyBootstrap",
+   "definedIn": [
+    "0047.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO48",
+   "query": "// VerifyJoinExisting sanity-checks the initial config for join existing cluster\n// case and returns an error for things that should never happen.",
+   "identifier": "VerifyJoinExisting",
+   "definedIn": [
+    "0048.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO49",
+   "query": "// hasLocalMember checks that the cluster at least contains the local server.",
+   "identifier": "hasLocalMember",
+   "definedIn": [
+    "0049.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO50",
+   "query": "// advertiseMatchesCluster confirms peer URLs match those in the cluster peer list.",
+   "identifier": "advertiseMatchesCluster",
+   "definedIn": [
+    "0050.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO51",
+   "query": "// ReqTimeout returns timeout for request to finish.",
+   "identifier": "ReqTimeout",
+   "definedIn": [
+    "0051.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO52",
+   "query": "// getStatus gets a copy of the current raft status.",
+   "identifier": "getStatus",
+   "definedIn": [
+    "0052.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO53",
+   "query": "// MarshalJSON translates the raft status into JSON.\n// TODO: try to simplify this by introducing ID type into raft",
+   "identifier": "MarshalJSON",
+   "definedIn": [
+    "0053.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO54",
+   "query": "// GetDefaultHost obtains the first IP address of machine from the routing table and returns the IP address as string.\n// An IPv4 address is preferred to an IPv6 address for backward compatibility.",
+   "identifier": "GetDefaultHost",
+   "definedIn": [
+    "0054.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO55",
+   "query": "// Used to get an address of interface.",
+   "identifier": "getIfaceAddr",
+   "definedIn": [
+    "0055.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO56",
+   "query": "// Used to get a name of interface.",
+   "identifier": "getIfaceLink",
+   "definedIn": [
+    "0056.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO57",
+   "query": "// GetDefaultInterfaces gets names of interfaces and returns a map[interface]families.",
+   "identifier": "GetDefaultInterfaces",
+   "definedIn": [
+    "0057.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO58",
+   "query": "// parsePREFSRC returns preferred source address and output interface index (RTA_OIF).",
+   "identifier": "parsePREFSRC",
+   "definedIn": [
+    "0058.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO59",
+   "query": "// lsCommandFunc executes the \"ls\" command.",
+   "identifier": "lsCommandFunc",
+   "definedIn": [
+    "0059.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO60",
+   "query": "// printLs writes a response out in a manner similar to the `ls` command in unix.\n// Non-empty directories list their contents and files list their name.",
+   "identifier": "printLs",
+   "definedIn": [
+    "0060.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO61",
+   "query": "// rPrint recursively prints out the nodes in the node structure.",
+   "identifier": "rPrint",
+   "definedIn": [
+    "0061.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO62",
+   "query": "// NewLeaseRenewerCommand returns the cobra command for \"lease-renewer runner\".",
+   "identifier": "NewLeaseRenewerCommand",
+   "definedIn": [
+    "0062.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO63",
+   "query": "// Read reads the snapshot named by snapname and returns the snapshot.",
+   "identifier": "Read",
+   "definedIn": [
+    "0063.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO64",
+   "query": "// snapNames returns the filename of the snapshots in logical time order (from newest to oldest).\n// If there is no available snapshots, an ErrNoSnapshot will be returned.",
+   "identifier": "snapNames",
+   "definedIn": [
+    "0064.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO65",
+   "query": "// GracefulClose drains http.Response.Body until it hits EOF\n// and closes it. This prevents TCP/TLS connections from closing,\n// therefore available for reuse.\n// Borrowed from golang/net/context/ctxhttp/cancelreq.go.",
+   "identifier": "GracefulClose",
+   "definedIn": [
+    "0065.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO66",
+   "query": "// GetHostname returns the hostname from request Host field.\n// It returns empty string, if Host field contains invalid\n// value (e.g. \"localhost:::\" with too many colons).",
+   "identifier": "GetHostname",
+   "definedIn": [
+    "0066.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO67",
+   "query": "// Dequeue returns Enqueue()'d elements in FIFO order. If the\n// queue is empty, Dequeue blocks until elements are available.",
+   "identifier": "Dequeue",
+   "definedIn": [
+    "0067.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO68",
+   "query": "// GetCipherSuite returns the corresponding cipher suite,\n// and boolean value if it is supported.",
+   "identifier": "GetCipherSuite",
+   "definedIn": [
+    "0068.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO69",
+   "query": "// post POSTs a data payload to a url. Returns nil if the POST succeeds,\n// error on any failure.",
+   "identifier": "post",
+   "definedIn": [
+    "0069.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO70",
+   "query": "// XXX_OneofFuncs is for the internal use of the proto package.",
+   "identifier": "XXX_OneofFuncs",
+   "definedIn": [
+    "0070.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO71",
+   "query": "// XXX_OneofFuncs is for the internal use of the proto package.",
+   "identifier": "XXX_OneofFuncs",
+   "definedIn": [
+    "0071.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO72",
+   "query": "// XXX_OneofFuncs is for the internal use of the proto package.",
+   "identifier": "XXX_OneofFuncs",
+   "definedIn": [
+    "0072.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO73",
+   "query": "// XXX_OneofFuncs is for the internal use of the proto package.",
+   "identifier": "XXX_OneofFuncs",
+   "definedIn": [
+    "0073.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO74",
+   "query": "// send persists state to stable storage and then sends to its mailbox.",
+   "identifier": "send",
+   "definedIn": [
+    "0074.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO75",
+   "query": "// maybeSendAppend sends an append RPC with new entries to the given peer,\n// if necessary. Returns true if a message was sent. The sendIfEmpty\n// argument controls whether messages with no entries will be sent\n// (\"empty\" messages are useful to convey updated Commit indexes, but\n// are undesirable when we're sending multiple messages in a batch).",
+   "identifier": "maybeSendAppend",
+   "definedIn": [
+    "0075.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO76",
+   "query": "// sendHeartbeat sends a heartbeat RPC to the given peer.",
+   "identifier": "sendHeartbeat",
+   "definedIn": [
+    "0076.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO77",
+   "query": "// bcastAppend sends RPC, with entries to all peers that are not up-to-date\n// according to the progress recorded in r.prs.",
+   "identifier": "bcastAppend",
+   "definedIn": [
+    "0077.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO78",
+   "query": "// bcastHeartbeat sends RPC, without entries to all the peers.",
+   "identifier": "bcastHeartbeat",
+   "definedIn": [
+    "0078.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO79",
+   "query": "// maybeCommit attempts to advance the commit index. Returns true if\n// the commit index changed (in which case the caller should call\n// r.bcastAppend).",
+   "identifier": "maybeCommit",
+   "definedIn": [
+    "0079.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO80",
+   "query": "// tickElection is run by followers and candidates after r.electionTimeout.",
+   "identifier": "tickElection",
+   "definedIn": [
+    "0080.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO81",
+   "query": "// tickHeartbeat is run by leaders to send a MsgBeat after r.heartbeatTimeout.",
+   "identifier": "tickHeartbeat",
+   "definedIn": [
+    "0081.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO82",
+   "query": "// stepCandidate is shared by StateCandidate and StatePreCandidate; the difference is\n// whether they respond to MsgVoteResp or MsgPreVoteResp.",
+   "identifier": "stepCandidate",
+   "definedIn": [
+    "0082.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO83",
+   "query": "// restore recovers the state machine from a snapshot. It restores the log and the\n// configuration of state machine.",
+   "identifier": "restore",
+   "definedIn": [
+    "0083.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO84",
+   "query": "// promotable indicates whether state machine can be promoted to leader,\n// which is true when its own id is in progress list.",
+   "identifier": "promotable",
+   "definedIn": [
+    "0084.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO85",
+   "query": "// checkQuorumActive returns true if the quorum is active from\n// the view of the local raft state machine. Otherwise, it returns\n// false.\n// checkQuorumActive also resets all RecentActive to false.",
+   "identifier": "checkQuorumActive",
+   "definedIn": [
+    "0085.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO86",
+   "query": "// increaseUncommittedSize computes the size of the proposed entries and\n// determines whether they would push leader over its maxUncommittedSize limit.\n// If the new entries would exceed the limit, the method returns false. If not,\n// the increase in uncommitted entry size is recorded and the method returns\n// true.",
+   "identifier": "increaseUncommittedSize",
+   "definedIn": [
+    "0086.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO87",
+   "query": "// reduceUncommittedSize accounts for the newly committed entries by decreasing\n// the uncommitted entry size limit.",
+   "identifier": "reduceUncommittedSize",
+   "definedIn": [
+    "0087.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO88",
+   "query": "// newPeriodic creates a new instance of Periodic compactor that purges\n// the log older than h Duration.",
+   "identifier": "newPeriodic",
+   "definedIn": [
+    "0088.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO89",
+   "query": "/*\nCompaction period 1-hour:\n  1. compute compaction period, which is 1-hour\n  2. record revisions for every 1/10 of 1-hour (6-minute)\n  3. keep recording revisions with no compaction for first 1-hour\n  4. do compact with revs[0]\n\t- success? contiue on for-loop and move sliding window; revs = revs[1:]\n\t- failure? update revs, and retry after 1/10 of 1-hour (6-minute)\n\nCompaction period 24-hour:\n  1. compute compaction period, which is 1-hour\n  2. record revisions for every 1/10 of 1-hour (6-minute)\n  3. keep recording revisions with no compaction for first 24-hour\n  4. do compact with revs[0]\n\t- success? contiue on for-loop and move sliding window; revs = revs[1:]\n\t- failure? update revs, and retry after 1/10 of 1-hour (6-minute)\n\nCompaction period 59-min:\n  1. compute compaction period, which is 59-min\n  2. record revisions for every 1/10 of 59-min (5.9-min)\n  3. keep recording revisions with no compaction for first 59-min\n  4. do compact with revs[0]\n\t- success? contiue on for-loop and move sliding window; revs = revs[1:]\n\t- failure? update revs, and retry after 1/10 of 59-min (5.9-min)\n\nCompaction period 5-sec:\n  1. compute compaction period, which is 5-sec\n  2. record revisions for every 1/10 of 5-sec (0.5-sec)\n  3. keep recording revisions with no compaction for first 5-sec\n  4. do compact with revs[0]\n\t- success? contiue on for-loop and move sliding window; revs = revs[1:]\n\t- failure? update revs, and retry after 1/10 of 5-sec (0.5-sec)\n*/\n// Run runs periodic compactor.",
+   "identifier": "Run",
+   "definedIn": [
+    "0089.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO90",
+   "query": "// if given compaction period x is <1-hour, compact every x duration.\n// (e.g. --auto-compaction-mode 'periodic' --auto-compaction-retention='10m', then compact every 10-minute)\n// if given compaction period x is >1-hour, compact every hour.\n// (e.g. --auto-compaction-mode 'periodic' --auto-compaction-retention='2h', then compact every 1-hour)",
+   "identifier": "getCompactInterval",
+   "definedIn": [
+    "0090.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO91",
+   "query": "// Pause pauses periodic compactor.",
+   "identifier": "Pause",
+   "definedIn": [
+    "0091.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO92",
+   "query": "// Resume resumes periodic compactor.",
+   "identifier": "Resume",
+   "definedIn": [
+    "0092.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO93",
+   "query": "// Lock locks the mutex with a cancelable context. If the context is canceled\n// while trying to acquire the lock, the mutex tries to clean its stale lock entry.",
+   "identifier": "Lock",
+   "definedIn": [
+    "0093.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO94",
+   "query": "// NewLocker creates a sync.Locker backed by an etcd mutex.",
+   "identifier": "NewLocker",
+   "definedIn": [
+    "0094.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO95",
+   "query": "// NewFIFOScheduler returns a Scheduler that schedules jobs in FIFO\n// order sequentially",
+   "identifier": "NewFIFOScheduler",
+   "definedIn": [
+    "0095.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO96",
+   "query": "// Schedule schedules a job that will be ran in FIFO order sequentially.",
+   "identifier": "Schedule",
+   "definedIn": [
+    "0096.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO97",
+   "query": "// Stop stops the scheduler and cancels all pending jobs.",
+   "identifier": "Stop",
+   "definedIn": [
+    "0097.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO98",
+   "query": "// NewServer returns a new agent server.",
+   "identifier": "NewServer",
+   "definedIn": [
+    "0098.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO99",
+   "query": "// StartServe starts serving agent server.",
+   "identifier": "StartServe",
+   "definedIn": [
+    "0099.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO100",
+   "query": "// Stop stops serving gRPC server.",
+   "identifier": "Stop",
+   "definedIn": [
+    "0100.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO101",
+   "query": "// Transport communicates with etcd tester.",
+   "identifier": "Transport",
+   "definedIn": [
+    "0101.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO102",
+   "query": "// RegisterInterruptHandler registers a new InterruptHandler. Handlers registered\n// after interrupt handing was initiated will not be executed.",
+   "identifier": "RegisterInterruptHandler",
+   "definedIn": [
+    "0102.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO103",
+   "query": "// HandleInterrupts calls the handler functions on receiving a SIGINT or SIGTERM.",
+   "identifier": "HandleInterrupts",
+   "definedIn": [
+    "0103.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO104",
+   "query": "// Txn returns the comparison(if) operations, \"then\" operations, and \"else\" operations.",
+   "identifier": "Txn",
+   "definedIn": [
+    "0104.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO105",
+   "query": "// OpGet returns \"get\" operation based on given key and operation options.",
+   "identifier": "OpGet",
+   "definedIn": [
+    "0105.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO106",
+   "query": "// OpDelete returns \"delete\" operation based on given key and operation options.",
+   "identifier": "OpDelete",
+   "definedIn": [
+    "0106.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO107",
+   "query": "// OpPut returns \"put\" operation based on given key-value and operation options.",
+   "identifier": "OpPut",
+   "definedIn": [
+    "0107.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO108",
+   "query": "// OpTxn returns \"txn\" operation based on given transaction conditions.",
+   "identifier": "OpTxn",
+   "definedIn": [
+    "0108.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO109",
+   "query": "// WithSort specifies the ordering in 'Get' request. It requires\n// 'WithRange' and/or 'WithPrefix' to be specified too.\n// 'target' specifies the target to sort by: key, version, revisions, value.\n// 'order' can be either 'SortNone', 'SortAscend', 'SortDescend'.",
+   "identifier": "WithSort",
+   "definedIn": [
+    "0109.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO110",
+   "query": "// WithPrefix enables 'Get', 'Delete', or 'Watch' requests to operate\n// on the keys with matching prefix. For example, 'Get(foo, WithPrefix())'\n// can return 'foo1', 'foo2', and so on.",
+   "identifier": "WithPrefix",
+   "definedIn": [
+    "0110.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO111",
+   "query": "// WithRange specifies the range of 'Get', 'Delete', 'Watch' requests.\n// For example, 'Get' requests with 'WithRange(end)' returns\n// the keys in the range [key, end).\n// endKey must be lexicographically greater than start key.",
+   "identifier": "WithRange",
+   "definedIn": [
+    "0111.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO112",
+   "query": "// WithFromKey specifies the range of 'Get', 'Delete', 'Watch' requests\n// to be equal or greater than the key in the argument.",
+   "identifier": "WithFromKey",
+   "definedIn": [
+    "0112.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO113",
+   "query": "// withTop gets the first key over the get's prefix given a sort order",
+   "identifier": "withTop",
+   "definedIn": [
+    "0113.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO114",
+   "query": "// Exist returns true if there are any files in a given directory.",
+   "identifier": "Exist",
+   "definedIn": [
+    "0114.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO115",
+   "query": "// searchIndex returns the last array index of names whose raft index section is\n// equal to or smaller than the given index.\n// The given names MUST be sorted.",
+   "identifier": "searchIndex",
+   "definedIn": [
+    "0115.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO116",
+   "query": "// names should have been sorted based on sequence number.\n// isValidSeq checks whether seq increases continuously.",
+   "identifier": "isValidSeq",
+   "definedIn": [
+    "0116.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO117",
+   "query": "// NewListener creates a new listner.",
+   "identifier": "NewListener",
+   "definedIn": [
+    "0117.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO118",
+   "query": "// baseConfig is called on initial TLS handshake start.\n//\n// Previously,\n// 1. Server has non-empty (*tls.Config).Certificates on client hello\n// 2. Server calls (*tls.Config).GetCertificate iff:\n//    - Server's (*tls.Config).Certificates is not empty, or\n//    - Client supplies SNI; non-empty (*tls.ClientHelloInfo).ServerName\n//\n// When (*tls.Config).Certificates is always populated on initial handshake,\n// client is expected to provide a valid matching SNI to pass the TLS\n// verification, thus trigger server (*tls.Config).GetCertificate to reload\n// TLS assets. However, a cert whose SAN field does not include domain names\n// but only IP addresses, has empty (*tls.ClientHelloInfo).ServerName, thus\n// it was never able to trigger TLS reload on initial handshake; first\n// ceritifcate object was being used, never being updated.\n//\n// Now, (*tls.Config).Certificates is created empty on initial TLS client\n// handshake, in order to trigger (*tls.Config).GetCertificate and populate\n// rest of the certificates on every new TLS connection, even when client\n// SNI is empty (e.g. cert only includes IPs).",
+   "identifier": "baseConfig",
+   "definedIn": [
+    "0118.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO119",
+   "query": "// cafiles returns a list of CA file paths.",
+   "identifier": "cafiles",
+   "definedIn": [
+    "0119.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO120",
+   "query": "// ServerConfig generates a tls.Config object for use by an HTTP server.",
+   "identifier": "ServerConfig",
+   "definedIn": [
+    "0120.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO121",
+   "query": "// ClientConfig generates a tls.Config object for use by an HTTP client.",
+   "identifier": "ClientConfig",
+   "definedIn": [
+    "0121.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO122",
+   "query": "// IsClosedConnError returns true if the error is from closing listener, cmux.\n// copied from golang.org/x/net/http2/http2.go",
+   "identifier": "IsClosedConnError",
+   "definedIn": [
+    "0122.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO123",
+   "query": "// NewKeepAliveListener returns a listener that listens on the given address.\n// Be careful when wrap around KeepAliveListener with another Listener if TLSInfo is not nil.\n// Some pkgs (like go/http) might expect Listener to return TLSConn type to start TLS handshake.\n// http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html",
+   "identifier": "NewKeepAliveListener",
+   "definedIn": [
+    "0123.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO124",
+   "query": "// Accept waits for and returns the next incoming TLS connection.\n// The returned connection c is a *tls.Conn.",
+   "identifier": "Accept",
+   "definedIn": [
+    "0124.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO125",
+   "query": "// NewListener creates a Listener which accepts connections from an inner\n// Listener and wraps each connection with Server.\n// The configuration config must be non-nil and must have\n// at least one certificate.",
+   "identifier": "newTLSKeepaliveListener",
+   "definedIn": [
+    "0125.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO126",
+   "query": "// applyV2Request interprets r as a call to v2store.X\n// and returns a Response interpreted from v2store.Event",
+   "identifier": "applyV2Request",
+   "definedIn": [
+    "0126.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO127",
+   "query": "// NewRoleCommand returns the cobra command for \"role\".",
+   "identifier": "NewRoleCommand",
+   "definedIn": [
+    "0127.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO128",
+   "query": "// roleAddCommandFunc executes the \"role add\" command.",
+   "identifier": "roleAddCommandFunc",
+   "definedIn": [
+    "0128.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO129",
+   "query": "// roleGetCommandFunc executes the \"role get\" command.",
+   "identifier": "roleGetCommandFunc",
+   "definedIn": [
+    "0129.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO130",
+   "query": "// roleGrantPermissionCommandFunc executes the \"role grant-permission\" command.",
+   "identifier": "roleGrantPermissionCommandFunc",
+   "definedIn": [
+    "0130.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO131",
+   "query": "// roleRevokePermissionCommandFunc executes the \"role revoke-permission\" command.",
+   "identifier": "roleRevokePermissionCommandFunc",
+   "definedIn": [
+    "0131.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO132",
+   "query": "// DialJournal returns no error if the process can dial journal socket.\n// Returns an error if dial failed, whichi indicates journald is not available\n// (e.g. run embedded etcd as docker daemon).\n// Reference: https://github.com/coreos/go-systemd/blob/master/journal/journal.go.",
+   "identifier": "DialJournal",
+   "definedIn": [
+    "0132.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO133",
+   "query": "// NewCluster returns an unlaunched cluster of the given size which has been\n// set to use static bootstrap.",
+   "identifier": "NewCluster",
+   "definedIn": [
+    "0133.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO134",
+   "query": "// NewClusterByConfig returns an unlaunched cluster defined by a cluster configuration",
+   "identifier": "NewClusterByConfig",
+   "definedIn": [
+    "0134.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO135",
+   "query": "// HTTPMembers returns a list of all active members as client.Members",
+   "identifier": "HTTPMembers",
+   "definedIn": [
+    "0135.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO136",
+   "query": "// waitLeader waits until given members agree on the same leader.",
+   "identifier": "waitLeader",
+   "definedIn": [
+    "0136.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO137",
+   "query": "// waitNoLeader waits until given members lose leader.",
+   "identifier": "waitNoLeader",
+   "definedIn": [
+    "0137.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO138",
+   "query": "// isMembersEqual checks whether two members equal except ID field.\n// The given wmembs should always set ID field to empty string.",
+   "identifier": "isMembersEqual",
+   "definedIn": [
+    "0138.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO139",
+   "query": "// mustNewMember return an inited member with the given name. If peerTLS is\n// set, it will use https scheme to communicate between peers.",
+   "identifier": "mustNewMember",
+   "definedIn": [
+    "0139.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO140",
+   "query": "// listenGRPC starts a grpc server over a unix domain socket on the member",
+   "identifier": "listenGRPC",
+   "definedIn": [
+    "0140.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO141",
+   "query": "// NewClientV3 creates a new grpc client connection to the member",
+   "identifier": "NewClientV3",
+   "definedIn": [
+    "0141.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO142",
+   "query": "// Clone returns a member with the same server configuration. The returned\n// member will not set PeerListeners and ClientListeners.",
+   "identifier": "Clone",
+   "definedIn": [
+    "0142.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO143",
+   "query": "// Launch starts a member based on ServerConfig, PeerListeners\n// and ClientListeners.",
+   "identifier": "Launch",
+   "definedIn": [
+    "0143.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO144",
+   "query": "// Close stops the member's etcdserver and closes its connections",
+   "identifier": "Close",
+   "definedIn": [
+    "0144.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO145",
+   "query": "// Stop stops the member, but the data dir of the member is preserved.",
+   "identifier": "Stop",
+   "definedIn": [
+    "0145.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO146",
+   "query": "// checkLeaderTransition waits for leader transition, returning the new leader ID.",
+   "identifier": "checkLeaderTransition",
+   "definedIn": [
+    "0146.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO147",
+   "query": "// Restart starts the member using the preserved data dir.",
+   "identifier": "Restart",
+   "definedIn": [
+    "0147.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO148",
+   "query": "// Terminate stops the member and removes the data dir.",
+   "identifier": "Terminate",
+   "definedIn": [
+    "0148.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO149",
+   "query": "// Metric gets the metric value for a member",
+   "identifier": "Metric",
+   "definedIn": [
+    "0149.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO150",
+   "query": "// InjectPartition drops connections from m to others, vice versa.",
+   "identifier": "InjectPartition",
+   "definedIn": [
+    "0150.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO151",
+   "query": "// RecoverPartition recovers connections from m to others, vice versa.",
+   "identifier": "RecoverPartition",
+   "definedIn": [
+    "0151.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO152",
+   "query": "// NewClusterV3 returns a launched cluster with a grpc client connection\n// for each cluster member.",
+   "identifier": "NewClusterV3",
+   "definedIn": [
+    "0152.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO153",
+   "query": "// ParseWithDefaults will load options from the specified map or set defaults where appropriate",
+   "identifier": "ParseWithDefaults",
+   "definedIn": [
+    "0153.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO154",
+   "query": "// Parse will load options from the specified map",
+   "identifier": "Parse",
+   "definedIn": [
+    "0154.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO155",
+   "query": "// Key will parse and return the appropriately typed key for the selected signature method",
+   "identifier": "Key",
+   "definedIn": [
+    "0155.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO156",
+   "query": "// fill populates pb.ResponseHeader using etcdserver information",
+   "identifier": "fill",
+   "definedIn": [
+    "0156.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO157",
+   "query": "// add puts a watcher into receiving a broadcast if its revision at least\n// meets the broadcast revision. Returns true if added.",
+   "identifier": "add",
+   "definedIn": [
+    "0157.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO158",
+   "query": "// Watch creates a new watcher in the stream and returns its WatchID.",
+   "identifier": "Watch",
+   "definedIn": [
+    "0158.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO159",
+   "query": "// newFileEncoder creates a new encoder with current file offset for the page writer.",
+   "identifier": "newFileEncoder",
+   "definedIn": [
+    "0159.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO160",
+   "query": "// purgeFile is the internal implementation for PurgeFile which can post purged files to purgec if non-nil.",
+   "identifier": "purgeFile",
+   "definedIn": [
+    "0160.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO161",
+   "query": "// Set parses a command line set of strings, separated by comma.\n// Implements \"flag.Value\" interface.",
+   "identifier": "Set",
+   "definedIn": [
+    "0161.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO162",
+   "query": "// NewStringsValue implements string slice as \"flag.Value\" interface.\n// Given value is to be separated by comma.",
+   "identifier": "NewStringsValue",
+   "definedIn": [
+    "0162.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO163",
+   "query": "// StringsFromFlag returns a string slice from the flag.",
+   "identifier": "StringsFromFlag",
+   "definedIn": [
+    "0163.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO164",
+   "query": "// Cluster only keeps the major.minor.",
+   "identifier": "Cluster",
+   "definedIn": [
+    "0164.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO165",
+   "query": "// NewPageWriter creates a new PageWriter. pageBytes is the number of bytes\n// to write per page. pageOffset is the starting offset of io.Writer.",
+   "identifier": "NewPageWriter",
+   "definedIn": [
+    "0165.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO166",
+   "query": "// newWatchHub creates a watcherHub. The capacity determines how many events we will\n// keep in the eventHistory.\n// Typically, we only need to keep a small size of history[smaller than 20K].\n// Ideally, it should smaller than 20K/s[max throughput] * 2 * 50ms[RTT] = 2000",
+   "identifier": "newWatchHub",
+   "definedIn": [
+    "0166.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO167",
+   "query": "// Watch function returns a Watcher.\n// If recursive is true, the first change after index under key will be sent to the event channel of the watcher.\n// If recursive is false, the first change after index at key will be sent to the event channel of the watcher.\n// If index is zero, watch will start from the current index + 1.",
+   "identifier": "watch",
+   "definedIn": [
+    "0167.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO168",
+   "query": "// notify function accepts an event and notify to the watchers.",
+   "identifier": "notify",
+   "definedIn": [
+    "0168.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO169",
+   "query": "// clone function clones the watcherHub and return the cloned one.\n// only clone the static content. do not clone the current watchers.",
+   "identifier": "clone",
+   "definedIn": [
+    "0169.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO170",
+   "query": "// isHidden checks to see if key path is considered hidden to watch path i.e. the\n// last element is hidden or it's within a hidden directory",
+   "identifier": "isHidden",
+   "definedIn": [
+    "0170.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO171",
+   "query": "// NewTimeoutListener returns a listener that listens on the given address.\n// If read/write on the accepted connection blocks longer than its time limit,\n// it will return timeout error.",
+   "identifier": "NewTimeoutListener",
+   "definedIn": [
+    "0171.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO172",
+   "query": "// just archive the first file",
+   "identifier": "createEtcdLogFile",
+   "definedIn": [
+    "0172.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO173",
+   "query": "// start but do not wait for it to complete",
+   "identifier": "runEtcd",
+   "definedIn": [
+    "0173.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO174",
+   "query": "// SIGQUIT to exit with stackstrace",
+   "identifier": "stopEtcd",
+   "definedIn": [
+    "0174.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO175",
+   "query": "// if started with manual TLS, stores TLS assets\n// from tester/client to disk before starting etcd process",
+   "identifier": "saveTLSAssets",
+   "definedIn": [
+    "0175.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO176",
+   "query": "// stop proxy, etcd, delete data directory",
+   "identifier": "handle_SIGQUIT_ETCD_AND_REMOVE_DATA_AND_STOP_AGENT",
+   "definedIn": [
+    "0176.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO177",
+   "query": "// LimitListener returns a Listener that accepts at most n simultaneous\n// connections from the provided Listener.",
+   "identifier": "LimitListener",
+   "definedIn": [
+    "0177.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO178",
+   "query": "// allowMethod verifies that the given method is one of the allowed methods,\n// and if not, it writes an error to w.  A boolean is returned indicating\n// whether or not the method is allowed.",
+   "identifier": "allowMethod",
+   "definedIn": [
+    "0178.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO179",
+   "query": "// NewWatchServer returns a new watch server.",
+   "identifier": "NewWatchServer",
+   "definedIn": [
+    "0179.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO180",
+   "query": "// GetProgressReportInterval returns the current progress report interval (for testing).",
+   "identifier": "GetProgressReportInterval",
+   "definedIn": [
+    "0180.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO181",
+   "query": "// SetProgressReportInterval updates the current progress report interval (for testing).",
+   "identifier": "SetProgressReportInterval",
+   "definedIn": [
+    "0181.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO182",
+   "query": "// FiltersFromRequest returns \"mvcc.FilterFunc\" from a given watch create request.",
+   "identifier": "FiltersFromRequest",
+   "definedIn": [
+    "0182.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO183",
+   "query": "// newPipelineHandler returns a handler for handling raft messages\n// from pipeline for RaftPrefix.\n//\n// The handler reads out the raft message from request body,\n// and forwards it to the given raft state machine for processing.",
+   "identifier": "newPipelineHandler",
+   "definedIn": [
+    "0183.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO184",
+   "query": "// ServeHTTP serves HTTP request to receive and process snapshot message.\n//\n// If request sender dies without closing underlying TCP connection,\n// the handler will keep waiting for the request body until TCP keepalive\n// finds out that the connection is broken after several minutes.\n// This is acceptable because\n// 1. snapshot messages sent through other TCP connections could still be\n// received and processed.\n// 2. this case should happen rarely, so no further optimization is done.",
+   "identifier": "ServeHTTP",
+   "definedIn": [
+    "0184.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO185",
+   "query": "// checkClusterCompatibilityFromHeader checks the cluster compatibility of\n// the local member from the given header.\n// It checks whether the version of local member is compatible with\n// the versions in the header, and whether the cluster ID of local member\n// matches the one in the header.",
+   "identifier": "checkClusterCompatibilityFromHeader",
+   "definedIn": [
+    "0185.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO186",
+   "query": "// KeyExists returns a comparison operation that evaluates to true iff the given\n// key exists. It does this by checking if the key `Version` is greater than 0.\n// It is a useful guard in transaction delete operations.",
+   "identifier": "KeyExists",
+   "definedIn": [
+    "0186.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO187",
+   "query": "// KeyMissing returns a comparison operation that evaluates to true iff the\n// given key does not exist.",
+   "identifier": "KeyMissing",
+   "definedIn": [
+    "0187.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO188",
+   "query": "// ValidateSecureEndpoints scans the given endpoints against tls info, returning only those\n// endpoints that could be validated as secure.",
+   "identifier": "ValidateSecureEndpoints",
+   "definedIn": [
+    "0188.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO189",
+   "query": "// putNewKV attempts to create the given key, only succeeding if the key did\n// not yet exist.",
+   "identifier": "putNewKV",
+   "definedIn": [
+    "0189.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO190",
+   "query": "// newSequentialKV allocates a new sequential key <prefix>/nnnnn with a given\n// prefix and value. Note: a bookkeeping node __<prefix> is also allocated.",
+   "identifier": "newSequentialKV",
+   "definedIn": [
+    "0190.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO191",
+   "query": "// newEphemeralKV creates a new key/value pair associated with a session lease",
+   "identifier": "newEphemeralKV",
+   "definedIn": [
+    "0191.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO192",
+   "query": "// newUniqueEphemeralKey creates a new unique valueless key associated with a session lease",
+   "identifier": "newUniqueEphemeralKey",
+   "definedIn": [
+    "0192.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO193",
+   "query": "// newUniqueEphemeralKV creates a new unique key/value pair associated with a session lease",
+   "identifier": "newUniqueEphemeralKV",
+   "definedIn": [
+    "0193.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO194",
+   "query": "// NewUpdateDirCommand returns the CLI command for \"updatedir\".",
+   "identifier": "NewUpdateDirCommand",
+   "definedIn": [
+    "0194.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO195",
+   "query": "// updatedirCommandFunc executes the \"updatedir\" command.",
+   "identifier": "updatedirCommandFunc",
+   "definedIn": [
+    "0195.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO196",
+   "query": "// handleBackup handles a request that intends to do a backup.",
+   "identifier": "handleBackup",
+   "definedIn": [
+    "0196.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO197",
+   "query": "// saveDB copies the v3 backend and strips cluster information.",
+   "identifier": "saveDB",
+   "definedIn": [
+    "0197.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO198",
+   "query": "// NewWatchCommand returns the cobra command for \"watcher runner\".",
+   "identifier": "NewWatchCommand",
+   "definedIn": [
+    "0198.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO199",
+   "query": "// NewV3 returns a new snapshot Manager for v3.x snapshot.",
+   "identifier": "NewV3",
+   "definedIn": [
+    "0199.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO200",
+   "query": "// Save fetches snapshot from remote etcd server and saves data to target path.",
+   "identifier": "Save",
+   "definedIn": [
+    "0200.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO201",
+   "query": "// Status returns the snapshot file information.",
+   "identifier": "Status",
+   "definedIn": [
+    "0201.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO202",
+   "query": "// Restore restores a new etcd data directory from given snapshot file.",
+   "identifier": "Restore",
+   "definedIn": [
+    "0202.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO203",
+   "query": "// saveDB copies the database snapshot to the snapshot directory",
+   "identifier": "saveDB",
+   "definedIn": [
+    "0203.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO204",
+   "query": "// saveWALAndSnap creates a WAL for the initial cluster",
+   "identifier": "saveWALAndSnap",
+   "definedIn": [
+    "0204.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO205",
+   "query": "// NewAuthStore creates a new AuthStore.",
+   "identifier": "NewAuthStore",
+   "definedIn": [
+    "0205.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO206",
+   "query": "// NewTokenProvider creates a new token provider.",
+   "identifier": "NewTokenProvider",
+   "definedIn": [
+    "0206.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO207",
+   "query": "// CutPeer drops messages to the specified peer.",
+   "identifier": "CutPeer",
+   "definedIn": [
+    "0207.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO208",
+   "query": "// MendPeer recovers the message dropping behavior of the given peer.",
+   "identifier": "MendPeer",
+   "definedIn": [
+    "0208.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO209",
+   "query": "// the caller of this function must have the peers mutex.",
+   "identifier": "removePeer",
+   "definedIn": [
+    "0209.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO210",
+   "query": "// ActivePeers returns a channel that closes when an initial\n// peer connection has been established. Use this to wait until the\n// first peer connection becomes active.",
+   "identifier": "ActivePeers",
+   "definedIn": [
+    "0210.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO211",
+   "query": "// taken from go's ResolveTCP code but uses configurable ctx",
+   "identifier": "resolveTCPAddrDefault",
+   "definedIn": [
+    "0211.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO212",
+   "query": "// resolveTCPAddrs is a convenience wrapper for net.ResolveTCPAddr.\n// resolveTCPAddrs return a new set of url.URLs, in which all DNS hostnames\n// are resolved.",
+   "identifier": "resolveTCPAddrs",
+   "definedIn": [
+    "0212.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO213",
+   "query": "// urlsEqual checks equality of url.URLS between two arrays.\n// This check pass even if an URL is in hostname and opposite is in IP address.",
+   "identifier": "urlsEqual",
+   "definedIn": [
+    "0213.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO214",
+   "query": "// URLStringsEqual returns \"true\" if given URLs are valid\n// and resolved to same IP addresses. Otherwise, return \"false\"\n// and error, if any.",
+   "identifier": "URLStringsEqual",
+   "definedIn": [
+    "0214.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO215",
+   "query": "// NewLeaseCommand returns the cobra command for \"lease\".",
+   "identifier": "NewLeaseCommand",
+   "definedIn": [
+    "0215.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO216",
+   "query": "// NewLeaseGrantCommand returns the cobra command for \"lease grant\".",
+   "identifier": "NewLeaseGrantCommand",
+   "definedIn": [
+    "0216.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO217",
+   "query": "// leaseGrantCommandFunc executes the \"lease grant\" command.",
+   "identifier": "leaseGrantCommandFunc",
+   "definedIn": [
+    "0217.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO218",
+   "query": "// NewLeaseRevokeCommand returns the cobra command for \"lease revoke\".",
+   "identifier": "NewLeaseRevokeCommand",
+   "definedIn": [
+    "0218.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO219",
+   "query": "// leaseRevokeCommandFunc executes the \"lease grant\" command.",
+   "identifier": "leaseRevokeCommandFunc",
+   "definedIn": [
+    "0219.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO220",
+   "query": "// NewLeaseTimeToLiveCommand returns the cobra command for \"lease timetolive\".",
+   "identifier": "NewLeaseTimeToLiveCommand",
+   "definedIn": [
+    "0220.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO221",
+   "query": "// leaseTimeToLiveCommandFunc executes the \"lease timetolive\" command.",
+   "identifier": "leaseTimeToLiveCommandFunc",
+   "definedIn": [
+    "0221.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO222",
+   "query": "// NewLeaseListCommand returns the cobra command for \"lease list\".",
+   "identifier": "NewLeaseListCommand",
+   "definedIn": [
+    "0222.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO223",
+   "query": "// leaseListCommandFunc executes the \"lease list\" command.",
+   "identifier": "leaseListCommandFunc",
+   "definedIn": [
+    "0223.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO224",
+   "query": "// NewLeaseKeepAliveCommand returns the cobra command for \"lease keep-alive\".",
+   "identifier": "NewLeaseKeepAliveCommand",
+   "definedIn": [
+    "0224.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO225",
+   "query": "// leaseKeepAliveCommandFunc executes the \"lease keep-alive\" command.",
+   "identifier": "leaseKeepAliveCommandFunc",
+   "definedIn": [
+    "0225.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO226",
+   "query": "// CheckInitialHashKV compares initial hash values with its peers\n// before serving any peer/client traffic. Only mismatch when hashes\n// are different at requested revision, with same compact revision.",
+   "identifier": "CheckInitialHashKV",
+   "definedIn": [
+    "0226.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO227",
+   "query": "// NewAlarmCommand returns the cobra command for \"alarm\".",
+   "identifier": "NewAlarmCommand",
+   "definedIn": [
+    "0227.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO228",
+   "query": "// alarmDisarmCommandFunc executes the \"alarm disarm\" command.",
+   "identifier": "alarmDisarmCommandFunc",
+   "definedIn": [
+    "0228.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO229",
+   "query": "// alarmListCommandFunc executes the \"alarm list\" command.",
+   "identifier": "alarmListCommandFunc",
+   "definedIn": [
+    "0229.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO230",
+   "query": "// Flags returns etcd flags in string slice.",
+   "identifier": "Flags",
+   "definedIn": [
+    "0230.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO231",
+   "query": "// EmbedConfig returns etcd embed.Config.",
+   "identifier": "EmbedConfig",
+   "definedIn": [
+    "0231.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO232",
+   "query": "// PProfHandlers returns a map of pprof handlers keyed by the HTTP path.",
+   "identifier": "PProfHandlers",
+   "definedIn": [
+    "0232.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO233",
+   "query": "// NewBackendQuota creates a quota layer with the given storage limit.",
+   "identifier": "NewBackendQuota",
+   "definedIn": [
+    "0233.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO234",
+   "query": "// NewClusterProxy takes optional prefix to fetch grpc-proxy member endpoints.\n// The returned channel is closed when there is grpc-proxy endpoint registered\n// and the client's context is canceled so the 'register' loop returns.",
+   "identifier": "NewClusterProxy",
+   "definedIn": [
+    "0234.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO235",
+   "query": "// MemberList wraps member list API with following rules:\n// - If 'advaddr' is not empty and 'prefix' is not empty, return registered member lists via resolver\n// - If 'advaddr' is not empty and 'prefix' is not empty and registered grpc-proxy members haven't been fetched, return the 'advaddr'\n// - If 'advaddr' is not empty and 'prefix' is empty, return 'advaddr' without forcing it to 'register'\n// - If 'advaddr' is empty, forward to member list API",
+   "identifier": "MemberList",
+   "definedIn": [
+    "0235.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO236",
+   "query": "// NewHandler returns an http Handler for lease renewals",
+   "identifier": "NewHandler",
+   "definedIn": [
+    "0236.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO237",
+   "query": "// RenewHTTP renews a lease at a given primary server.\n// TODO: Batch request in future?",
+   "identifier": "RenewHTTP",
+   "definedIn": [
+    "0237.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO238",
+   "query": "// TimeToLiveHTTP retrieves lease information of the given lease ID.",
+   "identifier": "TimeToLiveHTTP",
+   "definedIn": [
+    "0238.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO239",
+   "query": "// newWatcherBatch maps watchers to their matched events. It enables quick\n// events look up by watcher.",
+   "identifier": "newWatcherBatch",
+   "definedIn": [
+    "0239.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO240",
+   "query": "// add puts a watcher in the group.",
+   "identifier": "add",
+   "definedIn": [
+    "0240.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO241",
+   "query": "// contains is whether the given key has a watcher in the group.",
+   "identifier": "contains",
+   "definedIn": [
+    "0241.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO242",
+   "query": "// delete removes a watcher from the group.",
+   "identifier": "delete",
+   "definedIn": [
+    "0242.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO243",
+   "query": "// choose selects watchers from the watcher group to update",
+   "identifier": "choose",
+   "definedIn": [
+    "0243.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO244",
+   "query": "// watcherSetByKey gets the set of watchers that receive events on the given key.",
+   "identifier": "watcherSetByKey",
+   "definedIn": [
+    "0244.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO245",
+   "query": "// Compare on an interval gives == if the interval overlaps.",
+   "identifier": "Compare",
+   "definedIn": [
+    "0245.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO246",
+   "query": "// successor is the next in-order node in the tree",
+   "identifier": "successor",
+   "definedIn": [
+    "0246.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO247",
+   "query": "// updateMax updates the maximum values for a node and its ancestors",
+   "identifier": "updateMax",
+   "definedIn": [
+    "0247.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO248",
+   "query": "// visit will call a node visitor on each node that overlaps the given interval",
+   "identifier": "visit",
+   "definedIn": [
+    "0248.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO249",
+   "query": "// Delete removes the node with the given interval from the tree, returning\n// true if a node is in fact removed.",
+   "identifier": "Delete",
+   "definedIn": [
+    "0249.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO250",
+   "query": "// Insert adds a node with the given interval into the tree.",
+   "identifier": "Insert",
+   "definedIn": [
+    "0250.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO251",
+   "query": "// rotateLeft moves x so it is left of its right child",
+   "identifier": "rotateLeft",
+   "definedIn": [
+    "0251.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO252",
+   "query": "// replaceParent replaces x's parent with y",
+   "identifier": "replaceParent",
+   "definedIn": [
+    "0252.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO253",
+   "query": "// MaxHeight is the expected maximum tree height given the number of nodes",
+   "identifier": "MaxHeight",
+   "definedIn": [
+    "0253.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO254",
+   "query": "// Visit calls a visitor function on every tree node intersecting the given interval.\n// It will visit each interval [x, y) in ascending order sorted on x.",
+   "identifier": "Visit",
+   "definedIn": [
+    "0254.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO255",
+   "query": "// find the exact node for a given interval",
+   "identifier": "find",
+   "definedIn": [
+    "0255.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO256",
+   "query": "// Find gets the IntervalValue for the node matching the given interval",
+   "identifier": "Find",
+   "definedIn": [
+    "0256.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO257",
+   "query": "// Intersects returns true if there is some tree node intersecting the given interval.",
+   "identifier": "Intersects",
+   "definedIn": [
+    "0257.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO258",
+   "query": "// Contains returns true if the interval tree's keys cover the entire given interval.",
+   "identifier": "Contains",
+   "definedIn": [
+    "0258.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO259",
+   "query": "// Stab returns a slice with all elements in the tree intersecting the interval.",
+   "identifier": "Stab",
+   "definedIn": [
+    "0259.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO260",
+   "query": "// Union merges a given interval tree into the receiver.",
+   "identifier": "Union",
+   "definedIn": [
+    "0260.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO261",
+   "query": "// NewExactReadCloser returns a ReadCloser that returns errors if the underlying\n// reader does not read back exactly the requested number of bytes.",
+   "identifier": "NewExactReadCloser",
+   "definedIn": [
+    "0261.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO262",
+   "query": "// NewElection returns a new election on a given key prefix.",
+   "identifier": "NewElection",
+   "definedIn": [
+    "0262.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO263",
+   "query": "// ResumeElection initializes an election with a known leader.",
+   "identifier": "ResumeElection",
+   "definedIn": [
+    "0263.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO264",
+   "query": "// Campaign puts a value as eligible for the election on the prefix\n// key.\n// Multiple sessions can participate in the election for the\n// same prefix, but only one can be the leader at a time.\n//\n// If the context is 'context.TODO()/context.Background()', the Campaign\n// will continue to be blocked for other keys to be deleted, unless server\n// returns a non-recoverable error (e.g. ErrCompacted).\n// Otherwise, until the context is not cancelled or timed-out, Campaign will\n// continue to be blocked until it becomes the leader.",
+   "identifier": "Campaign",
+   "definedIn": [
+    "0264.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO265",
+   "query": "// Proclaim lets the leader announce a new value without another election.",
+   "identifier": "Proclaim",
+   "definedIn": [
+    "0265.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO266",
+   "query": "// Resign lets a leader start a new election.",
+   "identifier": "Resign",
+   "definedIn": [
+    "0266.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO267",
+   "query": "// Leader returns the leader value for the current election.",
+   "identifier": "Leader",
+   "definedIn": [
+    "0267.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO268",
+   "query": "// Observe returns a channel that reliably observes ordered leader proposals\n// as GetResponse values on every current elected leader key. It will not\n// necessarily fetch all historical leader updates, but will always post the\n// most recent leader value.\n//\n// The channel closes when the context is canceled or the underlying watcher\n// is otherwise disrupted.",
+   "identifier": "Observe",
+   "definedIn": [
+    "0268.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO269",
+   "query": "// check whether request satisfies the quota. If there is not enough space,\n// ignore request and raise the free space alarm.",
+   "identifier": "check",
+   "definedIn": [
+    "0269.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO270",
+   "query": "// NewExecWatchCommand returns the CLI command for \"exec-watch\".",
+   "identifier": "NewExecWatchCommand",
+   "definedIn": [
+    "0270.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO271",
+   "query": "// execWatchCommandFunc executes the \"exec-watch\" command.",
+   "identifier": "execWatchCommandFunc",
+   "definedIn": [
+    "0271.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO272",
+   "query": "// NewListener returns a listener for raft message transfer between peers.\n// It uses timeout listener to identify broken streams promptly.",
+   "identifier": "NewListener",
+   "definedIn": [
+    "0272.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO273",
+   "query": "// NewRoundTripper returns a roundTripper used to send requests\n// to rafthttp listener of remote peers.",
+   "identifier": "NewRoundTripper",
+   "definedIn": [
+    "0273.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO274",
+   "query": "// newStreamRoundTripper returns a roundTripper used to send stream requests\n// to rafthttp listener of remote peers.\n// Read/write timeout is set for stream roundTripper to promptly\n// find out broken status, which minimizes the number of messages\n// sent on broken connection.",
+   "identifier": "newStreamRoundTripper",
+   "definedIn": [
+    "0274.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO275",
+   "query": "// createPostRequest creates a HTTP POST request that sends raft message.",
+   "identifier": "createPostRequest",
+   "definedIn": [
+    "0275.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO276",
+   "query": "// checkPostResponse checks the response of the HTTP POST request that sends\n// raft message.",
+   "identifier": "checkPostResponse",
+   "definedIn": [
+    "0276.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO277",
+   "query": "// compareMajorMinorVersion returns an integer comparing two versions based on\n// their major and minor version. The result will be 0 if a==b, -1 if a < b,\n// and 1 if a > b.",
+   "identifier": "compareMajorMinorVersion",
+   "definedIn": [
+    "0277.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO278",
+   "query": "// serverVersion returns the server version from the given header.",
+   "identifier": "serverVersion",
+   "definedIn": [
+    "0278.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO279",
+   "query": "// checkVersionCompatibility checks whether the given version is compatible\n// with the local version.",
+   "identifier": "checkVersionCompatibility",
+   "definedIn": [
+    "0279.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO280",
+   "query": "// setPeerURLsHeader reports local urls for peer discovery",
+   "identifier": "setPeerURLsHeader",
+   "definedIn": [
+    "0280.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO281",
+   "query": "// addRemoteFromRequest adds a remote peer according to an http request header",
+   "identifier": "addRemoteFromRequest",
+   "definedIn": [
+    "0281.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO282",
+   "query": "// NewKeysAPIWithPrefix acts like NewKeysAPI, but allows the caller\n// to provide a custom base URL path. This should only be used in\n// very rare cases.",
+   "identifier": "NewKeysAPIWithPrefix",
+   "definedIn": [
+    "0282.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO283",
+   "query": "// TTLDuration returns the Node's TTL as a time.Duration object",
+   "identifier": "TTLDuration",
+   "definedIn": [
+    "0283.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO284",
+   "query": "// v2KeysURL forms a URL representing the location of a key.\n// The endpoint argument represents the base URL of an etcd\n// server. The prefix is the path needed to route from the\n// provided endpoint's path to the root of the keys API\n// (typically \"/v2/keys\").",
+   "identifier": "v2KeysURL",
+   "definedIn": [
+    "0284.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO285",
+   "query": "// SetFlagsFromEnv parses all registered flags in the given flagset,\n// and if they are not already set it attempts to set their values from\n// environment variables. Environment variables take the name of the flag but\n// are UPPERCASE, have the given prefix  and any dashes are replaced by\n// underscores - for example: some-flag => ETCD_SOME_FLAG",
+   "identifier": "SetFlagsFromEnv",
+   "definedIn": [
+    "0285.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO286",
+   "query": "// SetPflagsFromEnv is similar to SetFlagsFromEnv. However, the accepted flagset type is pflag.FlagSet\n// and it does not do any logging.",
+   "identifier": "SetPflagsFromEnv",
+   "definedIn": [
+    "0286.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO287",
+   "query": "// FlagToEnv converts flag string to upper-case environment variable key string.",
+   "identifier": "FlagToEnv",
+   "definedIn": [
+    "0287.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO288",
+   "query": "// excerpt replaces middle part with ellipsis and returns a double-quoted\n// string safely escaped with Go syntax.",
+   "identifier": "excerpt",
+   "definedIn": [
+    "0288.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO289",
+   "query": "// The 9 pass functions below takes the raftpb.Entry and return if the entry should be printed and the type of entry,\n// the type of the entry will used in the following print function",
+   "identifier": "passConfChange",
+   "definedIn": [
+    "0289.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO290",
+   "query": "// The 4 print functions below print the entry format based on there types\n// printInternalRaftRequest is used to print entry information for IRRRange, IRRPut,\n// IRRDeleteRange and IRRTxn entries",
+   "identifier": "printInternalRaftRequest",
+   "definedIn": [
+    "0290.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO291",
+   "query": "// evaluateEntrytypeFlag evaluates entry-type flag and choose proper filter/filters to filter entries",
+   "identifier": "evaluateEntrytypeFlag",
+   "definedIn": [
+    "0291.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO292",
+   "query": "//  listEntriesType filters and prints entries based on the entry-type flag,",
+   "identifier": "listEntriesType",
+   "definedIn": [
+    "0292.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO293",
+   "query": "// newLog returns log using the given storage and default options. It\n// recovers the log to the state that it just commits and applies the\n// latest snapshot.",
+   "identifier": "newLog",
+   "definedIn": [
+    "0293.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO294",
+   "query": "// newLogWithSize returns a log using the given storage and max\n// message size.",
+   "identifier": "newLogWithSize",
+   "definedIn": [
+    "0294.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO295",
+   "query": "// maybeAppend returns (0, false) if the entries cannot be appended. Otherwise,\n// it returns (last index of new entries, true).",
+   "identifier": "maybeAppend",
+   "definedIn": [
+    "0295.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO296",
+   "query": "// findConflict finds the index of the conflict.\n// It returns the first pair of conflicting entries between the existing\n// entries and the given entries, if there are any.\n// If there is no conflicting entries, and the existing entries contains\n// all the given entries, zero will be returned.\n// If there is no conflicting entries, but the given entries contains new\n// entries, the index of the first new entry will be returned.\n// An entry is considered to be conflicting if it has the same index but\n// a different term.\n// The first entry MUST have an index equal to the argument 'from'.\n// The index of the given entries MUST be continuously increasing.",
+   "identifier": "findConflict",
+   "definedIn": [
+    "0296.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO297",
+   "query": "// nextEnts returns all the available entries for execution.\n// If applied is smaller than the index of snapshot, it returns all committed\n// entries after the index of snapshot.",
+   "identifier": "nextEnts",
+   "definedIn": [
+    "0297.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO298",
+   "query": "// hasNextEnts returns if there is any available entries for execution. This\n// is a fast check without heavy raftLog.slice() in raftLog.nextEnts().",
+   "identifier": "hasNextEnts",
+   "definedIn": [
+    "0298.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO299",
+   "query": "// allEntries returns all entries in the log.",
+   "identifier": "allEntries",
+   "definedIn": [
+    "0299.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO300",
+   "query": "// isUpToDate determines if the given (lastIndex,term) log is more up-to-date\n// by comparing the index and term of the last entries in the existing logs.\n// If the logs have last entries with different terms, then the log with the\n// later term is more up-to-date. If the logs end with the same term, then\n// whichever log has the larger lastIndex is more up-to-date. If the logs are\n// the same, the given log is up-to-date.",
+   "identifier": "isUpToDate",
+   "definedIn": [
+    "0300.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO301",
+   "query": "// slice returns a slice of log entries from lo through hi-1, inclusive.",
+   "identifier": "slice",
+   "definedIn": [
+    "0301.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO302",
+   "query": "// l.firstIndex <= lo <= hi <= l.firstIndex + len(l.entries)",
+   "identifier": "mustCheckOutOfBounds",
+   "definedIn": [
+    "0302.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO303",
+   "query": "// NewSession gets the leased session for a client.",
+   "identifier": "NewSession",
+   "definedIn": [
+    "0303.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO304",
+   "query": "// Close orphans the session and revokes the session lease.",
+   "identifier": "Close",
+   "definedIn": [
+    "0304.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO305",
+   "query": "// WithTTL configures the session's TTL in seconds.\n// If TTL is <= 0, the default 60 seconds TTL will be used.",
+   "identifier": "WithTTL",
+   "definedIn": [
+    "0305.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO306",
+   "query": "// WithLease specifies the existing leaseID to be used for the session.\n// This is useful in process restart scenario, for example, to reclaim\n// leadership from an election prior to restart.",
+   "identifier": "WithLease",
+   "definedIn": [
+    "0306.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO307",
+   "query": "// WithContext assigns a context to the session instead of defaulting to\n// using the client context. This is useful for canceling NewSession and\n// Close operations immediately without having to close the client. If the\n// context is canceled before Close() completes, the session's lease will be\n// abandoned and left to expire instead of being revoked.",
+   "identifier": "WithContext",
+   "definedIn": [
+    "0307.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO308",
+   "query": "// addRequest adds a read only reuqest into readonly struct.\n// `index` is the commit index of the raft state machine when it received\n// the read only request.\n// `m` is the original read only request message from the local or remote node.",
+   "identifier": "addRequest",
+   "definedIn": [
+    "0308.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO309",
+   "query": "// recvAck notifies the readonly struct that the raft state machine received\n// an acknowledgment of the heartbeat that attached with the read only request\n// context.",
+   "identifier": "recvAck",
+   "definedIn": [
+    "0309.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO310",
+   "query": "// advance advances the read only request queue kept by the readonly struct.\n// It dequeues the requests until it finds the read only request that has\n// the same context as the given `m`.",
+   "identifier": "advance",
+   "definedIn": [
+    "0310.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO311",
+   "query": "// lastPendingRequestCtx returns the context of the last pending read only\n// request in readonly struct.",
+   "identifier": "lastPendingRequestCtx",
+   "definedIn": [
+    "0311.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO312",
+   "query": "// NewServer creates a new EtcdServer from the supplied configuration. The\n// configuration is considered static for the lifetime of the EtcdServer.",
+   "identifier": "NewServer",
+   "definedIn": [
+    "0312.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO313",
+   "query": "// Start performs any initialization of the Server necessary for it to\n// begin serving requests. It must be called before Do or Process.\n// Start must be non-blocking; any long-running server functionality\n// should be implemented in goroutines.",
+   "identifier": "Start",
+   "definedIn": [
+    "0313.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO314",
+   "query": "// start prepares and starts server in a new goroutine. It is no longer safe to\n// modify a server's fields after it has been sent to Start.\n// This function is just used for testing.",
+   "identifier": "start",
+   "definedIn": [
+    "0314.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO315",
+   "query": "// Process takes a raft message and applies it to the server's raft state\n// machine, respecting any timeout of the given context.",
+   "identifier": "Process",
+   "definedIn": [
+    "0315.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO316",
+   "query": "// ReportSnapshot reports snapshot sent status to the raft state machine,\n// and clears the used snapshot from the snapshot store.",
+   "identifier": "ReportSnapshot",
+   "definedIn": [
+    "0316.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO317",
+   "query": "// MoveLeader transfers the leader to the given transferee.",
+   "identifier": "MoveLeader",
+   "definedIn": [
+    "0317.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO318",
+   "query": "// TransferLeadership transfers the leader to the chosen transferee.",
+   "identifier": "TransferLeadership",
+   "definedIn": [
+    "0318.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO319",
+   "query": "// Stop stops the server gracefully, and shuts down the running goroutine.\n// Stop should be called after a Start(s), otherwise it will block forever.\n// When stopping leader, Stop transfers its leadership to one of its peers\n// before stopping the server.\n// Stop terminates the Server and performs any necessary finalization.\n// Do and Process cannot be called after Stop has been invoked.",
+   "identifier": "Stop",
+   "definedIn": [
+    "0319.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO320",
+   "query": "// configure sends a configuration change through consensus and\n// then waits for it to be applied to the server. It\n// will block until the change is performed or there is an error.",
+   "identifier": "configure",
+   "definedIn": [
+    "0320.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO321",
+   "query": "// sync proposes a SYNC request and is non-blocking.\n// This makes no guarantee that the request will be proposed or performed.\n// The request will be canceled after the given timeout.",
+   "identifier": "sync",
+   "definedIn": [
+    "0321.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO322",
+   "query": "// publish registers server information into the cluster. The information\n// is the JSON representation of this server's member struct, updated with the\n// static clientURLs of the server.\n// The function keeps attempting to register until it succeeds,\n// or its server is stopped.",
+   "identifier": "publish",
+   "definedIn": [
+    "0322.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO323",
+   "query": "// apply takes entries received from Raft (after it has been committed) and\n// applies them to the current state of the EtcdServer.\n// The given entries should not be empty.",
+   "identifier": "apply",
+   "definedIn": [
+    "0323.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO324",
+   "query": "// applyEntryNormal apples an EntryNormal type raftpb request to the EtcdServer",
+   "identifier": "applyEntryNormal",
+   "definedIn": [
+    "0324.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO325",
+   "query": "// applyConfChange applies a ConfChange to the server. It is only\n// invoked with a ConfChange that has already passed through Raft",
+   "identifier": "applyConfChange",
+   "definedIn": [
+    "0325.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO326",
+   "query": "// TODO: non-blocking snapshot",
+   "identifier": "snapshot",
+   "definedIn": [
+    "0326.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO327",
+   "query": "// CutPeer drops messages to the specified peer.",
+   "identifier": "CutPeer",
+   "definedIn": [
+    "0327.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO328",
+   "query": "// monitorVersions checks the member's version every monitorVersionInterval.\n// It updates the cluster version if all members agrees on a higher one.\n// It prints out log if there is a member with a higher version than the\n// local version.",
+   "identifier": "monitorVersions",
+   "definedIn": [
+    "0328.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO329",
+   "query": "// goAttach creates a goroutine on a given function and tracks it using\n// the etcdserver waitgroup.",
+   "identifier": "goAttach",
+   "definedIn": [
+    "0329.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO330",
+   "query": "// NewRoundrobinBalanced returns a new roundrobin balanced picker.",
+   "identifier": "NewRoundrobinBalanced",
+   "definedIn": [
+    "0330.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO331",
+   "query": "// Pick is called for every client request.",
+   "identifier": "Pick",
+   "definedIn": [
+    "0331.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO332",
+   "query": "// NewTLSListener handshakes TLS connections and performs optional CRL checking.",
+   "identifier": "NewTLSListener",
+   "definedIn": [
+    "0332.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO333",
+   "query": "// acceptLoop launches each TLS handshake in a separate goroutine\n// to prevent a hanging TLS connection from blocking other connections.",
+   "identifier": "acceptLoop",
+   "definedIn": [
+    "0333.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO334",
+   "query": "// SetEndpoints updates the endpoints for ResolverGroup. All registered resolver are updated\n// immediately with the new endpoints.",
+   "identifier": "SetEndpoints",
+   "definedIn": [
+    "0334.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO335",
+   "query": "// Target constructs a endpoint target using the endpoint id of the ResolverGroup.",
+   "identifier": "Target",
+   "definedIn": [
+    "0335.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO336",
+   "query": "// Target constructs a endpoint resolver target.",
+   "identifier": "Target",
+   "definedIn": [
+    "0336.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO337",
+   "query": "// Build creates or reuses an etcd resolver for the etcd cluster name identified by the authority part of the target.",
+   "identifier": "Build",
+   "definedIn": [
+    "0337.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO338",
+   "query": "// TODO: use balancer.epsToAddrs",
+   "identifier": "epsToAddrs",
+   "definedIn": [
+    "0338.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO339",
+   "query": "// ParseEndpoint endpoint parses an endpoint of the form\n// (http|https)://<host>*|(unix|unixs)://<path>)\n// and returns a protocol ('tcp' or 'unix'),\n// host (or filepath if a unix socket),\n// scheme (http, https, unix, unixs).",
+   "identifier": "ParseEndpoint",
+   "definedIn": [
+    "0339.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO340",
+   "query": "// ParseTarget parses a endpoint://<id>/<endpoint> string and returns the parsed id and endpoint.\n// If the target is malformed, an error is returned.",
+   "identifier": "ParseTarget",
+   "definedIn": [
+    "0340.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO341",
+   "query": "// ParseHostPort splits a \"<host>:<port>\" string into the host and port parts.\n// The port part is optional.",
+   "identifier": "ParseHostPort",
+   "definedIn": [
+    "0341.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO342",
+   "query": "// Handle interprets r and performs an operation on s.store according to r.Method\n// and other fields. If r.Method is \"POST\", \"PUT\", \"DELETE\", or a \"GET\" with\n// Quorum == true, r will be sent through consensus before performing its\n// respective operation. Do will block until an action is performed or there is\n// an error.",
+   "identifier": "Handle",
+   "definedIn": [
+    "0342.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO343",
+   "query": "// NewElectionCommand returns the cobra command for \"election runner\".",
+   "identifier": "NewElectionCommand",
+   "definedIn": [
+    "0343.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO344",
+   "query": "// nodeToMember builds member from a key value node.\n// the child nodes of the given node MUST be sorted by key.",
+   "identifier": "nodeToMember",
+   "definedIn": [
+    "0344.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO345",
+   "query": "// NewTmpBackend creates a backend implementation for testing.",
+   "identifier": "NewTmpBackend",
+   "definedIn": [
+    "0345.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO346",
+   "query": "// newRevision creates a new instance of Revisonal compactor that purges\n// the log older than retention revisions from the current revision.",
+   "identifier": "newRevision",
+   "definedIn": [
+    "0346.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO347",
+   "query": "// Run runs revision-based compactor.",
+   "identifier": "Run",
+   "definedIn": [
+    "0347.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO348",
+   "query": "// Pause pauses revision-based compactor.",
+   "identifier": "Pause",
+   "definedIn": [
+    "0348.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO349",
+   "query": "// Resume resumes revision-based compactor.",
+   "identifier": "Resume",
+   "definedIn": [
+    "0349.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO350",
+   "query": "// voteResponseType maps vote and prevote message types to their corresponding responses.",
+   "identifier": "voteRespMsgType",
+   "definedIn": [
+    "0350.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO351",
+   "query": "// DescribeMessage returns a concise human-readable description of a\n// Message for debugging.",
+   "identifier": "DescribeMessage",
+   "definedIn": [
+    "0351.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO352",
+   "query": "// DescribeEntry returns a concise human-readable description of an\n// Entry for debugging.",
+   "identifier": "DescribeEntry",
+   "definedIn": [
+    "0352.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO353",
+   "query": "// DescribeEntries calls DescribeEntry for each Entry, adding a newline to\n// each.",
+   "identifier": "DescribeEntries",
+   "definedIn": [
+    "0353.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO354",
+   "query": "// watchCommandFunc executes the \"watch\" command.",
+   "identifier": "watchCommandFunc",
+   "definedIn": [
+    "0354.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO355",
+   "query": "// SetLogger sets client-side Logger.",
+   "identifier": "SetLogger",
+   "definedIn": [
+    "0355.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO356",
+   "query": "// GetLogger returns the current logutil.Logger.",
+   "identifier": "GetLogger",
+   "definedIn": [
+    "0356.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO357",
+   "query": "// New creates a clientv3 client that wraps an in-process EtcdServer. Instead\n// of making gRPC calls through sockets, the client makes direct function calls\n// to the etcd server through its api/v3rpc function interfaces.",
+   "identifier": "New",
+   "definedIn": [
+    "0357.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO358",
+   "query": "// maybeFirstIndex returns the index of the first possible entry in entries\n// if it has a snapshot.",
+   "identifier": "maybeFirstIndex",
+   "definedIn": [
+    "0358.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO359",
+   "query": "// maybeLastIndex returns the last index if it has at least one\n// unstable entry or snapshot.",
+   "identifier": "maybeLastIndex",
+   "definedIn": [
+    "0359.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO360",
+   "query": "// maybeTerm returns the term of the entry at index i, if there\n// is any.",
+   "identifier": "maybeTerm",
+   "definedIn": [
+    "0360.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO361",
+   "query": "// shrinkEntriesArray discards the underlying array used by the entries slice\n// if most of it isn't being used. This avoids holding references to a bunch of\n// potentially large entries that aren't needed anymore. Simply clearing the\n// entries wouldn't be safe because clients might still be using them.",
+   "identifier": "shrinkEntriesArray",
+   "definedIn": [
+    "0361.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO362",
+   "query": "// u.offset <= lo <= hi <= u.offset+len(u.entries)",
+   "identifier": "mustCheckOutOfBounds",
+   "definedIn": [
+    "0362.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO363",
+   "query": "// HandleMetrics performs a GET request against etcd endpoint and returns '/metrics'.",
+   "identifier": "HandleMetrics",
+   "definedIn": [
+    "0363.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO364",
+   "query": "// SaveSnap saves the snapshot to disk and release the locked\n// wal files since they will not be used.",
+   "identifier": "SaveSnap",
+   "definedIn": [
+    "0364.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO365",
+   "query": "// New creates a new etcdv3 client from a given configuration.",
+   "identifier": "New",
+   "definedIn": [
+    "0365.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO366",
+   "query": "// NewCtxClient creates a client with a context but no underlying grpc\n// connection. This is useful for embedded cases that override the\n// service interface implementations and do not need connection management.",
+   "identifier": "NewCtxClient",
+   "definedIn": [
+    "0366.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO367",
+   "query": "// NewFromURL creates a new etcdv3 client from a URL.",
+   "identifier": "NewFromURL",
+   "definedIn": [
+    "0367.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO368",
+   "query": "// Close shuts down the client's etcd connections.",
+   "identifier": "Close",
+   "definedIn": [
+    "0368.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO369",
+   "query": "// Endpoints lists the registered endpoints for the client.",
+   "identifier": "Endpoints",
+   "definedIn": [
+    "0369.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO370",
+   "query": "// SetEndpoints updates client's endpoints.",
+   "identifier": "SetEndpoints",
+   "definedIn": [
+    "0370.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO371",
+   "query": "// Sync synchronizes client's endpoints with the known endpoints from the etcd membership.",
+   "identifier": "Sync",
+   "definedIn": [
+    "0371.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO372",
+   "query": "// dialSetupOpts gives the dial opts prior to any authentication.",
+   "identifier": "dialSetupOpts",
+   "definedIn": [
+    "0372.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO373",
+   "query": "// Dial connects to a single endpoint using the client's config.",
+   "identifier": "Dial",
+   "definedIn": [
+    "0373.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO374",
+   "query": "// dialWithBalancer dials the client's current load balanced resolver group.  The scheme of the host\n// of the provided endpoint determines the scheme used for all endpoints of the client connection.",
+   "identifier": "dialWithBalancer",
+   "definedIn": [
+    "0374.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO375",
+   "query": "// dial configures and dials any grpc balancer target.",
+   "identifier": "dial",
+   "definedIn": [
+    "0375.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO376",
+   "query": "// WithRequireLeader requires client requests to only succeed\n// when the cluster has a leader.",
+   "identifier": "WithRequireLeader",
+   "definedIn": [
+    "0376.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO377",
+   "query": "// roundRobinQuorumBackoff retries against quorum between each backoff.\n// This is intended for use with a round robin load balancer.",
+   "identifier": "roundRobinQuorumBackoff",
+   "definedIn": [
+    "0377.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO378",
+   "query": "// isHaltErr returns true if the given error and context indicate no forward\n// progress can be made, even after reconnecting.",
+   "identifier": "isHaltErr",
+   "definedIn": [
+    "0378.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO379",
+   "query": "// IsConnCanceled returns true, if error is from a closed gRPC connection.\n// ref. https://github.com/grpc/grpc-go/pull/1854",
+   "identifier": "IsConnCanceled",
+   "definedIn": [
+    "0379.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO380",
+   "query": "// NewLease wraps a Lease interface to filter for only keys with a prefix\n// and remove that prefix when fetching attached keys through TimeToLive.",
+   "identifier": "NewLease",
+   "definedIn": [
+    "0380.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO381",
+   "query": "// serveHttpKVAPI starts a key-value server with a GET/PUT API and listens.",
+   "identifier": "serveHttpKVAPI",
+   "definedIn": [
+    "0381.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO382",
+   "query": "// IsCreate returns true if the event tells that the key is newly created.",
+   "identifier": "IsCreate",
+   "definedIn": [
+    "0382.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO383",
+   "query": "// Err is the error value if this WatchResponse holds an error.",
+   "identifier": "Err",
+   "definedIn": [
+    "0383.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO384",
+   "query": "// IsProgressNotify returns true if the WatchResponse is progress notification.",
+   "identifier": "IsProgressNotify",
+   "definedIn": [
+    "0384.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO385",
+   "query": "// Watch posts a watch request to run() and waits for a new watcher channel",
+   "identifier": "Watch",
+   "definedIn": [
+    "0385.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO386",
+   "query": "// RequestProgress requests a progress notify response be sent in all watch channels.",
+   "identifier": "RequestProgress",
+   "definedIn": [
+    "0386.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO387",
+   "query": "// run is the root of the goroutines for managing a watcher client",
+   "identifier": "run",
+   "definedIn": [
+    "0387.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO388",
+   "query": "// nextResume chooses the next resuming to register with the grpc stream. Abandoned\n// streams are marked as nil in the queue since the head must wait for its inflight registration.",
+   "identifier": "nextResume",
+   "definedIn": [
+    "0388.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO389",
+   "query": "// dispatchEvent sends a WatchResponse to the appropriate watcher stream",
+   "identifier": "dispatchEvent",
+   "definedIn": [
+    "0389.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO390",
+   "query": "// broadcastResponse send a watch response to all watch substreams.",
+   "identifier": "broadcastResponse",
+   "definedIn": [
+    "0390.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO391",
+   "query": "// unicastResponse sends a watch response to a specific watch substream.",
+   "identifier": "unicastResponse",
+   "definedIn": [
+    "0391.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO392",
+   "query": "// serveWatchClient forwards messages from the grpc stream to run()",
+   "identifier": "serveWatchClient",
+   "definedIn": [
+    "0392.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO393",
+   "query": "// serveSubstream forwards watch responses from run() to the subscriber",
+   "identifier": "serveSubstream",
+   "definedIn": [
+    "0393.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO394",
+   "query": "// joinSubstreams waits for all substream goroutines to complete.",
+   "identifier": "joinSubstreams",
+   "definedIn": [
+    "0394.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO395",
+   "query": "// openWatchClient retries opening a watch client until success or halt.\n// manually retry in case \"ws==nil && err==nil\"\n// TODO: remove FailFast=false",
+   "identifier": "openWatchClient",
+   "definedIn": [
+    "0395.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO396",
+   "query": "// toPB converts an internal watch request structure to its protobuf WatchRequest structure.",
+   "identifier": "toPB",
+   "definedIn": [
+    "0396.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO397",
+   "query": "// toPB converts an internal progress request structure to its protobuf WatchRequest structure.",
+   "identifier": "toPB",
+   "definedIn": [
+    "0397.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO398",
+   "query": "// Contains returns whether the set contains the given value",
+   "identifier": "Contains",
+   "definedIn": [
+    "0398.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO399",
+   "query": "// ContainsAll returns whether the set contains all given values",
+   "identifier": "ContainsAll",
+   "definedIn": [
+    "0399.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO400",
+   "query": "// Equals returns whether the contents of two sets are identical",
+   "identifier": "Equals",
+   "definedIn": [
+    "0400.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO401",
+   "query": "// Values returns the values of the Set in an unspecified order.",
+   "identifier": "Values",
+   "definedIn": [
+    "0401.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO402",
+   "query": "// Copy creates a new Set containing the values of the first",
+   "identifier": "Copy",
+   "definedIn": [
+    "0402.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO403",
+   "query": "// Sub removes all elements in other from the set",
+   "identifier": "Sub",
+   "definedIn": [
+    "0403.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO404",
+   "query": "// v2MembersURL add the necessary path to the provided endpoint\n// to route requests to the default v2 members API.",
+   "identifier": "v2MembersURL",
+   "definedIn": [
+    "0404.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO405",
+   "query": "// NewMigrateCommand returns the cobra command for \"migrate\".",
+   "identifier": "NewMigrateCommand",
+   "definedIn": [
+    "0405.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO406",
+   "query": "// newRaftNode initiates a raft instance and returns a committed log entry\n// channel and error channel. Proposals for log updates are sent over the\n// provided the proposal channel. All log entries are replayed over the\n// commit channel, followed by a nil message (to indicate the channel is\n// current), then new log entries. To shutdown, close proposeC and read errorC.",
+   "identifier": "newRaftNode",
+   "definedIn": [
+    "0406.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO407",
+   "query": "// publishEntries writes committed log entries to commit channel and returns\n// whether all entries could be published.",
+   "identifier": "publishEntries",
+   "definedIn": [
+    "0407.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO408",
+   "query": "// openWAL returns a WAL ready for reading.",
+   "identifier": "openWAL",
+   "definedIn": [
+    "0408.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO409",
+   "query": "// replayWAL replays WAL entries into the raft instance.",
+   "identifier": "replayWAL",
+   "definedIn": [
+    "0409.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO410",
+   "query": "// stop closes http, closes all channels, and stops raft.",
+   "identifier": "stop",
+   "definedIn": [
+    "0410.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO411",
+   "query": "// NewWatchCommand returns the cobra command for \"watch\".",
+   "identifier": "NewWatchCommand",
+   "definedIn": [
+    "0411.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO412",
+   "query": "// watchCommandFunc executes the \"watch\" command.",
+   "identifier": "watchCommandFunc",
+   "definedIn": [
+    "0412.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO413",
+   "query": "// \"commandArgs\" is the command arguments after \"spf13/cobra\" parses\n// all \"watch\" command flags, strips out special characters (e.g. \"--\").\n// \"orArgs\" is the raw arguments passed to \"watch\" command\n// (e.g. ./bin/etcdctl watch foo --rev 1 bar).\n// \"--\" characters are invalid arguments for \"spf13/cobra\" library,\n// so no need to handle such cases.",
+   "identifier": "parseWatchArgs",
+   "definedIn": [
+    "0413.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO414",
+   "query": "// InitialState implements the Storage interface.",
+   "identifier": "InitialState",
+   "definedIn": [
+    "0414.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO415",
+   "query": "// SetHardState saves the current HardState.",
+   "identifier": "SetHardState",
+   "definedIn": [
+    "0415.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO416",
+   "query": "// Entries implements the Storage interface.",
+   "identifier": "Entries",
+   "definedIn": [
+    "0416.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO417",
+   "query": "// Term implements the Storage interface.",
+   "identifier": "Term",
+   "definedIn": [
+    "0417.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO418",
+   "query": "// LastIndex implements the Storage interface.",
+   "identifier": "LastIndex",
+   "definedIn": [
+    "0418.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO419",
+   "query": "// FirstIndex implements the Storage interface.",
+   "identifier": "FirstIndex",
+   "definedIn": [
+    "0419.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO420",
+   "query": "// Snapshot implements the Storage interface.",
+   "identifier": "Snapshot",
+   "definedIn": [
+    "0420.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO421",
+   "query": "// ApplySnapshot overwrites the contents of this Storage object with\n// those of the given snapshot.",
+   "identifier": "ApplySnapshot",
+   "definedIn": [
+    "0421.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO422",
+   "query": "// CreateSnapshot makes a snapshot which can be retrieved with Snapshot() and\n// can be used to reconstruct the state at that point.\n// If any configuration changes have been made since the last compaction,\n// the result of the last ApplyConfChange must be passed in.",
+   "identifier": "CreateSnapshot",
+   "definedIn": [
+    "0422.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO423",
+   "query": "// Compact discards all log entries prior to compactIndex.\n// It is the application's responsibility to not attempt to compact an index\n// greater than raftLog.applied.",
+   "identifier": "Compact",
+   "definedIn": [
+    "0423.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO424",
+   "query": "// Append the new entries to storage.\n// TODO (xiangli): ensure the entries are continuous and\n// entries[0].Index > ms.entries[0].Index",
+   "identifier": "Append",
+   "definedIn": [
+    "0424.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO425",
+   "query": "// unreachable notices the picker that the given url is unreachable,\n// and it should use other possible urls.",
+   "identifier": "unreachable",
+   "definedIn": [
+    "0425.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO426",
+   "query": "// NewEndpointCommand returns the cobra command for \"endpoint\".",
+   "identifier": "NewEndpointCommand",
+   "definedIn": [
+    "0426.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO427",
+   "query": "// epHealthCommandFunc executes the \"endpoint-health\" command.",
+   "identifier": "epHealthCommandFunc",
+   "definedIn": [
+    "0427.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO428",
+   "query": "// NewElectCommand returns the cobra command for \"elect\".",
+   "identifier": "NewElectCommand",
+   "definedIn": [
+    "0428.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO429",
+   "query": "// NewDefragCommand returns the cobra command for \"Defrag\".",
+   "identifier": "NewDefragCommand",
+   "definedIn": [
+    "0429.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO430",
+   "query": "// RegisterBuilder creates and registers a builder. Since this function calls balancer.Register, it\n// must be invoked at initialization time.",
+   "identifier": "RegisterBuilder",
+   "definedIn": [
+    "0430.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO431",
+   "query": "// Build is called initially when creating \"ccBalancerWrapper\".\n// \"grpc.Dial\" is called to this client connection.\n// Then, resolved addresses will be handled via \"HandleResolvedAddrs\".",
+   "identifier": "Build",
+   "definedIn": [
+    "0431.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO432",
+   "query": "// HandleResolvedAddrs implements \"grpc/balancer.Balancer\" interface.\n// gRPC sends initial or updated resolved addresses from \"Build\".",
+   "identifier": "HandleResolvedAddrs",
+   "definedIn": [
+    "0432.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO433",
+   "query": "// HandleSubConnStateChange implements \"grpc/balancer.Balancer\" interface.",
+   "identifier": "HandleSubConnStateChange",
+   "definedIn": [
+    "0433.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO434",
+   "query": "// recordTransition records state change happening in every subConn and based on\n// that it evaluates what aggregated state should be.\n// It can only transition between Ready, Connecting and TransientFailure. Other states,\n// Idle and Shutdown are transitioned into by ClientConn; in the beginning of the connection\n// before any subConn is created ClientConn is in idle state. In the end when ClientConn\n// closes it is in Shutdown state.\n//\n// recordTransition should only be called synchronously from the same goroutine.",
+   "identifier": "recordTransition",
+   "definedIn": [
+    "0434.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO435",
+   "query": "// doSerialize handles the auth logic, with permissions checked by \"chk\", for a serialized request \"get\". Returns a non-nil error on authentication failure.",
+   "identifier": "doSerialize",
+   "definedIn": [
+    "0435.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO436",
+   "query": "// send filters out repeated events by discarding revisions older\n// than the last one sent over the watch channel.",
+   "identifier": "send",
+   "definedIn": [
+    "0436.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO437",
+   "query": "// post puts a watch response on the watcher's proxy stream channel",
+   "identifier": "post",
+   "definedIn": [
+    "0437.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO438",
+   "query": "// OriginAllowed determines whether the server will allow a given CORS origin.\n// If CORS is empty, allow all.",
+   "identifier": "OriginAllowed",
+   "definedIn": [
+    "0438.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO439",
+   "query": "// IsHostWhitelisted returns true if the host is whitelisted.\n// If whitelist is empty, allow all.",
+   "identifier": "IsHostWhitelisted",
+   "definedIn": [
+    "0439.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO440",
+   "query": "// Set verifies the argument to be a valid member of the allowed values\n// before setting the underlying flag value.",
+   "identifier": "Set",
+   "definedIn": [
+    "0440.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO441",
+   "query": "// Valids returns the list of valid strings.",
+   "identifier": "Valids",
+   "definedIn": [
+    "0441.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO442",
+   "query": "// NewSelectiveStringValue creates a new string flag\n// for which any one of the given strings is a valid value,\n// and any other value is an error.\n//\n// valids[0] will be default value. Caller must be sure\n// len(valids) != 0 or it will panic.",
+   "identifier": "NewSelectiveStringValue",
+   "definedIn": [
+    "0442.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO443",
+   "query": "// Set verifies the argument to be a valid member of the allowed values\n// before setting the underlying flag value.",
+   "identifier": "Set",
+   "definedIn": [
+    "0443.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO444",
+   "query": "// NewSelectiveStringsValue creates a new string slice flag\n// for which any one of the given strings is a valid value,\n// and any other value is an error.",
+   "identifier": "NewSelectiveStringsValue",
+   "definedIn": [
+    "0444.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO445",
+   "query": "// NewKV wraps a KV instance so that all requests\n// are prefixed with a given string.",
+   "identifier": "NewKV",
+   "definedIn": [
+    "0445.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO446",
+   "query": "// NewTimeoutTransport returns a transport created using the given TLS info.\n// If read/write on the created connection blocks longer than its time limit,\n// it will return timeout error.\n// If read/write timeout is set, transport will not be able to reuse connection.",
+   "identifier": "NewTimeoutTransport",
+   "definedIn": [
+    "0446.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO447",
+   "query": "// Set parses a command line set of URLs formatted like:\n// http://127.0.0.1:2380,http://10.1.1.2:80\n// Implements \"flag.Value\" interface.",
+   "identifier": "Set",
+   "definedIn": [
+    "0447.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO448",
+   "query": "// String implements \"flag.Value\" interface.",
+   "identifier": "String",
+   "definedIn": [
+    "0448.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO449",
+   "query": "// NewURLsValue implements \"url.URL\" slice as flag.Value interface.\n// Given value is to be separated by comma.",
+   "identifier": "NewURLsValue",
+   "definedIn": [
+    "0449.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO450",
+   "query": "// URLsFromFlag returns a slices from url got from the flag.",
+   "identifier": "URLsFromFlag",
+   "definedIn": [
+    "0450.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO451",
+   "query": "// StartEtcd launches the etcd server and HTTP handlers for client/server communication.\n// The returned Etcd.Server is not guaranteed to have joined the cluster. Wait\n// on the Etcd.Server.ReadyNotify() channel to know when it completes and is ready for use.",
+   "identifier": "StartEtcd",
+   "definedIn": [
+    "0451.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO452",
+   "query": "// Close gracefully shuts down all servers/listeners.\n// Client requests will be terminated with request timeout.\n// After timeout, enforce remaning requests be closed immediately.",
+   "identifier": "Close",
+   "definedIn": [
+    "0452.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO453",
+   "query": "// configure peer handlers after rafthttp.Transport started",
+   "identifier": "servePeers",
+   "definedIn": [
+    "0453.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO454",
+   "query": "// GetLogger returns the logger.",
+   "identifier": "GetLogger",
+   "definedIn": [
+    "0454.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO455",
+   "query": "// NewStore returns a new store. It is useful to create a store inside\n// mvcc pkg. It should only be used for testing externally.",
+   "identifier": "NewStore",
+   "definedIn": [
+    "0455.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO456",
+   "query": "// appendMarkTombstone appends tombstone mark to normal revision bytes.",
+   "identifier": "appendMarkTombstone",
+   "definedIn": [
+    "0456.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO457",
+   "query": "// IsDirWriteable checks if dir is writable by writing and removing a file\n// to dir. It returns nil if dir is writable.",
+   "identifier": "IsDirWriteable",
+   "definedIn": [
+    "0457.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO458",
+   "query": "// TouchDirAll is similar to os.MkdirAll. It creates directories with 0700 permission if any directory\n// does not exists. TouchDirAll also ensures the given directory is writable.",
+   "identifier": "TouchDirAll",
+   "definedIn": [
+    "0458.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO459",
+   "query": "// CreateDirAll is similar to TouchDirAll but returns error\n// if the deepest directory was not empty.",
+   "identifier": "CreateDirAll",
+   "definedIn": [
+    "0459.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO460",
+   "query": "// ZeroToEnd zeros a file starting from SEEK_CUR to its SEEK_END. May temporarily\n// shorten the length of the file.",
+   "identifier": "ZeroToEnd",
+   "definedIn": [
+    "0460.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO461",
+   "query": "// Open returns a fresh file for writing. Rename the file before calling\n// Open again or there will be file collisions.",
+   "identifier": "Open",
+   "definedIn": [
+    "0461.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO462",
+   "query": "// NewRaftLogger converts \"*zap.Logger\" to \"raft.Logger\".",
+   "identifier": "NewRaftLogger",
+   "definedIn": [
+    "0462.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO463",
+   "query": "// NewRaftLoggerFromZapCore creates \"raft.Logger\" from \"zap.Core\"\n// and \"zapcore.WriteSyncer\".",
+   "identifier": "NewRaftLoggerFromZapCore",
+   "definedIn": [
+    "0463.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO464",
+   "query": "// NewConfig creates a new clientv3.Config from a yaml file.",
+   "identifier": "NewConfig",
+   "definedIn": [
+    "0464.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO465",
+   "query": "// RegisterElectionHandler registers the http handlers for service Election to \"mux\".\n// The handlers forward requests to the grpc endpoint over \"conn\".",
+   "identifier": "RegisterElectionHandler",
+   "definedIn": [
+    "0465.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO466",
+   "query": "// RegisterElectionHandler registers the http handlers for service Election to \"mux\".\n// The handlers forward requests to the grpc endpoint over the given implementation of \"ElectionClient\".\n// Note: the gRPC framework executes interceptors within the gRPC handler. If the passed in \"ElectionClient\"\n// doesn't go through the normal gRPC flow (creating a gRPC client etc.) then it will be up to the passed in\n// \"ElectionClient\" to call the correct interceptors.",
+   "identifier": "RegisterElectionHandlerClient",
+   "definedIn": [
+    "0466.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO467",
+   "query": "// UpdateCapability updates the enabledMap when the cluster version increases.",
+   "identifier": "UpdateCapability",
+   "definedIn": [
+    "0467.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO468",
+   "query": "// NewLockCommand returns the cobra command for \"lock\".",
+   "identifier": "NewLockCommand",
+   "definedIn": [
+    "0468.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO469",
+   "query": "// raft.Node does not have locks in Raft package",
+   "identifier": "tick",
+   "definedIn": [
+    "0469.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO470",
+   "query": "// start prepares and starts raftNode in a new goroutine. It is no longer safe\n// to modify the fields after it has been started.",
+   "identifier": "start",
+   "definedIn": [
+    "0470.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO471",
+   "query": "// for testing",
+   "identifier": "pauseSending",
+   "definedIn": [
+    "0471.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO472",
+   "query": "// advanceTicks advances ticks of Raft node.\n// This can be used for fast-forwarding election\n// ticks in multi data-center deployments, thus\n// speeding up election process.",
+   "identifier": "advanceTicks",
+   "definedIn": [
+    "0472.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO473",
+   "query": "// getIDs returns an ordered set of IDs included in the given snapshot and\n// the entries. The given snapshot/entries can contain two kinds of\n// ID-related entry:\n// - ConfChangeAddNode, in which case the contained ID will be added into the set.\n// - ConfChangeRemoveNode, in which case the contained ID will be removed from the set.",
+   "identifier": "getIDs",
+   "definedIn": [
+    "0473.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO474",
+   "query": "// createConfigChangeEnts creates a series of Raft entries (i.e.\n// EntryConfChange) to remove the set of given IDs from the cluster. The ID\n// `self` is _not_ removed, even if present in the set.\n// If `self` is not inside the given ids, it creates a Raft entry to add a\n// default member with the given `self`.",
+   "identifier": "createConfigChangeEnts",
+   "definedIn": [
+    "0474.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO475",
+   "query": "// NewAuthCommand returns the cobra command for \"auth\".",
+   "identifier": "NewAuthCommand",
+   "definedIn": [
+    "0475.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO476",
+   "query": "// authEnableCommandFunc executes the \"auth enable\" command.",
+   "identifier": "authEnableCommandFunc",
+   "definedIn": [
+    "0476.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO477",
+   "query": "// authDisableCommandFunc executes the \"auth disable\" command.",
+   "identifier": "authDisableCommandFunc",
+   "definedIn": [
+    "0477.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO478",
+   "query": "// isSafeRetryImmutableRPC returns \"true\" when an immutable request is safe for retry.\n//\n// immutable requests (e.g. Get) should be retried unless it's\n// an obvious server-side error (e.g. rpctypes.ErrRequestTooLarge).\n//\n// Returning \"false\" means retry should stop, since client cannot\n// handle itself even with retries.",
+   "identifier": "isSafeRetryImmutableRPC",
+   "definedIn": [
+    "0478.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO479",
+   "query": "// isSafeRetryMutableRPC returns \"true\" when a mutable request is safe for retry.\n//\n// mutable requests (e.g. Put, Delete, Txn) should only be retried\n// when the status code is codes.Unavailable when initial connection\n// has not been established (no endpoint is up).\n//\n// Returning \"false\" means retry should stop, otherwise it violates\n// write-at-most-once semantics.",
+   "identifier": "isSafeRetryMutableRPC",
+   "definedIn": [
+    "0479.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO480",
+   "query": "// RetryKVClient implements a KVClient.",
+   "identifier": "RetryKVClient",
+   "definedIn": [
+    "0480.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO481",
+   "query": "// RetryLeaseClient implements a LeaseClient.",
+   "identifier": "RetryLeaseClient",
+   "definedIn": [
+    "0481.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO482",
+   "query": "// RetryClusterClient implements a ClusterClient.",
+   "identifier": "RetryClusterClient",
+   "definedIn": [
+    "0482.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO483",
+   "query": "// RetryMaintenanceClient implements a Maintenance.",
+   "identifier": "RetryMaintenanceClient",
+   "definedIn": [
+    "0483.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO484",
+   "query": "// RetryAuthClient implements a AuthClient.",
+   "identifier": "RetryAuthClient",
+   "definedIn": [
+    "0484.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO485",
+   "query": "// NewSetDirCommand returns the CLI command for \"setDir\".",
+   "identifier": "NewSetDirCommand",
+   "definedIn": [
+    "0485.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO486",
+   "query": "// Enter waits for \"count\" processes to enter the barrier then returns",
+   "identifier": "Enter",
+   "definedIn": [
+    "0486.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO487",
+   "query": "// Leave waits for \"count\" processes to leave the barrier then returns",
+   "identifier": "Leave",
+   "definedIn": [
+    "0487.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO488",
+   "query": "// HandleBasic adds handlers to a mux for serving JSON etcd client requests\n// that do not access the v2 store.",
+   "identifier": "HandleBasic",
+   "definedIn": [
+    "0488.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO489",
+   "query": "// TODO: deprecate '/config/local/log' in v3.5",
+   "identifier": "logHandleFunc",
+   "definedIn": [
+    "0489.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO490",
+   "query": "// WriteError logs and writes the given Error to the ResponseWriter\n// If Error is an etcdErr, it is rendered to the ResponseWriter\n// Otherwise, it is assumed to be a StatusInternalServerError",
+   "identifier": "WriteError",
+   "definedIn": [
+    "0490.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO491",
+   "query": "// MemberByName returns a Member with the given name if exists.\n// If more than one member has the given name, it will panic.",
+   "identifier": "MemberByName",
+   "definedIn": [
+    "0491.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO492",
+   "query": "// PeerURLs returns a list of all peer addresses.\n// The returned list is sorted in ascending lexicographical order.",
+   "identifier": "PeerURLs",
+   "definedIn": [
+    "0492.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO493",
+   "query": "// ValidateConfigurationChange takes a proposed ConfChange and\n// ensures that it is still valid.",
+   "identifier": "ValidateConfigurationChange",
+   "definedIn": [
+    "0493.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO494",
+   "query": "// AddMember adds a new Member into the cluster, and saves the given member's\n// raftAttributes into the store. The given member should have empty attributes.\n// A Member with a matching id must not exist.",
+   "identifier": "AddMember",
+   "definedIn": [
+    "0494.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO495",
+   "query": "// RemoveMember removes a member from the store.\n// The given id MUST exist, or the function panics.",
+   "identifier": "RemoveMember",
+   "definedIn": [
+    "0495.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO496",
+   "query": "// ValidateClusterAndAssignIDs validates the local cluster by matching the PeerURLs\n// with the existing cluster. If the validation succeeds, it assigns the IDs\n// from the existing cluster to the local cluster.\n// If the validation fails, an error will be returned.",
+   "identifier": "ValidateClusterAndAssignIDs",
+   "definedIn": [
+    "0496.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO497",
+   "query": "// RangeSince returns all revisions from key(including) to end(excluding)\n// at or after the given rev. The returned slice is sorted in the order\n// of revision.",
+   "identifier": "RangeSince",
+   "definedIn": [
+    "0497.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO498",
+   "query": "// Keep finds all revisions to be kept for a Compaction at the given rev.",
+   "identifier": "Keep",
+   "definedIn": [
+    "0498.go"
+   ],
+   "source": "etcd-io/etcd"
+  },
+  {
+   "id": "CSN_GO499",
+   "query": "// closeRequireLeader scans keepAlives for ctxs that have require leader\n// and closes the associated channels.",
+   "identifier": "closeRequireLeader",
+   "definedIn": [
+    "0499.go"
+   ],
+   "source": "etcd-io/etcd"
+  }
+ ]
+}

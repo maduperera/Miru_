@@ -118,6 +118,11 @@ function varTargets(n: Node): string[] {
       const left = n.childForFieldName("left");
       return left && left.type === "identifier" ? [left.text] : [];
     }
+    case "assignment_expression": {                                // php ($x = ...), js reassignment
+      const left = n.childForFieldName("left");
+      if (left?.type === "variable_name") { const id = firstIdent(left); return id ? [id] : []; }
+      return left && left.type === "identifier" ? [left.text] : [];
+    }
     case "variable_declarator": {                                  // js/ts/java/c#
       const nm = n.childForFieldName("name");
       return nm && IDENT.test(nm.type) ? [nm.text] : [];
@@ -133,12 +138,49 @@ function varTargets(n: Node): string[] {
 
 export interface Extracted { roles: [string, string][]; defs: string[] }
 
-export function extract(root: Node): Extracted {
+// Elixir: no declaration node types — `def foo(a, b) do`, `defmodule X do`, `Mod.fun(x)` are all `call`
+// nodes whose callee is the `target` field; `x = ...` is a binary_operator with operator "=".
+const EX_FUNC = new Set(["def", "defp", "defmacro", "defmacrop", "defguard", "defguardp", "defdelegate"]);
+const EX_CLASS = new Set(["defmodule", "defprotocol", "defimpl", "defstruct", "defexception"]);
+
+function elixirCall(n: Node, defsFunc: string[], defsClass: string[], args: string[], calls: string[]): boolean {
+  const target = n.childForFieldName("target");
+  if (!target) return false;
+  const kw = target.type === "identifier" ? target.text : null;
+  const argBox = n.namedChildren.find((c) => c?.type === "arguments") ?? null;
+  if (kw && EX_FUNC.has(kw)) {
+    let head = argBox?.namedChildren[0] ?? null;            // foo(a, b) | foo(a) when guard | foo
+    if (head?.type === "binary_operator") head = head.childForFieldName("left");
+    if (head?.type === "call") {
+      const nm = head.childForFieldName("target");
+      if (nm) defsFunc.push(nm.text);
+      const ps = head.namedChildren.find((c) => c?.type === "arguments");
+      for (const p of ps?.namedChildren ?? []) { const id = p && firstIdent(p); if (id) args.push(id); }
+    } else if (head?.type === "identifier") defsFunc.push(head.text);
+    return true;
+  }
+  if (kw && EX_CLASS.has(kw)) {
+    const a = argBox?.namedChildren[0];
+    if (a && (a.type === "alias" || a.type === "identifier")) defsClass.push(a.text.split(".").pop()!);
+    return true;
+  }
+  const callee = target.type === "dot" ? target.childForFieldName("right") : target;
+  if (callee && callee.type === "identifier") calls.push(callee.text);
+  return true;
+}
+
+export function extract(root: Node, language = ""): Extracted {
   const defsFunc: string[] = [], defsClass: string[] = [], args: string[] = [], vars: string[] = [], calls: string[] = [];
   const stack: Node[] = [root];
+  const ex = language === "elixir";
   while (stack.length) {   // pre-order, document order (stack reversed below)
     const n = stack.pop()!;
-    if (FUNC_TYPES.has(n.type)) {
+    if (ex && n.type === "call" && elixirCall(n, defsFunc, defsClass, args, calls)) {
+      // handled
+    } else if (ex && n.type === "binary_operator") {
+      const op = n.childForFieldName("operator"), left = n.childForFieldName("left");
+      if (op?.text === "=" && left?.type === "identifier") vars.push(left.text);
+    } else if (FUNC_TYPES.has(n.type)) {
       const nm = defName(n);
       if (nm) { defsFunc.push(nm); args.push(...params(n)); }
     } else if (CLASS_TYPES.has(n.type)) {
@@ -187,9 +229,11 @@ export async function extractSource(src: string, language: string | null, filePa
   if (!lang) return null;
   const p = await parserFor(lang, filePath);
   if (!p) return null;
-  const tree = p.parse(src);
+  // tree-sitter-php parses everything before `<?php` as inline HTML; CodeSearchNet PHP rows are untagged.
+  const text = lang === "php" && !src.includes("<?php") ? `<?php\n${src}` : src;
+  const tree = p.parse(text);
   if (!tree) return null;
-  try { return extract(tree.rootNode); } finally { tree.delete(); }
+  try { return extract(tree.rootNode, lang); } finally { tree.delete(); }
 }
 
 async function modePool(inPath: string, outPath: string) {
@@ -224,7 +268,7 @@ function walk(dir: string, out: string[]) {
 async function modeRepo(repoDir: string, outPath: string, langs: Set<string> | null) {
   const files: string[] = [];
   walk(repoDir, files);
-  const defs: Record<string, string[]> = {};
+  const defs: Record<string, string[]> = Object.create(null);
   let parsed = 0;
   for (const f of files) {
     const lang = EXT_LANG[path.extname(f)];

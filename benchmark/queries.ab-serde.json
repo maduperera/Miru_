@@ -1,0 +1,29 @@
+{
+ "repo": "ab-serde",
+ "language": "rust",
+ "commit": "0db9b3b504bcb0a7fa9cf001429869519afd3e9a",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_SERDE0",
+   "query": "Serialize Deserialize trait derive",
+   "identifier": "",
+   "definedIn": [
+    "serde/src/lib.rs",
+    "serde/src/ser/mod.rs"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_SERDE1",
+   "query": "JSON serialization deserializer",
+   "identifier": "",
+   "definedIn": [
+    "serde/src/ser/mod.rs",
+    "serde/src/de/mod.rs"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

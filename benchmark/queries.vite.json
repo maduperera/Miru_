@@ -1,0 +1,518 @@
+{
+ "repo": "vite",
+ "commit": "2601eed4d764f21809652dbba745d0f38b47146c",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "50 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0x5e5512) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "VITE0",
+   "query": "is node within circular imports",
+   "identifier": "isNodeWithinCircularImports",
+   "definedIn": [
+    "packages/vite/src/client/bundledDevHmrClient.ts",
+    "packages/vite/src/node/server/hmr.ts"
+   ]
+  },
+  {
+   "id": "VITE1",
+   "query": "transform index html",
+   "identifier": "transformIndexHtml",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/src/node/server/index.ts"
+   ]
+  },
+  {
+   "id": "VITE2",
+   "query": "ssr transform",
+   "identifier": "ssrTransform",
+   "definedIn": [
+    "packages/vite/src/node/server/index.ts",
+    "packages/vite/src/node/ssr/ssrTransform.ts"
+   ]
+  },
+  {
+   "id": "VITE3",
+   "query": "import meta env",
+   "identifier": "ImportMetaEnv",
+   "definedIn": [
+    "packages/vite/src/module-runner/types.ts",
+    "packages/vite/types/importMeta.d.ts"
+   ]
+  },
+  {
+   "id": "VITE4",
+   "query": "render start",
+   "identifier": "renderStart",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/src/node/plugins/css.ts"
+   ]
+  },
+  {
+   "id": "VITE5",
+   "query": "build start",
+   "identifier": "buildStart",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/pluginConverter.ts",
+    "packages/vite/src/node/packages.ts",
+    "packages/vite/src/node/plugins/asset.ts",
+    "packages/vite/src/node/plugins/clientInjections.ts",
+    "packages/vite/src/node/plugins/css.ts",
+    "packages/vite/src/node/plugins/importMetaGlob.ts",
+    "packages/vite/src/node/plugins/manifest.ts",
+    "packages/vite/src/node/plugins/resolve.ts",
+    "packages/vite/src/node/plugins/worker.ts",
+    "packages/vite/src/node/server/pluginContainer.ts"
+   ]
+  },
+  {
+   "id": "VITE6",
+   "query": "empty dir",
+   "identifier": "emptyDir",
+   "definedIn": [
+    "packages/create-vite/src/index.ts",
+    "packages/vite/src/node/utils.ts"
+   ]
+  },
+  {
+   "id": "VITE7",
+   "query": "minimal plugin context",
+   "identifier": "MinimalPluginContext",
+   "definedIn": [
+    "packages/vite/src/node/plugin.ts",
+    "packages/vite/src/node/server/pluginContainer.ts"
+   ]
+  },
+  {
+   "id": "VITE8",
+   "query": "get top level config",
+   "identifier": "getTopLevelConfig",
+   "definedIn": [
+    "packages/vite/src/node/baseEnvironment.ts",
+    "packages/vite/src/node/optimizer/scan.ts"
+   ]
+  },
+  {
+   "id": "VITE9",
+   "query": "get module by id",
+   "identifier": "getModuleById",
+   "definedIn": [
+    "packages/vite/src/module-runner/evaluatedModules.ts",
+    "packages/vite/src/node/server/mixedModuleGraph.ts",
+    "packages/vite/src/node/server/moduleGraph.ts"
+   ]
+  },
+  {
+   "id": "VITE10",
+   "query": "web socket server",
+   "identifier": "WebSocketServer",
+   "definedIn": [
+    "packages/vite/src/node/server/ws.ts",
+    "packages/vite/src/types/ws.d.ts"
+   ]
+  },
+  {
+   "id": "VITE11",
+   "query": "close bundle",
+   "identifier": "closeBundle",
+   "definedIn": [
+    "packages/vite/rolldown.config.ts",
+    "packages/vite/src/node/optimizer/pluginConverter.ts",
+    "packages/vite/src/node/plugins/terser.ts"
+   ]
+  },
+  {
+   "id": "VITE12",
+   "query": "watch change",
+   "identifier": "watchChange",
+   "definedIn": [
+    "packages/vite/src/node/packages.ts",
+    "packages/vite/src/node/plugins/asset.ts",
+    "packages/vite/src/node/plugins/prepareOutDir.ts",
+    "packages/vite/src/node/plugins/worker.ts",
+    "packages/vite/src/node/server/pluginContainer.ts"
+   ]
+  },
+  {
+   "id": "VITE13",
+   "query": "server options",
+   "identifier": "ServerOptions",
+   "definedIn": [
+    "packages/vite/src/node/server/index.ts",
+    "packages/vite/src/types/ws.d.ts"
+   ]
+  },
+  {
+   "id": "VITE14",
+   "query": "ssr rewrite stacktrace",
+   "identifier": "ssrRewriteStacktrace",
+   "definedIn": [
+    "packages/vite/src/node/server/index.ts",
+    "packages/vite/src/node/ssr/ssrStacktrace.ts"
+   ]
+  },
+  {
+   "id": "VITE15",
+   "query": "get watched",
+   "identifier": "getWatched",
+   "definedIn": [
+    "packages/vite/src/node/watch.ts",
+    "packages/vite/src/types/chokidar.d.ts"
+   ]
+  },
+  {
+   "id": "VITE16",
+   "query": "vite preload error event",
+   "identifier": "VitePreloadErrorEvent",
+   "definedIn": [
+    "packages/vite/client.d.ts",
+    "packages/vite/src/node/plugins/importAnalysisBuild.ts"
+   ]
+  },
+  {
+   "id": "VITE17",
+   "query": "apply to environment",
+   "identifier": "applyToEnvironment",
+   "definedIn": [
+    "packages/vite/src/node/plugins/assetImportMetaUrl.ts",
+    "packages/vite/src/node/plugins/clientInjections.ts",
+    "packages/vite/src/node/plugins/css.ts",
+    "packages/vite/src/node/plugins/define.ts",
+    "packages/vite/src/node/plugins/dynamicImportVars.ts",
+    "packages/vite/src/node/plugins/esbuild.ts",
+    "packages/vite/src/node/plugins/html.ts",
+    "packages/vite/src/node/plugins/importAnalysis.ts",
+    "packages/vite/src/node/plugins/importMetaGlob.ts",
+    "packages/vite/src/node/plugins/index.ts",
+    "packages/vite/src/node/plugins/modulePreloadPolyfill.ts",
+    "packages/vite/src/node/plugins/optimizedDeps.ts",
+    "packages/vite/src/node/plugins/oxc.ts",
+    "packages/vite/src/node/plugins/preAlias.ts",
+    "packages/vite/src/node/plugins/resolve.ts",
+    "packages/vite/src/node/plugins/terser.ts",
+    "packages/vite/src/node/plugins/worker.ts",
+    "packages/vite/src/node/plugins/workerImportMetaUrl.ts",
+    "packages/vite/src/node/ssr/ssrManifestPlugin.ts"
+   ]
+  },
+  {
+   "id": "VITE18",
+   "query": "propagation boundary",
+   "identifier": "PropagationBoundary",
+   "definedIn": [
+    "packages/vite/src/client/bundledDevHmrClient.ts",
+    "packages/vite/src/node/server/hmr.ts"
+   ]
+  },
+  {
+   "id": "VITE19",
+   "query": "get identifier name or literal value",
+   "identifier": "getIdentifierNameOrLiteralValue",
+   "definedIn": [
+    "packages/vite/src/node/plugins/importAnalysis.ts",
+    "packages/vite/src/node/ssr/ssrTransform.ts"
+   ]
+  },
+  {
+   "id": "VITE20",
+   "query": "bind cli shortcuts",
+   "identifier": "bindCLIShortcuts",
+   "definedIn": [
+    "packages/vite/src/node/preview.ts",
+    "packages/vite/src/node/server/index.ts",
+    "packages/vite/src/node/shortcuts.ts"
+   ]
+  },
+  {
+   "id": "VITE21",
+   "query": "license plugin",
+   "identifier": "licensePlugin",
+   "definedIn": [
+    "packages/vite/rollupLicensePlugin.ts",
+    "packages/vite/src/node/plugins/license.ts"
+   ]
+  },
+  {
+   "id": "VITE22",
+   "query": "inject query",
+   "identifier": "injectQuery",
+   "definedIn": [
+    "packages/vite/src/client/client.ts",
+    "packages/vite/src/node/utils.ts"
+   ]
+  },
+  {
+   "id": "VITE23",
+   "query": "invalidate module",
+   "identifier": "invalidateModule",
+   "definedIn": [
+    "packages/vite/src/module-runner/evaluatedModules.ts",
+    "packages/vite/src/node/server/environment.ts",
+    "packages/vite/src/node/server/mixedModuleGraph.ts",
+    "packages/vite/src/node/server/moduleGraph.ts"
+   ]
+  },
+  {
+   "id": "VITE24",
+   "query": "accept exports",
+   "identifier": "acceptExports",
+   "definedIn": [
+    "packages/vite/src/shared/hmr.ts",
+    "packages/vite/types/hot.d.ts"
+   ]
+  },
+  {
+   "id": "VITE25",
+   "query": "file to url",
+   "identifier": "fileToUrl",
+   "definedIn": [
+    "packages/vite/src/node/plugins/asset.ts",
+    "packages/vite/src/node/server/warmup.ts"
+   ]
+  },
+  {
+   "id": "VITE26",
+   "query": "resolve id",
+   "identifier": "resolveId",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/scripts/benchCircularImport.ts",
+    "packages/vite/src/node/optimizer/index.ts",
+    "packages/vite/src/node/optimizer/pluginConverter.ts",
+    "packages/vite/src/node/optimizer/scan.ts",
+    "packages/vite/src/node/plugins/optimizedDeps.ts",
+    "packages/vite/src/node/plugins/preAlias.ts",
+    "packages/vite/src/node/server/pluginContainer.ts"
+   ]
+  },
+  {
+   "id": "VITE27",
+   "query": "on click",
+   "identifier": "_onClick",
+   "definedIn": [
+    "packages/create-vite/template-lit-ts/src/my-element.ts",
+    "packages/create-vite/template-lit/src/my-element.js"
+   ]
+  },
+  {
+   "id": "VITE28",
+   "query": "direct request",
+   "identifier": "directRequest",
+   "definedIn": [
+    "packages/vite/src/module-runner/runner.ts",
+    "packages/vite/src/node/ssr/ssrModuleLoader.ts"
+   ]
+  },
+  {
+   "id": "VITE29",
+   "query": "generate bundle",
+   "identifier": "generateBundle",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/rolldown.config.ts",
+    "packages/vite/src/node/optimizer/pluginConverter.ts",
+    "packages/vite/src/node/plugins/asset.ts",
+    "packages/vite/src/node/plugins/css.ts",
+    "packages/vite/src/node/plugins/html.ts",
+    "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+    "packages/vite/src/node/plugins/license.ts",
+    "packages/vite/src/node/plugins/manifest.ts",
+    "packages/vite/src/node/plugins/worker.ts",
+    "packages/vite/src/node/ssr/ssrManifestPlugin.ts"
+   ]
+  },
+  {
+   "id": "VITE30",
+   "query": "get import map filename",
+   "identifier": "getImportMapFilename",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/src/node/plugins/html.ts"
+   ]
+  },
+  {
+   "id": "VITE31",
+   "query": "render chunk",
+   "identifier": "renderChunk",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/rolldown.config.ts",
+    "packages/vite/src/node/plugins/asset.ts",
+    "packages/vite/src/node/plugins/css.ts",
+    "packages/vite/src/node/plugins/esbuild.ts",
+    "packages/vite/src/node/plugins/importAnalysisBuild.ts",
+    "packages/vite/src/node/plugins/terser.ts"
+   ]
+  },
+  {
+   "id": "VITE32",
+   "query": "build end",
+   "identifier": "buildEnd",
+   "definedIn": [
+    "packages/vite/rolldown.config.ts",
+    "packages/vite/src/node/optimizer/rolldownDepPlugin.ts",
+    "packages/vite/src/node/packages.ts",
+    "packages/vite/src/node/plugins/css.ts"
+   ]
+  },
+  {
+   "id": "VITE33",
+   "query": "get modules by file",
+   "identifier": "getModulesByFile",
+   "definedIn": [
+    "packages/vite/src/module-runner/evaluatedModules.ts",
+    "packages/vite/src/module-runner/hmrHandler.ts",
+    "packages/vite/src/node/server/mixedModuleGraph.ts",
+    "packages/vite/src/node/server/moduleGraph.ts"
+   ]
+  },
+  {
+   "id": "VITE34",
+   "query": "escape regex",
+   "identifier": "escapeRegex",
+   "definedIn": [
+    "packages/vite/rolldown.dts.config.ts",
+    "packages/vite/src/node/utils.ts",
+    "scripts/mergeChangelog.ts"
+   ]
+  },
+  {
+   "id": "VITE35",
+   "query": "join url segments",
+   "identifier": "joinUrlSegments",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/src/node/utils.ts"
+   ]
+  },
+  {
+   "id": "VITE36",
+   "query": "get base in html",
+   "identifier": "getBaseInHTML",
+   "definedIn": [
+    "packages/plugin-legacy/src/index.ts",
+    "packages/vite/src/node/plugins/html.ts"
+   ]
+  },
+  {
+   "id": "VITE37",
+   "query": "fetch module",
+   "identifier": "fetchModule",
+   "definedIn": [
+    "packages/vite/src/node/server/environment.ts",
+    "packages/vite/src/node/ssr/fetchModule.ts"
+   ]
+  },
+  {
+   "id": "VITE38",
+   "query": "setup counter",
+   "identifier": "setupCounter",
+   "definedIn": [
+    "packages/create-vite/template-vanilla-ts/src/counter.ts",
+    "packages/create-vite/template-vanilla/src/counter.js"
+   ]
+  },
+  {
+   "id": "VITE39",
+   "query": "ssr fix stacktrace",
+   "identifier": "ssrFixStacktrace",
+   "definedIn": [
+    "packages/vite/src/node/server/index.ts",
+    "packages/vite/src/node/ssr/ssrStacktrace.ts"
+   ]
+  },
+  {
+   "id": "VITE40",
+   "query": "my element",
+   "identifier": "MyElement",
+   "definedIn": [
+    "packages/create-vite/template-lit-ts/src/my-element.ts",
+    "packages/create-vite/template-lit/src/my-element.js"
+   ]
+  },
+  {
+   "id": "VITE41",
+   "query": "retrieve file",
+   "identifier": "retrieveFile",
+   "definedIn": [
+    "packages/vite/src/module-runner/sourcemap/interceptor.ts",
+    "packages/vite/src/node/ssr/runtime/serverModuleRunner.ts"
+   ]
+  },
+  {
+   "id": "VITE42",
+   "query": "resolve rolldown options",
+   "identifier": "resolveRolldownOptions",
+   "definedIn": [
+    "packages/vite/src/node/build.ts",
+    "packages/vite/src/node/server/pluginContainer.ts"
+   ]
+  },
+  {
+   "id": "VITE43",
+   "query": "get module by url",
+   "identifier": "getModuleByUrl",
+   "definedIn": [
+    "packages/vite/src/module-runner/evaluatedModules.ts",
+    "packages/vite/src/node/server/mixedModuleGraph.ts",
+    "packages/vite/src/node/server/moduleGraph.ts"
+   ]
+  },
+  {
+   "id": "VITE44",
+   "query": "print urls",
+   "identifier": "printUrls",
+   "definedIn": [
+    "packages/vite/src/node/preview.ts",
+    "packages/vite/src/node/server/index.ts"
+   ]
+  },
+  {
+   "id": "VITE45",
+   "query": "source map like",
+   "identifier": "SourceMapLike",
+   "definedIn": [
+    "packages/vite/src/module-runner/sourcemap/decoder.ts",
+    "packages/vite/src/node/server/sourcemap.ts"
+   ]
+  },
+  {
+   "id": "VITE46",
+   "query": "ssr load module",
+   "identifier": "ssrLoadModule",
+   "definedIn": [
+    "packages/vite/src/node/server/index.ts",
+    "packages/vite/src/node/ssr/ssrModuleLoader.ts"
+   ]
+  },
+  {
+   "id": "VITE47",
+   "query": "plugin container",
+   "identifier": "pluginContainer",
+   "definedIn": [
+    "packages/vite/src/node/optimizer/scan.ts",
+    "packages/vite/src/node/server/environment.ts",
+    "packages/vite/src/node/server/index.ts"
+   ]
+  },
+  {
+   "id": "VITE48",
+   "query": "set headers",
+   "identifier": "setHeaders",
+   "definedIn": [
+    "packages/vite/src/node/preview.ts",
+    "packages/vite/src/node/server/middlewares/static.ts"
+   ]
+  },
+  {
+   "id": "VITE49",
+   "query": "clean url",
+   "identifier": "cleanUrl",
+   "definedIn": [
+    "packages/vite/src/client/client.ts",
+    "packages/vite/src/shared/utils.ts"
+   ]
+  }
+ ]
+}

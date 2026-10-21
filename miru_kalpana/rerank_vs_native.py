@@ -28,20 +28,34 @@ TAG = "minilm-l6-256"
 ap = argparse.ArgumentParser()
 ap.add_argument("--pool", default="k5")
 ap.add_argument("--set", default="", help="query-set tag, e.g. all500 (empty = frozen 150)")
+ap.add_argument("--repo", default="", help="language repo (tree-sitter pools), e.g. scikit-learn")
 args = ap.parse_args()
 
-st = f".{args.set}" if args.set else ""
-qfile = ROOT / "benchmark" / (f"queries.topk.{args.set}.json" if args.set else "queries.topk.json")
+if args.repo:
+    st = f".queries.{args.repo}"
+    qfile = ROOT / "benchmark" / f"queries.{args.repo}.json"
+    rfile = ROOT / "benchmark" / f"results.kalpana.{TAG}{st}.{args.pool}.ts.json"
+    nfile = ROOT / ".bench" / "kalpana" / f"candidates.{TAG}{st}.k3.ts.json"
+else:
+    st = f".{args.set}" if args.set else ""
+    qfile = ROOT / "benchmark" / (f"queries.topk.{args.set}.json" if args.set else "queries.topk.json")
+    rfile = ROOT / "benchmark" / f"results.kalpana.{TAG}{st}.{args.pool}.json"
+    nfile = ROOT / ".bench" / "kalpana" / f"candidates.{TAG}{st}.k3.json"
 spec = {q["id"]: q for q in json.loads(qfile.read_text())["queries"]}
-res = json.loads((ROOT / "benchmark" / f"results.kalpana.{TAG}{st}.{args.pool}.json").read_text())
-nat = {r["id"]: r["candidates"][:3]
-       for r in json.loads((ROOT / ".bench" / "kalpana" / f"candidates.{TAG}{st}.k3.json").read_text())["queries"]}
+res = json.loads(rfile.read_text())
+nat = {r["id"]: r["candidates"][:3] for r in json.loads(nfile.read_text())["queries"]}
+
+
+def _def(c: dict, ident: str) -> bool:
+    if "defs" in c and c.get("language") != "go":
+        return ident in c["defs"]
+    return defines(c["content"], ident)
 
 
 def native(qid: str) -> dict:
     q, top = spec[qid], nat[qid]
     fh = [in_defined(c["file_path"], q["definedIn"]) for c in top]
-    return {"hit3": any(fh), "def3": any(h and defines(c["content"], q["identifier"]) for h, c in zip(fh, top))}
+    return {"hit3": any(fh), "def3": any(h and _def(c, q["identifier"]) for h, c in zip(fh, top))}
 
 
 pq = res["perQuery"]
@@ -95,7 +109,9 @@ def report(title: str, sel: list) -> None:
               f"   {'STRICT (0 losses)' if l == 0 else f'{l} chunk loss(es)'}")
 
 
-if args.set:
+if args.repo:
+    report(f"{args.repo} (tree-sitter)", list(range(len(pq))))
+elif args.set:
     new = [i for i, r in enumerate(pq) if r["id"].startswith("N")]
     old = [i for i, r in enumerate(pq) if r["id"].startswith("S")]
     report("PRIMARY: new queries only (confirmatory, unseen in development)", new)

@@ -47,7 +47,7 @@ const child = spawn(bun, [path.join(root, "scripts", "miru_index_runner.ts"), re
     MIRU_CACHE_HOME: path.join(root, ".miru", "_cache"),
     MIRU_CREDENTIALS_DIR: path.join(root, ".miru", "_creds"),
     MIRU_NO_UPDATE_CHECK: "1",
-    MIRU_QUIET: "1",
+    MIRU_QUIET: process.env.MIRU_QUIET ?? "1",
     ...(int8 ? {} : { MIRU_FLOAT_VECTORS: "1" }),
   },
 });

@@ -177,7 +177,11 @@ def chunk_key(c: dict) -> str:
 # ---------------------------------------------------------------------------
 def arm_metrics(order: Sequence[int], cands: List[dict], q: dict) -> dict:
     file_hit = [in_defined(cands[i]["file_path"], q["definedIn"]) for i in order]
-    def_hit = [file_hit[j] and defines(cands[i]["content"], q["identifier"]) for j, i in enumerate(order)]
+    def _defines(c: dict) -> bool:
+        if "defs" in c and c.get("language") != "go":  # tree-sitter ground truth for non-Go pools
+            return q["identifier"] in c["defs"]
+        return defines(c["content"], q["identifier"])
+    def_hit = [file_hit[j] and _defines(cands[i]) for j, i in enumerate(order)]
     first = next((r for r, h in enumerate(file_hit) if h), None)
     first_def = next((r for r, h in enumerate(def_hit) if h), None)
     top3 = list(order[:3])

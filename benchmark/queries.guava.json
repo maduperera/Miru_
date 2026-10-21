@@ -1,0 +1,3235 @@
+{
+ "repo": "guava",
+ "commit": "de57a419b56bcd887f51bb99103d91c65b7c5e86",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "300 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0x5e5512) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "GUAVA0",
+   "query": "is collected",
+   "identifier": "isCollected",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA1",
+   "query": "unmodifiable table",
+   "identifier": "unmodifiableTable",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Tables.java",
+    "guava/src/com/google/common/collect/Tables.java"
+   ]
+  },
+  {
+   "id": "GUAVA2",
+   "query": "try acquire",
+   "identifier": "tryAcquire",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/RateLimiter.java",
+    "guava/src/com/google/common/util/concurrent/RateLimiter.java"
+   ]
+  },
+  {
+   "id": "GUAVA3",
+   "query": "to immutable enum set",
+   "identifier": "toImmutableEnumSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CollectCollectors.java",
+    "android/guava/src/com/google/common/collect/Sets.java",
+    "guava/src/com/google/common/collect/CollectCollectors.java",
+    "guava/src/com/google/common/collect/Sets.java"
+   ]
+  },
+  {
+   "id": "GUAVA4",
+   "query": "above all",
+   "identifier": "AboveAll",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Cut.java",
+    "guava/src/com/google/common/collect/Cut.java"
+   ]
+  },
+  {
+   "id": "GUAVA5",
+   "query": "synchronized bi map",
+   "identifier": "synchronizedBiMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA6",
+   "query": "uses access entries",
+   "identifier": "usesAccessEntries",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA7",
+   "query": "or natural order",
+   "identifier": "orNaturalOrder",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA8",
+   "query": "subtype of predicate",
+   "identifier": "SubtypeOfPredicate",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Predicates.java",
+    "guava/src/com/google/common/base/Predicates.java"
+   ]
+  },
+  {
+   "id": "GUAVA9",
+   "query": "as converter",
+   "identifier": "asConverter",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA10",
+   "query": "byte array byte source",
+   "identifier": "ByteArrayByteSource",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/ByteSource.java",
+    "guava/src/com/google/common/io/ByteSource.java"
+   ]
+  },
+  {
+   "id": "GUAVA11",
+   "query": "get factory",
+   "identifier": "getFactory",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA12",
+   "query": "file traverser",
+   "identifier": "fileTraverser",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/Files.java",
+    "android/guava/src/com/google/common/io/MoreFiles.java",
+    "guava/src/com/google/common/io/Files.java",
+    "guava/src/com/google/common/io/MoreFiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA13",
+   "query": "in completion order state",
+   "identifier": "InCompletionOrderState",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Futures.java",
+    "guava/src/com/google/common/util/concurrent/Futures.java"
+   ]
+  },
+  {
+   "id": "GUAVA14",
+   "query": "unmodifiable list multimap",
+   "identifier": "UnmodifiableListMultimap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/Multimaps.java"
+   ]
+  },
+  {
+   "id": "GUAVA15",
+   "query": "init nano time",
+   "identifier": "initNanoTime",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Monitor.java",
+    "guava/src/com/google/common/util/concurrent/Monitor.java"
+   ]
+  },
+  {
+   "id": "GUAVA16",
+   "query": "standard clear",
+   "identifier": "standardClear",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingCollection.java",
+    "android/guava/src/com/google/common/collect/ForwardingMap.java",
+    "android/guava/src/com/google/common/collect/ForwardingMultiset.java",
+    "guava/src/com/google/common/collect/ForwardingCollection.java",
+    "guava/src/com/google/common/collect/ForwardingMap.java",
+    "guava/src/com/google/common/collect/ForwardingMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA17",
+   "query": "expiring memoizing supplier",
+   "identifier": "ExpiringMemoizingSupplier",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Suppliers.java",
+    "guava/src/com/google/common/base/Suppliers.java"
+   ]
+  },
+  {
+   "id": "GUAVA18",
+   "query": "above value",
+   "identifier": "AboveValue",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Cut.java",
+    "guava/src/com/google/common/collect/Cut.java"
+   ]
+  },
+  {
+   "id": "GUAVA19",
+   "query": "get raw types",
+   "identifier": "getRawTypes",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/TypeToken.java",
+    "guava/src/com/google/common/reflect/TypeToken.java"
+   ]
+  },
+  {
+   "id": "GUAVA20",
+   "query": "identity function",
+   "identifier": "IdentityFunction",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Functions.java",
+    "guava/src/com/google/common/base/Functions.java"
+   ]
+  },
+  {
+   "id": "GUAVA21",
+   "query": "standard to string",
+   "identifier": "standardToString",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingCollection.java",
+    "android/guava/src/com/google/common/collect/ForwardingMap.java",
+    "android/guava/src/com/google/common/collect/ForwardingMapEntry.java",
+    "android/guava/src/com/google/common/collect/ForwardingMultiset.java",
+    "guava/src/com/google/common/collect/ForwardingCollection.java",
+    "guava/src/com/google/common/collect/ForwardingMap.java",
+    "guava/src/com/google/common/collect/ForwardingMapEntry.java",
+    "guava/src/com/google/common/collect/ForwardingMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA22",
+   "query": "new linked hash map",
+   "identifier": "newLinkedHashMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA23",
+   "query": "nulls first ordering",
+   "identifier": "NullsFirstOrdering",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/NullsFirstOrdering.java",
+    "guava/src/com/google/common/collect/NullsFirstOrdering.java"
+   ]
+  },
+  {
+   "id": "GUAVA24",
+   "query": "new strong interner",
+   "identifier": "newStrongInterner",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Interners.java",
+    "guava/src/com/google/common/collect/Interners.java"
+   ]
+  },
+  {
+   "id": "GUAVA25",
+   "query": "decoupled loader",
+   "identifier": "DecoupledLoader",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/FinalizableReferenceQueue.java",
+    "guava/src/com/google/common/base/FinalizableReferenceQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA26",
+   "query": "trim trailing from",
+   "identifier": "trimTrailingFrom",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/CharMatcher.java",
+    "guava/src/com/google/common/base/CharMatcher.java"
+   ]
+  },
+  {
+   "id": "GUAVA27",
+   "query": "create font type",
+   "identifier": "createFontType",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/MediaType.java",
+    "guava/src/com/google/common/net/MediaType.java"
+   ]
+  },
+  {
+   "id": "GUAVA28",
+   "query": "create from system timer",
+   "identifier": "createFromSystemTimer",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/RateLimiter.java",
+    "guava/src/com/google/common/util/concurrent/RateLimiter.java"
+   ]
+  },
+  {
+   "id": "GUAVA29",
+   "query": "sum then reset",
+   "identifier": "sumThenReset",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LongAdder.java",
+    "android/guava/src/com/google/common/hash/LongAdder.java"
+   ]
+  },
+  {
+   "id": "GUAVA30",
+   "query": "interner builder",
+   "identifier": "InternerBuilder",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Interners.java",
+    "guava/src/com/google/common/collect/Interners.java"
+   ]
+  },
+  {
+   "id": "GUAVA31",
+   "query": "check not closed",
+   "identifier": "checkNotClosed",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/AppendableWriter.java",
+    "guava/src/com/google/common/io/AppendableWriter.java"
+   ]
+  },
+  {
+   "id": "GUAVA32",
+   "query": "replace values",
+   "identifier": "replaceValues",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractListMultimap.java",
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "android/guava/src/com/google/common/collect/AbstractMultimap.java",
+    "android/guava/src/com/google/common/collect/AbstractSetMultimap.java",
+    "android/guava/src/com/google/common/collect/AbstractSortedSetMultimap.java",
+    "android/guava/src/com/google/common/collect/FilteredEntrySetMultimap.java",
+    "android/guava/src/com/google/common/collect/FilteredKeyListMultimap.java",
+    "android/guava/src/com/google/common/collect/FilteredKeySetMultimap.java",
+    "android/guava/src/com/google/common/collect/ForwardingListMultimap.java",
+    "android/guava/src/com/google/common/collect/ForwardingMultimap.java",
+    "android/guava/src/com/google/common/collect/ForwardingSetMultimap.java",
+    "android/guava/src/com/google/common/collect/ForwardingSortedSetMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableListMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableSetMultimap.java",
+    "android/guava/src/com/google/common/collect/LinkedHashMultimap.java",
+    "android/guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "android/guava/src/com/google/common/collect/ListMultimap.java",
+    "android/guava/src/com/google/common/collect/Multimap.java",
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "android/guava/src/com/google/common/collect/SetMultimap.java",
+    "android/guava/src/com/google/common/collect/SortedSetMultimap.java",
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/AbstractListMultimap.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "guava/src/com/google/common/collect/AbstractMultimap.java",
+    "guava/src/com/google/common/collect/AbstractSetMultimap.java",
+    "guava/src/com/google/common/collect/AbstractSortedSetMultimap.java",
+    "guava/src/com/google/common/collect/FilteredEntrySetMultimap.java",
+    "guava/src/com/google/common/collect/FilteredKeyListMultimap.java",
+    "guava/src/com/google/common/collect/FilteredKeySetMultimap.java",
+    "guava/src/com/google/common/collect/ForwardingListMultimap.java",
+    "guava/src/com/google/common/collect/ForwardingMultimap.java",
+    "guava/src/com/google/common/collect/ForwardingSetMultimap.java",
+    "guava/src/com/google/common/collect/ForwardingSortedSetMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableListMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableSetMultimap.java",
+    "guava/src/com/google/common/collect/LinkedHashMultimap.java",
+    "guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "guava/src/com/google/common/collect/ListMultimap.java",
+    "guava/src/com/google/common/collect/Multimap.java",
+    "guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/SetMultimap.java",
+    "guava/src/com/google/common/collect/SortedSetMultimap.java",
+    "guava/src/com/google/common/collect/Synchronized.java"
+   ]
+  },
+  {
+   "id": "GUAVA33",
+   "query": "thread factory builder",
+   "identifier": "ThreadFactoryBuilder",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ThreadFactoryBuilder.java",
+    "guava/src/com/google/common/util/concurrent/ThreadFactoryBuilder.java"
+   ]
+  },
+  {
+   "id": "GUAVA34",
+   "query": "add delayed shutdown hook",
+   "identifier": "addDelayedShutdownHook",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/MoreExecutors.java",
+    "guava/src/com/google/common/util/concurrent/MoreExecutors.java"
+   ]
+  },
+  {
+   "id": "GUAVA35",
+   "query": "require table",
+   "identifier": "requireTable",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CompactHashMap.java",
+    "android/guava/src/com/google/common/collect/CompactHashSet.java",
+    "guava/src/com/google/common/collect/CompactHashMap.java",
+    "guava/src/com/google/common/collect/CompactHashSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA36",
+   "query": "ints to doubles",
+   "identifier": "intsToDoubles",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/Quantiles.java",
+    "guava/src/com/google/common/math/Quantiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA37",
+   "query": "is active",
+   "identifier": "isActive",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA38",
+   "query": "succeeds in value set",
+   "identifier": "succeedsInValueSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/LinkedHashMultimap.java",
+    "guava/src/com/google/common/collect/LinkedHashMultimap.java"
+   ]
+  },
+  {
+   "id": "GUAVA39",
+   "query": "clear listeners",
+   "identifier": "clearListeners",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA40",
+   "query": "remove in edge",
+   "identifier": "removeInEdge",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/AbstractDirectedNetworkConnections.java",
+    "android/guava/src/com/google/common/graph/AbstractUndirectedNetworkConnections.java",
+    "android/guava/src/com/google/common/graph/DirectedMultiNetworkConnections.java",
+    "android/guava/src/com/google/common/graph/NetworkConnections.java",
+    "android/guava/src/com/google/common/graph/UndirectedMultiNetworkConnections.java",
+    "guava/src/com/google/common/graph/AbstractDirectedNetworkConnections.java",
+    "guava/src/com/google/common/graph/AbstractUndirectedNetworkConnections.java",
+    "guava/src/com/google/common/graph/DirectedMultiNetworkConnections.java",
+    "guava/src/com/google/common/graph/NetworkConnections.java",
+    "guava/src/com/google/common/graph/UndirectedMultiNetworkConnections.java"
+   ]
+  },
+  {
+   "id": "GUAVA41",
+   "query": "user permissions",
+   "identifier": "userPermissions",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/TempFileCreator.java",
+    "guava/src/com/google/common/io/TempFileCreator.java"
+   ]
+  },
+  {
+   "id": "GUAVA42",
+   "query": "filter keys",
+   "identifier": "filterKeys",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Multimaps.java"
+   ]
+  },
+  {
+   "id": "GUAVA43",
+   "query": "unmodifiable entry",
+   "identifier": "UnmodifiableEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/MutableTypeToInstanceMap.java",
+    "guava/src/com/google/common/reflect/MutableTypeToInstanceMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA44",
+   "query": "compare to",
+   "identifier": "compareTo",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Cut.java",
+    "android/guava/src/com/google/common/primitives/UnsignedInteger.java",
+    "android/guava/src/com/google/common/primitives/UnsignedLong.java",
+    "android/guava/src/com/google/common/util/concurrent/MoreExecutors.java",
+    "guava/src/com/google/common/collect/Cut.java",
+    "guava/src/com/google/common/primitives/UnsignedInteger.java",
+    "guava/src/com/google/common/primitives/UnsignedLong.java",
+    "guava/src/com/google/common/util/concurrent/MoreExecutors.java"
+   ]
+  },
+  {
+   "id": "GUAVA45",
+   "query": "enter if interruptibly",
+   "identifier": "enterIfInterruptibly",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Monitor.java",
+    "guava/src/com/google/common/util/concurrent/Monitor.java"
+   ]
+  },
+  {
+   "id": "GUAVA46",
+   "query": "is wrapper",
+   "identifier": "isWrapper",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/TypeToken.java",
+    "guava/src/com/google/common/reflect/TypeToken.java"
+   ]
+  },
+  {
+   "id": "GUAVA47",
+   "query": "has previous",
+   "identifier": "hasPrevious",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractIndexedListIterator.java",
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "android/guava/src/com/google/common/collect/ForwardingListIterator.java",
+    "android/guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "android/guava/src/com/google/common/collect/Lists.java",
+    "android/guava/src/com/google/common/collect/TransformedListIterator.java",
+    "guava/src/com/google/common/collect/AbstractIndexedListIterator.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "guava/src/com/google/common/collect/ForwardingListIterator.java",
+    "guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "guava/src/com/google/common/collect/Lists.java",
+    "guava/src/com/google/common/collect/TransformedListIterator.java"
+   ]
+  },
+  {
+   "id": "GUAVA48",
+   "query": "get host and port from bracketed host",
+   "identifier": "getHostAndPortFromBracketedHost",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/HostAndPort.java",
+    "guava/src/com/google/common/net/HostAndPort.java"
+   ]
+  },
+  {
+   "id": "GUAVA49",
+   "query": "is directed",
+   "identifier": "isDirected",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/AbstractBaseGraph.java",
+    "android/guava/src/com/google/common/graph/AbstractNetwork.java",
+    "android/guava/src/com/google/common/graph/AbstractValueGraph.java",
+    "android/guava/src/com/google/common/graph/ArchetypeGraph.java",
+    "android/guava/src/com/google/common/graph/ForwardingGraph.java",
+    "android/guava/src/com/google/common/graph/ForwardingNetwork.java",
+    "android/guava/src/com/google/common/graph/ForwardingValueGraph.java",
+    "android/guava/src/com/google/common/graph/Graph.java",
+    "android/guava/src/com/google/common/graph/StandardNetwork.java",
+    "android/guava/src/com/google/common/graph/StandardValueGraph.java",
+    "android/guava/src/com/google/common/graph/ValueGraph.java",
+    "guava/src/com/google/common/graph/AbstractBaseGraph.java",
+    "guava/src/com/google/common/graph/AbstractNetwork.java",
+    "guava/src/com/google/common/graph/AbstractValueGraph.java",
+    "guava/src/com/google/common/graph/ArchetypeGraph.java",
+    "guava/src/com/google/common/graph/ForwardingGraph.java",
+    "guava/src/com/google/common/graph/ForwardingNetwork.java",
+    "guava/src/com/google/common/graph/ForwardingValueGraph.java",
+    "guava/src/com/google/common/graph/Graph.java",
+    "guava/src/com/google/common/graph/StandardNetwork.java",
+    "guava/src/com/google/common/graph/StandardValueGraph.java",
+    "guava/src/com/google/common/graph/ValueGraph.java"
+   ]
+  },
+  {
+   "id": "GUAVA50",
+   "query": "map splitter",
+   "identifier": "MapSplitter",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Splitter.java",
+    "guava/src/com/google/common/base/Splitter.java"
+   ]
+  },
+  {
+   "id": "GUAVA51",
+   "query": "get replacement array",
+   "identifier": "getReplacementArray",
+   "definedIn": [
+    "android/guava/src/com/google/common/escape/ArrayBasedEscaperMap.java",
+    "guava/src/com/google/common/escape/ArrayBasedEscaperMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA52",
+   "query": "key absent behavior",
+   "identifier": "KeyAbsentBehavior",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/SortedLists.java",
+    "guava/src/com/google/common/collect/SortedLists.java"
+   ]
+  },
+  {
+   "id": "GUAVA53",
+   "query": "get coerced i pv4 address",
+   "identifier": "getCoercedIPv4Address",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/InetAddresses.java",
+    "guava/src/com/google/common/net/InetAddresses.java"
+   ]
+  },
+  {
+   "id": "GUAVA54",
+   "query": "long value",
+   "identifier": "longValue",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LongAdder.java",
+    "android/guava/src/com/google/common/hash/LongAdder.java",
+    "android/guava/src/com/google/common/primitives/UnsignedInteger.java",
+    "android/guava/src/com/google/common/primitives/UnsignedLong.java",
+    "android/guava/src/com/google/common/util/concurrent/AtomicDouble.java",
+    "guava/src/com/google/common/primitives/UnsignedInteger.java",
+    "guava/src/com/google/common/primitives/UnsignedLong.java",
+    "guava/src/com/google/common/util/concurrent/AtomicDouble.java"
+   ]
+  },
+  {
+   "id": "GUAVA55",
+   "query": "new sequential executor",
+   "identifier": "newSequentialExecutor",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/MoreExecutors.java",
+    "guava/src/com/google/common/util/concurrent/MoreExecutors.java"
+   ]
+  },
+  {
+   "id": "GUAVA56",
+   "query": "collect types",
+   "identifier": "collectTypes",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/TypeToken.java",
+    "guava/src/com/google/common/reflect/TypeToken.java"
+   ]
+  },
+  {
+   "id": "GUAVA57",
+   "query": "combined future",
+   "identifier": "CombinedFuture",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/CombinedFuture.java",
+    "guava/src/com/google/common/util/concurrent/CombinedFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA58",
+   "query": "encloses all",
+   "identifier": "enclosesAll",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractRangeSet.java",
+    "android/guava/src/com/google/common/collect/RangeSet.java",
+    "guava/src/com/google/common/collect/AbstractRangeSet.java",
+    "guava/src/com/google/common/collect/RangeSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA59",
+   "query": "get occupied depth",
+   "identifier": "getOccupiedDepth",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Monitor.java",
+    "guava/src/com/google/common/util/concurrent/Monitor.java"
+   ]
+  },
+  {
+   "id": "GUAVA60",
+   "query": "stopped guard",
+   "identifier": "StoppedGuard",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ServiceManager.java",
+    "guava/src/com/google/common/util/concurrent/ServiceManager.java"
+   ]
+  },
+  {
+   "id": "GUAVA61",
+   "query": "get best comparator",
+   "identifier": "getBestComparator",
+   "definedIn": [
+    "android/guava/src/com/google/common/primitives/UnsignedBytes.java",
+    "guava/src/com/google/common/primitives/UnsignedBytes.java"
+   ]
+  },
+  {
+   "id": "GUAVA62",
+   "query": "for string",
+   "identifier": "forString",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/InetAddresses.java",
+    "guava/src/com/google/common/net/InetAddresses.java"
+   ]
+  },
+  {
+   "id": "GUAVA63",
+   "query": "defensive copy",
+   "identifier": "defensiveCopy",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Predicates.java",
+    "guava/src/com/google/common/base/Predicates.java"
+   ]
+  },
+  {
+   "id": "GUAVA64",
+   "query": "set previous in write queue",
+   "identifier": "setPreviousInWriteQueue",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/cache/ReferenceEntry.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/ReferenceEntry.java"
+   ]
+  },
+  {
+   "id": "GUAVA65",
+   "query": "count true",
+   "identifier": "countTrue",
+   "definedIn": [
+    "android/guava/src/com/google/common/primitives/Booleans.java",
+    "guava/src/com/google/common/primitives/Booleans.java"
+   ]
+  },
+  {
+   "id": "GUAVA66",
+   "query": "sub range map",
+   "identifier": "subRangeMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ImmutableRangeMap.java",
+    "android/guava/src/com/google/common/collect/RangeMap.java",
+    "android/guava/src/com/google/common/collect/TreeRangeMap.java",
+    "guava/src/com/google/common/collect/ImmutableRangeMap.java",
+    "guava/src/com/google/common/collect/RangeMap.java",
+    "guava/src/com/google/common/collect/TreeRangeMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA67",
+   "query": "hash keys",
+   "identifier": "hashKeys",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MultimapBuilder.java",
+    "guava/src/com/google/common/collect/MultimapBuilder.java"
+   ]
+  },
+  {
+   "id": "GUAVA68",
+   "query": "tree traverser",
+   "identifier": "TreeTraverser",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/TreeTraverser.java",
+    "guava/src/com/google/common/collect/TreeTraverser.java"
+   ]
+  },
+  {
+   "id": "GUAVA69",
+   "query": "abstract non streaming hash function",
+   "identifier": "AbstractNonStreamingHashFunction",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java",
+    "guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA70",
+   "query": "class set",
+   "identifier": "ClassSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/TypeToken.java",
+    "guava/src/com/google/common/reflect/TypeToken.java"
+   ]
+  },
+  {
+   "id": "GUAVA71",
+   "query": "more objects",
+   "identifier": "MoreObjects",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/MoreObjects.java",
+    "guava/src/com/google/common/base/MoreObjects.java"
+   ]
+  },
+  {
+   "id": "GUAVA72",
+   "query": "subtype of",
+   "identifier": "subtypeOf",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Predicates.java",
+    "android/guava/src/com/google/common/reflect/Types.java",
+    "guava/src/com/google/common/base/Predicates.java",
+    "guava/src/com/google/common/reflect/Types.java"
+   ]
+  },
+  {
+   "id": "GUAVA73",
+   "query": "set count",
+   "identifier": "setCount",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultiset.java",
+    "android/guava/src/com/google/common/collect/AbstractMultiset.java",
+    "android/guava/src/com/google/common/collect/ConcurrentHashMultiset.java",
+    "android/guava/src/com/google/common/collect/EnumMultiset.java",
+    "android/guava/src/com/google/common/collect/ForwardingMultiset.java",
+    "android/guava/src/com/google/common/collect/ImmutableMultiset.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedMultiset.java",
+    "android/guava/src/com/google/common/collect/Multiset.java",
+    "android/guava/src/com/google/common/collect/Multisets.java",
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "android/guava/src/com/google/common/collect/TreeMultiset.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultiset.java",
+    "guava/src/com/google/common/collect/AbstractMultiset.java",
+    "guava/src/com/google/common/collect/ConcurrentHashMultiset.java",
+    "guava/src/com/google/common/collect/EnumMultiset.java",
+    "guava/src/com/google/common/collect/ForwardingMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableSortedMultiset.java",
+    "guava/src/com/google/common/collect/Multiset.java",
+    "guava/src/com/google/common/collect/Multisets.java",
+    "guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/TreeMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA74",
+   "query": "timeout future",
+   "identifier": "TimeoutFuture",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/TimeoutFuture.java",
+    "guava/src/com/google/common/util/concurrent/TimeoutFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA75",
+   "query": "resize table",
+   "identifier": "resizeTable",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CompactHashMap.java",
+    "android/guava/src/com/google/common/collect/CompactHashSet.java",
+    "android/guava/src/com/google/common/collect/ObjectCountHashMap.java",
+    "guava/src/com/google/common/collect/CompactHashMap.java",
+    "guava/src/com/google/common/collect/CompactHashSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA76",
+   "query": "equivalent to",
+   "identifier": "equivalentTo",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Equivalence.java",
+    "guava/src/com/google/common/base/Equivalence.java"
+   ]
+  },
+  {
+   "id": "GUAVA77",
+   "query": "platform thread factory",
+   "identifier": "platformThreadFactory",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/MoreExecutors.java",
+    "guava/src/com/google/common/util/concurrent/MoreExecutors.java"
+   ]
+  },
+  {
+   "id": "GUAVA78",
+   "query": "unmodifiable sorted multiset",
+   "identifier": "unmodifiableSortedMultiset",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Multisets.java",
+    "guava/src/com/google/common/collect/Multisets.java"
+   ]
+  },
+  {
+   "id": "GUAVA79",
+   "query": "empty sub range map",
+   "identifier": "emptySubRangeMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/TreeRangeMap.java",
+    "guava/src/com/google/common/collect/TreeRangeMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA80",
+   "query": "java iso control",
+   "identifier": "JavaIsoControl",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/CharMatcher.java",
+    "guava/src/com/google/common/base/CharMatcher.java"
+   ]
+  },
+  {
+   "id": "GUAVA81",
+   "query": "try set started",
+   "identifier": "trySetStarted",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ExecutionSequencer.java",
+    "guava/src/com/google/common/util/concurrent/ExecutionSequencer.java"
+   ]
+  },
+  {
+   "id": "GUAVA82",
+   "query": "filtered set",
+   "identifier": "FilteredSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Sets.java",
+    "guava/src/com/google/common/collect/Sets.java"
+   ]
+  },
+  {
+   "id": "GUAVA83",
+   "query": "descending multiset",
+   "identifier": "DescendingMultiset",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/DescendingMultiset.java",
+    "guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/DescendingMultiset.java",
+    "guava/src/com/google/common/collect/DescendingMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA84",
+   "query": "reflective starter",
+   "identifier": "ReflectiveStarter",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/FinalizableReferenceQueue.java",
+    "guava/src/com/google/common/base/FinalizableReferenceQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA85",
+   "query": "maybe clear reference queues",
+   "identifier": "maybeClearReferenceQueues",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA86",
+   "query": "set result",
+   "identifier": "setResult",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractCatchingFuture.java",
+    "android/guava/src/com/google/common/util/concurrent/AbstractTransformFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractCatchingFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractTransformFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA87",
+   "query": "new parameterized type with owner",
+   "identifier": "newParameterizedTypeWithOwner",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Types.java",
+    "guava/src/com/google/common/reflect/Types.java"
+   ]
+  },
+  {
+   "id": "GUAVA88",
+   "query": "write int",
+   "identifier": "writeInt",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/ByteArrayDataOutput.java",
+    "android/guava/src/com/google/common/io/ByteStreams.java",
+    "android/guava/src/com/google/common/io/LittleEndianDataOutputStream.java",
+    "guava/src/com/google/common/io/ByteArrayDataOutput.java",
+    "guava/src/com/google/common/io/ByteStreams.java",
+    "guava/src/com/google/common/io/LittleEndianDataOutputStream.java"
+   ]
+  },
+  {
+   "id": "GUAVA89",
+   "query": "next state",
+   "identifier": "nextState",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/Hashing.java",
+    "guava/src/com/google/common/hash/Hashing.java"
+   ]
+  },
+  {
+   "id": "GUAVA90",
+   "query": "scale and index",
+   "identifier": "ScaleAndIndex",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/Quantiles.java",
+    "guava/src/com/google/common/math/Quantiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA91",
+   "query": "unmodifiable bi map",
+   "identifier": "UnmodifiableBiMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA92",
+   "query": "tree range set",
+   "identifier": "TreeRangeSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/TreeRangeSet.java",
+    "guava/src/com/google/common/collect/TreeRangeSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA93",
+   "query": "atomic helper",
+   "identifier": "AtomicHelper",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFutureState.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFutureState.java"
+   ]
+  },
+  {
+   "id": "GUAVA94",
+   "query": "get write time",
+   "identifier": "getWriteTime",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/cache/ReferenceEntry.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/ReferenceEntry.java"
+   ]
+  },
+  {
+   "id": "GUAVA95",
+   "query": "adjacent node",
+   "identifier": "adjacentNode",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/AbstractDirectedNetworkConnections.java",
+    "android/guava/src/com/google/common/graph/AbstractUndirectedNetworkConnections.java",
+    "android/guava/src/com/google/common/graph/EndpointPair.java",
+    "android/guava/src/com/google/common/graph/NetworkConnections.java",
+    "guava/src/com/google/common/graph/AbstractDirectedNetworkConnections.java",
+    "guava/src/com/google/common/graph/AbstractUndirectedNetworkConnections.java",
+    "guava/src/com/google/common/graph/EndpointPair.java",
+    "guava/src/com/google/common/graph/NetworkConnections.java"
+   ]
+  },
+  {
+   "id": "GUAVA96",
+   "query": "get element",
+   "identifier": "getElement",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/EnumMultiset.java",
+    "android/guava/src/com/google/common/collect/MoreCollectors.java",
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "android/guava/src/com/google/common/collect/Multiset.java",
+    "android/guava/src/com/google/common/collect/Multisets.java",
+    "android/guava/src/com/google/common/collect/ObjectCountHashMap.java",
+    "android/guava/src/com/google/common/collect/TreeMultiset.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultiset.java",
+    "guava/src/com/google/common/collect/EnumMultiset.java",
+    "guava/src/com/google/common/collect/MoreCollectors.java",
+    "guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/Multiset.java",
+    "guava/src/com/google/common/collect/Multisets.java",
+    "guava/src/com/google/common/collect/TreeMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA97",
+   "query": "preferring strings then throwables",
+   "identifier": "preferringStringsThenThrowables",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/FuturesGetChecked.java",
+    "guava/src/com/google/common/util/concurrent/FuturesGetChecked.java"
+   ]
+  },
+  {
+   "id": "GUAVA98",
+   "query": "sleep uninterruptibly",
+   "identifier": "sleepUninterruptibly",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Uninterruptibles.java",
+    "guava/src/com/google/common/util/concurrent/Uninterruptibles.java"
+   ]
+  },
+  {
+   "id": "GUAVA99",
+   "query": "is declared thread safe",
+   "identifier": "isDeclaredThreadSafe",
+   "definedIn": [
+    "android/guava/src/com/google/common/eventbus/Subscriber.java",
+    "guava/src/com/google/common/eventbus/Subscriber.java"
+   ]
+  },
+  {
+   "id": "GUAVA100",
+   "query": "weak value entry",
+   "identifier": "WeakValueEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA101",
+   "query": "key iterator",
+   "identifier": "KeyIterator",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava-gwt/src-super/com/google/common/cache/super/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA102",
+   "query": "linked weak key strong value entry",
+   "identifier": "LinkedWeakKeyStrongValueEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA103",
+   "query": "is directory",
+   "identifier": "isDirectory",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/Files.java",
+    "android/guava/src/com/google/common/io/MoreFiles.java",
+    "guava/src/com/google/common/io/Files.java",
+    "guava/src/com/google/common/io/MoreFiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA104",
+   "query": "check position index",
+   "identifier": "checkPositionIndex",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Preconditions.java",
+    "guava/src/com/google/common/base/Preconditions.java"
+   ]
+  },
+  {
+   "id": "GUAVA105",
+   "query": "clear value reference queue",
+   "identifier": "clearValueReferenceQueue",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA106",
+   "query": "remove node",
+   "identifier": "removeNode",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "android/guava/src/com/google/common/graph/MutableGraph.java",
+    "android/guava/src/com/google/common/graph/MutableNetwork.java",
+    "android/guava/src/com/google/common/graph/MutableValueGraph.java",
+    "android/guava/src/com/google/common/graph/StandardMutableGraph.java",
+    "android/guava/src/com/google/common/graph/StandardMutableNetwork.java",
+    "android/guava/src/com/google/common/graph/StandardMutableValueGraph.java",
+    "guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "guava/src/com/google/common/graph/MutableGraph.java",
+    "guava/src/com/google/common/graph/MutableNetwork.java",
+    "guava/src/com/google/common/graph/MutableValueGraph.java",
+    "guava/src/com/google/common/graph/StandardMutableGraph.java",
+    "guava/src/com/google/common/graph/StandardMutableNetwork.java",
+    "guava/src/com/google/common/graph/StandardMutableValueGraph.java"
+   ]
+  },
+  {
+   "id": "GUAVA107",
+   "query": "get generic component type",
+   "identifier": "getGenericComponentType",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Types.java",
+    "guava/src/com/google/common/reflect/Types.java"
+   ]
+  },
+  {
+   "id": "GUAVA108",
+   "query": "unmodifiable sorted set multimap",
+   "identifier": "UnmodifiableSortedSetMultimap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/Multimaps.java"
+   ]
+  },
+  {
+   "id": "GUAVA109",
+   "query": "escape unsafe",
+   "identifier": "escapeUnsafe",
+   "definedIn": [
+    "android/guava/src/com/google/common/escape/ArrayBasedCharEscaper.java",
+    "android/guava/src/com/google/common/escape/ArrayBasedUnicodeEscaper.java",
+    "android/guava/src/com/google/common/escape/Escapers.java",
+    "guava/src/com/google/common/escape/ArrayBasedCharEscaper.java",
+    "guava/src/com/google/common/escape/ArrayBasedUnicodeEscaper.java",
+    "guava/src/com/google/common/escape/Escapers.java"
+   ]
+  },
+  {
+   "id": "GUAVA110",
+   "query": "try set accessible",
+   "identifier": "trySetAccessible",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Invokable.java",
+    "guava/src/com/google/common/reflect/Invokable.java"
+   ]
+  },
+  {
+   "id": "GUAVA111",
+   "query": "worker running state",
+   "identifier": "WorkerRunningState",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/SequentialExecutor.java",
+    "guava/src/com/google/common/util/concurrent/SequentialExecutor.java"
+   ]
+  },
+  {
+   "id": "GUAVA112",
+   "query": "unsafe comparator",
+   "identifier": "UnsafeComparator",
+   "definedIn": [
+    "android/guava/src/com/google/common/primitives/UnsignedBytes.java",
+    "guava/src/com/google/common/primitives/UnsignedBytes.java"
+   ]
+  },
+  {
+   "id": "GUAVA113",
+   "query": "read fully",
+   "identifier": "readFully",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/ByteArrayDataInput.java",
+    "android/guava/src/com/google/common/io/ByteStreams.java",
+    "android/guava/src/com/google/common/io/LittleEndianDataInputStream.java",
+    "guava/src/com/google/common/io/ByteArrayDataInput.java",
+    "guava/src/com/google/common/io/ByteStreams.java",
+    "guava/src/com/google/common/io/LittleEndianDataInputStream.java"
+   ]
+  },
+  {
+   "id": "GUAVA114",
+   "query": "synchronized collection",
+   "identifier": "SynchronizedCollection",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/Synchronized.java"
+   ]
+  },
+  {
+   "id": "GUAVA115",
+   "query": "for array",
+   "identifier": "forArray",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Iterators.java",
+    "guava/src/com/google/common/collect/Iterators.java"
+   ]
+  },
+  {
+   "id": "GUAVA116",
+   "query": "populate cache",
+   "identifier": "populateCache",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Enums.java",
+    "guava/src/com/google/common/base/Enums.java"
+   ]
+  },
+  {
+   "id": "GUAVA117",
+   "query": "without closer",
+   "identifier": "withoutCloser",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ClosingFuture.java",
+    "guava/src/com/google/common/util/concurrent/ClosingFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA118",
+   "query": "enqueue helper",
+   "identifier": "enqueueHelper",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ListenerCallQueue.java",
+    "guava/src/com/google/common/util/concurrent/ListenerCallQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA119",
+   "query": "constrain to range",
+   "identifier": "constrainToRange",
+   "definedIn": [
+    "android/guava/src/com/google/common/primitives/Chars.java",
+    "android/guava/src/com/google/common/primitives/Doubles.java",
+    "android/guava/src/com/google/common/primitives/Floats.java",
+    "android/guava/src/com/google/common/primitives/Ints.java",
+    "android/guava/src/com/google/common/primitives/Longs.java",
+    "android/guava/src/com/google/common/primitives/Shorts.java",
+    "guava/src/com/google/common/primitives/Chars.java",
+    "guava/src/com/google/common/primitives/Doubles.java",
+    "guava/src/com/google/common/primitives/Floats.java",
+    "guava/src/com/google/common/primitives/Ints.java",
+    "guava/src/com/google/common/primitives/Longs.java",
+    "guava/src/com/google/common/primitives/Shorts.java"
+   ]
+  },
+  {
+   "id": "GUAVA120",
+   "query": "service name",
+   "identifier": "serviceName",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractExecutionThreadService.java",
+    "android/guava/src/com/google/common/util/concurrent/AbstractIdleService.java",
+    "android/guava/src/com/google/common/util/concurrent/AbstractScheduledService.java",
+    "guava/src/com/google/common/util/concurrent/AbstractExecutionThreadService.java",
+    "guava/src/com/google/common/util/concurrent/AbstractIdleService.java",
+    "guava/src/com/google/common/util/concurrent/AbstractScheduledService.java"
+   ]
+  },
+  {
+   "id": "GUAVA121",
+   "query": "array based escaper map",
+   "identifier": "ArrayBasedEscaperMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/escape/ArrayBasedEscaperMap.java",
+    "guava/src/com/google/common/escape/ArrayBasedEscaperMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA122",
+   "query": "get owner",
+   "identifier": "getOwner",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/InterruptibleTask.java",
+    "guava/src/com/google/common/util/concurrent/InterruptibleTask.java"
+   ]
+  },
+  {
+   "id": "GUAVA123",
+   "query": "next in table",
+   "identifier": "nextInTable",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA124",
+   "query": "view multiset",
+   "identifier": "ViewMultiset",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Multisets.java",
+    "guava/src/com/google/common/collect/Multisets.java"
+   ]
+  },
+  {
+   "id": "GUAVA125",
+   "query": "new entry",
+   "identifier": "newEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA126",
+   "query": "add copies",
+   "identifier": "addCopies",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ImmutableMultiset.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableSortedMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA127",
+   "query": "vertical linear transformation",
+   "identifier": "VerticalLinearTransformation",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/LinearTransformation.java",
+    "guava/src/com/google/common/math/LinearTransformation.java"
+   ]
+  },
+  {
+   "id": "GUAVA128",
+   "query": "value and closer consumer",
+   "identifier": "ValueAndCloserConsumer",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ClosingFuture.java",
+    "guava/src/com/google/common/util/concurrent/ClosingFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA129",
+   "query": "catching more generic",
+   "identifier": "catchingMoreGeneric",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ClosingFuture.java",
+    "guava/src/com/google/common/util/concurrent/ClosingFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA130",
+   "query": "from int bits",
+   "identifier": "fromIntBits",
+   "definedIn": [
+    "android/guava/src/com/google/common/primitives/UnsignedInteger.java",
+    "guava/src/com/google/common/primitives/UnsignedInteger.java"
+   ]
+  },
+  {
+   "id": "GUAVA131",
+   "query": "convert dotted quad to hex",
+   "identifier": "convertDottedQuadToHex",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/InetAddresses.java",
+    "guava/src/com/google/common/net/InetAddresses.java"
+   ]
+  },
+  {
+   "id": "GUAVA132",
+   "query": "descending key set",
+   "identifier": "descendingKeySet",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "android/guava/src/com/google/common/collect/AbstractNavigableMap.java",
+    "android/guava/src/com/google/common/collect/ForwardingNavigableMap.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedMap.java",
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "guava/src/com/google/common/collect/AbstractNavigableMap.java",
+    "guava/src/com/google/common/collect/ForwardingNavigableMap.java",
+    "guava/src/com/google/common/collect/ImmutableSortedMap.java",
+    "guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Synchronized.java"
+   ]
+  },
+  {
+   "id": "GUAVA133",
+   "query": "as async callable",
+   "identifier": "asAsyncCallable",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Callables.java",
+    "guava/src/com/google/common/util/concurrent/Callables.java"
+   ]
+  },
+  {
+   "id": "GUAVA134",
+   "query": "function based converter",
+   "identifier": "FunctionBasedConverter",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Converter.java",
+    "guava/src/com/google/common/base/Converter.java"
+   ]
+  },
+  {
+   "id": "GUAVA135",
+   "query": "forwarding collection",
+   "identifier": "ForwardingCollection",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingCollection.java",
+    "guava/src/com/google/common/collect/ForwardingCollection.java"
+   ]
+  },
+  {
+   "id": "GUAVA136",
+   "query": "is app engine with api classes",
+   "identifier": "isAppEngineWithApiClasses",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/MoreExecutors.java",
+    "guava/src/com/google/common/util/concurrent/MoreExecutors.java"
+   ]
+  },
+  {
+   "id": "GUAVA137",
+   "query": "case format",
+   "identifier": "CaseFormat",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/CaseFormat.java",
+    "guava/src/com/google/common/base/CaseFormat.java"
+   ]
+  },
+  {
+   "id": "GUAVA138",
+   "query": "service manager bridge",
+   "identifier": "ServiceManagerBridge",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ServiceManagerBridge.java",
+    "guava/src/com/google/common/util/concurrent/ServiceManagerBridge.java"
+   ]
+  },
+  {
+   "id": "GUAVA139",
+   "query": "list multimap",
+   "identifier": "ListMultimap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ListMultimap.java",
+    "guava/src/com/google/common/collect/ListMultimap.java"
+   ]
+  },
+  {
+   "id": "GUAVA140",
+   "query": "check exception class validity",
+   "identifier": "checkExceptionClassValidity",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/FuturesGetChecked.java",
+    "guava/src/com/google/common/util/concurrent/FuturesGetChecked.java"
+   ]
+  },
+  {
+   "id": "GUAVA141",
+   "query": "common matcher",
+   "identifier": "CommonMatcher",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/CommonMatcher.java",
+    "guava/src/com/google/common/base/CommonMatcher.java"
+   ]
+  },
+  {
+   "id": "GUAVA142",
+   "query": "type variable invocation handler",
+   "identifier": "TypeVariableInvocationHandler",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Types.java",
+    "guava/src/com/google/common/reflect/Types.java"
+   ]
+  },
+  {
+   "id": "GUAVA143",
+   "query": "registry suffix",
+   "identifier": "registrySuffix",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/InternetDomainName.java",
+    "guava/src/com/google/common/net/InternetDomainName.java"
+   ]
+  },
+  {
+   "id": "GUAVA144",
+   "query": "for uri string",
+   "identifier": "forUriString",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/InetAddresses.java",
+    "guava/src/com/google/common/net/InetAddresses.java"
+   ]
+  },
+  {
+   "id": "GUAVA145",
+   "query": "flatten hierarchy",
+   "identifier": "flattenHierarchy",
+   "definedIn": [
+    "android/guava/src/com/google/common/eventbus/SubscriberRegistry.java",
+    "guava/src/com/google/common/eventbus/SubscriberRegistry.java"
+   ]
+  },
+  {
+   "id": "GUAVA146",
+   "query": "delegate or null",
+   "identifier": "delegateOrNull",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CompactHashMap.java",
+    "android/guava/src/com/google/common/collect/CompactHashSet.java",
+    "guava/src/com/google/common/collect/CompactHashMap.java",
+    "guava/src/com/google/common/collect/CompactHashSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA147",
+   "query": "to double array",
+   "identifier": "toDoubleArray",
+   "definedIn": [
+    "android/guava/src/com/google/common/primitives/Doubles.java",
+    "guava/src/com/google/common/primitives/Doubles.java"
+   ]
+  },
+  {
+   "id": "GUAVA148",
+   "query": "for predicate",
+   "identifier": "ForPredicate",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/CharMatcher.java",
+    "guava/src/com/google/common/base/CharMatcher.java"
+   ]
+  },
+  {
+   "id": "GUAVA149",
+   "query": "get type name",
+   "identifier": "getTypeName",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Types.java",
+    "guava/src/com/google/common/reflect/Types.java"
+   ]
+  },
+  {
+   "id": "GUAVA150",
+   "query": "is annotation present",
+   "identifier": "isAnnotationPresent",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Invokable.java",
+    "android/guava/src/com/google/common/reflect/Parameter.java",
+    "guava/src/com/google/common/reflect/Invokable.java",
+    "guava/src/com/google/common/reflect/Parameter.java"
+   ]
+  },
+  {
+   "id": "GUAVA151",
+   "query": "adjust after remove",
+   "identifier": "adjustAfterRemove",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CompactHashMap.java",
+    "android/guava/src/com/google/common/collect/CompactHashSet.java",
+    "android/guava/src/com/google/common/collect/CompactLinkedHashMap.java",
+    "android/guava/src/com/google/common/collect/CompactLinkedHashSet.java",
+    "guava/src/com/google/common/collect/CompactHashMap.java",
+    "guava/src/com/google/common/collect/CompactHashSet.java",
+    "guava/src/com/google/common/collect/CompactLinkedHashMap.java",
+    "guava/src/com/google/common/collect/CompactLinkedHashSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA152",
+   "query": "records access",
+   "identifier": "recordsAccess",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA153",
+   "query": "new set multimap",
+   "identifier": "newSetMultimap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/Multimaps.java"
+   ]
+  },
+  {
+   "id": "GUAVA154",
+   "query": "get name without extension",
+   "identifier": "getNameWithoutExtension",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/Files.java",
+    "android/guava/src/com/google/common/io/MoreFiles.java",
+    "guava/src/com/google/common/io/Files.java",
+    "guava/src/com/google/common/io/MoreFiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA155",
+   "query": "new hasher",
+   "identifier": "newHasher",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/AbstractCompositeHashFunction.java",
+    "android/guava/src/com/google/common/hash/AbstractHashFunction.java",
+    "android/guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java",
+    "android/guava/src/com/google/common/hash/ChecksumHashFunction.java",
+    "android/guava/src/com/google/common/hash/Crc32cHashFunction.java",
+    "android/guava/src/com/google/common/hash/HashFunction.java",
+    "android/guava/src/com/google/common/hash/MacHashFunction.java",
+    "android/guava/src/com/google/common/hash/MessageDigestHashFunction.java",
+    "android/guava/src/com/google/common/hash/Murmur3_128HashFunction.java",
+    "android/guava/src/com/google/common/hash/Murmur3_32HashFunction.java",
+    "android/guava/src/com/google/common/hash/SipHashFunction.java",
+    "guava/src/com/google/common/hash/AbstractCompositeHashFunction.java",
+    "guava/src/com/google/common/hash/AbstractHashFunction.java",
+    "guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java",
+    "guava/src/com/google/common/hash/ChecksumHashFunction.java",
+    "guava/src/com/google/common/hash/Crc32cHashFunction.java",
+    "guava/src/com/google/common/hash/HashFunction.java",
+    "guava/src/com/google/common/hash/MacHashFunction.java",
+    "guava/src/com/google/common/hash/MessageDigestHashFunction.java",
+    "guava/src/com/google/common/hash/Murmur3_128HashFunction.java",
+    "guava/src/com/google/common/hash/Murmur3_32HashFunction.java",
+    "guava/src/com/google/common/hash/SipHashFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA156",
+   "query": "node aggregate",
+   "identifier": "nodeAggregate",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/TreeMultiset.java",
+    "guava/src/com/google/common/collect/TreeMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA157",
+   "query": "soft values",
+   "identifier": "softValues",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/CacheBuilder.java",
+    "guava/src/com/google/common/cache/CacheBuilder.java"
+   ]
+  },
+  {
+   "id": "GUAVA158",
+   "query": "new execution exception",
+   "identifier": "newExecutionException",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA159",
+   "query": "trusted future interruptible async task",
+   "identifier": "TrustedFutureInterruptibleAsyncTask",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/TrustedListenableFutureTask.java",
+    "guava/src/com/google/common/util/concurrent/TrustedListenableFutureTask.java"
+   ]
+  },
+  {
+   "id": "GUAVA160",
+   "query": "permission supplier",
+   "identifier": "PermissionSupplier",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/TempFileCreator.java",
+    "guava/src/com/google/common/io/TempFileCreator.java"
+   ]
+  },
+  {
+   "id": "GUAVA161",
+   "query": "get field",
+   "identifier": "getField",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Enums.java",
+    "guava/src/com/google/common/base/Enums.java"
+   ]
+  },
+  {
+   "id": "GUAVA162",
+   "query": "abstract cache set",
+   "identifier": "AbstractCacheSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava-gwt/src-super/com/google/common/cache/super/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA163",
+   "query": "linked hash set values",
+   "identifier": "linkedHashSetValues",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MultimapBuilder.java",
+    "guava/src/com/google/common/collect/MultimapBuilder.java"
+   ]
+  },
+  {
+   "id": "GUAVA164",
+   "query": "set owner",
+   "identifier": "setOwner",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/InterruptibleTask.java",
+    "guava/src/com/google/common/util/concurrent/InterruptibleTask.java"
+   ]
+  },
+  {
+   "id": "GUAVA165",
+   "query": "get checked type validator",
+   "identifier": "GetCheckedTypeValidator",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/FuturesGetChecked.java",
+    "guava/src/com/google/common/util/concurrent/FuturesGetChecked.java"
+   ]
+  },
+  {
+   "id": "GUAVA166",
+   "query": "transition service",
+   "identifier": "transitionService",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ServiceManager.java",
+    "guava/src/com/google/common/util/concurrent/ServiceManager.java"
+   ]
+  },
+  {
+   "id": "GUAVA167",
+   "query": "grow if needed",
+   "identifier": "growIfNeeded",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MinMaxPriorityQueue.java",
+    "guava/src/com/google/common/collect/MinMaxPriorityQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA168",
+   "query": "async function",
+   "identifier": "AsyncFunction",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AsyncFunction.java",
+    "guava/src/com/google/common/util/concurrent/AsyncFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA169",
+   "query": "class to instance map",
+   "identifier": "ClassToInstanceMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ClassToInstanceMap.java",
+    "guava/src/com/google/common/collect/ClassToInstanceMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA170",
+   "query": "iterator or list iterator",
+   "identifier": "iteratorOrListIterator",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultimap.java"
+   ]
+  },
+  {
+   "id": "GUAVA171",
+   "query": "big integer to double rounder",
+   "identifier": "BigIntegerToDoubleRounder",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/BigIntegerMath.java",
+    "guava/src/com/google/common/math/BigIntegerMath.java"
+   ]
+  },
+  {
+   "id": "GUAVA172",
+   "query": "abstract serialization proxy",
+   "identifier": "AbstractSerializationProxy",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA173",
+   "query": "regular contiguous set",
+   "identifier": "RegularContiguousSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/RegularContiguousSet.java",
+    "guava/src/com/google/common/collect/RegularContiguousSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA174",
+   "query": "checksum hasher",
+   "identifier": "ChecksumHasher",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/ChecksumHashFunction.java",
+    "guava/src/com/google/common/hash/ChecksumHashFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA175",
+   "query": "forwarding object",
+   "identifier": "ForwardingObject",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingObject.java",
+    "guava/src/com/google/common/collect/ForwardingObject.java"
+   ]
+  },
+  {
+   "id": "GUAVA176",
+   "query": "padded partition",
+   "identifier": "paddedPartition",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Iterables.java",
+    "android/guava/src/com/google/common/collect/Iterators.java",
+    "guava/src/com/google/common/collect/Iterables.java",
+    "guava/src/com/google/common/collect/Iterators.java"
+   ]
+  },
+  {
+   "id": "GUAVA177",
+   "query": "predicate function",
+   "identifier": "PredicateFunction",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Functions.java",
+    "guava/src/com/google/common/base/Functions.java"
+   ]
+  },
+  {
+   "id": "GUAVA178",
+   "query": "trusted put",
+   "identifier": "trustedPut",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/MutableTypeToInstanceMap.java",
+    "guava/src/com/google/common/reflect/MutableTypeToInstanceMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA179",
+   "query": "write long",
+   "identifier": "writeLong",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/ByteArrayDataOutput.java",
+    "android/guava/src/com/google/common/io/ByteStreams.java",
+    "android/guava/src/com/google/common/io/LittleEndianDataOutputStream.java",
+    "guava/src/com/google/common/io/ByteArrayDataOutput.java",
+    "guava/src/com/google/common/io/ByteStreams.java",
+    "guava/src/com/google/common/io/LittleEndianDataOutputStream.java"
+   ]
+  },
+  {
+   "id": "GUAVA180",
+   "query": "trusted future",
+   "identifier": "TrustedFuture",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "android/guava/src/com/google/common/util/concurrent/FluentFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "guava/src/com/google/common/util/concurrent/FluentFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA181",
+   "query": "write map to",
+   "identifier": "writeMapTo",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA182",
+   "query": "listening executor service",
+   "identifier": "ListeningExecutorService",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ListeningExecutorService.java",
+    "guava/src/com/google/common/util/concurrent/ListeningExecutorService.java"
+   ]
+  },
+  {
+   "id": "GUAVA183",
+   "query": "unsafe atomic helper",
+   "identifier": "UnsafeAtomicHelper",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFutureState.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFutureState.java"
+   ]
+  },
+  {
+   "id": "GUAVA184",
+   "query": "contains node",
+   "identifier": "containsNode",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/StandardNetwork.java",
+    "android/guava/src/com/google/common/graph/StandardValueGraph.java",
+    "guava/src/com/google/common/graph/StandardNetwork.java",
+    "guava/src/com/google/common/graph/StandardValueGraph.java"
+   ]
+  },
+  {
+   "id": "GUAVA185",
+   "query": "new tree map",
+   "identifier": "newTreeMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA186",
+   "query": "map retrieval cache",
+   "identifier": "MapRetrievalCache",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/MapRetrievalCache.java",
+    "guava/src/com/google/common/graph/MapRetrievalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA187",
+   "query": "cap at maximum size",
+   "identifier": "capAtMaximumSize",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MinMaxPriorityQueue.java",
+    "guava/src/com/google/common/collect/MinMaxPriorityQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA188",
+   "query": "enum map accumulator",
+   "identifier": "EnumMapAccumulator",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CollectCollectors.java",
+    "guava/src/com/google/common/collect/CollectCollectors.java"
+   ]
+  },
+  {
+   "id": "GUAVA189",
+   "query": "reverse list",
+   "identifier": "ReverseList",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Lists.java",
+    "guava/src/com/google/common/collect/Lists.java"
+   ]
+  },
+  {
+   "id": "GUAVA190",
+   "query": "cas value",
+   "identifier": "casValue",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFutureState.java",
+    "guava-gwt/src-super/com/google/common/util/concurrent/super/com/google/common/util/concurrent/AbstractFutureState.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFutureState.java"
+   ]
+  },
+  {
+   "id": "GUAVA191",
+   "query": "new cancellation exception",
+   "identifier": "newCancellationException",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA192",
+   "query": "add pending string",
+   "identifier": "addPendingString",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA193",
+   "query": "is6to4 address",
+   "identifier": "is6to4Address",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/InetAddresses.java",
+    "guava/src/com/google/common/net/InetAddresses.java"
+   ]
+  },
+  {
+   "id": "GUAVA194",
+   "query": "delete recursively",
+   "identifier": "deleteRecursively",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/MoreFiles.java",
+    "guava/src/com/google/common/io/MoreFiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA195",
+   "query": "url fragment escaper",
+   "identifier": "urlFragmentEscaper",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/UrlEscapers.java",
+    "guava/src/com/google/common/net/UrlEscapers.java"
+   ]
+  },
+  {
+   "id": "GUAVA196",
+   "query": "sorted multiset bridge",
+   "identifier": "SortedMultisetBridge",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/SortedMultisetBridge.java",
+    "guava/src/com/google/common/collect/SortedMultisetBridge.java"
+   ]
+  },
+  {
+   "id": "GUAVA197",
+   "query": "nulls first",
+   "identifier": "nullsFirst",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/NaturalOrdering.java",
+    "android/guava/src/com/google/common/collect/NullsFirstOrdering.java",
+    "android/guava/src/com/google/common/collect/NullsLastOrdering.java",
+    "android/guava/src/com/google/common/collect/Ordering.java",
+    "guava/src/com/google/common/collect/NaturalOrdering.java",
+    "guava/src/com/google/common/collect/NullsFirstOrdering.java",
+    "guava/src/com/google/common/collect/NullsLastOrdering.java",
+    "guava/src/com/google/common/collect/Ordering.java"
+   ]
+  },
+  {
+   "id": "GUAVA198",
+   "query": "get subscribers for testing",
+   "identifier": "getSubscribersForTesting",
+   "definedIn": [
+    "android/guava/src/com/google/common/eventbus/SubscriberRegistry.java",
+    "guava/src/com/google/common/eventbus/SubscriberRegistry.java"
+   ]
+  },
+  {
+   "id": "GUAVA199",
+   "query": "range map entry",
+   "identifier": "RangeMapEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/TreeRangeMap.java",
+    "guava/src/com/google/common/collect/TreeRangeMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA200",
+   "query": "enum multiset",
+   "identifier": "EnumMultiset",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/EnumMultiset.java",
+    "guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/EnumMultiset.java",
+    "guava/src/com/google/common/collect/EnumMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA201",
+   "query": "direct executor",
+   "identifier": "DirectExecutor",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/DirectExecutor.java",
+    "guava/src/com/google/common/util/concurrent/DirectExecutor.java"
+   ]
+  },
+  {
+   "id": "GUAVA202",
+   "query": "describe as lower bound",
+   "identifier": "describeAsLowerBound",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Cut.java",
+    "guava/src/com/google/common/collect/Cut.java"
+   ]
+  },
+  {
+   "id": "GUAVA203",
+   "query": "successors function",
+   "identifier": "SuccessorsFunction",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/SuccessorsFunction.java",
+    "guava/src/com/google/common/graph/SuccessorsFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA204",
+   "query": "is predecessor",
+   "identifier": "isPredecessor",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/DirectedGraphConnections.java",
+    "guava/src/com/google/common/graph/DirectedGraphConnections.java"
+   ]
+  },
+  {
+   "id": "GUAVA205",
+   "query": "weighted soft value reference",
+   "identifier": "WeightedSoftValueReference",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA206",
+   "query": "hash unencoded chars",
+   "identifier": "hashUnencodedChars",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/AbstractHashFunction.java",
+    "android/guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java",
+    "android/guava/src/com/google/common/hash/HashFunction.java",
+    "android/guava/src/com/google/common/hash/Murmur3_32HashFunction.java",
+    "guava/src/com/google/common/hash/AbstractHashFunction.java",
+    "guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java",
+    "guava/src/com/google/common/hash/HashFunction.java",
+    "guava/src/com/google/common/hash/Murmur3_32HashFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA207",
+   "query": "visit next",
+   "identifier": "visitNext",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/Traverser.java",
+    "guava/src/com/google/common/graph/Traverser.java"
+   ]
+  },
+  {
+   "id": "GUAVA208",
+   "query": "get int little endian",
+   "identifier": "getIntLittleEndian",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/Murmur3_32HashFunction.java",
+    "guava/src/com/google/common/hash/Murmur3_32HashFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA209",
+   "query": "hash function",
+   "identifier": "HashFunction",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/HashFunction.java",
+    "guava/src/com/google/common/hash/HashFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA210",
+   "query": "filtered entry bi map",
+   "identifier": "FilteredEntryBiMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA211",
+   "query": "ordered by",
+   "identifier": "orderedBy",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ImmutableSortedMap.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedMultiset.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedSet.java",
+    "android/guava/src/com/google/common/collect/MinMaxPriorityQueue.java",
+    "guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/ImmutableSortedMap.java",
+    "guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/ImmutableSortedSet.java",
+    "guava/src/com/google/common/collect/ImmutableSortedMap.java",
+    "guava/src/com/google/common/collect/ImmutableSortedMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableSortedSet.java",
+    "guava/src/com/google/common/collect/MinMaxPriorityQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA212",
+   "query": "has constructor usable by get checked",
+   "identifier": "hasConstructorUsableByGetChecked",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/FuturesGetChecked.java",
+    "guava/src/com/google/common/util/concurrent/FuturesGetChecked.java"
+   ]
+  },
+  {
+   "id": "GUAVA213",
+   "query": "is recording stats",
+   "identifier": "isRecordingStats",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/CacheBuilder.java",
+    "guava/src/com/google/common/cache/CacheBuilder.java"
+   ]
+  },
+  {
+   "id": "GUAVA214",
+   "query": "remove at for testing",
+   "identifier": "removeAtForTesting",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MinMaxPriorityQueue.java",
+    "guava/src/com/google/common/collect/MinMaxPriorityQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA215",
+   "query": "mark supported",
+   "identifier": "markSupported",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/HashingInputStream.java",
+    "android/guava/src/com/google/common/io/CharSequenceReader.java",
+    "android/guava/src/com/google/common/io/MultiInputStream.java",
+    "guava/src/com/google/common/hash/HashingInputStream.java",
+    "guava/src/com/google/common/io/CharSequenceReader.java",
+    "guava/src/com/google/common/io/MultiInputStream.java"
+   ]
+  },
+  {
+   "id": "GUAVA216",
+   "query": "remove if empty",
+   "identifier": "removeIfEmpty",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultimap.java"
+   ]
+  },
+  {
+   "id": "GUAVA217",
+   "query": "create combined",
+   "identifier": "createCombined",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Collections2.java",
+    "guava/src/com/google/common/collect/Collections2.java"
+   ]
+  },
+  {
+   "id": "GUAVA218",
+   "query": "get declared annotations",
+   "identifier": "getDeclaredAnnotations",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Invokable.java",
+    "android/guava/src/com/google/common/reflect/Parameter.java",
+    "guava/src/com/google/common/reflect/Invokable.java",
+    "guava/src/com/google/common/reflect/Parameter.java"
+   ]
+  },
+  {
+   "id": "GUAVA219",
+   "query": "hash bytes",
+   "identifier": "hashBytes",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/AbstractHashFunction.java",
+    "android/guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java",
+    "android/guava/src/com/google/common/hash/FarmHashFingerprint64.java",
+    "android/guava/src/com/google/common/hash/Fingerprint2011.java",
+    "android/guava/src/com/google/common/hash/HashFunction.java",
+    "android/guava/src/com/google/common/hash/Murmur3_32HashFunction.java",
+    "guava/src/com/google/common/hash/AbstractHashFunction.java",
+    "guava/src/com/google/common/hash/AbstractNonStreamingHashFunction.java",
+    "guava/src/com/google/common/hash/FarmHashFingerprint64.java",
+    "guava/src/com/google/common/hash/Fingerprint2011.java",
+    "guava/src/com/google/common/hash/HashFunction.java",
+    "guava/src/com/google/common/hash/Murmur3_32HashFunction.java"
+   ]
+  },
+  {
+   "id": "GUAVA220",
+   "query": "file tree children",
+   "identifier": "fileTreeChildren",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/MoreFiles.java",
+    "guava/src/com/google/common/io/MoreFiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA221",
+   "query": "builder with expected keys",
+   "identifier": "builderWithExpectedKeys",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ImmutableListMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableSetMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableListMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableSetMultimap.java"
+   ]
+  },
+  {
+   "id": "GUAVA222",
+   "query": "create video type",
+   "identifier": "createVideoType",
+   "definedIn": [
+    "android/guava/src/com/google/common/net/MediaType.java",
+    "guava/src/com/google/common/net/MediaType.java"
+   ]
+  },
+  {
+   "id": "GUAVA223",
+   "query": "range lex ordering",
+   "identifier": "RangeLexOrdering",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Range.java",
+    "guava/src/com/google/common/collect/Range.java"
+   ]
+  },
+  {
+   "id": "GUAVA224",
+   "query": "close quietly",
+   "identifier": "closeQuietly",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/Closeables.java",
+    "android/guava/src/com/google/common/util/concurrent/ClosingFuture.java",
+    "guava/src/com/google/common/io/Closeables.java",
+    "guava/src/com/google/common/util/concurrent/ClosingFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA225",
+   "query": "empty to null",
+   "identifier": "emptyToNull",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Platform.java",
+    "android/guava/src/com/google/common/base/Strings.java",
+    "guava-gwt/src-super/com/google/common/base/super/com/google/common/base/Platform.java",
+    "guava/src/com/google/common/base/Platform.java",
+    "guava/src/com/google/common/base/Strings.java"
+   ]
+  },
+  {
+   "id": "GUAVA226",
+   "query": "listening scheduled executor service",
+   "identifier": "ListeningScheduledExecutorService",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ListeningScheduledExecutorService.java",
+    "guava/src/com/google/common/util/concurrent/ListeningScheduledExecutorService.java"
+   ]
+  },
+  {
+   "id": "GUAVA227",
+   "query": "async callable",
+   "identifier": "AsyncCallable",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AsyncCallable.java",
+    "guava/src/com/google/common/util/concurrent/AsyncCallable.java"
+   ]
+  },
+  {
+   "id": "GUAVA228",
+   "query": "get generic exception types",
+   "identifier": "getGenericExceptionTypes",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/Invokable.java",
+    "android/guava/src/com/google/common/reflect/TypeToken.java",
+    "guava/src/com/google/common/reflect/Invokable.java",
+    "guava/src/com/google/common/reflect/TypeToken.java"
+   ]
+  },
+  {
+   "id": "GUAVA229",
+   "query": "weak hash length32 with seeds",
+   "identifier": "weakHashLength32WithSeeds",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/FarmHashFingerprint64.java",
+    "android/guava/src/com/google/common/hash/Fingerprint2011.java",
+    "guava/src/com/google/common/hash/FarmHashFingerprint64.java",
+    "guava/src/com/google/common/hash/Fingerprint2011.java"
+   ]
+  },
+  {
+   "id": "GUAVA230",
+   "query": "internal array",
+   "identifier": "internalArray",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ImmutableCollection.java",
+    "android/guava/src/com/google/common/collect/ImmutableList.java",
+    "android/guava/src/com/google/common/collect/RegularImmutableAsList.java",
+    "android/guava/src/com/google/common/collect/RegularImmutableList.java",
+    "android/guava/src/com/google/common/collect/RegularImmutableSet.java",
+    "android/guava/src/com/google/common/collect/RegularImmutableSortedSet.java",
+    "guava-gwt/src-super/com/google/common/collect/super/com/google/common/collect/ImmutableCollection.java",
+    "guava/src/com/google/common/collect/ImmutableCollection.java",
+    "guava/src/com/google/common/collect/RegularImmutableAsList.java",
+    "guava/src/com/google/common/collect/RegularImmutableList.java",
+    "guava/src/com/google/common/collect/RegularImmutableSet.java",
+    "guava/src/com/google/common/collect/RegularImmutableSortedSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA231",
+   "query": "contains entry impl",
+   "identifier": "containsEntryImpl",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA232",
+   "query": "greater than",
+   "identifier": "greaterThan",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Range.java",
+    "guava/src/com/google/common/collect/Range.java"
+   ]
+  },
+  {
+   "id": "GUAVA233",
+   "query": "element order",
+   "identifier": "ElementOrder",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/ElementOrder.java",
+    "guava/src/com/google/common/graph/ElementOrder.java"
+   ]
+  },
+  {
+   "id": "GUAVA234",
+   "query": "retain occurrences",
+   "identifier": "retainOccurrences",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Multisets.java",
+    "guava/src/com/google/common/collect/Multisets.java"
+   ]
+  },
+  {
+   "id": "GUAVA235",
+   "query": "expires after write",
+   "identifier": "expiresAfterWrite",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA236",
+   "query": "get known successful done value",
+   "identifier": "getKnownSuccessfulDoneValue",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA237",
+   "query": "to multiset",
+   "identifier": "toMultiset",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CollectCollectors.java",
+    "android/guava/src/com/google/common/collect/FluentIterable.java",
+    "android/guava/src/com/google/common/collect/Multisets.java",
+    "guava/src/com/google/common/collect/CollectCollectors.java",
+    "guava/src/com/google/common/collect/FluentIterable.java",
+    "guava/src/com/google/common/collect/Multisets.java"
+   ]
+  },
+  {
+   "id": "GUAVA238",
+   "query": "is using hash flooding resistance",
+   "identifier": "isUsingHashFloodingResistance",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CompactHashSet.java",
+    "guava/src/com/google/common/collect/CompactHashSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA239",
+   "query": "as ranges",
+   "identifier": "asRanges",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ImmutableRangeSet.java",
+    "android/guava/src/com/google/common/collect/RangeSet.java",
+    "android/guava/src/com/google/common/collect/TreeRangeSet.java",
+    "guava/src/com/google/common/collect/ImmutableRangeSet.java",
+    "guava/src/com/google/common/collect/RangeSet.java",
+    "guava/src/com/google/common/collect/TreeRangeSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA240",
+   "query": "update backing row map field",
+   "identifier": "updateBackingRowMapField",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/StandardTable.java",
+    "guava/src/com/google/common/collect/StandardTable.java"
+   ]
+  },
+  {
+   "id": "GUAVA241",
+   "query": "compute next",
+   "identifier": "computeNext",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/AbstractIterator.java",
+    "android/guava/src/com/google/common/base/Optional.java",
+    "android/guava/src/com/google/common/base/Splitter.java",
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/collect/AbstractIterator.java",
+    "android/guava/src/com/google/common/collect/AbstractSequentialIterator.java",
+    "android/guava/src/com/google/common/collect/Collections2.java",
+    "android/guava/src/com/google/common/collect/ConcurrentHashMultiset.java",
+    "android/guava/src/com/google/common/collect/ConsumingQueueIterator.java",
+    "android/guava/src/com/google/common/collect/DenseImmutableTable.java",
+    "android/guava/src/com/google/common/collect/FilteredEntryMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableRangeSet.java",
+    "android/guava/src/com/google/common/collect/Iterators.java",
+    "android/guava/src/com/google/common/collect/Multisets.java",
+    "android/guava/src/com/google/common/collect/RegularContiguousSet.java",
+    "android/guava/src/com/google/common/collect/Sets.java",
+    "android/guava/src/com/google/common/collect/StandardTable.java",
+    "android/guava/src/com/google/common/collect/TreeBasedTable.java",
+    "android/guava/src/com/google/common/collect/TreeRangeMap.java",
+    "android/guava/src/com/google/common/collect/TreeRangeSet.java",
+    "android/guava/src/com/google/common/collect/TreeTraverser.java",
+    "android/guava/src/com/google/common/graph/DirectedGraphConnections.java",
+    "android/guava/src/com/google/common/graph/EndpointPairIterator.java",
+    "android/guava/src/com/google/common/graph/MultiEdgesConnecting.java",
+    "android/guava/src/com/google/common/graph/Traverser.java",
+    "android/guava/src/com/google/common/io/CharSource.java",
+    "guava/src/com/google/common/base/AbstractIterator.java",
+    "guava/src/com/google/common/base/Optional.java",
+    "guava/src/com/google/common/base/Splitter.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/collect/AbstractIterator.java",
+    "guava/src/com/google/common/collect/AbstractSequentialIterator.java",
+    "guava/src/com/google/common/collect/Collections2.java",
+    "guava/src/com/google/common/collect/ConcurrentHashMultiset.java",
+    "guava/src/com/google/common/collect/ConsumingQueueIterator.java",
+    "guava/src/com/google/common/collect/DenseImmutableTable.java",
+    "guava/src/com/google/common/collect/FilteredEntryMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableRangeSet.java",
+    "guava/src/com/google/common/collect/Iterators.java",
+    "guava/src/com/google/common/collect/Multisets.java",
+    "guava/src/com/google/common/collect/RegularContiguousSet.java",
+    "guava/src/com/google/common/collect/Sets.java",
+    "guava/src/com/google/common/collect/StandardTable.java",
+    "guava/src/com/google/common/collect/TreeBasedTable.java",
+    "guava/src/com/google/common/collect/TreeRangeMap.java",
+    "guava/src/com/google/common/collect/TreeRangeSet.java",
+    "guava/src/com/google/common/collect/TreeTraverser.java",
+    "guava/src/com/google/common/graph/DirectedGraphConnections.java",
+    "guava/src/com/google/common/graph/EndpointPairIterator.java",
+    "guava/src/com/google/common/graph/MultiEdgesConnecting.java",
+    "guava/src/com/google/common/graph/Traverser.java",
+    "guava/src/com/google/common/io/CharSource.java"
+   ]
+  },
+  {
+   "id": "GUAVA242",
+   "query": "base encoding",
+   "identifier": "BaseEncoding",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/BaseEncoding.java",
+    "guava/src/com/google/common/io/BaseEncoding.java"
+   ]
+  },
+  {
+   "id": "GUAVA243",
+   "query": "safe contains key",
+   "identifier": "safeContainsKey",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA244",
+   "query": "copy reader to writer",
+   "identifier": "copyReaderToWriter",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/CharStreams.java",
+    "guava/src/com/google/common/io/CharStreams.java"
+   ]
+  },
+  {
+   "id": "GUAVA245",
+   "query": "sorted map",
+   "identifier": "sortedMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Synchronized.java"
+   ]
+  },
+  {
+   "id": "GUAVA246",
+   "query": "offer all",
+   "identifier": "offerAll",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/TopKSelector.java",
+    "guava/src/com/google/common/collect/TopKSelector.java"
+   ]
+  },
+  {
+   "id": "GUAVA247",
+   "query": "unmodifiable navigable set",
+   "identifier": "UnmodifiableNavigableSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Sets.java",
+    "guava/src/com/google/common/collect/Sets.java"
+   ]
+  },
+  {
+   "id": "GUAVA248",
+   "query": "set exception internal",
+   "identifier": "setExceptionInternal",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/AbstractFuture.java",
+    "guava/src/com/google/common/util/concurrent/AbstractFuture.java"
+   ]
+  },
+  {
+   "id": "GUAVA249",
+   "query": "check not value type",
+   "identifier": "checkNotValueType",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA250",
+   "query": "recompute height",
+   "identifier": "recomputeHeight",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/TreeMultiset.java",
+    "guava/src/com/google/common/collect/TreeMultiset.java"
+   ]
+  },
+  {
+   "id": "GUAVA251",
+   "query": "boolean array as list",
+   "identifier": "BooleanArrayAsList",
+   "definedIn": [
+    "android/guava/src/com/google/common/primitives/Booleans.java",
+    "guava/src/com/google/common/primitives/Booleans.java"
+   ]
+  },
+  {
+   "id": "GUAVA252",
+   "query": "standard remove",
+   "identifier": "standardRemove",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingCollection.java",
+    "android/guava/src/com/google/common/collect/ForwardingMap.java",
+    "android/guava/src/com/google/common/collect/ForwardingMultiset.java",
+    "android/guava/src/com/google/common/collect/ForwardingSortedSet.java",
+    "guava/src/com/google/common/collect/ForwardingCollection.java",
+    "guava/src/com/google/common/collect/ForwardingMap.java",
+    "guava/src/com/google/common/collect/ForwardingMultiset.java",
+    "guava/src/com/google/common/collect/ForwardingSortedSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA253",
+   "query": "snapshot first",
+   "identifier": "snapshotFirst",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA254",
+   "query": "limited input stream",
+   "identifier": "LimitedInputStream",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/ByteStreams.java",
+    "guava/src/com/google/common/io/ByteStreams.java"
+   ]
+  },
+  {
+   "id": "GUAVA255",
+   "query": "write bytes to impl",
+   "identifier": "writeBytesToImpl",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/HashCode.java",
+    "guava/src/com/google/common/hash/HashCode.java"
+   ]
+  },
+  {
+   "id": "GUAVA256",
+   "query": "temp file creator",
+   "identifier": "TempFileCreator",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/TempFileCreator.java",
+    "guava/src/com/google/common/io/TempFileCreator.java"
+   ]
+  },
+  {
+   "id": "GUAVA257",
+   "query": "queue iterator",
+   "identifier": "QueueIterator",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MinMaxPriorityQueue.java",
+    "guava/src/com/google/common/collect/MinMaxPriorityQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA258",
+   "query": "standard peek",
+   "identifier": "standardPeek",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingQueue.java",
+    "guava/src/com/google/common/collect/ForwardingQueue.java"
+   ]
+  },
+  {
+   "id": "GUAVA259",
+   "query": "strong entry",
+   "identifier": "StrongEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA260",
+   "query": "peek last",
+   "identifier": "peekLast",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingDeque.java",
+    "android/guava/src/com/google/common/collect/MinMaxPriorityQueue.java",
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/ForwardingDeque.java",
+    "guava/src/com/google/common/collect/MinMaxPriorityQueue.java",
+    "guava/src/com/google/common/collect/Synchronized.java"
+   ]
+  },
+  {
+   "id": "GUAVA261",
+   "query": "create temp dir",
+   "identifier": "createTempDir",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/Files.java",
+    "android/guava/src/com/google/common/io/TempFileCreator.java",
+    "guava/src/com/google/common/io/Files.java",
+    "guava/src/com/google/common/io/TempFileCreator.java"
+   ]
+  },
+  {
+   "id": "GUAVA262",
+   "query": "all equal ordering",
+   "identifier": "AllEqualOrdering",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AllEqualOrdering.java",
+    "guava/src/com/google/common/collect/AllEqualOrdering.java"
+   ]
+  },
+  {
+   "id": "GUAVA263",
+   "query": "synchronized queue",
+   "identifier": "SynchronizedQueue",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/Synchronized.java"
+   ]
+  },
+  {
+   "id": "GUAVA264",
+   "query": "loading value reference",
+   "identifier": "LoadingValueReference",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA265",
+   "query": "get sorted set delegate",
+   "identifier": "getSortedSetDelegate",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultimap.java",
+    "guava/src/com/google/common/collect/AbstractMapBasedMultimap.java"
+   ]
+  },
+  {
+   "id": "GUAVA266",
+   "query": "canonicalize wildcards in parameterized type",
+   "identifier": "canonicalizeWildcardsInParameterizedType",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/TypeToken.java",
+    "guava/src/com/google/common/reflect/TypeToken.java"
+   ]
+  },
+  {
+   "id": "GUAVA267",
+   "query": "saturated pow",
+   "identifier": "saturatedPow",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/IntMath.java",
+    "android/guava/src/com/google/common/math/LongMath.java",
+    "guava/src/com/google/common/math/IntMath.java",
+    "guava/src/com/google/common/math/LongMath.java"
+   ]
+  },
+  {
+   "id": "GUAVA268",
+   "query": "write short",
+   "identifier": "writeShort",
+   "definedIn": [
+    "android/guava/src/com/google/common/io/ByteArrayDataOutput.java",
+    "android/guava/src/com/google/common/io/ByteStreams.java",
+    "android/guava/src/com/google/common/io/LittleEndianDataOutputStream.java",
+    "guava/src/com/google/common/io/ByteArrayDataOutput.java",
+    "guava/src/com/google/common/io/ByteStreams.java",
+    "guava/src/com/google/common/io/LittleEndianDataOutputStream.java"
+   ]
+  },
+  {
+   "id": "GUAVA269",
+   "query": "encoded length",
+   "identifier": "encodedLength",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Utf8.java",
+    "guava/src/com/google/common/base/Utf8.java"
+   ]
+  },
+  {
+   "id": "GUAVA270",
+   "query": "is finite",
+   "identifier": "isFinite",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/DoubleUtils.java",
+    "android/guava/src/com/google/common/primitives/Doubles.java",
+    "android/guava/src/com/google/common/primitives/Floats.java",
+    "guava/src/com/google/common/math/DoubleUtils.java",
+    "guava/src/com/google/common/primitives/Doubles.java",
+    "guava/src/com/google/common/primitives/Floats.java"
+   ]
+  },
+  {
+   "id": "GUAVA271",
+   "query": "cache builder spec",
+   "identifier": "CacheBuilderSpec",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/CacheBuilderSpec.java",
+    "guava/src/com/google/common/cache/CacheBuilderSpec.java"
+   ]
+  },
+  {
+   "id": "GUAVA272",
+   "query": "trim and collapse from",
+   "identifier": "trimAndCollapseFrom",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/CharMatcher.java",
+    "guava/src/com/google/common/base/CharMatcher.java"
+   ]
+  },
+  {
+   "id": "GUAVA273",
+   "query": "sorted map difference",
+   "identifier": "SortedMapDifference",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/SortedMapDifference.java",
+    "guava/src/com/google/common/collect/SortedMapDifference.java"
+   ]
+  },
+  {
+   "id": "GUAVA274",
+   "query": "new concurrent map",
+   "identifier": "newConcurrentMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA275",
+   "query": "close all",
+   "identifier": "closeAll",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Streams.java",
+    "guava/src/com/google/common/collect/Streams.java"
+   ]
+  },
+  {
+   "id": "GUAVA276",
+   "query": "java upper case",
+   "identifier": "javaUpperCase",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/CharMatcher.java",
+    "guava/src/com/google/common/base/CharMatcher.java"
+   ]
+  },
+  {
+   "id": "GUAVA277",
+   "query": "unmodifiable empty collection",
+   "identifier": "unmodifiableEmptyCollection",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/FilteredEntryMultimap.java",
+    "android/guava/src/com/google/common/collect/FilteredKeyMultimap.java",
+    "guava/src/com/google/common/collect/FilteredEntryMultimap.java",
+    "guava/src/com/google/common/collect/FilteredKeyMultimap.java"
+   ]
+  },
+  {
+   "id": "GUAVA278",
+   "query": "remove last occurrence",
+   "identifier": "removeLastOccurrence",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/ForwardingDeque.java",
+    "android/guava/src/com/google/common/collect/Synchronized.java",
+    "guava/src/com/google/common/collect/ForwardingDeque.java",
+    "guava/src/com/google/common/collect/Synchronized.java"
+   ]
+  },
+  {
+   "id": "GUAVA279",
+   "query": "new array deque",
+   "identifier": "newArrayDeque",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Queues.java",
+    "guava/src/com/google/common/collect/Queues.java"
+   ]
+  },
+  {
+   "id": "GUAVA280",
+   "query": "get checked",
+   "identifier": "getChecked",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Futures.java",
+    "android/guava/src/com/google/common/util/concurrent/FuturesGetChecked.java",
+    "guava/src/com/google/common/util/concurrent/Futures.java",
+    "guava/src/com/google/common/util/concurrent/FuturesGetChecked.java"
+   ]
+  },
+  {
+   "id": "GUAVA281",
+   "query": "get exact match type",
+   "identifier": "getExactMatchType",
+   "definedIn": [
+    "android/guava/src/com/google/thirdparty/publicsuffix/PublicSuffixTrie.java",
+    "guava/src/com/google/thirdparty/publicsuffix/PublicSuffixTrie.java"
+   ]
+  },
+  {
+   "id": "GUAVA282",
+   "query": "new weak value reference for testing",
+   "identifier": "newWeakValueReferenceForTesting",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA283",
+   "query": "choose next selection",
+   "identifier": "chooseNextSelection",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/Quantiles.java",
+    "guava/src/com/google/common/math/Quantiles.java"
+   ]
+  },
+  {
+   "id": "GUAVA284",
+   "query": "record completion",
+   "identifier": "recordCompletion",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Futures.java",
+    "guava/src/com/google/common/util/concurrent/Futures.java"
+   ]
+  },
+  {
+   "id": "GUAVA285",
+   "query": "ensure in unit range",
+   "identifier": "ensureInUnitRange",
+   "definedIn": [
+    "android/guava/src/com/google/common/math/PairedStats.java",
+    "android/guava/src/com/google/common/math/PairedStatsAccumulator.java",
+    "guava/src/com/google/common/math/PairedStats.java",
+    "guava/src/com/google/common/math/PairedStatsAccumulator.java"
+   ]
+  },
+  {
+   "id": "GUAVA286",
+   "query": "to multimap",
+   "identifier": "toMultimap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/CollectCollectors.java",
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/CollectCollectors.java",
+    "guava/src/com/google/common/collect/Multimaps.java"
+   ]
+  },
+  {
+   "id": "GUAVA287",
+   "query": "from bytes no copy",
+   "identifier": "fromBytesNoCopy",
+   "definedIn": [
+    "android/guava/src/com/google/common/hash/HashCode.java",
+    "guava/src/com/google/common/hash/HashCode.java"
+   ]
+  },
+  {
+   "id": "GUAVA288",
+   "query": "get value equivalence",
+   "identifier": "getValueEquivalence",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/CacheBuilder.java",
+    "guava/src/com/google/common/cache/CacheBuilder.java"
+   ]
+  },
+  {
+   "id": "GUAVA289",
+   "query": "abstract invocation handler",
+   "identifier": "AbstractInvocationHandler",
+   "definedIn": [
+    "android/guava/src/com/google/common/reflect/AbstractInvocationHandler.java",
+    "guava/src/com/google/common/reflect/AbstractInvocationHandler.java"
+   ]
+  },
+  {
+   "id": "GUAVA290",
+   "query": "transforming random access list",
+   "identifier": "TransformingRandomAccessList",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Lists.java",
+    "guava/src/com/google/common/collect/Lists.java"
+   ]
+  },
+  {
+   "id": "GUAVA291",
+   "query": "filtered entry sorted map",
+   "identifier": "FilteredEntrySortedMap",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Maps.java",
+    "guava/src/com/google/common/collect/Maps.java"
+   ]
+  },
+  {
+   "id": "GUAVA292",
+   "query": "record input completion",
+   "identifier": "recordInputCompletion",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/Futures.java",
+    "guava/src/com/google/common/util/concurrent/Futures.java"
+   ]
+  },
+  {
+   "id": "GUAVA293",
+   "query": "null entry",
+   "identifier": "NullEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/cache/LocalCache.java"
+   ]
+  },
+  {
+   "id": "GUAVA294",
+   "query": "read object",
+   "identifier": "readObject",
+   "definedIn": [
+    "android/guava/src/com/google/common/base/Suppliers.java",
+    "android/guava/src/com/google/common/cache/LocalCache.java",
+    "android/guava/src/com/google/common/cache/LongAdder.java",
+    "android/guava/src/com/google/common/collect/AbstractBiMap.java",
+    "android/guava/src/com/google/common/collect/AbstractMapBasedMultiset.java",
+    "android/guava/src/com/google/common/collect/ArrayListMultimap.java",
+    "android/guava/src/com/google/common/collect/CompactHashMap.java",
+    "android/guava/src/com/google/common/collect/CompactHashSet.java",
+    "android/guava/src/com/google/common/collect/ConcurrentHashMultiset.java",
+    "android/guava/src/com/google/common/collect/EmptyContiguousSet.java",
+    "android/guava/src/com/google/common/collect/EnumBiMap.java",
+    "android/guava/src/com/google/common/collect/EnumHashBiMap.java",
+    "android/guava/src/com/google/common/collect/EnumMultiset.java",
+    "android/guava/src/com/google/common/collect/HashBiMap.java",
+    "android/guava/src/com/google/common/collect/HashMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableAsList.java",
+    "android/guava/src/com/google/common/collect/ImmutableBiMap.java",
+    "android/guava/src/com/google/common/collect/ImmutableCollection.java",
+    "android/guava/src/com/google/common/collect/ImmutableEnumMap.java",
+    "android/guava/src/com/google/common/collect/ImmutableEnumSet.java",
+    "android/guava/src/com/google/common/collect/ImmutableList.java",
+    "android/guava/src/com/google/common/collect/ImmutableListMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableMap.java",
+    "android/guava/src/com/google/common/collect/ImmutableMapEntrySet.java",
+    "android/guava/src/com/google/common/collect/ImmutableMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableMultiset.java",
+    "android/guava/src/com/google/common/collect/ImmutableRangeMap.java",
+    "android/guava/src/com/google/common/collect/ImmutableRangeSet.java",
+    "android/guava/src/com/google/common/collect/ImmutableSet.java",
+    "android/guava/src/com/google/common/collect/ImmutableSetMultimap.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedMap.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedMultiset.java",
+    "android/guava/src/com/google/common/collect/ImmutableSortedSet.java",
+    "android/guava/src/com/google/common/collect/ImmutableTable.java",
+    "android/guava/src/com/google/common/collect/LinkedHashMultimap.java",
+    "android/guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "android/guava/src/com/google/common/collect/Multimaps.java",
+    "android/guava/src/com/google/common/collect/MutableClassToInstanceMap.java",
+    "android/guava/src/com/google/common/collect/RegularContiguousSet.java",
+    "android/guava/src/com/google/common/collect/TreeMultimap.java",
+    "android/guava/src/com/google/common/collect/TreeMultiset.java",
+    "android/guava/src/com/google/common/hash/BloomFilter.java",
+    "android/guava/src/com/google/common/hash/Funnels.java",
+    "android/guava/src/com/google/common/hash/LongAdder.java",
+    "android/guava/src/com/google/common/hash/MessageDigestHashFunction.java",
+    "android/guava/src/com/google/common/util/concurrent/AtomicDouble.java",
+    "android/guava/src/com/google/common/util/concurrent/AtomicDoubleArray.java",
+    "guava/src/com/google/common/base/Suppliers.java",
+    "guava/src/com/google/common/cache/LocalCache.java",
+    "guava/src/com/google/common/collect/AbstractBiMap.java",
+    "guava/src/com/google/common/collect/ArrayListMultimap.java",
+    "guava/src/com/google/common/collect/CompactHashMap.java",
+    "guava/src/com/google/common/collect/CompactHashSet.java",
+    "guava/src/com/google/common/collect/ConcurrentHashMultiset.java",
+    "guava/src/com/google/common/collect/EmptyContiguousSet.java",
+    "guava/src/com/google/common/collect/EnumBiMap.java",
+    "guava/src/com/google/common/collect/EnumHashBiMap.java",
+    "guava/src/com/google/common/collect/EnumMultiset.java",
+    "guava/src/com/google/common/collect/HashBiMap.java",
+    "guava/src/com/google/common/collect/HashMultimap.java",
+    "guava/src/com/google/common/collect/HashMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableAsList.java",
+    "guava/src/com/google/common/collect/ImmutableBiMap.java",
+    "guava/src/com/google/common/collect/ImmutableCollection.java",
+    "guava/src/com/google/common/collect/ImmutableEnumMap.java",
+    "guava/src/com/google/common/collect/ImmutableEnumSet.java",
+    "guava/src/com/google/common/collect/ImmutableList.java",
+    "guava/src/com/google/common/collect/ImmutableListMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableMap.java",
+    "guava/src/com/google/common/collect/ImmutableMapEntrySet.java",
+    "guava/src/com/google/common/collect/ImmutableMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableRangeMap.java",
+    "guava/src/com/google/common/collect/ImmutableRangeSet.java",
+    "guava/src/com/google/common/collect/ImmutableSet.java",
+    "guava/src/com/google/common/collect/ImmutableSetMultimap.java",
+    "guava/src/com/google/common/collect/ImmutableSortedMap.java",
+    "guava/src/com/google/common/collect/ImmutableSortedMultiset.java",
+    "guava/src/com/google/common/collect/ImmutableSortedSet.java",
+    "guava/src/com/google/common/collect/ImmutableTable.java",
+    "guava/src/com/google/common/collect/LinkedHashMultimap.java",
+    "guava/src/com/google/common/collect/LinkedHashMultiset.java",
+    "guava/src/com/google/common/collect/LinkedListMultimap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/Multimaps.java",
+    "guava/src/com/google/common/collect/MutableClassToInstanceMap.java",
+    "guava/src/com/google/common/collect/RegularContiguousSet.java",
+    "guava/src/com/google/common/collect/RegularImmutableBiMap.java",
+    "guava/src/com/google/common/collect/TreeMultimap.java",
+    "guava/src/com/google/common/collect/TreeMultiset.java",
+    "guava/src/com/google/common/hash/BloomFilter.java",
+    "guava/src/com/google/common/hash/Funnels.java",
+    "guava/src/com/google/common/hash/MessageDigestHashFunction.java",
+    "guava/src/com/google/common/util/concurrent/AtomicDouble.java",
+    "guava/src/com/google/common/util/concurrent/AtomicDoubleArray.java"
+   ]
+  },
+  {
+   "id": "GUAVA295",
+   "query": "dummy internal entry",
+   "identifier": "DummyInternalEntry",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/MapMakerInternalMap.java",
+    "guava/src/com/google/common/collect/MapMakerInternalMap.java"
+   ]
+  },
+  {
+   "id": "GUAVA296",
+   "query": "escape slow",
+   "identifier": "escapeSlow",
+   "definedIn": [
+    "android/guava/src/com/google/common/escape/CharEscaper.java",
+    "android/guava/src/com/google/common/escape/UnicodeEscaper.java",
+    "guava/src/com/google/common/escape/CharEscaper.java",
+    "guava/src/com/google/common/escape/UnicodeEscaper.java"
+   ]
+  },
+  {
+   "id": "GUAVA297",
+   "query": "submit async",
+   "identifier": "submitAsync",
+   "definedIn": [
+    "android/guava/src/com/google/common/util/concurrent/ClosingFuture.java",
+    "android/guava/src/com/google/common/util/concurrent/ExecutionSequencer.java",
+    "android/guava/src/com/google/common/util/concurrent/Futures.java",
+    "guava/src/com/google/common/util/concurrent/ClosingFuture.java",
+    "guava/src/com/google/common/util/concurrent/ExecutionSequencer.java",
+    "guava/src/com/google/common/util/concurrent/Futures.java"
+   ]
+  },
+  {
+   "id": "GUAVA298",
+   "query": "invalidatable set",
+   "identifier": "InvalidatableSet",
+   "definedIn": [
+    "android/guava/src/com/google/common/graph/InvalidatableSet.java",
+    "guava/src/com/google/common/graph/InvalidatableSet.java"
+   ]
+  },
+  {
+   "id": "GUAVA299",
+   "query": "closed table size",
+   "identifier": "closedTableSize",
+   "definedIn": [
+    "android/guava/src/com/google/common/collect/Hashing.java",
+    "guava/src/com/google/common/collect/Hashing.java"
+   ]
+  }
+ ]
+}

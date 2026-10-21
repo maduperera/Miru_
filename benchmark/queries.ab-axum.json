@@ -1,0 +1,38 @@
+{
+ "repo": "ab-axum",
+ "language": "rust",
+ "commit": "86aa6153e47b7862737acdcfe3a0eb3a162b939a",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_AXUM0",
+   "query": "HTTP router route matching axum",
+   "identifier": "",
+   "definedIn": [
+    "axum/src/routing/mod.rs",
+    "axum/src/routing/path_router.rs"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_AXUM1",
+   "query": "extract request body handler",
+   "identifier": "",
+   "definedIn": [
+    "axum/src/extract/mod.rs",
+    "axum/src/extract/query.rs"
+   ],
+   "category": "semantic"
+  },
+  {
+   "id": "AB_AXUM2",
+   "query": "middleware layer tower",
+   "identifier": "",
+   "definedIn": [
+    "axum/src/middleware/mod.rs"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

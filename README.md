@@ -21,7 +21,7 @@ Each code chunk becomes a set of *(role, identifier)* pairs, for example `ROLE_F
 |---|---|---|
 | Install / run | `bun add -g @takara-ai/miru-code`, `miru setup`, then `miru` CLI / MCP | `npm install` + `pip install -r requirements.txt`, then Python scripts |
 | Where reranking happens | Inside Miru | **Outside Miru, afterwards.** Miru is used unmodified. |
-| Languages | Many | Go benchmarked (regex and tree-sitter extractors). Tree-sitter extractor ([scripts/extract_roles.ts](scripts/extract_roles.ts)) uses Miru's own grammars; multi-language benchmark in progress. |
+| Languages | Many | Go benchmarked in depth (client-go, 500 queries). Also run on Miru's own suites: CodeSearchNet (Go, Java, JS, PHP, Python, Ruby) and the curated A/B repos (TypeScript, Rust, Elixir). See [Multi-language results](#multi-language-results-mirus-own-benchmark-suites). |
 | Index | Any repo | Scripts are wired to `eval-repos/client-go` |
 
 ### How it fits together
@@ -71,7 +71,7 @@ This example builds chunk tensors on the fly for clarity. In production, build t
 
 * A `miru-kalpana search <repo> "<query>"` command, or an MCP tool for agents.
 * Indexing an arbitrary repository through these scripts (they target `client-go`).
-* Benchmarked results for languages other than Go (tree-sitter extraction works for Python, TypeScript, Java, Rust, Ruby and more; evaluation in progress).
+* Strong multi-language evidence: on docstring-style queries (CodeSearchNet) the gain is small and only borderline significant overall (see [Multi-language results](#multi-language-results-mirus-own-benchmark-suites)).
 
 ---
 
@@ -159,6 +159,44 @@ python3 miru_kalpana/benchmark_kalpana_fusion.py --extractor treesitter \
   --queries benchmark/queries.topk.all500.json
 ```
 
+### Multi-language results (Miru's own benchmark suites)
+
+The benchmark suites from the Miru repository (`miru-code/scripts`) were run with the same tree-sitter extractor. Miru stays unmodified and supplies the topK=5 pools. Kalpana fusion uses linear α chosen by 5-fold CV and scored on held-out folds only. The results below compare Kalpana against Miru native topK=3.
+
+**CodeSearchNet** (Miru's protocol: `code-search-net/code_search_net` test split, first 500 usable rows per language, docstring → function, one corpus per language):
+
+| Language | Pool recall@5 | Miru native Chunk@3 | + Kalpana (held-out α) | Chunk W/L | p |
+|---|---:|---:|---:|---:|---:|
+| Ruby | 80.2% | 69.8% | **71.8%** | **11 / 1** | **0.006** |
+| PHP | 76.8% | 69.6% | 71.8% | 23 / 12 | 0.09 |
+| Java | 82.4% | 73.0% | 74.6% | 18 / 10 | 0.19 |
+| Go | 92.0% | 89.4% | 88.2% | 4 / 10 | 0.18 |
+| JavaScript | 78.0% | 54.2% | 54.0% | 8 / 9 | 1.00 |
+| Python | 99.0% | 91.4% | 91.2% | 0 / 1 | 1.00 |
+| **Pooled (3,000 queries)** | | | | **64 / 43** | **0.053** |
+
+* The direction is consistent but the effect is **small**. Only Ruby is significant on its own, and the pooled result is borderline.
+* **The do-no-harm property does not fully transfer.** Against the same top-5 pool, the pooled result is 61 wins / 40 losses (p = 0.046), and every language has some losses. CodeSearchNet queries are natural-language docstrings, whereas Kalpana's query tensor targets identifier-style "where is *X* defined" lookups (the client-go setting above).
+* Python is at ceiling: CodeSearchNet Python code contains its own docstring, which is the query.
+* The extractor needed two language-specific fixes. Elixir `def`/`defmodule` are plain function calls in its grammar, and untagged PHP snippets need `<?php` prepended.
+
+**Miru curated A/B suite** (`search-ab-queries.ts`; file-level labels only, 2–3 queries per repo, repos pinned to the commits in `benchmark/queries.ab-*.json`):
+
+| Repo | Language | Pool recall@5 | Miru native File@3 | + Kalpana (held-out α) | Note |
+|---|---|---:|---:|---:|---|
+| miru-code | TypeScript | 100% | 100% | 100% | Tied, 0 losses |
+| phoenix | Elixir | 100% | 100% | 100% | Tied, 0 losses |
+| axum | Rust | 0% | 0% | 0% | Labels are valid, but Miru's top 5 is mostly `.md` docs |
+| serde | Rust | 0% | 0% | 0% | Stale labels: `serde/src/{ser,de}` moved to `serde_core/` |
+
+This suite is too small to test for an effect. It shows that the pipeline runs end to end on TypeScript, Rust and Elixir.
+
+```bash
+node --import tsx tests/roles_smoke.ts          # extractor sanity check, 9 languages
+sh scripts/run_miru_suite.sh                    # prep CodeSearchNet + curated repos, index, rerank, paired tests
+# logs: benchmark/logs/{csn,ab}-*.log
+```
+
 ### How we got here (development history, frozen 150 queries)
 
 | Step | Pool | Result |
@@ -169,7 +207,7 @@ python3 miru_kalpana/benchmark_kalpana_fusion.py --extractor treesitter \
 
 ### Limitations
 
-* **One repository and one embedder:** `kubernetes/client-go` with local MiniLM-L6 truncated to 256-D (a stand-in for Takara DS1). Other repositories and languages are untested.
+* **One embedder, and one repository for the headline result:** `kubernetes/client-go` with local MiniLM-L6 truncated to 256-D (a stand-in for Takara DS1). Multi-language results on Miru's own suites are smaller and only borderline significant (see above).
 * **The new 350 queries come from a re-implementation** ([gen_queries.py](miru_kalpana/gen_queries.py)) of the sampling rule documented in `queries.topk.json`. The original sampler isn't available. The new set is somewhat easier (native Chunk@3 56.9% vs 50.0%).
 * **Go chunks are parsed with a regex extractor** in the headline results. A tree-sitter extractor gives equal or slightly better numbers on the same queries (see above).
 * **Kalpana alone, without fusion, is worse than Miru** (K=25 pool: Top-1 64.7% → 49.3%). It's useful as a fused reranker, not as a replacement ranker.

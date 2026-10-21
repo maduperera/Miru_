@@ -1,0 +1,1284 @@
+{
+ "repo": "scikit-learn",
+ "commit": "106573971c28d82a1b5579aea7a23eecd80355f0",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "100 ambiguous-symbol lookups drawn by gen_queries_multi.py (seed 0x5e5512) from tree-sitter definitions; >=8 chars, >=2 words, 2..30 dirs, tests excluded.",
+ "queries": [
+  {
+   "id": "SCIKIT0",
+   "query": "get metadata routing",
+   "identifier": "get_metadata_routing",
+   "definedIn": [
+    "sklearn/calibration.py",
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/compose/_target.py",
+    "sklearn/covariance/_graph_lasso.py",
+    "sklearn/ensemble/_bagging.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/ensemble/_stacking.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/feature_selection/_from_model.py",
+    "sklearn/feature_selection/_rfe.py",
+    "sklearn/feature_selection/_sequential.py",
+    "sklearn/impute/_iterative.py",
+    "sklearn/linear_model/_coordinate_descent.py",
+    "sklearn/linear_model/_least_angle.py",
+    "sklearn/linear_model/_logistic.py",
+    "sklearn/linear_model/_omp.py",
+    "sklearn/linear_model/_ransac.py",
+    "sklearn/linear_model/_ridge.py",
+    "sklearn/metrics/_scorer.py",
+    "sklearn/model_selection/_classification_threshold.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/multiclass.py",
+    "sklearn/multioutput.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_target_encoder.py",
+    "sklearn/semi_supervised/_self_training.py",
+    "sklearn/utils/_metadata_requests.py"
+   ]
+  },
+  {
+   "id": "SCIKIT1",
+   "query": "unique values",
+   "identifier": "unique_values",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/common/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py"
+   ]
+  },
+  {
+   "id": "SCIKIT2",
+   "query": "unique inverse",
+   "identifier": "unique_inverse",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/common/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py"
+   ]
+  },
+  {
+   "id": "SCIKIT3",
+   "query": "unique all",
+   "identifier": "unique_all",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/common/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py"
+   ]
+  },
+  {
+   "id": "SCIKIT4",
+   "query": "blas functions",
+   "identifier": "BlasFunctions",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/_cython_blas_helpers.h",
+    "sklearn/svm/src/libsvm/_svm_cython_blas_helpers.h"
+   ]
+  },
+  {
+   "id": "SCIKIT5",
+   "query": "tril indices",
+   "identifier": "tril_indices",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_indexing.py",
+    "sklearn/externals/array_api_extra/_indexing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT6",
+   "query": "predict log proba",
+   "identifier": "predict_log_proba",
+   "definedIn": [
+    "sklearn/discriminant_analysis.py",
+    "sklearn/dummy.py",
+    "sklearn/ensemble/_bagging.py",
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_weight_boosting.py",
+    "sklearn/feature_selection/_rfe.py",
+    "sklearn/linear_model/_logistic.py",
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/model_selection/_classification_threshold.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/multioutput.py",
+    "sklearn/naive_bayes.py",
+    "sklearn/neural_network/_multilayer_perceptron.py",
+    "sklearn/pipeline.py",
+    "sklearn/semi_supervised/_self_training.py",
+    "sklearn/svm/_base.py",
+    "sklearn/tree/_classes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT7",
+   "query": "get param names",
+   "identifier": "_get_param_names",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/utils/_metadata_requests.py"
+   ]
+  },
+  {
+   "id": "SCIKIT8",
+   "query": "raw predict",
+   "identifier": "_raw_predict",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT9",
+   "query": "sklearn is fitted",
+   "identifier": "__sklearn_is_fitted__",
+   "definedIn": [
+    "sklearn/frozen/_frozen.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_function_transformer.py"
+   ]
+  },
+  {
+   "id": "SCIKIT10",
+   "query": "diag indices",
+   "identifier": "diag_indices",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_indexing.py",
+    "sklearn/externals/array_api_extra/_indexing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT11",
+   "query": "create diagonal",
+   "identifier": "create_diagonal",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_creation.py",
+    "sklearn/externals/array_api_extra/_creation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT12",
+   "query": "check solver",
+   "identifier": "_check_solver",
+   "definedIn": [
+    "sklearn/linear_model/_logistic.py",
+    "sklearn/neural_network/_multilayer_perceptron.py"
+   ]
+  },
+  {
+   "id": "SCIKIT13",
+   "query": "loss grad lbfgs",
+   "identifier": "_loss_grad_lbfgs",
+   "definedIn": [
+    "sklearn/neighbors/_nca.py",
+    "sklearn/neural_network/_multilayer_perceptron.py"
+   ]
+  },
+  {
+   "id": "SCIKIT14",
+   "query": "get feature names out",
+   "identifier": "get_feature_names_out",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_stacking.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/feature_extraction/_dict_vectorizer.py",
+    "sklearn/feature_extraction/text.py",
+    "sklearn/feature_selection/_base.py",
+    "sklearn/impute/_base.py",
+    "sklearn/impute/_iterative.py",
+    "sklearn/impute/_knn.py",
+    "sklearn/isotonic.py",
+    "sklearn/kernel_approximation.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_discretization.py",
+    "sklearn/preprocessing/_encoders.py",
+    "sklearn/preprocessing/_function_transformer.py",
+    "sklearn/preprocessing/_polynomial.py",
+    "sklearn/preprocessing/_target_encoder.py"
+   ]
+  },
+  {
+   "id": "SCIKIT15",
+   "query": "check method params",
+   "identifier": "_check_method_params",
+   "definedIn": [
+    "sklearn/pipeline.py",
+    "sklearn/utils/validation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT16",
+   "query": "unique counts",
+   "identifier": "unique_counts",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/common/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py"
+   ]
+  },
+  {
+   "id": "SCIKIT17",
+   "query": "fit predict",
+   "identifier": "fit_predict",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/cluster/_affinity_propagation.py",
+    "sklearn/cluster/_agglomerative.py",
+    "sklearn/cluster/_dbscan.py",
+    "sklearn/cluster/_hdbscan/hdbscan.py",
+    "sklearn/cluster/_kmeans.py",
+    "sklearn/cluster/_spectral.py",
+    "sklearn/mixture/_base.py",
+    "sklearn/neighbors/_lof.py",
+    "sklearn/pipeline.py"
+   ]
+  },
+  {
+   "id": "SCIKIT18",
+   "query": "check proba",
+   "identifier": "_check_proba",
+   "definedIn": [
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/svm/_base.py"
+   ]
+  },
+  {
+   "id": "SCIKIT19",
+   "query": "nan to num",
+   "identifier": "nan_to_num",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_elementwise.py",
+    "sklearn/externals/array_api_extra/_elementwise.py"
+   ]
+  },
+  {
+   "id": "SCIKIT20",
+   "query": "fit binary",
+   "identifier": "_fit_binary",
+   "definedIn": [
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/multiclass.py"
+   ]
+  },
+  {
+   "id": "SCIKIT21",
+   "query": "partial fit",
+   "identifier": "partial_fit",
+   "definedIn": [
+    "sklearn/cluster/_birch.py",
+    "sklearn/cluster/_kmeans.py",
+    "sklearn/decomposition/_dict_learning.py",
+    "sklearn/decomposition/_incremental_pca.py",
+    "sklearn/decomposition/_lda.py",
+    "sklearn/decomposition/_nmf.py",
+    "sklearn/feature_extraction/text.py",
+    "sklearn/feature_selection/_from_model.py",
+    "sklearn/linear_model/_passive_aggressive.py",
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/multiclass.py",
+    "sklearn/multioutput.py",
+    "sklearn/naive_bayes.py",
+    "sklearn/neural_network/_multilayer_perceptron.py",
+    "sklearn/neural_network/_rbm.py",
+    "sklearn/preprocessing/_data.py"
+   ]
+  },
+  {
+   "id": "SCIKIT22",
+   "query": "check x y",
+   "identifier": "_check_X_y",
+   "definedIn": [
+    "sklearn/naive_bayes.py",
+    "sklearn/utils/_mocking.py"
+   ]
+  },
+  {
+   "id": "SCIKIT23",
+   "query": "validate transformers",
+   "identifier": "_validate_transformers",
+   "definedIn": [
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/pipeline.py"
+   ]
+  },
+  {
+   "id": "SCIKIT24",
+   "query": "triu indices",
+   "identifier": "triu_indices",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_indexing.py",
+    "sklearn/externals/array_api_extra/_indexing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT25",
+   "query": "clear state",
+   "identifier": "_clear_state",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT26",
+   "query": "sparse fit",
+   "identifier": "_sparse_fit",
+   "definedIn": [
+    "sklearn/impute/_base.py",
+    "sklearn/preprocessing/_data.py",
+    "sklearn/svm/_base.py"
+   ]
+  },
+  {
+   "id": "SCIKIT27",
+   "query": "get scorer",
+   "identifier": "_get_scorer",
+   "definedIn": [
+    "sklearn/feature_selection/_rfe.py",
+    "sklearn/linear_model/_logistic.py",
+    "sklearn/linear_model/_ridge.py"
+   ]
+  },
+  {
+   "id": "SCIKIT28",
+   "query": "partial fit",
+   "identifier": "_partial_fit",
+   "definedIn": [
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/naive_bayes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT29",
+   "query": "vector norm",
+   "identifier": "vector_norm",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/common/_linalg.py",
+    "sklearn/externals/array_api_compat/torch/linalg.py"
+   ]
+  },
+  {
+   "id": "SCIKIT30",
+   "query": "set problem",
+   "identifier": "set_problem",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/liblinear_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_helper.c"
+   ]
+  },
+  {
+   "id": "SCIKIT31",
+   "query": "log loss",
+   "identifier": "log_loss",
+   "definedIn": [
+    "sklearn/calibration.py",
+    "sklearn/metrics/_classification.py",
+    "sklearn/neural_network/_base.py"
+   ]
+  },
+  {
+   "id": "SCIKIT32",
+   "query": "staged raw predict",
+   "identifier": "_staged_raw_predict",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT33",
+   "query": "staged decision function",
+   "identifier": "staged_decision_function",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/ensemble/_weight_boosting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT34",
+   "query": "log message",
+   "identifier": "_log_message",
+   "definedIn": [
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/multioutput.py",
+    "sklearn/pipeline.py"
+   ]
+  },
+  {
+   "id": "SCIKIT35",
+   "query": "validate x predict",
+   "identifier": "_validate_X_predict",
+   "definedIn": [
+    "sklearn/ensemble/_forest.py",
+    "sklearn/tree/_classes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT36",
+   "query": "count nonzero",
+   "identifier": "count_nonzero",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/cupy/_aliases.py",
+    "sklearn/externals/array_api_compat/dask/array/_aliases.py",
+    "sklearn/externals/array_api_compat/numpy/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py",
+    "sklearn/utils/sparsefuncs.py"
+   ]
+  },
+  {
+   "id": "SCIKIT37",
+   "query": "preprocess x",
+   "identifier": "_preprocess_X",
+   "definedIn": [
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/tree/_classes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT38",
+   "query": "gradient hessian",
+   "identifier": "gradient_hessian",
+   "definedIn": [
+    "sklearn/_loss/loss.py",
+    "sklearn/linear_model/_linear_loss.py"
+   ]
+  },
+  {
+   "id": "SCIKIT39",
+   "query": "n features in",
+   "identifier": "n_features_in_",
+   "definedIn": [
+    "sklearn/compose/_target.py",
+    "sklearn/ensemble/_stacking.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/feature_selection/_from_model.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/pipeline.py"
+   ]
+  },
+  {
+   "id": "SCIKIT40",
+   "query": "n features out",
+   "identifier": "_n_features_out",
+   "definedIn": [
+    "sklearn/decomposition/_base.py",
+    "sklearn/decomposition/_dict_learning.py",
+    "sklearn/decomposition/_factor_analysis.py",
+    "sklearn/decomposition/_fastica.py",
+    "sklearn/decomposition/_kernel_pca.py",
+    "sklearn/decomposition/_lda.py",
+    "sklearn/decomposition/_nmf.py",
+    "sklearn/decomposition/_sparse_pca.py",
+    "sklearn/decomposition/_truncated_svd.py",
+    "sklearn/manifold/_t_sne.py",
+    "sklearn/neighbors/_nca.py",
+    "sklearn/preprocessing/_data.py"
+   ]
+  },
+  {
+   "id": "SCIKIT41",
+   "query": "set params",
+   "identifier": "set_params",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/ensemble/_base.py",
+    "sklearn/frozen/_frozen.py",
+    "sklearn/gaussian_process/kernels.py",
+    "sklearn/pipeline.py",
+    "sklearn/utils/_testing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT42",
+   "query": "is fitted",
+   "identifier": "_is_fitted",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/utils/validation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT43",
+   "query": "check feature names",
+   "identifier": "_check_feature_names",
+   "definedIn": [
+    "sklearn/inspection/_pd_utils.py",
+    "sklearn/utils/validation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT44",
+   "query": "unravel index",
+   "identifier": "unravel_index",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_indexing.py",
+    "sklearn/externals/array_api_extra/_indexing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT45",
+   "query": "take along axis",
+   "identifier": "take_along_axis",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/cupy/_aliases.py",
+    "sklearn/externals/array_api_compat/numpy/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py"
+   ]
+  },
+  {
+   "id": "SCIKIT46",
+   "query": "sk visual block",
+   "identifier": "_sk_visual_block_",
+   "definedIn": [
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/compose/_target.py",
+    "sklearn/ensemble/_stacking.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/model_selection/_classification_threshold.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_function_transformer.py",
+    "sklearn/utils/_repr_html/estimator.py"
+   ]
+  },
+  {
+   "id": "SCIKIT47",
+   "query": "estimator has",
+   "identifier": "_estimator_has",
+   "definedIn": [
+    "sklearn/frozen/_frozen.py",
+    "sklearn/utils/validation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT48",
+   "query": "sklearn clone",
+   "identifier": "__sklearn_clone__",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/frozen/_frozen.py",
+    "sklearn/utils/_metadata_requests.py"
+   ]
+  },
+  {
+   "id": "SCIKIT49",
+   "query": "get kernel",
+   "identifier": "_get_kernel",
+   "definedIn": [
+    "sklearn/decomposition/_kernel_pca.py",
+    "sklearn/kernel_ridge.py",
+    "sklearn/semi_supervised/_label_propagation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT50",
+   "query": "expand dims",
+   "identifier": "expand_dims",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/torch/_aliases.py",
+    "sklearn/externals/array_api_extra/_agnostic/_manipulation.py",
+    "sklearn/externals/array_api_extra/_manipulation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT51",
+   "query": "set callbacks",
+   "identifier": "set_callbacks",
+   "definedIn": [
+    "sklearn/callback/_callback_support.py",
+    "sklearn/linear_model/_logistic.py"
+   ]
+  },
+  {
+   "id": "SCIKIT52",
+   "query": "default dtypes",
+   "identifier": "default_dtypes",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/cupy/_info.py",
+    "sklearn/externals/array_api_compat/dask/array/_info.py",
+    "sklearn/externals/array_api_compat/numpy/_info.py",
+    "sklearn/externals/array_api_compat/torch/_info.py"
+   ]
+  },
+  {
+   "id": "SCIKIT53",
+   "query": "get metadata request",
+   "identifier": "_get_metadata_request",
+   "definedIn": [
+    "sklearn/metrics/_scorer.py",
+    "sklearn/utils/_metadata_requests.py"
+   ]
+  },
+  {
+   "id": "SCIKIT54",
+   "query": "get estimator",
+   "identifier": "_get_estimator",
+   "definedIn": [
+    "sklearn/calibration.py",
+    "sklearn/ensemble/_bagging.py",
+    "sklearn/ensemble/_iforest.py",
+    "sklearn/linear_model/_coordinate_descent.py",
+    "sklearn/semi_supervised/_self_training.py"
+   ]
+  },
+  {
+   "id": "SCIKIT55",
+   "query": "validate plot params",
+   "identifier": "_validate_plot_params",
+   "definedIn": [
+    "sklearn/metrics/_plot/precision_recall_curve.py",
+    "sklearn/metrics/_plot/roc_curve.py",
+    "sklearn/utils/_plotting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT56",
+   "query": "fit transform",
+   "identifier": "_fit_transform",
+   "definedIn": [
+    "sklearn/decomposition/_fastica.py",
+    "sklearn/decomposition/_nmf.py",
+    "sklearn/manifold/_isomap.py",
+    "sklearn/manifold/_locally_linear.py"
+   ]
+  },
+  {
+   "id": "SCIKIT57",
+   "query": "set score request",
+   "identifier": "set_score_request",
+   "definedIn": [
+    "sklearn/metrics/_scorer.py",
+    "sklearn/utils/_metadata_requests.py"
+   ]
+  },
+  {
+   "id": "SCIKIT58",
+   "query": "set verbosity",
+   "identifier": "set_verbosity",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/liblinear_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_sparse_helper.c"
+   ]
+  },
+  {
+   "id": "SCIKIT59",
+   "query": "set parameter",
+   "identifier": "set_parameter",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/liblinear_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_sparse_helper.c"
+   ]
+  },
+  {
+   "id": "SCIKIT60",
+   "query": "csr set problem",
+   "identifier": "csr_set_problem",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/liblinear_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_sparse_helper.c"
+   ]
+  },
+  {
+   "id": "SCIKIT61",
+   "query": "feature importances",
+   "identifier": "feature_importances_",
+   "definedIn": [
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_weight_boosting.py",
+    "sklearn/tree/_classes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT62",
+   "query": "inverse transform",
+   "identifier": "inverse_transform",
+   "definedIn": [
+    "sklearn/cluster/_feature_agglomeration.py",
+    "sklearn/cross_decomposition/_pls.py",
+    "sklearn/decomposition/_base.py",
+    "sklearn/decomposition/_dict_learning.py",
+    "sklearn/decomposition/_fastica.py",
+    "sklearn/decomposition/_kernel_pca.py",
+    "sklearn/decomposition/_nmf.py",
+    "sklearn/decomposition/_sparse_pca.py",
+    "sklearn/decomposition/_truncated_svd.py",
+    "sklearn/feature_extraction/_dict_vectorizer.py",
+    "sklearn/feature_extraction/text.py",
+    "sklearn/feature_selection/_base.py",
+    "sklearn/impute/_base.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_data.py",
+    "sklearn/preprocessing/_discretization.py",
+    "sklearn/preprocessing/_encoders.py",
+    "sklearn/preprocessing/_function_transformer.py",
+    "sklearn/preprocessing/_label.py",
+    "sklearn/random_projection.py"
+   ]
+  },
+  {
+   "id": "SCIKIT63",
+   "query": "get params",
+   "identifier": "get_params",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/ensemble/_base.py",
+    "sklearn/frozen/_frozen.py",
+    "sklearn/gaussian_process/kernels.py",
+    "sklearn/pipeline.py",
+    "sklearn/utils/_testing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT64",
+   "query": "routing repr",
+   "identifier": "_routing_repr",
+   "definedIn": [
+    "sklearn/metrics/_scorer.py",
+    "sklearn/utils/_metadata_requests.py"
+   ]
+  },
+  {
+   "id": "SCIKIT65",
+   "query": "staged predict",
+   "identifier": "staged_predict",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/ensemble/_weight_boosting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT66",
+   "query": "add prefix for feature names out",
+   "identifier": "_add_prefix_for_feature_names_out",
+   "definedIn": [
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/pipeline.py"
+   ]
+  },
+  {
+   "id": "SCIKIT67",
+   "query": "staged predict proba",
+   "identifier": "staged_predict_proba",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/ensemble/_weight_boosting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT68",
+   "query": "check params",
+   "identifier": "_check_params",
+   "definedIn": [
+    "sklearn/decomposition/_dict_learning.py",
+    "sklearn/decomposition/_nmf.py",
+    "sklearn/feature_extraction/text.py",
+    "sklearn/feature_selection/_univariate_selection.py",
+    "sklearn/neighbors/_graph.py",
+    "sklearn/utils/_param_validation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT69",
+   "query": "decision function",
+   "identifier": "_decision_function",
+   "definedIn": [
+    "sklearn/discriminant_analysis.py",
+    "sklearn/linear_model/_base.py",
+    "sklearn/linear_model/_coordinate_descent.py",
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/neighbors/_nearest_centroid.py",
+    "sklearn/svm/_base.py"
+   ]
+  },
+  {
+   "id": "SCIKIT70",
+   "query": "print string stdout",
+   "identifier": "print_string_stdout",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/liblinear_helper.c",
+    "sklearn/svm/src/liblinear/linear.cpp",
+    "sklearn/svm/src/libsvm/libsvm_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_sparse_helper.c",
+    "sklearn/svm/src/libsvm/svm.cpp"
+   ]
+  },
+  {
+   "id": "SCIKIT71",
+   "query": "dense fit",
+   "identifier": "_dense_fit",
+   "definedIn": [
+    "sklearn/impute/_base.py",
+    "sklearn/preprocessing/_data.py",
+    "sklearn/svm/_base.py"
+   ]
+  },
+  {
+   "id": "SCIKIT72",
+   "query": "get loss",
+   "identifier": "_get_loss",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/linear_model/_glm/glm.py"
+   ]
+  },
+  {
+   "id": "SCIKIT73",
+   "query": "broadcast arrays",
+   "identifier": "broadcast_arrays",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/cupy/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py"
+   ]
+  },
+  {
+   "id": "SCIKIT74",
+   "query": "fit transform",
+   "identifier": "fit_transform",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/cluster/_kmeans.py",
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/cross_decomposition/_pls.py",
+    "sklearn/decomposition/_dict_learning.py",
+    "sklearn/decomposition/_fastica.py",
+    "sklearn/decomposition/_kernel_pca.py",
+    "sklearn/decomposition/_lda.py",
+    "sklearn/decomposition/_nmf.py",
+    "sklearn/decomposition/_pca.py",
+    "sklearn/decomposition/_truncated_svd.py",
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_stacking.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/feature_extraction/_dict_vectorizer.py",
+    "sklearn/feature_extraction/text.py",
+    "sklearn/impute/_base.py",
+    "sklearn/impute/_iterative.py",
+    "sklearn/manifold/_classical_mds.py",
+    "sklearn/manifold/_isomap.py",
+    "sklearn/manifold/_locally_linear.py",
+    "sklearn/manifold/_mds.py",
+    "sklearn/manifold/_spectral_embedding.py",
+    "sklearn/manifold/_t_sne.py",
+    "sklearn/neighbors/_graph.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_data.py",
+    "sklearn/preprocessing/_label.py",
+    "sklearn/preprocessing/_target_encoder.py",
+    "sklearn/utils/_testing.py",
+    "sklearn/utils/estimator_checks.py"
+   ]
+  },
+  {
+   "id": "SCIKIT75",
+   "query": "check x",
+   "identifier": "_check_X",
+   "definedIn": [
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/ensemble/_weight_boosting.py",
+    "sklearn/naive_bayes.py",
+    "sklearn/preprocessing/_encoders.py"
+   ]
+  },
+  {
+   "id": "SCIKIT76",
+   "query": "predict proba",
+   "identifier": "predict_proba",
+   "definedIn": [
+    "sklearn/_loss/loss.py",
+    "sklearn/calibration.py",
+    "sklearn/discriminant_analysis.py",
+    "sklearn/dummy.py",
+    "sklearn/ensemble/_bagging.py",
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/ensemble/_stacking.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/ensemble/_weight_boosting.py",
+    "sklearn/feature_selection/_rfe.py",
+    "sklearn/gaussian_process/_gpc.py",
+    "sklearn/linear_model/_logistic.py",
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/mixture/_base.py",
+    "sklearn/model_selection/_classification_threshold.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/multiclass.py",
+    "sklearn/multioutput.py",
+    "sklearn/naive_bayes.py",
+    "sklearn/neighbors/_classification.py",
+    "sklearn/neural_network/_multilayer_perceptron.py",
+    "sklearn/pipeline.py",
+    "sklearn/semi_supervised/_label_propagation.py",
+    "sklearn/semi_supervised/_self_training.py",
+    "sklearn/svm/_base.py",
+    "sklearn/tree/_classes.py",
+    "sklearn/utils/_mocking.py",
+    "sklearn/utils/_testing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT77",
+   "query": "atleast nd",
+   "identifier": "atleast_nd",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_manipulation.py",
+    "sklearn/externals/array_api_extra/_manipulation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT78",
+   "query": "get precision",
+   "identifier": "get_precision",
+   "definedIn": [
+    "sklearn/covariance/_empirical_covariance.py",
+    "sklearn/decomposition/_base.py",
+    "sklearn/decomposition/_factor_analysis.py"
+   ]
+  },
+  {
+   "id": "SCIKIT79",
+   "query": "print null",
+   "identifier": "print_null",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/liblinear_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_sparse_helper.c"
+   ]
+  },
+  {
+   "id": "SCIKIT80",
+   "query": "from estimator",
+   "identifier": "from_estimator",
+   "definedIn": [
+    "sklearn/calibration.py",
+    "sklearn/inspection/_plot/decision_boundary.py",
+    "sklearn/inspection/_plot/partial_dependence.py",
+    "sklearn/metrics/_plot/confusion_matrix.py",
+    "sklearn/metrics/_plot/det_curve.py",
+    "sklearn/metrics/_plot/precision_recall_curve.py",
+    "sklearn/metrics/_plot/regression.py",
+    "sklearn/metrics/_plot/roc_curve.py",
+    "sklearn/model_selection/_plot.py"
+   ]
+  },
+  {
+   "id": "SCIKIT81",
+   "query": "broadcast shapes",
+   "identifier": "broadcast_shapes",
+   "definedIn": [
+    "sklearn/externals/array_api_extra/_agnostic/_manipulation.py",
+    "sklearn/externals/array_api_extra/_manipulation.py"
+   ]
+  },
+  {
+   "id": "SCIKIT82",
+   "query": "compute partial dependence recursion",
+   "identifier": "_compute_partial_dependence_recursion",
+   "definedIn": [
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/tree/_classes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT83",
+   "query": "encode y",
+   "identifier": "_encode_y",
+   "definedIn": [
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py"
+   ]
+  },
+  {
+   "id": "SCIKIT84",
+   "query": "sklearn tags",
+   "identifier": "__sklearn_tags__",
+   "definedIn": [
+    "sklearn/base.py",
+    "sklearn/calibration.py",
+    "sklearn/cluster/_affinity_propagation.py",
+    "sklearn/cluster/_bicluster.py",
+    "sklearn/cluster/_birch.py",
+    "sklearn/cluster/_bisect_k_means.py",
+    "sklearn/cluster/_dbscan.py",
+    "sklearn/cluster/_hdbscan/hdbscan.py",
+    "sklearn/cluster/_kmeans.py",
+    "sklearn/cluster/_spectral.py",
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/compose/_target.py",
+    "sklearn/covariance/_shrunk_covariance.py",
+    "sklearn/cross_decomposition/_pls.py",
+    "sklearn/decomposition/_dict_learning.py",
+    "sklearn/decomposition/_fastica.py",
+    "sklearn/decomposition/_incremental_pca.py",
+    "sklearn/decomposition/_kernel_pca.py",
+    "sklearn/decomposition/_lda.py",
+    "sklearn/decomposition/_nmf.py",
+    "sklearn/decomposition/_pca.py",
+    "sklearn/decomposition/_sparse_pca.py",
+    "sklearn/decomposition/_truncated_svd.py",
+    "sklearn/discriminant_analysis.py",
+    "sklearn/dummy.py",
+    "sklearn/ensemble/_bagging.py",
+    "sklearn/ensemble/_base.py",
+    "sklearn/ensemble/_forest.py",
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/ensemble/_iforest.py",
+    "sklearn/ensemble/_voting.py",
+    "sklearn/ensemble/_weight_boosting.py",
+    "sklearn/feature_extraction/_dict_vectorizer.py",
+    "sklearn/feature_extraction/_hash.py",
+    "sklearn/feature_extraction/image.py",
+    "sklearn/feature_extraction/text.py",
+    "sklearn/feature_selection/_from_model.py",
+    "sklearn/feature_selection/_rfe.py",
+    "sklearn/feature_selection/_sequential.py",
+    "sklearn/feature_selection/_univariate_selection.py",
+    "sklearn/feature_selection/_variance_threshold.py",
+    "sklearn/frozen/_frozen.py",
+    "sklearn/gaussian_process/_gpr.py",
+    "sklearn/impute/_base.py",
+    "sklearn/isotonic.py",
+    "sklearn/kernel_approximation.py",
+    "sklearn/kernel_ridge.py",
+    "sklearn/linear_model/_base.py",
+    "sklearn/linear_model/_coordinate_descent.py",
+    "sklearn/linear_model/_glm/glm.py",
+    "sklearn/linear_model/_huber.py",
+    "sklearn/linear_model/_least_angle.py",
+    "sklearn/linear_model/_logistic.py",
+    "sklearn/linear_model/_quantile.py",
+    "sklearn/linear_model/_ransac.py",
+    "sklearn/linear_model/_ridge.py",
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/manifold/_classical_mds.py",
+    "sklearn/manifold/_isomap.py",
+    "sklearn/manifold/_mds.py",
+    "sklearn/manifold/_spectral_embedding.py",
+    "sklearn/manifold/_t_sne.py",
+    "sklearn/mixture/_gaussian_mixture.py",
+    "sklearn/model_selection/_classification_threshold.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/model_selection/_search_successive_halving.py",
+    "sklearn/multiclass.py",
+    "sklearn/multioutput.py",
+    "sklearn/naive_bayes.py",
+    "sklearn/neighbors/_base.py",
+    "sklearn/neighbors/_classification.py",
+    "sklearn/neighbors/_nca.py",
+    "sklearn/neighbors/_nearest_centroid.py",
+    "sklearn/neighbors/_regression.py",
+    "sklearn/neural_network/_multilayer_perceptron.py",
+    "sklearn/neural_network/_rbm.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_data.py",
+    "sklearn/preprocessing/_encoders.py",
+    "sklearn/preprocessing/_function_transformer.py",
+    "sklearn/preprocessing/_label.py",
+    "sklearn/preprocessing/_polynomial.py",
+    "sklearn/preprocessing/_target_encoder.py",
+    "sklearn/random_projection.py",
+    "sklearn/semi_supervised/_label_propagation.py",
+    "sklearn/semi_supervised/_self_training.py",
+    "sklearn/svm/_base.py",
+    "sklearn/svm/_classes.py",
+    "sklearn/tree/_classes.py",
+    "sklearn/utils/_mocking.py",
+    "sklearn/utils/_testing.py"
+   ]
+  },
+  {
+   "id": "SCIKIT85",
+   "query": "score samples",
+   "identifier": "score_samples",
+   "definedIn": [
+    "sklearn/covariance/_elliptic_envelope.py",
+    "sklearn/decomposition/_factor_analysis.py",
+    "sklearn/decomposition/_pca.py",
+    "sklearn/ensemble/_iforest.py",
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/mixture/_base.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/neighbors/_kde.py",
+    "sklearn/neighbors/_lof.py",
+    "sklearn/neural_network/_rbm.py",
+    "sklearn/pipeline.py",
+    "sklearn/svm/_classes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT86",
+   "query": "free problem",
+   "identifier": "free_problem",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/liblinear_helper.c",
+    "sklearn/svm/src/libsvm/libsvm_sparse_helper.c"
+   ]
+  },
+  {
+   "id": "SCIKIT87",
+   "query": "loss gradient",
+   "identifier": "loss_gradient",
+   "definedIn": [
+    "sklearn/_loss/loss.py",
+    "sklearn/linear_model/_linear_loss.py"
+   ]
+  },
+  {
+   "id": "SCIKIT88",
+   "query": "check params vs input",
+   "identifier": "_check_params_vs_input",
+   "definedIn": [
+    "sklearn/cluster/_kmeans.py",
+    "sklearn/manifold/_t_sne.py"
+   ]
+  },
+  {
+   "id": "SCIKIT89",
+   "query": "check parameters",
+   "identifier": "_check_parameters",
+   "definedIn": [
+    "sklearn/cluster/_bicluster.py",
+    "sklearn/mixture/_base.py",
+    "sklearn/mixture/_bayesian_mixture.py",
+    "sklearn/mixture/_gaussian_mixture.py"
+   ]
+  },
+  {
+   "id": "SCIKIT90",
+   "query": "permute dims",
+   "identifier": "permute_dims",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/common/_aliases.py",
+    "sklearn/externals/array_api_compat/torch/_aliases.py"
+   ]
+  },
+  {
+   "id": "SCIKIT91",
+   "query": "set output",
+   "identifier": "set_output",
+   "definedIn": [
+    "sklearn/compose/_column_transformer.py",
+    "sklearn/pipeline.py",
+    "sklearn/preprocessing/_function_transformer.py",
+    "sklearn/utils/_set_output.py"
+   ]
+  },
+  {
+   "id": "SCIKIT92",
+   "query": "be shrunk",
+   "identifier": "be_shrunk",
+   "definedIn": [
+    "sklearn/svm/src/liblinear/linear.cpp",
+    "sklearn/svm/src/libsvm/svm.cpp"
+   ]
+  },
+  {
+   "id": "SCIKIT93",
+   "query": "solve svd",
+   "identifier": "_solve_svd",
+   "definedIn": [
+    "sklearn/discriminant_analysis.py",
+    "sklearn/linear_model/_ridge.py"
+   ]
+  },
+  {
+   "id": "SCIKIT94",
+   "query": "decision path",
+   "identifier": "decision_path",
+   "definedIn": [
+    "sklearn/ensemble/_forest.py",
+    "sklearn/tree/_classes.py"
+   ]
+  },
+  {
+   "id": "SCIKIT95",
+   "query": "array namespace info",
+   "identifier": "__array_namespace_info__",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/cupy/_info.py",
+    "sklearn/externals/array_api_compat/dask/array/_info.py",
+    "sklearn/externals/array_api_compat/numpy/_info.py",
+    "sklearn/externals/array_api_compat/torch/_info.py"
+   ]
+  },
+  {
+   "id": "SCIKIT96",
+   "query": "decision function",
+   "identifier": "decision_function",
+   "definedIn": [
+    "sklearn/covariance/_elliptic_envelope.py",
+    "sklearn/discriminant_analysis.py",
+    "sklearn/ensemble/_bagging.py",
+    "sklearn/ensemble/_gb.py",
+    "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+    "sklearn/ensemble/_iforest.py",
+    "sklearn/ensemble/_stacking.py",
+    "sklearn/ensemble/_weight_boosting.py",
+    "sklearn/feature_selection/_rfe.py",
+    "sklearn/linear_model/_base.py",
+    "sklearn/linear_model/_ridge.py",
+    "sklearn/linear_model/_stochastic_gradient.py",
+    "sklearn/model_selection/_classification_threshold.py",
+    "sklearn/model_selection/_search.py",
+    "sklearn/multiclass.py",
+    "sklearn/multioutput.py",
+    "sklearn/neighbors/_lof.py",
+    "sklearn/pipeline.py",
+    "sklearn/semi_supervised/_self_training.py",
+    "sklearn/svm/_base.py",
+    "sklearn/svm/_classes.py",
+    "sklearn/svm/src/libsvm/svm.cpp",
+    "sklearn/utils/_mocking.py"
+   ]
+  },
+  {
+   "id": "SCIKIT97",
+   "query": "default device",
+   "identifier": "default_device",
+   "definedIn": [
+    "sklearn/externals/array_api_compat/cupy/_info.py",
+    "sklearn/externals/array_api_compat/dask/array/_info.py",
+    "sklearn/externals/array_api_compat/numpy/_info.py",
+    "sklearn/externals/array_api_compat/torch/_info.py"
+   ]
+  },
+  {
+   "id": "SCIKIT98",
+   "query": "validate input",
+   "identifier": "_validate_input",
+   "definedIn": [
+    "sklearn/impute/_base.py",
+    "sklearn/neural_network/_multilayer_perceptron.py"
+   ]
+  },
+  {
+   "id": "SCIKIT99",
+   "query": "from predictions",
+   "identifier": "from_predictions",
+   "definedIn": [
+    "sklearn/calibration.py",
+    "sklearn/metrics/_plot/confusion_matrix.py",
+    "sklearn/metrics/_plot/det_curve.py",
+    "sklearn/metrics/_plot/precision_recall_curve.py",
+    "sklearn/metrics/_plot/regression.py",
+    "sklearn/metrics/_plot/roc_curve.py"
+   ]
+  }
+ ]
+}

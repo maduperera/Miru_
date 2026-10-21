@@ -1,0 +1,28 @@
+{
+ "repo": "ab-rails",
+ "language": "ruby",
+ "commit": "3f0b675158e8284241bb1213c00375bc1fb9c52f",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_RAILS0",
+   "query": "Rails routing route set dispatch",
+   "identifier": "",
+   "definedIn": [
+    "actionpack/lib/action_dispatch/routing/route_set.rb",
+    "actionpack/lib/action_dispatch/routing/mapper.rb"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_RAILS1",
+   "query": "ActiveRecord database model persistence",
+   "identifier": "",
+   "definedIn": [
+    "activerecord/lib/active_record/base.rb"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

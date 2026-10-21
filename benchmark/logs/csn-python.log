@@ -1,0 +1,79 @@
+Embedding 500 new queries with minilm-l6-256… done
+wrote 500 candidate pools (topK=3) -> /Users/madusha/Documents/Kalpana-Series/Miru_Dicsrete_RIF/.bench/kalpana/candidates.minilm-l6-256.queries.csn-python.k3.json
+roles for 1500 candidates (99.2% with >=1 role) by language {"python":1500} -> .bench/kalpana/candidates.minilm-l6-256.queries.csn-python.k3.ts.json
+wrote 500 candidate pools (topK=5) -> /Users/madusha/Documents/Kalpana-Series/Miru_Dicsrete_RIF/.bench/kalpana/candidates.minilm-l6-256.queries.csn-python.k5.json
+roles for 2500 candidates (98.8% with >=1 role) by language {"python":2500} -> .bench/kalpana/candidates.minilm-l6-256.queries.csn-python.k5.ts.json
+Loading Kalpana-RIF (MiniLM codebook)…
+/Users/madusha/opt/anaconda3/lib/python3.9/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+/Users/madusha/opt/anaconda3/lib/python3.9/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.2' currently installed).
+  from pandas.core import (
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: af658f7d-622e-48e5-900d-4f37ec4d4f6b)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json
+Retrying in 1s [Retry 1/5].
+Offline: tensorizing 544 unique pool chunks…
+  500/544
+
+============================================================================================
+ Miru + Kalpana-RIF fusion benchmark v2   (bun 1.4.3, 636 chunks)
+ 500 queries | Miru pool K=5 | pool Recall@K = 99.0% (identical for all arms)
+ Distractor = generic pattern AND not in the query's ground-truth file list
+============================================================================================
+ Metric                               Baseline    Kalpana        RRF Lin a=0.1*   Lin CV5†
+ -------------------------------------------------------------------------------------------
+ Top-1  (defining file at rank 1)      93.2%      41.0% ▼    76.6% ▼    93.0% ▼    93.0% ▼
+ Hit@3  (defining file in top 3)       98.2%      79.8% ▼    97.4% ▼    98.0% ▼    98.0% ▼
+ Def@3  (defining chunk in top 3)      91.4%      77.8% ▼    90.8% ▼    91.2% ▼    91.2% ▼
+ Precision@3                           32.7%      26.6% ▼    32.5% ▼    32.7% ▼    32.7% ▼
+ MRR@K  (file)                         0.958      0.621 ▼    0.865 ▼    0.956 ▼    0.956 ▼
+ MRR@K  (defining chunk)               0.890      0.600 ▼    0.823 ▼    0.890 ▼    0.890 ▼
+ Distractor share of top 3              0.0%       0.0%       0.0%       0.0%       0.0%  
+ Distractor at rank 1                   0.0%       0.0%       0.0%       0.0%       0.0%  
+ Rank-1 distractor suppressed n=0       0.0%       0.0%       0.0%       0.0%       0.0%  
+ -------------------------------------------------------------------------------------------
+ * alpha chosen on all 500 queries (in-sample, optimistic).
+ † alpha chosen on train folds, scored on held-out folds; per-fold alpha = [0.1, 0.1, 0.1, 0.1, 0.1]
+
+ Alpha sweep   final = (1-a)*minmax(miru_score) + a*minmax(kalpana_cos)
+ -------------------------------------------------------------------------------------------
+  alpha    Top-1    Hit@3    Def@3     MRR  MRRdef   Hit@3 W/L       p   Def@3 W/L       p
+    0.1    93.0%    98.0%    91.2%   0.956   0.890     0/1      1.0000     0/1      1.0000 *
+    0.2    91.4%    98.0%    91.2%   0.948   0.883     0/1      1.0000     0/1      1.0000
+    0.3    89.0%    98.0%    91.2%   0.935   0.874     0/1      1.0000     0/1      1.0000
+    0.4    82.8%    97.6%    91.0%   0.901   0.849     0/3      0.2500     0/2      0.5000
+    0.5    75.6%    97.0%    90.8%   0.859   0.817     0/6      0.0312     0/3      0.2500
+    0.6    66.2%    92.6%    88.0%   0.795   0.764     0/28     0.0000     0/17     0.0000
+    0.7    57.0%    89.4%    85.8%   0.739   0.713     0/44     0.0000     0/28     0.0000
+ -------------------------------------------------------------------------------------------
+ argmax Def@3 -> a=0.1   argmax MRR -> a=0.1   selected (Def@3, tie MRR) -> a=0.1
+   Lin a=0.1 (in-sample)      Hit@3 W/L 0/1 p=1.0000   Def@3 W/L 0/1 p=1.0000
+   Lin CV5 (held-out)         Hit@3 W/L 0/1 p=1.0000   Def@3 W/L 0/1 p=1.0000
+   RRF                        Hit@3 W/L 0/4 p=0.1250   Def@3 W/L 0/3 p=0.2500
+
+ Latency / query (ms) — pool tensors pre-computed offline
+ -------------------------------------------------------------------------------------------
+                                                   p50      p95
+   Miru search (Top-5)                           6.040   10.228
+   Kalpana query tensor, cold (MiniLM encode)   16.945   54.132
+   Kalpana query tensor, warm (token cached)     0.089    0.161
+   Kalpana pool scoring (mat-vec + sort)         0.033    0.059
+   Overhead above Miru, cold query              16.978   54.176   >= 1 ms at p95
+   Overhead above Miru, warm query               0.122    0.229   < 1 ms at p95
+ Offline tensor build: 544 chunks in 14.7s (built); model load 33.7s (one-time)
+ Chunks with ≥1 extracted pair: 98.8%
+============================================================================================
+
+ Results -> benchmark/results.kalpana.minilm-l6-256.queries.csn-python.k5.ts.json
+================================================================================================
+ csn-python (tree-sitter)   (500 queries)   ceiling: defining chunk anywhere in top-5 = 92.0%
+------------------------------------------------------------------------------------------------
+ Top-3 drawn from                        File@3  Chunk@3   vs native K=3: Chunk W/L       p  File W/L      p
+ Miru native topK=3                       98.2%    91.4%                          —
+ Miru topK=5 first 3 (no rerank)          98.2%    91.4%                    0/0      1.0000     0/0    1.000
+ Kalpana RRF                              97.4%    90.8%                    0/3      0.2500     0/4    0.125
+ Kalpana held-out alpha                   98.0%    91.2%                    0/1      1.0000     0/1    1.000
+------------------------------------------------------------------------------------------------
+ Do-no-harm vs the same top-5 pool un-reranked (correct defining chunk removed from top 3 = loss):
+   Kalpana RRF                          Chunk W/L   0/3   p=2.50e-01   File W/L   0/4   p=1.25e-01   3 chunk loss(es)
+   Kalpana held-out alpha               Chunk W/L   0/1   p=1.00e+00   File W/L   0/1   p=1.00e+00   1 chunk loss(es)
+================================================================================================
+ Held-out alphas per fold: [0.1, 0.1, 0.1, 0.1, 0.1]

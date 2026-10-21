@@ -1,0 +1,28 @@
+{
+ "repo": "ab-cobra",
+ "language": "go",
+ "commit": "adbc8813901bba65827259daa8e22ff94ec1f30e",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_COBRA0",
+   "query": "cobra command CLI execute flags",
+   "identifier": "",
+   "definedIn": [
+    "command.go"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_COBRA1",
+   "query": "persistent flags command tree",
+   "identifier": "",
+   "definedIn": [
+    "command.go",
+    "flag_groups.go"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

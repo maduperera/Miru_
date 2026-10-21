@@ -1,0 +1,29 @@
+{
+ "repo": "ab-click",
+ "language": "python",
+ "commit": "2247b35ea1c47c727d7a06e51fa280e12a863ff6",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_CLICK0",
+   "query": "command line interface Click command decorator",
+   "identifier": "",
+   "definedIn": [
+    "src/click/core.py",
+    "src/click/decorators.py"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_CLICK1",
+   "query": "argument option parsing CLI",
+   "identifier": "",
+   "definedIn": [
+    "src/click/core.py",
+    "src/click/parser.py"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

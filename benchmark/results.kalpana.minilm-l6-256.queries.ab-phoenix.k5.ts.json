@@ -1,0 +1,673 @@
+{
+ "candidates": ".bench/kalpana/candidates.minilm-l6-256.queries.ab-phoenix.k5.ts.json",
+ "queries": 2,
+ "poolRecallAtK": 1.0,
+ "rrfC": 60,
+ "alphas": [
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7
+ ],
+ "bestAlphaInSample": 0.1,
+ "argmaxDef3": 0.1,
+ "argmaxMRR": 0.1,
+ "cv": {
+  "folds": 5,
+  "seed": 6182160,
+  "alphas": [
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1
+  ]
+ },
+ "arms": {
+  "baseline": {
+   "hit1": 0.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.5,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "kalpana": {
+   "hit1": 0.0,
+   "hit3": 0.5,
+   "def3": 0.0,
+   "p3": 0.16666666666666666,
+   "mrr": 0.35,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "rrf": {
+   "hit1": 0.0,
+   "hit3": 0.5,
+   "def3": 0.0,
+   "p3": 0.16666666666666666,
+   "mrr": 0.375,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.1": {
+   "hit1": 0.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.5,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.2": {
+   "hit1": 0.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.5,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.3": {
+   "hit1": 0.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.3333333333333333,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.4": {
+   "hit1": 0.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.3333333333333333,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.5": {
+   "hit1": 0.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.3333333333333333,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.6": {
+   "hit1": 0.0,
+   "hit3": 0.5,
+   "def3": 0.0,
+   "p3": 0.16666666666666666,
+   "mrr": 0.375,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.7": {
+   "hit1": 0.0,
+   "hit3": 0.5,
+   "def3": 0.0,
+   "p3": 0.16666666666666666,
+   "mrr": 0.375,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 1,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "cv": {
+   "hit1": 0.0,
+   "hit3": 1.0,
+   "def3": 0.0,
+   "p3": 0.3333333333333333,
+   "mrr": 0.5,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  }
+ },
+ "latencyMs": {
+  "miru": {
+   "p50": 5.823309999999992,
+   "p95": 7.939081000000016
+  },
+  "queryTensorCold": {
+   "p50": 13.401900999998162,
+   "p95": 15.833771000000496
+  },
+  "queryTensorWarm": {
+   "p50": 0.09220300000123416,
+   "p95": 0.1565670000012176
+  },
+  "poolScoring": {
+   "p50": 0.05080700000092975,
+   "p95": 0.13816599999927348
+  },
+  "overheadCold": {
+   "p50": 13.452707999999092,
+   "p95": 15.97193699999977
+  },
+  "overheadWarm": {
+   "p50": 0.20737400000214734,
+   "p95": 0.23036900000050764
+  },
+  "offlineBuildS": 1.2655573380000007,
+  "modelLoadS": 16.305561953
+ },
+ "perQuery": [
+  {
+   "id": "AB_PHOENIX0",
+   "query": "Phoenix router HTTP pipeline plugs",
+   "identifier": "",
+   "poolRecall": true,
+   "parsed": 0.4,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/plug.md:174",
+     "lib/phoenix/router.ex:1035",
+     "guides/routing.md:466"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.2,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/controller/pipeline.ex:75",
+     "guides/plug.md:174",
+     "guides/routing.md:466"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/plug.md:174",
+     "lib/phoenix/controller/pipeline.ex:75",
+     "guides/routing.md:466"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/plug.md:174",
+     "lib/phoenix/router.ex:1035",
+     "guides/routing.md:466"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/plug.md:174",
+     "lib/phoenix/router.ex:1035",
+     "guides/routing.md:466"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/plug.md:174",
+     "lib/phoenix/controller/pipeline.ex:75",
+     "lib/phoenix/router.ex:1035"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/plug.md:174",
+     "lib/phoenix/controller/pipeline.ex:75",
+     "lib/phoenix/router.ex:1035"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/controller/pipeline.ex:75",
+     "guides/plug.md:174",
+     "lib/phoenix/router.ex:1035"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/controller/pipeline.ex:75",
+     "guides/plug.md:174",
+     "guides/routing.md:466"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.25,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/controller/pipeline.ex:75",
+     "guides/plug.md:174",
+     "guides/routing.md:466"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "AB_PHOENIX1",
+   "query": "channel websocket pubsub",
+   "identifier": "",
+   "poolRecall": true,
+   "parsed": 0.6,
+   "baseline": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/real_time/channels.md:100",
+     "lib/phoenix/channel.ex:584",
+     "lib/phoenix/endpoint.ex:437"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/endpoint.ex:437",
+     "lib/phoenix/channel.ex:584",
+     "lib/phoenix/channel/server.ex:417"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/endpoint.ex:437",
+     "lib/phoenix/channel.ex:584",
+     "guides/real_time/channels.md:100"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/real_time/channels.md:100",
+     "lib/phoenix/channel.ex:584",
+     "lib/phoenix/endpoint.ex:437"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/real_time/channels.md:100",
+     "lib/phoenix/channel.ex:584",
+     "lib/phoenix/endpoint.ex:437"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "guides/real_time/channels.md:100",
+     "lib/phoenix/endpoint.ex:437",
+     "lib/phoenix/channel.ex:584"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/endpoint.ex:437",
+     "guides/real_time/channels.md:100",
+     "lib/phoenix/channel.ex:584"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.3333333333333333,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/endpoint.ex:437",
+     "guides/real_time/channels.md:100",
+     "lib/phoenix/channel.ex:584"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     true
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/endpoint.ex:437",
+     "lib/phoenix/channel.ex:584",
+     "guides/real_time/channels.md:100"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": true,
+    "def3": false,
+    "p3": 0.3333333333333333,
+    "rr": 0.5,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "lib/phoenix/endpoint.ex:437",
+     "lib/phoenix/channel.ex:584",
+     "guides/real_time/channels.md:100"
+    ],
+    "top3_hit": [
+     false,
+     true,
+     false
+    ]
+   }
+  }
+ ]
+}

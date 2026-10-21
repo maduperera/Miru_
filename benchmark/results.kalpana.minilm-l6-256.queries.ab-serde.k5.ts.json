@@ -1,0 +1,673 @@
+{
+ "candidates": ".bench/kalpana/candidates.minilm-l6-256.queries.ab-serde.k5.ts.json",
+ "queries": 2,
+ "poolRecallAtK": 0.0,
+ "rrfC": 60,
+ "alphas": [
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7
+ ],
+ "bestAlphaInSample": 0.1,
+ "argmaxDef3": 0.1,
+ "argmaxMRR": 0.1,
+ "cv": {
+  "folds": 5,
+  "seed": 6182160,
+  "alphas": [
+   0.1,
+   0.1,
+   0.1,
+   0.1,
+   0.1
+  ]
+ },
+ "arms": {
+  "baseline": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "kalpana": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "rrf": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.1": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.2": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.3": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.4": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.5": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.6": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "lin0.7": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  },
+  "cv": {
+   "hit1": 0.0,
+   "hit3": 0.0,
+   "def3": 0.0,
+   "p3": 0.0,
+   "mrr": 0.0,
+   "mrr_def": 0.0,
+   "generic3": 0.0,
+   "generic1": 0.0,
+   "suppress1": 0.0,
+   "baseGeneric1N": 0,
+   "hit3_wins": 0,
+   "hit3_losses": 0,
+   "hit3_p": 1.0,
+   "def3_wins": 0,
+   "def3_losses": 0,
+   "def3_p": 1.0
+  }
+ },
+ "latencyMs": {
+  "miru": {
+   "p50": 7.643073999999984,
+   "p95": 10.522853999999995
+  },
+  "queryTensorCold": {
+   "p50": 10.591790999999517,
+   "p95": 11.505782000000409
+  },
+  "queryTensorWarm": {
+   "p50": 0.0907259999998189,
+   "p95": 0.10087100000077953
+  },
+  "poolScoring": {
+   "p50": 0.039023999999443504,
+   "p95": 0.1463109999981782
+  },
+  "overheadCold": {
+   "p50": 10.630814999998961,
+   "p95": 11.652092999998587
+  },
+  "overheadWarm": {
+   "p50": 0.1297499999992624,
+   "p95": 0.24718199999895774
+  },
+  "offlineBuildS": 0.20752068900000253,
+  "modelLoadS": 25.929672789
+ },
+ "perQuery": [
+  {
+   "id": "AB_SERDE0",
+   "query": "Serialize Deserialize trait derive",
+   "identifier": "",
+   "poolRecall": false,
+   "parsed": 1.0,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/ser/mod.rs:234",
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/ser/mod.rs:234",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/ser/mod.rs:234",
+     "serde_derive/src/ser.rs:1315",
+     "serde_core/src/de/mod.rs:595"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  },
+  {
+   "id": "AB_SERDE1",
+   "query": "JSON serialization deserializer",
+   "identifier": "",
+   "poolRecall": false,
+   "parsed": 0.2,
+   "baseline": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55",
+     "serde_core/src/ser/impls.rs:486"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "kalpana": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde/src/private/de.rs:2245",
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "rrf": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55",
+     "serde/src/private/de.rs:2245"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.1": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55",
+     "serde_core/src/ser/impls.rs:486"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.2": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55",
+     "serde/src/private/de.rs:2245"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.3": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55",
+     "serde/src/private/de.rs:2245"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.4": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55",
+     "serde/src/private/de.rs:2245"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.5": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/private/de.rs:2245",
+     "serde/src/lib.rs:55"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.6": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde/src/private/de.rs:2245",
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   },
+   "lin0.7": {
+    "hit1": false,
+    "hit3": false,
+    "def3": false,
+    "p3": 0.0,
+    "rr": 0.0,
+    "rr_def": 0.0,
+    "generic3": 0,
+    "generic1": false,
+    "top3": [
+     "serde/src/private/de.rs:2245",
+     "serde_core/src/de/mod.rs:935",
+     "serde/src/lib.rs:55"
+    ],
+    "top3_hit": [
+     false,
+     false,
+     false
+    ]
+   }
+  }
+ ]
+}

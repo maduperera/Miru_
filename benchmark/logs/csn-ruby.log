@@ -1,0 +1,83 @@
+Embedding 500 new queries with minilm-l6-256… done
+wrote 500 candidate pools (topK=3) -> /Users/madusha/Documents/Kalpana-Series/Miru_Dicsrete_RIF/.bench/kalpana/candidates.minilm-l6-256.queries.csn-ruby.k3.json
+roles for 1500 candidates (98.3% with >=1 role) by language {"ruby":1500} -> .bench/kalpana/candidates.minilm-l6-256.queries.csn-ruby.k3.ts.json
+wrote 500 candidate pools (topK=5) -> /Users/madusha/Documents/Kalpana-Series/Miru_Dicsrete_RIF/.bench/kalpana/candidates.minilm-l6-256.queries.csn-ruby.k5.json
+roles for 2500 candidates (97.6% with >=1 role) by language {"ruby":2500} -> .bench/kalpana/candidates.minilm-l6-256.queries.csn-ruby.k5.ts.json
+Loading Kalpana-RIF (MiniLM codebook)…
+/Users/madusha/opt/anaconda3/lib/python3.9/site-packages/pandas/core/computation/expressions.py:21: UserWarning: Pandas requires version '2.8.4' or newer of 'numexpr' (version '2.7.3' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+/Users/madusha/opt/anaconda3/lib/python3.9/site-packages/pandas/core/arrays/masked.py:61: UserWarning: Pandas requires version '1.3.6' or newer of 'bottleneck' (version '1.3.2' currently installed).
+  from pandas.core import (
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: a48a6100-eb42-4625-9133-ff7d25cd055e)')' thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/./modules.json
+Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 1c08a3fc-06fc-49f6-a1a0-40374bce3116)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json
+Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 00288e88-c80c-4d8d-aeb5-5a82e7950325)')' thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json
+Retrying in 2s [Retry 2/5].
+Offline: tensorizing 502 unique pool chunks…
+  500/502
+
+============================================================================================
+ Miru + Kalpana-RIF fusion benchmark v2   (bun 1.4.3, 561 chunks)
+ 500 queries | Miru pool K=5 | pool Recall@K = 80.2% (identical for all arms)
+ Distractor = generic pattern AND not in the query's ground-truth file list
+============================================================================================
+ Metric                               Baseline    Kalpana        RRF Lin a=0.3*   Lin CV5†
+ -------------------------------------------------------------------------------------------
+ Top-1  (defining file at rank 1)      55.4%      39.2% ▼    54.0% ▼    57.6% ▲    57.6% ▲
+ Hit@3  (defining file in top 3)       75.6%      69.4% ▼    76.2% ▲    77.4% ▲    77.4% ▲
+ Def@3  (defining chunk in top 3)      70.0%      66.8% ▼    71.0% ▲    71.8% ▲    71.8% ▲
+ Precision@3                           25.3%      23.1% ▼    25.4% ▲    25.8% ▲    25.8% ▲
+ MRR@K  (file)                         0.656      0.546 ▼    0.648 ▼    0.670 ▲    0.670 ▲
+ MRR@K  (defining chunk)               0.609      0.524 ▼    0.613 ▲    0.624 ▲    0.624 ▲
+ Distractor share of top 3              0.0%       0.0%       0.0%       0.0%       0.0%  
+ Distractor at rank 1                   0.0%       0.0%       0.0%       0.0%       0.0%  
+ Rank-1 distractor suppressed n=0       0.0%       0.0%       0.0%       0.0%       0.0%  
+ -------------------------------------------------------------------------------------------
+ * alpha chosen on all 500 queries (in-sample, optimistic).
+ † alpha chosen on train folds, scored on held-out folds; per-fold alpha = [0.3, 0.3, 0.3, 0.3, 0.3]
+
+ Alpha sweep   final = (1-a)*minmax(miru_score) + a*minmax(kalpana_cos)
+ -------------------------------------------------------------------------------------------
+  alpha    Top-1    Hit@3    Def@3     MRR  MRRdef   Hit@3 W/L       p   Def@3 W/L       p
+    0.1    56.6%    76.2%    70.8%   0.664   0.617     5/2      0.4531     5/1      0.2188
+    0.2    57.0%    77.0%    71.4%   0.666   0.620     9/2      0.0654     8/1      0.0391
+    0.3    57.6%    77.4%    71.8%   0.670   0.624    12/3      0.0352    11/2      0.0225 *
+    0.4    55.8%    76.8%    71.2%   0.661   0.619    12/6      0.2379    11/5      0.2101
+    0.5    53.4%    76.4%    71.2%   0.648   0.614    14/10     0.5413    13/7      0.2632
+    0.6    51.8%    75.4%    70.8%   0.636   0.605    16/17     1.0000    15/11     0.5572
+    0.7    48.4%    74.4%    70.6%   0.613   0.585    18/24     0.4408    17/14     0.7201
+ -------------------------------------------------------------------------------------------
+ argmax Def@3 -> a=0.3   argmax MRR -> a=0.3   selected (Def@3, tie MRR) -> a=0.3
+   Lin a=0.3 (in-sample)      Hit@3 W/L 12/3 p=0.0352   Def@3 W/L 11/2 p=0.0225
+   Lin CV5 (held-out)         Hit@3 W/L 12/3 p=0.0352   Def@3 W/L 11/2 p=0.0225
+   RRF                        Hit@3 W/L 16/13 p=0.7111   Def@3 W/L 15/10 p=0.4244
+
+ Latency / query (ms) — pool tensors pre-computed offline
+ -------------------------------------------------------------------------------------------
+                                                   p50      p95
+   Miru search (Top-5)                           4.252    6.234
+   Kalpana query tensor, cold (MiniLM encode)   13.820   38.655
+   Kalpana query tensor, warm (token cached)     0.089    0.153
+   Kalpana pool scoring (mat-vec + sort)         0.034    0.050
+   Overhead above Miru, cold query              13.854   38.690   >= 1 ms at p95
+   Overhead above Miru, warm query               0.123    0.215   < 1 ms at p95
+ Offline tensor build: 502 chunks in 13.3s (built); model load 63.4s (one-time)
+ Chunks with ≥1 extracted pair: 97.6%
+============================================================================================
+
+ Results -> benchmark/results.kalpana.minilm-l6-256.queries.csn-ruby.k5.ts.json
+================================================================================================
+ csn-ruby (tree-sitter)   (500 queries)   ceiling: defining chunk anywhere in top-5 = 74.2%
+------------------------------------------------------------------------------------------------
+ Top-3 drawn from                        File@3  Chunk@3   vs native K=3: Chunk W/L       p  File W/L      p
+ Miru native topK=3                       75.4%    69.8%                          —
+ Miru topK=5 first 3 (no rerank)          75.6%    70.0%                    1/0      1.0000     1/0    1.000
+ Kalpana RRF                              76.2%    71.0%                   16/10     0.3269    17/13   0.585
+ Kalpana held-out alpha                   77.4%    71.8%                   11/1      0.0063    12/2    0.013
+------------------------------------------------------------------------------------------------
+ Do-no-harm vs the same top-5 pool un-reranked (correct defining chunk removed from top 3 = loss):
+   Kalpana RRF                          Chunk W/L  15/10  p=4.24e-01   File W/L  16/13  p=7.11e-01   10 chunk loss(es)
+   Kalpana held-out alpha               Chunk W/L  11/2   p=2.25e-02   File W/L  12/3   p=3.52e-02   2 chunk loss(es)
+================================================================================================
+ Held-out alphas per fold: [0.3, 0.3, 0.3, 0.3, 0.3]

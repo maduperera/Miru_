@@ -1,0 +1,29 @@
+{
+ "repo": "ab-phoenix",
+ "language": "elixir",
+ "commit": "e5880ef7390d6fb4759d6cf9a957a310cefca7c4",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_PHOENIX0",
+   "query": "Phoenix router HTTP pipeline plugs",
+   "identifier": "",
+   "definedIn": [
+    "lib/phoenix/router.ex",
+    "lib/phoenix/router/route.ex"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_PHOENIX1",
+   "query": "channel websocket pubsub",
+   "identifier": "",
+   "definedIn": [
+    "lib/phoenix/channel.ex",
+    "lib/phoenix/socket.ex"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

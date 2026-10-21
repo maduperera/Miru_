@@ -29,6 +29,7 @@ __pycache__/
 # --- OS / editor / logs ---
 .DS_Store
 *.log
+!benchmark/logs/*.log
 
 # Kept on purpose (not ignored):
 #   benchmark/queries.topk*.json   frozen + generated query sets

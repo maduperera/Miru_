@@ -1,0 +1,37 @@
+{
+ "repo": "ab-miru-code",
+ "language": "typescript",
+ "commit": "e4fac7f5140475def202049c523037b10fcb3504",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_MIRUCODE0",
+   "query": "CLI entry point main command line interface",
+   "identifier": "",
+   "definedIn": [
+    "src/cli.ts",
+    "package.json"
+   ],
+   "category": "entry"
+  },
+  {
+   "id": "AB_MIRUCODE1",
+   "query": "hybrid search ranking BM25 embedding score fusion",
+   "identifier": "",
+   "definedIn": [
+    "src/search.ts"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_MIRUCODE2",
+   "query": "where is cli-ui terminal output formatting",
+   "identifier": "",
+   "definedIn": [
+    "src/cli-ui.ts"
+   ],
+   "category": "location"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "repo": "ab-express",
+ "language": "javascript",
+ "commit": "0dee2c52c7c873498f8ed7d8ee4ddd0a04d3ada8",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_EXPRESS0",
+   "query": "express application middleware routing",
+   "identifier": "",
+   "definedIn": [
+    "lib/application.js",
+    "lib/express.js"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_EXPRESS1",
+   "query": "request response HTTP handlers",
+   "identifier": "",
+   "definedIn": [
+    "lib/request.js",
+    "lib/response.js"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

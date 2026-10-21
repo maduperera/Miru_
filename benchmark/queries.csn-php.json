@@ -1,0 +1,4509 @@
+{
+ "repo": "csn-php",
+ "dataset": "code-search-net/code_search_net",
+ "split": "test",
+ "metric": "defining file / defining chunk in top 3",
+ "description": "Miru's CodeSearchNet protocol: first 500 usable test rows, docstring -> function, one function per file.",
+ "queries": [
+  {
+   "id": "CSN_PHP0",
+   "query": "Auto generated seed file.\n\n@return void",
+   "identifier": "run",
+   "definedIn": [
+    "0000.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP1",
+   "query": "Get the administrator role, create it if it does not exists.\n\n@return mixed",
+   "identifier": "getAdministratorRole",
+   "definedIn": [
+    "0001.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP2",
+   "query": "Get or create user.\n\n@param bool $create\n\n@return \\App\\User",
+   "identifier": "getUser",
+   "definedIn": [
+    "0002.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP3",
+   "query": "Delete a MenuItem for a given BREAD.\n\n@param BreadDeleted $bread\n\n@return void",
+   "identifier": "handle",
+   "definedIn": [
+    "0003.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP4",
+   "query": "Auto generate Categories Translations.\n\n@return void",
+   "identifier": "categoriesTranslations",
+   "definedIn": [
+    "0004.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP5",
+   "query": "Auto generate DataTypes Translations.\n\n@return void",
+   "identifier": "dataTypesTranslations",
+   "definedIn": [
+    "0005.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP6",
+   "query": "Auto generate Pages Translations.\n\n@return void",
+   "identifier": "pagesTranslations",
+   "definedIn": [
+    "0006.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP7",
+   "query": "Auto generate Menus Translations.\n\n@return void",
+   "identifier": "menusTranslations",
+   "definedIn": [
+    "0007.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP8",
+   "query": "Return the Highest Order Menu Item.\n\n@param number $parent (Optional) Parent id. Default null\n\n@return number Order number",
+   "identifier": "highestOrderMenuItem",
+   "definedIn": [
+    "0008.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP9",
+   "query": "Auto generated seed file.",
+   "identifier": "run",
+   "definedIn": [
+    "0009.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP10",
+   "query": "Check if user has an associated permission.\n\n@param User   $user\n@param object $model\n@param string $action\n\n@return bool",
+   "identifier": "checkPermission",
+   "definedIn": [
+    "0010.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP11",
+   "query": "Create a default index name.\n\n@param array  $columns\n@param string $type\n@param string $table\n\n@return string",
+   "identifier": "createName",
+   "definedIn": [
+    "0011.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP12",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0012.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP13",
+   "query": "Reverse the migrations.\n\n@return void",
+   "identifier": "down",
+   "definedIn": [
+    "0013.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP14",
+   "query": "handle.\n\n@param SettingUpdated $event\n\n@return void",
+   "identifier": "handle",
+   "definedIn": [
+    "0014.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP15",
+   "query": "Execute the console command.\n\n@param \\Illuminate\\Filesystem\\Filesystem $filesystem\n\n@return void",
+   "identifier": "handle",
+   "definedIn": [
+    "0015.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP16",
+   "query": "Auto generated seed file.",
+   "identifier": "run",
+   "definedIn": [
+    "0016.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP17",
+   "query": "Check if User has a Role(s) associated.\n\n@param string|array $name The role(s) to check.\n\n@return bool",
+   "identifier": "hasRole",
+   "definedIn": [
+    "0017.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP18",
+   "query": "@param string $file\n\n@throws \\Exception\n\n@return string",
+   "identifier": "pathToLogFile",
+   "definedIn": [
+    "0018.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP19",
+   "query": "@param bool $basename\n\n@return array",
+   "identifier": "getFiles",
+   "definedIn": [
+    "0019.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP20",
+   "query": "Run the database seeds.\n\n@return void",
+   "identifier": "run",
+   "definedIn": [
+    "0020.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP21",
+   "query": "Create a MenuItem for a given BREAD.\n\n@param BreadAdded $event\n\n@return void",
+   "identifier": "handle",
+   "definedIn": [
+    "0021.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP22",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0022.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP23",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0023.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP24",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0024.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP25",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0025.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP26",
+   "query": "POST BR(E)AD",
+   "identifier": "update",
+   "definedIn": [
+    "0026.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP27",
+   "query": "Update the table.\n\n@return void",
+   "identifier": "update",
+   "definedIn": [
+    "0027.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP28",
+   "query": "Updates the table.\n\n@return void",
+   "identifier": "updateTable",
+   "definedIn": [
+    "0028.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP29",
+   "query": "Get the table diff to rename columns.\n\n@return \\Doctrine\\DBAL\\Schema\\TableDiff",
+   "identifier": "getRenamedColumnsDiff",
+   "definedIn": [
+    "0029.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP30",
+   "query": "Get the table diff to rename columns and indexes.\n\n@return \\Doctrine\\DBAL\\Schema\\TableDiff",
+   "identifier": "getRenamedDiff",
+   "definedIn": [
+    "0030.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP31",
+   "query": "Get columns that were renamed.\n\n@return array",
+   "identifier": "getRenamedColumns",
+   "definedIn": [
+    "0031.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP32",
+   "query": "Get indexes that were renamed.\n\n@return array",
+   "identifier": "getRenamedIndexes",
+   "definedIn": [
+    "0032.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP33",
+   "query": "Method for returning specific thumbnail for model.\n\n@param string $type\n@param string $attribute\n\n@return string",
+   "identifier": "thumbnail",
+   "definedIn": [
+    "0033.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP34",
+   "query": "Generate thumbnail URL.\n\n@param $image\n@param $type\n\n@return string",
+   "identifier": "getThumbnail",
+   "definedIn": [
+    "0034.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP35",
+   "query": "Auto generated seed file.\n\n@return void",
+   "identifier": "run",
+   "definedIn": [
+    "0035.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP36",
+   "query": "Check if user has an associated permission.\n\n@param \\TCG\\Voyager\\Contracts\\User $user\n@param object                      $model\n@param string                      $action\n\n@return bool",
+   "identifier": "checkPermission",
+   "definedIn": [
+    "0036.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP37",
+   "query": "POST BR(E)AD",
+   "identifier": "update",
+   "definedIn": [
+    "0037.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP38",
+   "query": "Determine if the given user can change a user a role.\n\n@param \\TCG\\Voyager\\Contracts\\User $user\n@param  $model\n\n@return bool",
+   "identifier": "editRoles",
+   "definedIn": [
+    "0038.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP39",
+   "query": "Get a collection of the dashboard widgets.\n\n@return \\Arrilot\\Widgets\\WidgetGroup",
+   "identifier": "dimmers",
+   "definedIn": [
+    "0039.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP40",
+   "query": "abstract public static function registerCustomTypeOptions();",
+   "identifier": "getPlatform",
+   "definedIn": [
+    "0040.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP41",
+   "query": "Prepare menu translations.\n\n@param array $data menu data\n\n@return JSON translated item",
+   "identifier": "prepareMenuTranslations",
+   "definedIn": [
+    "0041.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP42",
+   "query": "Save changes made to the translator attributes.\n\n@return bool",
+   "identifier": "save",
+   "definedIn": [
+    "0042.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP43",
+   "query": "Determine if the given model can be viewed by the user.\n\n@param \\TCG\\Voyager\\Contracts\\User $user\n@param  $model\n\n@return bool",
+   "identifier": "read",
+   "definedIn": [
+    "0043.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP44",
+   "query": "Auto generated seed file.\n\n@return void",
+   "identifier": "run",
+   "definedIn": [
+    "0044.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP45",
+   "query": "Register the application services.",
+   "identifier": "register",
+   "definedIn": [
+    "0045.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP46",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0046.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP47",
+   "query": "Create BREAD.\n\n@param Request $request\n@param string  $table   Table name.\n\n@return \\Illuminate\\Contracts\\View\\Factory|\\Illuminate\\View\\View",
+   "identifier": "create",
+   "definedIn": [
+    "0047.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP48",
+   "query": "Store BREAD.\n\n@param \\Illuminate\\Http\\Request $request\n\n@return \\Illuminate\\Http\\RedirectResponse",
+   "identifier": "store",
+   "definedIn": [
+    "0048.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP49",
+   "query": "Edit BREAD.\n\n@param string $table\n\n@return \\Illuminate\\Contracts\\View\\Factory|\\Illuminate\\View\\View",
+   "identifier": "edit",
+   "definedIn": [
+    "0049.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP50",
+   "query": "Update BREAD.\n\n@param \\Illuminate\\Http\\Request $request\n@param number                   $id\n\n@return \\Illuminate\\Contracts\\View\\Factory|\\Illuminate\\View\\View",
+   "identifier": "update",
+   "definedIn": [
+    "0050.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP51",
+   "query": "Delete BREAD.\n\n@param Number $id BREAD data_type id.\n\n@return \\Illuminate\\Http\\RedirectResponse",
+   "identifier": "destroy",
+   "definedIn": [
+    "0051.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP52",
+   "query": "Add Relationship.\n\n@param Request $request",
+   "identifier": "addRelationship",
+   "definedIn": [
+    "0052.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP53",
+   "query": "Get Relationship Field.\n\n@param Request $request\n\n@return string",
+   "identifier": "getRelationshipField",
+   "definedIn": [
+    "0053.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP54",
+   "query": "Handle password fields.\n\n@return string",
+   "identifier": "handle",
+   "definedIn": [
+    "0054.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP55",
+   "query": "Store new database table.\n\n@param \\Illuminate\\Http\\Request $request\n\n@return \\Illuminate\\Http\\RedirectResponse",
+   "identifier": "store",
+   "definedIn": [
+    "0055.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP56",
+   "query": "Edit database table.\n\n@param string $table\n\n@return \\Illuminate\\Http\\RedirectResponse",
+   "identifier": "edit",
+   "definedIn": [
+    "0056.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP57",
+   "query": "Update database table.\n\n@param \\Illuminate\\Http\\Request $request\n\n@return \\Illuminate\\Http\\RedirectResponse",
+   "identifier": "update",
+   "definedIn": [
+    "0057.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP58",
+   "query": "Show table.\n\n@param string $table\n\n@return JSON",
+   "identifier": "show",
+   "definedIn": [
+    "0058.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP59",
+   "query": "Destroy table.\n\n@param string $table\n\n@return \\Illuminate\\Http\\RedirectResponse",
+   "identifier": "destroy",
+   "definedIn": [
+    "0059.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP60",
+   "query": "Treat this method as a controller action.\nReturn view() or other content to display.",
+   "identifier": "run",
+   "definedIn": [
+    "0060.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP61",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0061.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP62",
+   "query": "Reverse the migrations.\n\n@return void",
+   "identifier": "down",
+   "definedIn": [
+    "0062.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP63",
+   "query": "Build the URL to sort data type by this field.\n\n@return string Built URL",
+   "identifier": "sortByUrl",
+   "definedIn": [
+    "0063.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP64",
+   "query": "@param \\Illuminate\\Http\\UploadedFile $file\n@param $path\n\n@return string",
+   "identifier": "generateFileName",
+   "definedIn": [
+    "0064.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP65",
+   "query": "Auto generated seed file.",
+   "identifier": "run",
+   "definedIn": [
+    "0065.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP66",
+   "query": "Display menu.\n\n@param string      $menuName\n@param string|null $type\n@param array       $options\n\n@return string",
+   "identifier": "display",
+   "definedIn": [
+    "0066.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP67",
+   "query": "Handle an incoming request.\n\n@param \\Illuminate\\Http\\Request $request\n@param \\Closure                 $next\n\n@return mixed",
+   "identifier": "handle",
+   "definedIn": [
+    "0067.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP68",
+   "query": "Auto generated seed file.\n\n@return void",
+   "identifier": "run",
+   "definedIn": [
+    "0068.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP69",
+   "query": "Check if this model can translate.\n\n@return bool",
+   "identifier": "translatable",
+   "definedIn": [
+    "0069.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP70",
+   "query": "Load translations relation.\n\n@return mixed",
+   "identifier": "translations",
+   "definedIn": [
+    "0070.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP71",
+   "query": "This scope eager loads the translations for the default and the fallback locale only.\nWe can use this as a shortcut to improve performance in our application.\n\n@param Builder     $query\n@param string|null $locale\n@param string|bool $fallback",
+   "identifier": "scopeWithTranslation",
+   "definedIn": [
+    "0071.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP72",
+   "query": "Get a single translated attribute.\n\n@param $attribute\n@param null $language\n@param bool $fallback\n\n@return null",
+   "identifier": "getTranslatedAttribute",
+   "definedIn": [
+    "0072.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP73",
+   "query": "Get entries filtered by translated value.\n\n@example  Class::whereTranslation('title', '=', 'zuhause', ['de', 'iu'])\n@example  $query->whereTranslation('title', '=', 'zuhause', ['de', 'iu'])\n\n@param string       $field    {required} the field your looking to find a value in.\n@param string       $operator {required} value you are looking for or a relation modifier such as LIKE, =, etc.\n@param string       $value    {optional} value you are looking for. Only use if you supplied an operator.\n@param string|array $locales  {optional} locale(s) you are looking for the field.\n@param bool         $default  {optional} if true checks for $value is in default database before checking translations.\n\n@return Builder",
+   "identifier": "scopeWhereTranslation",
+   "definedIn": [
+    "0073.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP74",
+   "query": "Save translations.\n\n@param object $translations\n\n@return void",
+   "identifier": "saveTranslations",
+   "definedIn": [
+    "0074.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP75",
+   "query": "@param string $tableName\n\n@return \\TCG\\Voyager\\Database\\Schema\\Table",
+   "identifier": "listTableDetails",
+   "definedIn": [
+    "0075.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP76",
+   "query": "Describes given table.\n\n@param string $tableName\n\n@return \\Illuminate\\Support\\Collection",
+   "identifier": "describeTable",
+   "definedIn": [
+    "0076.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP77",
+   "query": "Reverse the migrations.\n\n@return void",
+   "identifier": "down",
+   "definedIn": [
+    "0077.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP78",
+   "query": "Auto generated seed file.",
+   "identifier": "run",
+   "definedIn": [
+    "0078.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP79",
+   "query": "Run the migrations.",
+   "identifier": "up",
+   "definedIn": [
+    "0079.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP80",
+   "query": "Create Permission for a given BREAD.\n\n@param BreadAdded $event\n\n@return void",
+   "identifier": "handle",
+   "definedIn": [
+    "0080.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP81",
+   "query": "Register the application services.",
+   "identifier": "register",
+   "definedIn": [
+    "0081.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP82",
+   "query": "Bootstrap the application services.\n\n@param \\Illuminate\\Routing\\Router $router",
+   "identifier": "boot",
+   "definedIn": [
+    "0082.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP83",
+   "query": "Add storage symlink alert.",
+   "identifier": "addStorageSymlinkAlert",
+   "definedIn": [
+    "0083.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP84",
+   "query": "Register the commands accessible from the Console.",
+   "identifier": "registerConsoleCommands",
+   "definedIn": [
+    "0084.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP85",
+   "query": "****************************************",
+   "identifier": "index",
+   "definedIn": [
+    "0085.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP86",
+   "query": "****************************************",
+   "identifier": "show",
+   "definedIn": [
+    "0086.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP87",
+   "query": "****************************************",
+   "identifier": "edit",
+   "definedIn": [
+    "0087.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP88",
+   "query": "POST BR(E)AD",
+   "identifier": "update",
+   "definedIn": [
+    "0088.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP89",
+   "query": "****************************************",
+   "identifier": "create",
+   "definedIn": [
+    "0089.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP90",
+   "query": "POST BRE(A)D - Store data.\n\n@param \\Illuminate\\Http\\Request $request\n\n@return \\Illuminate\\Http\\RedirectResponse",
+   "identifier": "store",
+   "definedIn": [
+    "0090.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP91",
+   "query": "****************************************",
+   "identifier": "destroy",
+   "definedIn": [
+    "0091.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP92",
+   "query": "Remove translations, images and files related to a BREAD item.\n\n@param \\Illuminate\\Database\\Eloquent\\Model $dataType\n@param \\Illuminate\\Database\\Eloquent\\Model $data\n\n@return void",
+   "identifier": "cleanup",
+   "definedIn": [
+    "0092.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP93",
+   "query": "Delete all images related to a BREAD item.\n\n@param \\Illuminate\\Database\\Eloquent\\Model $data\n@param \\Illuminate\\Database\\Eloquent\\Model $rows\n\n@return void",
+   "identifier": "deleteBreadImages",
+   "definedIn": [
+    "0093.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP94",
+   "query": "Order BREAD items.\n\n@param string $table\n\n@return \\Illuminate\\Contracts\\View\\Factory|\\Illuminate\\View\\View",
+   "identifier": "order",
+   "definedIn": [
+    "0094.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP95",
+   "query": "Get BREAD relations data.\n\n@param Request $request\n\n@return mixed",
+   "identifier": "relation",
+   "definedIn": [
+    "0095.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP96",
+   "query": "Replace relationships' keys for labels and create READ links if a slug is provided.\n\n@param  $dataTypeContent     Can be either an eloquent Model, Collection or LengthAwarePaginator instance.\n@param DataType $dataType\n\n@return $dataTypeContent",
+   "identifier": "resolveRelations",
+   "definedIn": [
+    "0096.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP97",
+   "query": "Auto generated seed file.\n\n@return void",
+   "identifier": "run",
+   "definedIn": [
+    "0097.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP98",
+   "query": "Run the migrations.\n\n@return void",
+   "identifier": "up",
+   "definedIn": [
+    "0098.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP99",
+   "query": "Add SoftDelete to the given stub.\n\n@param string $stub\n\n@return $this",
+   "identifier": "addSoftDelete",
+   "definedIn": [
+    "0099.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP100",
+   "query": "Validates bread POST request.\n\n@param \\Illuminate\\Http\\Request $request The Request\n@param array                    $data    Field data\n@param string                   $slug    Slug\n@param int                      $id      Id of the record to update\n\n@return mixed",
+   "identifier": "validateBread",
+   "definedIn": [
+    "0100.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP101",
+   "query": "Get fields having validation rules in proper format.\n\n@param array $fieldsConfig\n\n@return \\Illuminate\\Support\\Collection",
+   "identifier": "getFieldsWithValidationRules",
+   "definedIn": [
+    "0101.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP102",
+   "query": "Auto generated seed file.",
+   "identifier": "run",
+   "definedIn": [
+    "0102.php"
+   ],
+   "source": "the-control-group/voyager"
+  },
+  {
+   "id": "CSN_PHP103",
+   "query": "Revoke an OAuth2 access token or refresh token. This method will revoke the current access\ntoken, if a token isn't provided.\n\n@param string|array $token The token (access token or a refresh token) that should be revoked.\n@return boolean Returns True if the revocation was successful, otherwise False.",
+   "identifier": "revokeToken",
+   "definedIn": [
+    "0103.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP104",
+   "query": "Verifies an id token and returns the authenticated apiLoginTicket.\nThrows an exception if the id token is not valid.\nThe audience parameter can be used to control which id tokens are\naccepted.  By default, the id token must have been issued to this OAuth2 client.\n\n@param $audience\n@return array the token payload, if successful",
+   "identifier": "verifyIdToken",
+   "definedIn": [
+    "0104.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP105",
+   "query": "Retrieve and cache a certificates file.\n\n@param $url string location\n@throws Google_Exception\n@return array certificates",
+   "identifier": "retrieveCertsFromLocation",
+   "definedIn": [
+    "0105.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP106",
+   "query": "are PEM encoded certificates.",
+   "identifier": "getFederatedSignOnCerts",
+   "definedIn": [
+    "0106.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP107",
+   "query": "phpseclib calls \"phpinfo\" by default, which requires special\nwhitelisting in the AppEngine VM environment. This function\nsets constants to bypass the need for phpseclib to check phpinfo\n\n@see phpseclib/Math/BigInteger\n@see https://github.com/GoogleCloudPlatform/getting-started-php/issues/85",
+   "identifier": "setPhpsecConstants",
+   "definedIn": [
+    "0107.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP108",
+   "query": "TODO: This function needs simplifying.\n@param $name\n@param $arguments\n@param $expectedClass - optional, the expected class name\n@return Google_Http_Request|expectedClass\n@throws Google_Exception",
+   "identifier": "call",
+   "definedIn": [
+    "0108.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP109",
+   "query": "Parse/expand request parameters and create a fully qualified\nrequest uri.\n@static\n@param string $restPath\n@param array $params\n@return string $requestUrl",
+   "identifier": "createRequestUri",
+   "definedIn": [
+    "0109.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP110",
+   "query": "Attempt to exchange a code for an valid authentication token.\nHelper wrapped around the OAuth 2.0 implementation.\n\n@param $code string code from accounts.google.com\n@return array access token",
+   "identifier": "fetchAccessTokenWithAuthCode",
+   "definedIn": [
+    "0110.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP111",
+   "query": "Fetches a fresh access token with a given assertion token.\n@param ClientInterface $authHttp optional.\n@return array access token",
+   "identifier": "fetchAccessTokenWithAssertion",
+   "definedIn": [
+    "0111.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP112",
+   "query": "Fetches a fresh OAuth 2.0 access token with the given refresh token.\n@param string $refreshToken\n@return array access token",
+   "identifier": "fetchAccessTokenWithRefreshToken",
+   "definedIn": [
+    "0112.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP113",
+   "query": "Create a URL to obtain user authorization.\nThe authorization endpoint allows the user to first\nauthenticate, and then grant/deny the access request.\n@param string|array $scope The scope is expressed as an array or list of space-delimited strings.\n@return string",
+   "identifier": "createAuthUrl",
+   "definedIn": [
+    "0113.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP114",
+   "query": "Adds auth listeners to the HTTP client based on the credentials\nset in the Google API Client object\n\n@param GuzzleHttp\\ClientInterface $http the http client object.\n@return GuzzleHttp\\ClientInterface the http client object",
+   "identifier": "authorize",
+   "definedIn": [
+    "0114.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP115",
+   "query": "Returns if the access_token is expired.\n@return bool Returns True if the access_token is expired.",
+   "identifier": "isAccessTokenExpired",
+   "definedIn": [
+    "0115.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP116",
+   "query": "If 'plus.login' is included in the list of requested scopes, you can use\nthis method to define types of app activities that your app will write.\nYou can find a list of available types here:\n@link https://developers.google.com/+/api/moment-types\n\n@param array $requestVisibleActions Array of app activity types",
+   "identifier": "setRequestVisibleActions",
+   "definedIn": [
+    "0116.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP117",
+   "query": "Revoke an OAuth2 access token or refresh token. This method will revoke the current access\ntoken, if a token isn't provided.\n\n@param string|array|null $token The token (access token or a refresh token) that should be revoked.\n@return boolean Returns True if the revocation was successful, otherwise False.",
+   "identifier": "revokeToken",
+   "definedIn": [
+    "0117.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP118",
+   "query": "Verify an id_token. This method will verify the current id_token, if one\nisn't provided.\n\n@throws LogicException If no token was provided and no token was set using `setAccessToken`.\n@throws UnexpectedValueException If the token is not a valid JWT.\n@param string|null $idToken The token (id_token) that should be verified.\n@return array|false Returns the token payload as an array if the verification was\nsuccessful, false otherwise.",
+   "identifier": "verifyIdToken",
+   "definedIn": [
+    "0118.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP119",
+   "query": "This functions adds a scope to be requested as part of the OAuth2.0 flow.\nWill append any scopes not previously requested to the scope parameter.\nA single string will be treated as a scope to request. An array of strings\nwill each be appended.\n@param $scope_or_scopes string|array e.g. \"profile\"",
+   "identifier": "addScope",
+   "definedIn": [
+    "0119.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP120",
+   "query": "Helper method to execute deferred HTTP requests.\n\n@param $request Psr\\Http\\Message\\RequestInterface|Google_Http_Batch\n@throws Google_Exception\n@return object of the type of the expected class or Psr\\Http\\Message\\ResponseInterface.",
+   "identifier": "execute",
+   "definedIn": [
+    "0120.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP121",
+   "query": "Set the auth config from new or deprecated JSON config.\nThis structure should match the file downloaded from\nthe \"Download JSON\" button on in the Google Developer\nConsole.\n@param string|array $config the configuration json\n@throws Google_Exception",
+   "identifier": "setAuthConfig",
+   "definedIn": [
+    "0121.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP122",
+   "query": "create a default google auth object",
+   "identifier": "createOAuth2Service",
+   "definedIn": [
+    "0122.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP123",
+   "query": "Runs the task and (if applicable) automatically retries when errors occur.\n\n@return mixed\n@throws Google_Task_Retryable on failure when no retries are available.",
+   "identifier": "run",
+   "definedIn": [
+    "0123.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP124",
+   "query": "Runs a task once, if possible. This is useful for bypassing the `run()`\nloop.\n\nNOTE: If this is not the first attempt, this function will sleep in\naccordance to the backoff configurations before running the task.\n\n@return boolean",
+   "identifier": "attempt",
+   "definedIn": [
+    "0124.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP125",
+   "query": "Gets the delay (in seconds) for the current backoff period.\n\n@return float",
+   "identifier": "getDelay",
+   "definedIn": [
+    "0125.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP126",
+   "query": "Gets the number of times the associated task can be retried.\n\nNOTE: -1 is returned if the task can be retried indefinitely\n\n@return integer",
+   "identifier": "allowedRetries",
+   "definedIn": [
+    "0126.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP127",
+   "query": "Send the next part of the file to upload.\n@param [$chunk] the next set of bytes to send. If false will used $data passed\nat construct time.",
+   "identifier": "nextChunk",
+   "definedIn": [
+    "0127.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP128",
+   "query": "Sends a PUT-Request to google drive and parses the response,\nsetting the appropiate variables from the response()\n\n@param Google_Http_Request $httpRequest the Reuqest which will be send\n\n@return false|mixed false when the upload is unfinished or the decoded http response",
+   "identifier": "makePutRequest",
+   "definedIn": [
+    "0128.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP129",
+   "query": "Valid upload types:\n- resumable (UPLOAD_RESUMABLE_TYPE)\n- media (UPLOAD_MEDIA_TYPE)\n- multipart (UPLOAD_MULTIPART_TYPE)\n@param $meta\n@return string\n@visible for testing",
+   "identifier": "getUploadType",
+   "definedIn": [
+    "0129.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP130",
+   "query": "Used by the IO lib and also the batch processing.\n\n@param $respData\n@param $headerSize\n@return array",
+   "identifier": "parseHttpResponse",
+   "definedIn": [
+    "0130.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP131",
+   "query": "This function finds the first matching {...} block and\nexecutes the replacement. It then calls itself to find\nsubsequent blocks, if any.",
+   "identifier": "resolveNextSection",
+   "definedIn": [
+    "0131.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP132",
+   "query": "Return the type of a passed in value",
+   "identifier": "getDataType",
+   "definedIn": [
+    "0132.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP133",
+   "query": "Utility function that merges multiple combine calls\nfor multi-key templates.",
+   "identifier": "combineList",
+   "definedIn": [
+    "0133.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP134",
+   "query": "Utility function to encode and trim values",
+   "identifier": "getValue",
+   "definedIn": [
+    "0134.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP135",
+   "query": "Executes a Psr\\Http\\Message\\RequestInterface and (if applicable) automatically retries\nwhen errors occur.\n\n@param Google_Client $client\n@param Psr\\Http\\Message\\RequestInterface $req\n@return array decoded result\n@throws Google_Service_Exception on server side error (ie: not authenticated,\ninvalid or malformed post body, invalid url)",
+   "identifier": "execute",
+   "definedIn": [
+    "0135.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP136",
+   "query": "Executes a Psr\\Http\\Message\\RequestInterface\n\n@param Google_Client $client\n@param Psr\\Http\\Message\\RequestInterface $request\n@return array decoded result\n@throws Google_Service_Exception on server side error (ie: not authenticated,\ninvalid or malformed post body, invalid url)",
+   "identifier": "doExecute",
+   "definedIn": [
+    "0136.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP137",
+   "query": "Decode an HTTP Response.\n@static\n@throws Google_Service_Exception\n@param Psr\\Http\\Message\\RequestInterface $response The http response to be decoded.\n@param Psr\\Http\\Message\\ResponseInterface $response\n@return mixed|null",
+   "identifier": "decodeHttpResponse",
+   "definedIn": [
+    "0137.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP138",
+   "query": "Initialize this object's properties from an array.\n\n@param array $array Used to seed this object's properties.\n@return void",
+   "identifier": "mapTypes",
+   "definedIn": [
+    "0138.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP139",
+   "query": "Create a simplified object suitable for straightforward\nconversion to JSON. This is relatively expensive\ndue to the usage of reflection, but shouldn't be called\na whole lot, and is the most straightforward way to filter.",
+   "identifier": "toSimpleObject",
+   "definedIn": [
+    "0139.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP140",
+   "query": "Handle different types of values, primarily\nother objects and map and array data types.",
+   "identifier": "getSimpleValue",
+   "definedIn": [
+    "0140.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP141",
+   "query": "If there is an internal name mapping, use that.",
+   "identifier": "getMappedName",
+   "definedIn": [
+    "0141.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP142",
+   "query": "Returns true only if the array is associative.\n@param array $array\n@return bool True if the array is associative.",
+   "identifier": "isAssociativeArray",
+   "definedIn": [
+    "0142.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP143",
+   "query": "Builds out a default http handler for the installed version of guzzle.\n\n@return Google_AuthHandler_Guzzle5AuthHandler|Google_AuthHandler_Guzzle6AuthHandler\n@throws Exception",
+   "identifier": "build",
+   "definedIn": [
+    "0143.php"
+   ],
+   "source": "googleapis/google-api-php-client"
+  },
+  {
+   "id": "CSN_PHP144",
+   "query": "Find config.php, either user defined or from standard location\n\n@since  1.7.3\n@return string         path to found config file\n@throws ConfigException",
+   "identifier": "find_config",
+   "definedIn": [
+    "0144.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP145",
+   "query": "Define core constants that have not been user defined in config.php\n\n@since  1.7.3\n@return void\n@throws ConfigException",
+   "identifier": "define_core_constants",
+   "definedIn": [
+    "0145.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP146",
+   "query": "Check if we emulate prepare statements, and set bool flag accordingly\n\nCheck if current driver can PDO::getAttribute(PDO::ATTR_EMULATE_PREPARES)\nSome combinations of PHP/MySQL don't support this function. See\nhttps://travis-ci.org/YOURLS/YOURLS/jobs/271423782#L481\n\n@since  1.7.3\n@return void",
+   "identifier": "set_emulate_state",
+   "definedIn": [
+    "0146.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP147",
+   "query": "Die with an error message\n\n@since  1.7.3\n\n@param \\Exception $exception\n\n@return void",
+   "identifier": "dead_or_error",
+   "definedIn": [
+    "0147.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP148",
+   "query": "Return SQL queries performed\n\nAura\\Sql\\Profiler logs every PDO command issued. But depending on PDO::ATTR_EMULATE_PREPARES, some are\nactually sent to the mysql server or not :\n- if PDO::ATTR_EMULATE_PREPARES is true, prepare() statements are not sent to the server and are performed\ninternally, so they are removed from the logger\n- if PDO::ATTR_EMULATE_PREPARES is false, prepare() statements are actually performed by the mysql server,\nand count as an actual query\n\nResulting array is something like:\narray (\n0 => array (\n'duration' => 1.0010569095611572265625,\n'function' => 'connect',\n'statement' => NULL,\n'bind_values' => array (),\n'trace' => ...back trace...,\n),\n// key index might not be sequential if 'prepare' function are filtered out\n2 => array (\n'duration' => 0.000999927520751953125,\n'function' => 'perform',\n'statement' => 'SELECT option_value FROM yourls_options WHERE option_name = :option_name LIMIT 1',\n'bind_values' => array ( 'option_name' => 'test_option' ),\n'trace' => ...back trace...,\n),\n);\n\n@since  1.7.3\n@return array",
+   "identifier": "get_queries",
+   "definedIn": [
+    "0148.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP149",
+   "query": "Extends \\Aura\\Sql\\Profiler::addProfile() to log queries in our YOURLS logger\n\n@since  1.7.3\n@param  float  $duration     The query duration.\n@param  string $function     The PDO method that made the entry.\n@param  string $statement    The SQL query statement.\n@param  array  $bind_values  The values bound to the statement.\n@return void",
+   "identifier": "addProfile",
+   "definedIn": [
+    "0149.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP150",
+   "query": "Format PDO statement with bind/values replacement\n\nThis replaces PDO binds such as 'key_name = :name' with corresponding array values, eg array('name'=>'some value')\nThis is merely a cosmetic replacement to allow for readability: the result WILL NOT be valid SQL! (eg no proper quotes)\n\n@since  1.7.3\n@param  string $statement  SQL query with PDO style named placeholders\n@param  array  $values     Optional array of values corresponding to placeholders\n@return string             Readable SQL query with placeholders replaced",
+   "identifier": "pretty_format",
+   "definedIn": [
+    "0150.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP151",
+   "query": "/*Converts an array to an xml string",
+   "identifier": "array2xml",
+   "definedIn": [
+    "0151.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP152",
+   "query": "/*Transform an XML string to associative array \"XML Parser Functions\"",
+   "identifier": "xml2array",
+   "definedIn": [
+    "0152.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP153",
+   "query": "Sets up the translated strings and object properties.\n\nThe method creates the translatable strings for various\ncalendar elements. Which allows for specifying locale\nspecific calendar names and text direction.\n\n@since 1.6\n@access private",
+   "identifier": "init",
+   "definedIn": [
+    "0153.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP154",
+   "query": "Global variables are deprecated. For backwards compatibility only.\n\n@deprecated For backwards compatibility only.\n@access private\n\n@since 1.6",
+   "identifier": "register_globals",
+   "definedIn": [
+    "0154.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP155",
+   "query": "Read all options from DB at once, return bool\n\n@since  1.7.3\n@return bool    True on success, false on failure (eg table missing or empty)",
+   "identifier": "get_all_options",
+   "definedIn": [
+    "0155.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP156",
+   "query": "Get option value from DB (or from cache if available). Return value or $default if not found\n\n@since  1.7.3\n@param  string $name     Option name\n@param  string $default  Optional value to return if option doesn't exist\n@return mixed            Value set for the option",
+   "identifier": "get",
+   "definedIn": [
+    "0156.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP157",
+   "query": "Update (add if doesn't exist) an option to DB\n\n@since  1.7.3\n@param  string $name      Option name. Expected to not be SQL-escaped.\n@param  mixed  $newvalue  Option value.\n@return bool              False if value was not updated, true otherwise.",
+   "identifier": "update",
+   "definedIn": [
+    "0157.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP158",
+   "query": "Add an option to the DB\n\n@since  1.7.3\n@param  string $name   Name of option to add. Expected to not be SQL-escaped.\n@param  mixed  $value  Optional option value. Must be serializable if non-scalar. Expected to not be SQL-escaped.\n@return bool           False if option was not added (eg already exists), true otherwise.",
+   "identifier": "add",
+   "definedIn": [
+    "0158.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP159",
+   "query": "Delete option from DB\n\n@since  1.7.3\n@param  string $name  Option name to delete. Expected to not be SQL-escaped.\n@return bool          False if option was not deleted (eg not found), true otherwise.",
+   "identifier": "delete",
+   "definedIn": [
+    "0159.php"
+   ],
+   "source": "YOURLS/YOURLS"
+  },
+  {
+   "id": "CSN_PHP160",
+   "query": "Registers a new constraint with the system. Constraints are used\nby the routes as placeholders for regular expressions to make defining\nthe routes more human-friendly.\n\nYou can pass an associative array as $placeholder, and have\nmultiple placeholders added at once.\n\n@param string|array $placeholder\n@param string       $pattern\n\n@return \\CodeIgniter\\Router\\RouteCollectionInterface",
+   "identifier": "addPlaceholder",
+   "definedIn": [
+    "0160.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP161",
+   "query": "Sets the default namespace to use for Controllers when no other\nnamespace has been specified.\n\n@param $value\n\n@return \\CodeIgniter\\Router\\RouteCollectionInterface",
+   "identifier": "setDefaultNamespace",
+   "definedIn": [
+    "0161.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP162",
+   "query": "Sets the default controller to use when no other controller has been\nspecified.\n\n@param $value\n\n@return \\CodeIgniter\\Router\\RouteCollectionInterface",
+   "identifier": "setDefaultController",
+   "definedIn": [
+    "0162.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP163",
+   "query": "Sets the default method to call on the controller when no other\nmethod has been set in the route.\n\n@param $value\n\n@return \\CodeIgniter\\Router\\RouteCollectionInterface",
+   "identifier": "setDefaultMethod",
+   "definedIn": [
+    "0163.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP164",
+   "query": "Will attempt to discover any additional routes, either through\nthe local PSR4 namespaces, or through selected Composer packages.",
+   "identifier": "discoverRoutes",
+   "definedIn": [
+    "0164.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP165",
+   "query": "Sets the default constraint to be used in the system. Typically\nfor use with the 'resource' method.\n\n@param string $placeholder\n\n@return RouteCollectionInterface",
+   "identifier": "setDefaultConstraint",
+   "definedIn": [
+    "0165.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP166",
+   "query": "Returns the raw array of available routes.\n\n@param mixed $verb\n\n@return array",
+   "identifier": "getRoutes",
+   "definedIn": [
+    "0166.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP167",
+   "query": "Returns one or all routes options\n\n@param string $from\n\n@return array",
+   "identifier": "getRoutesOptions",
+   "definedIn": [
+    "0167.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP168",
+   "query": "A shortcut method to add a number of routes at a single time.\nIt does not allow any options to be set on the route, or to\ndefine the method used.\n\n@param array $routes\n@param array $options\n\n@return RouteCollectionInterface",
+   "identifier": "map",
+   "definedIn": [
+    "0168.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP169",
+   "query": "Adds a temporary redirect from one route to another. Used for\nredirecting traffic from old, non-existing routes to the new\nmoved routes.\n\n@param string  $from   The pattern to match against\n@param string  $to     Either a route name or a URI to redirect to\n@param integer $status The HTTP status code that should be returned with this redirect\n\n@return RouteCollection",
+   "identifier": "addRedirect",
+   "definedIn": [
+    "0169.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP170",
+   "query": "Determines if the route is a redirecting route.\n\n@param string $from\n\n@return boolean",
+   "identifier": "isRedirect",
+   "definedIn": [
+    "0170.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP171",
+   "query": "Grabs the HTTP status code from a redirecting Route.\n\n@param string $from\n\n@return integer",
+   "identifier": "getRedirectCode",
+   "definedIn": [
+    "0171.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP172",
+   "query": "Group a series of routes under a single URL segment. This is handy\nfor grouping items into an admin area, like:\n\nExample:\n// Creates route: admin/users\n$route->group('admin', function() {\n$route->resource('users');\n});\n\n@param string $name The name to group/prefix the routes with.\n@param $params\n\n@return void",
+   "identifier": "group",
+   "definedIn": [
+    "0172.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP173",
+   "query": "Creates a collections of HTTP-verb based routes for a controller.\n\nPossible Options:\n'controller'    - Customize the name of the controller used in the 'to' route\n'placeholder'   - The regex used by the Router. Defaults to '(:any)'\n\nExample:\n$route->resource('photos');\n\n// Generates the following routes:\nHTTP Verb | Path        | Action        | Used for...\n----------+-------------+---------------+-----------------\nGET         /photos             index           display a list of photos\nGET         /photos/new         new             new a specific photo\nGET         /photos/{id}/edit   edit            edit a specific photo\nGET         /photos/{id}        show            display a specific photo\nPOST        /photos             create          create a new photo\nPUT/PATCH   /photos/{id}        update          update an existing photo\nDELETE      /photos/{id}        delete          delete an existing photo\n\nIf 'websafe' option is present, the following paths are also available:\n\nPOST        /photos/{id}        update\nDELETE      /photos/{id}/delete delete\n\n@param string $name    The name of the controller to route to.\n@param array  $options An list of possible ways to customize the routing.\n\n@return RouteCollectionInterface",
+   "identifier": "resource",
+   "definedIn": [
+    "0173.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP174",
+   "query": "Specifies a single route to match for multiple HTTP Verbs.\n\nExample:\n$route->match( ['get', 'post'], 'users/(:num)', 'users/$1);\n\n@param array        $verbs\n@param string       $from\n@param string|array $to\n@param array        $options\n\n@return \\CodeIgniter\\Router\\RouteCollectionInterface",
+   "identifier": "match",
+   "definedIn": [
+    "0174.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP175",
+   "query": "Specifies a route that is only available to OPTIONS requests.\n\n@param string       $from\n@param string|array $to\n@param array        $options\n\n@return \\CodeIgniter\\Router\\RouteCollectionInterface",
+   "identifier": "options",
+   "definedIn": [
+    "0175.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP176",
+   "query": "Limits the routes to a specified ENVIRONMENT or they won't run.\n\n@param string   $env\n@param \\Closure $callback\n\n@return RouteCollectionInterface",
+   "identifier": "environment",
+   "definedIn": [
+    "0176.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP177",
+   "query": "Attempts to look up a route based on it's destination.\n\nIf a route exists:\n\n'path/(:any)/(:any)' => 'Controller::method/$1/$2'\n\nThis method allows you to know the Controller and method\nand get the route that leads to it.\n\n// Equals 'path/$param1/$param2'\nreverseRoute('Controller::method', $param1, $param2);\n\n@param string $search\n@param array  ...$params\n\n@return string|false",
+   "identifier": "reverseRoute",
+   "definedIn": [
+    "0177.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP178",
+   "query": "Returns the filter that should be applied for a single route, along\nwith any parameters it might have. Parameters are found by splitting\nthe parameter name on a colon to separate the filter name from the parameter list,\nand the splitting the result on commas. So:\n\n'role:admin,manager'\n\nhas a filter of \"role\", with parameters of ['admin', 'manager'].\n\n@param string $search\n\n@return string",
+   "identifier": "getFilterForRoute",
+   "definedIn": [
+    "0178.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP179",
+   "query": "Given a\n\n@param string     $from\n@param array|null $params\n\n@return string",
+   "identifier": "fillRouteParams",
+   "definedIn": [
+    "0179.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP180",
+   "query": "Does the heavy lifting of creating an actual route. You must specify\nthe request method(s) that this route will work for. They can be separated\nby a pipe character \"|\" if there is more than one.\n\n@param string       $verb\n@param string       $from\n@param string|array $to\n@param array        $options",
+   "identifier": "create",
+   "definedIn": [
+    "0180.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP181",
+   "query": "Compares the subdomain(s) passed in against the current subdomain\non this page request.\n\n@param mixed $subdomains\n\n@return boolean",
+   "identifier": "checkSubdomains",
+   "definedIn": [
+    "0181.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP182",
+   "query": "Examines the HTTP_HOST to get a best match for the subdomain. It\nwon't be perfect, but should work for our needs.\n\nIt's especially not perfect since it's possible to register a domain\nwith a period (.) as part of the domain name.",
+   "identifier": "determineCurrentSubdomain",
+   "definedIn": [
+    "0182.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP183",
+   "query": "Reset the routes, so that a FeatureTestCase can provide the\nexplicit ones needed for it.",
+   "identifier": "resetRoutes",
+   "definedIn": [
+    "0183.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP184",
+   "query": "Catches any uncaught errors and exceptions, including most Fatal errors\n(Yay PHP7!). Will log the error, display it if display_errors is on,\nand fire an event that allows custom actions to be taken at this point.\n\n@param \\Throwable $exception",
+   "identifier": "exceptionHandler",
+   "definedIn": [
+    "0184.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP185",
+   "query": "Even in PHP7, some errors make it through to the errorHandler, so\nconvert these to Exceptions and let the exception handler log it and\ndisplay it.\n\nThis seems to be primarily when a user triggers it with trigger_error().\n\n@param integer      $severity\n@param string       $message\n@param string|null  $file\n@param integer|null $line\n@param null         $context\n\n@throws \\ErrorException",
+   "identifier": "errorHandler",
+   "definedIn": [
+    "0185.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP186",
+   "query": "Checks to see if any errors have happened during shutdown that\nneed to be caught and handle them.",
+   "identifier": "shutdownHandler",
+   "definedIn": [
+    "0186.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP187",
+   "query": "Determines the view to display based on the exception thrown,\nwhether an HTTP or CLI request, etc.\n\n@param \\Throwable $exception\n@param string     $template_path\n\n@return string       The path and filename of the view file to use",
+   "identifier": "determineView",
+   "definedIn": [
+    "0187.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP188",
+   "query": "Given an exception and status code will display the error to the client.\n\n@param \\Throwable $exception\n@param integer    $statusCode",
+   "identifier": "render",
+   "definedIn": [
+    "0188.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP189",
+   "query": "Gathers the variables that will be made available to the view.\n\n@param \\Throwable $exception\n@param integer    $statusCode\n\n@return array",
+   "identifier": "collectVars",
+   "definedIn": [
+    "0189.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP190",
+   "query": "Determines the HTTP status code and the exit status code for this request.\n\n@param \\Throwable $exception\n\n@return array",
+   "identifier": "determineCodes",
+   "definedIn": [
+    "0190.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP191",
+   "query": "Describes memory usage in real-world units. Intended for use\nwith memory_get_usage, etc.\n\n@param $bytes\n\n@return string",
+   "identifier": "describeMemory",
+   "definedIn": [
+    "0191.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP192",
+   "query": "Creates a syntax-highlighted version of a PHP file.\n\n@param string  $file\n@param integer $lineNumber\n@param integer $lines\n\n@return boolean|string",
+   "identifier": "highlightFile",
+   "definedIn": [
+    "0192.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP193",
+   "query": "Open\n\nSanitizes save_path and initializes connections.\n\n@param string $save_path Server path(s)\n@param string $name      Session cookie name, unused\n\n@return boolean",
+   "identifier": "open",
+   "definedIn": [
+    "0193.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP194",
+   "query": "Read\n\nReads session data and acquires a lock\n\n@param string $sessionID Session ID\n\n@return string    Serialized session data",
+   "identifier": "read",
+   "definedIn": [
+    "0194.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP195",
+   "query": "Write\n\nWrites (create / update) session data\n\n@param string $sessionID   Session ID\n@param string $sessionData Serialized session data\n\n@return boolean",
+   "identifier": "write",
+   "definedIn": [
+    "0195.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP196",
+   "query": "Close\n\nReleases locks and closes connection.\n\n@return boolean",
+   "identifier": "close",
+   "definedIn": [
+    "0196.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP197",
+   "query": "Destroy\n\nDestroys the current session.\n\n@param string $session_id Session ID\n\n@return boolean",
+   "identifier": "destroy",
+   "definedIn": [
+    "0197.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP198",
+   "query": "Get lock\n\nAcquires an (emulated) lock.\n\n@param string $sessionID Session ID\n\n@return boolean",
+   "identifier": "lockSession",
+   "definedIn": [
+    "0198.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP199",
+   "query": "Release lock\n\nReleases a previously acquired lock\n\n@return boolean",
+   "identifier": "releaseLock",
+   "definedIn": [
+    "0199.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP200",
+   "query": "Alpha with spaces.\n\n@param string $value Value.\n\n@return boolean True if alpha with spaces, else false.",
+   "identifier": "alpha_space",
+   "definedIn": [
+    "0200.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP201",
+   "query": "Compares value against a regular expression pattern.\n\n@param string $str\n@param string $pattern\n@param array  $data    Other field/value pairs\n\n@return boolean",
+   "identifier": "regex_match",
+   "definedIn": [
+    "0201.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP202",
+   "query": "Checks for a correctly formatted email address\n\n@param string\n\n@return boolean",
+   "identifier": "valid_email",
+   "definedIn": [
+    "0202.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP203",
+   "query": "Validate a comma-separated list of email addresses.\n\nExample:\nvalid_emails[one@example.com,two@example.com]\n\n@param string\n\n@return boolean",
+   "identifier": "valid_emails",
+   "definedIn": [
+    "0203.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP204",
+   "query": "Validate an IP address\n\n@param string $ip    IP Address\n@param string $which IP protocol: 'ipv4' or 'ipv6'\n@param array  $data\n\n@return boolean",
+   "identifier": "valid_ip",
+   "definedIn": [
+    "0204.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP205",
+   "query": "Checks a URL to ensure it's formed correctly.\n\n@param string $str\n\n@return boolean",
+   "identifier": "valid_url",
+   "definedIn": [
+    "0205.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP206",
+   "query": "Checks for a valid date and matches a given date format\n\n@param string $str\n@param string $format\n\n@return boolean",
+   "identifier": "valid_date",
+   "definedIn": [
+    "0206.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP207",
+   "query": "Drop database\n\n@param string $db_name\n\n@return boolean\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "dropDatabase",
+   "definedIn": [
+    "0207.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP208",
+   "query": "ALTER TABLE\n\n@param string $alter_type ALTER type\n@param string $table      Table name\n@param mixed  $field      Column definition\n\n@return string|array",
+   "identifier": "_alterTable",
+   "definedIn": [
+    "0208.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP209",
+   "query": "Process column\n\n@param array $field\n\n@return string",
+   "identifier": "_processColumn",
+   "definedIn": [
+    "0209.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP210",
+   "query": "Field attribute AUTO_INCREMENT\n\n@param array &$attributes\n@param array &$field\n\n@return void",
+   "identifier": "_attributeAutoIncrement",
+   "definedIn": [
+    "0210.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP211",
+   "query": "Prepares the query against the database, and saves the connection\ninfo necessary to execute the query later.\n\nNOTE: This version is based on SQL code. Child classes should\noverride this method.\n\n@param string $sql\n@param array  $options Passed to the connection's prepare statement.\nUnused in the MySQLi driver.\n\n@return mixed",
+   "identifier": "_prepare",
+   "definedIn": [
+    "0211.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP212",
+   "query": "Takes a new set of data and runs it against the currently\nprepared query. Upon success, will return a Results object.\n\n@param array $data\n\n@return bool",
+   "identifier": "_execute",
+   "definedIn": [
+    "0212.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP213",
+   "query": "For Uploaded file move\n\n@return \\CodeIgniter\\HTTP\\Exceptions\\HTTPException",
+   "identifier": "forMoveFailed",
+   "definedIn": [
+    "0213.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP214",
+   "query": "Verifies that a credit card number is valid and matches the known\nformats for a wide number of credit card types. This does not verify\nthat the card is a valid card, only that the number is formatted correctly.\n\nExample:\n$rules = [\n'cc_num' => 'valid_cc_number[visa]'\n];\n\n@param string $ccNumber\n@param string $type\n@param array  $data\n\n@return boolean",
+   "identifier": "valid_cc_number",
+   "definedIn": [
+    "0214.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP215",
+   "query": "Checks the given number to see if the number passing a Luhn check.\n\n@param string $number\n\n@return boolean",
+   "identifier": "isValidLuhn",
+   "definedIn": [
+    "0215.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP216",
+   "query": "Move a file.\n\n@param string $source\n@param string $destination\n\n@return boolean",
+   "identifier": "moveFile",
+   "definedIn": [
+    "0216.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP217",
+   "query": "Moves the Zend Escaper files into our base repo so that it's\navailable for packaged releases where the users don't user Composer.\n\n@throws \\ReflectionException",
+   "identifier": "moveEscaper",
+   "definedIn": [
+    "0217.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP218",
+   "query": "Moves the Kint file into our base repo so that it's\navailable for packaged releases where the users don't user Composer.",
+   "identifier": "moveKint",
+   "definedIn": [
+    "0218.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP219",
+   "query": "Initialize the session container and starts up the session.\n\n@return mixed",
+   "identifier": "start",
+   "definedIn": [
+    "0219.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP220",
+   "query": "Does a full stop of the session:\n\n- destroys the session\n- unsets the session id\n- destroys the session cookie",
+   "identifier": "stop",
+   "definedIn": [
+    "0220.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP221",
+   "query": "Configuration.\n\nHandle input binds and configuration defaults.",
+   "identifier": "configure",
+   "definedIn": [
+    "0221.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP222",
+   "query": "Configure session ID length\n\nTo make life easier, we used to force SHA-1 and 4 bits per\ncharacter on everyone. And of course, someone was unhappy.\n\nThen PHP 7.1 broke backwards-compatibility because ext/session\nis such a mess that nobody wants to touch it with a pole stick,\nand the one guy who does, nobody has the energy to argue with.\n\nSo we were forced to make changes, and OF COURSE something was\ngoing to break and now we have this pile of shit. -- Narf\n\n@return void",
+   "identifier": "configureSidLength",
+   "definedIn": [
+    "0222.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP223",
+   "query": "Handle temporary variables\n\nClears old \"flash\" data, marks the new one for deletion and handles\n\"temp\" data deletion.",
+   "identifier": "initVars",
+   "definedIn": [
+    "0223.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP224",
+   "query": "Sets user data into the session.\n\nIf $data is a string, then it is interpreted as a session property\nkey, and  $value is expected to be non-null.\n\nIf $data is an array, it is expected to be an array of key/value pairs\nto be set as session properties.\n\n@param string|array $data  Property name or associative array of properties\n@param string|array $value Property value if single key provided",
+   "identifier": "set",
+   "definedIn": [
+    "0224.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP225",
+   "query": "Get user data that has been set in the session.\n\nIf the property exists as \"normal\", returns it.\nOtherwise, returns an array of any temp or flash data values with the\nproperty key.\n\nReplaces the legacy method $session->userdata();\n\n@param  string $key Identifier of the session property to retrieve\n@return array|null\tThe property value(s)",
+   "identifier": "get",
+   "definedIn": [
+    "0225.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP226",
+   "query": "Push new value onto session value that is array.\n\n@param string $key  Identifier of the session property we are interested in.\n@param array  $data value to be pushed to existing session key.\n\n@return void",
+   "identifier": "push",
+   "definedIn": [
+    "0226.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP227",
+   "query": "Remove one or more session properties.\n\nIf $key is an array, it is interpreted as an array of string property\nidentifiers to remove. Otherwise, it is interpreted as the identifier\nof a specific session property to remove.\n\n@param string|array $key Identifier of the session property or properties to remove.",
+   "identifier": "remove",
+   "definedIn": [
+    "0227.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP228",
+   "query": "Sets data into the session that will only last for a single request.\nPerfect for use with single-use status update messages.\n\nIf $data is an array, it is interpreted as an associative array of\nkey/value pairs for flashdata properties.\nOtherwise, it is interpreted as the identifier of a specific\nflashdata property, with $value containing the property value.\n\n@param array|string $data  Property identifier or associative array of properties\n@param string|array $value Property value if $data is a scalar",
+   "identifier": "setFlashdata",
+   "definedIn": [
+    "0228.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP229",
+   "query": "Retrieve one or more items of flash data from the session.\n\nIf the item key is null, return all flashdata.\n\n@param  string $key Property identifier\n@return array|null\tThe requested property value, or an associative array  of them",
+   "identifier": "getFlashdata",
+   "definedIn": [
+    "0229.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP230",
+   "query": "Mark a session property or properties as flashdata.\n\n@param array|string $key Property identifier or array of them\n\n@return boolean False if any of the properties are not already set",
+   "identifier": "markAsFlashdata",
+   "definedIn": [
+    "0230.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP231",
+   "query": "Retrieve all of the keys for session data marked as flashdata.\n\n@return array\tThe property names of all flashdata",
+   "identifier": "getFlashKeys",
+   "definedIn": [
+    "0231.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP232",
+   "query": "Sets new data into the session, and marks it as temporary data\nwith a set lifespan.\n\n@param string|array $data  Session data key or associative array of items\n@param null         $value Value to store\n@param integer      $ttl   Time-to-live in seconds",
+   "identifier": "setTempdata",
+   "definedIn": [
+    "0232.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP233",
+   "query": "Returns either a single piece of tempdata, or all temp data currently\nin the session.\n\n@param  string   $key   Session data key\n@return mixed  Session data value or null if not found.",
+   "identifier": "getTempdata",
+   "definedIn": [
+    "0233.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP234",
+   "query": "Mark one of more pieces of data as being temporary, meaning that\nit has a set lifespan within the session.\n\n@param string|array $key Property identifier or array of them\n@param integer      $ttl Time to live, in seconds\n\n@return boolean    False if any of the properties were not set",
+   "identifier": "markAsTempdata",
+   "definedIn": [
+    "0234.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP235",
+   "query": "Unmarks temporary data in the session, effectively removing its\nlifespan and allowing it to live as long as the session does.\n\n@param string|array $key\tProperty identifier or array of them",
+   "identifier": "unmarkTempdata",
+   "definedIn": [
+    "0235.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP236",
+   "query": "Retrieve the keys of all session data that have been marked as temporary data.\n\n@return array",
+   "identifier": "getTempKeys",
+   "definedIn": [
+    "0236.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP237",
+   "query": "Takes care of setting the cookie on the client side.\nExtracted for testing reasons.",
+   "identifier": "setCookie",
+   "definedIn": [
+    "0237.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP238",
+   "query": "Restricts the number of requests made by a single IP address within\na set number of seconds.\n\nExample:\n\nif (! $throttler->check($request->ipAddress(), 60, MINUTE))\n{\ndie('You submitted over 60 requests within a minute.');\n}\n\n@param string  $key      The name to use as the \"bucket\" name.\n@param integer $capacity The number of requests the \"bucket\" can hold\n@param integer $seconds  The time it takes the \"bucket\" to completely refill\n@param integer $cost     The number of tokens this action uses.\n\n@return   boolean\n@internal param int $maxRequests",
+   "identifier": "check",
+   "definedIn": [
+    "0238.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP239",
+   "query": "Attempts to determine the best mime type for the given file extension.\n\n@param string $extension\n\n@return string|null The mime type found, or none if unable to determine.",
+   "identifier": "guessTypeFromExtension",
+   "definedIn": [
+    "0239.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP240",
+   "query": "Attempts to determine the best file extension for a given mime type.\n\n@param string $type\n@param string $proposed_extension - default extension (in case there is more than one with the same mime type)\n\n@return string|null The extension determined, or null if unable to match.",
+   "identifier": "guessExtensionFromType",
+   "definedIn": [
+    "0240.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP241",
+   "query": "Sets the URI to redirect to and, optionally, the HTTP status code to use.\nIf no code is provided it will be automatically determined.\n\n@param string       $uri    The URI to redirect to\n@param integer|null $code   HTTP status code\n@param string       $method\n\n@return $this",
+   "identifier": "to",
+   "definedIn": [
+    "0241.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP242",
+   "query": "Sets the URI to redirect to but as a reverse-routed or named route\ninstead of a raw URI.\n\n@param string       $route\n@param array        $params\n@param integer|null $code\n@param string       $method\n\n@return $this",
+   "identifier": "route",
+   "definedIn": [
+    "0242.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP243",
+   "query": "Helper function to return to previous page.\n\nExample:\nreturn redirect()->back();\n\n@param integer|null $code\n@param string       $method\n\n@return $this",
+   "identifier": "back",
+   "definedIn": [
+    "0243.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP244",
+   "query": "Specifies that the current $_GET and $_POST arrays should be\npackaged up with the response. It will then be available via\nthe 'old()' helper function.\n\n@return $this",
+   "identifier": "withInput",
+   "definedIn": [
+    "0244.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP245",
+   "query": "Adds a key and message to the session as Flashdata.\n\n@param string       $key\n@param string|array $message\n\n@return $this",
+   "identifier": "with",
+   "definedIn": [
+    "0245.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP246",
+   "query": "Runs through all of the filters for the specified\nuri and position.\n\n@param string $uri\n@param string $position\n\n@return \\CodeIgniter\\HTTP\\RequestInterface|\\CodeIgniter\\HTTP\\ResponseInterface|mixed\n@throws \\CodeIgniter\\Filters\\Exceptions\\FilterException",
+   "identifier": "run",
+   "definedIn": [
+    "0246.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP247",
+   "query": "Runs through our list of filters provided by the configuration\nobject to get them ready for use, including getting uri masks\nto proper regex, removing those we can from the possibilities\nbased on HTTP method, etc.\n\nThe resulting $this->filters is an array of only filters\nthat should be applied to this request.\n\nWe go ahead an process the entire tree because we'll need to\nrun through both a before and after and don't want to double\nprocess the rows.\n\n@param string $uri\n\n@return Filters",
+   "identifier": "initialize",
+   "definedIn": [
+    "0247.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP248",
+   "query": "Adds a new alias to the config file.\nMUST be called prior to initialize();\nIntended for use within routes files.\n\n@param string      $class\n@param string|null $alias\n@param string      $when\n@param string      $section\n\n@return $this",
+   "identifier": "addFilter",
+   "definedIn": [
+    "0248.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP249",
+   "query": "Ensures that a specific filter is on and enabled for the current request.\n\nFilters can have \"arguments\". This is done by placing a colon immediately\nafter the filter name, followed by a comma-separated list of arguments that\nare passed to the filter when executed.\n\n@param string $name\n@param string $when\n\n@return \\CodeIgniter\\Filters\\Filters",
+   "identifier": "enableFilter",
+   "definedIn": [
+    "0249.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP250",
+   "query": "Returns the arguments for a specified key, or all.\n\n@return mixed",
+   "identifier": "getArguments",
+   "definedIn": [
+    "0250.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP251",
+   "query": "--------------------------------------------------------------------",
+   "identifier": "processGlobals",
+   "definedIn": [
+    "0251.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP252",
+   "query": "--------------------------------------------------------------------",
+   "identifier": "processMethods",
+   "definedIn": [
+    "0252.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP253",
+   "query": "--------------------------------------------------------------------",
+   "identifier": "processFilters",
+   "definedIn": [
+    "0253.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP254",
+   "query": "Handles logging the message.\nIf the handler returns false, then execution of handlers\nwill stop. Any handlers that have not run, yet, will not\nbe run.\n\n@param $level\n@param $message\n\n@return boolean",
+   "identifier": "handle",
+   "definedIn": [
+    "0254.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP255",
+   "query": "Converts the object to display nicely in the Chrome Logger UI.\n\n@param $object\n\n@return array",
+   "identifier": "format",
+   "definedIn": [
+    "0255.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP256",
+   "query": "Attaches the header and the content to the passed in request object.\n\n@param ResponseInterface $response",
+   "identifier": "sendLogs",
+   "definedIn": [
+    "0256.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP257",
+   "query": "CREATE TABLE attributes\n\n@param  array $attributes Associative array of table attributes\n@return string",
+   "identifier": "_createTableAttributes",
+   "definedIn": [
+    "0257.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP258",
+   "query": "ALTER TABLE\n\n@param  string $alter_type ALTER type\n@param  string $table      Table name\n@param  mixed  $field      Column definition\n@return string|string[]",
+   "identifier": "_alterTable",
+   "definedIn": [
+    "0258.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP259",
+   "query": "Process column\n\n@param  array $field\n@return string",
+   "identifier": "_processColumn",
+   "definedIn": [
+    "0259.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP260",
+   "query": "Process indexes\n\n@param  string $table (ignored)\n@return string",
+   "identifier": "_processIndexes",
+   "definedIn": [
+    "0260.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP261",
+   "query": "Handles setting up the locale, perhaps auto-detecting through\ncontent negotiation.\n\n@param $config",
+   "identifier": "detectLocale",
+   "definedIn": [
+    "0261.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP262",
+   "query": "Sets the locale string for this request.\n\n@param string $locale\n\n@return IncomingRequest",
+   "identifier": "setLocale",
+   "definedIn": [
+    "0262.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP263",
+   "query": "Attempts to detect if the current connection is secure through\na few different methods.\n\n@return boolean",
+   "identifier": "isSecure",
+   "definedIn": [
+    "0263.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP264",
+   "query": "Fetch an item from the $_REQUEST object. This is the simplest way\nto grab data from the request object and can be used in lieu of the\nother get* methods in most cases.\n\n@param string|array|null $index\n@param integer|null      $filter Filter constant\n@param mixed             $flags\n\n@return mixed",
+   "identifier": "getVar",
+   "definedIn": [
+    "0264.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP265",
+   "query": "A convenience method that grabs the raw input stream and decodes\nthe JSON into an array.\n\nIf $assoc == true, then all objects in the response will be converted\nto associative arrays.\n\n@param boolean $assoc   Whether to return objects as associative arrays\n@param integer $depth   How many levels deep to decode\n@param integer $options Bitmask of options\n\n@see http://php.net/manual/en/function.json-decode.php\n\n@return mixed",
+   "identifier": "getJSON",
+   "definedIn": [
+    "0265.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP266",
+   "query": "Fetch an item from GET data.\n\n@param string|array|null $index  Index for item to fetch from $_GET.\n@param integer|null      $filter A filter name to apply.\n@param mixed|null        $flags\n\n@return mixed",
+   "identifier": "getGet",
+   "definedIn": [
+    "0266.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP267",
+   "query": "Fetch an item from POST.\n\n@param string|array|null $index  Index for item to fetch from $_POST.\n@param integer|null      $filter A filter name to apply\n@param mixed             $flags\n\n@return mixed",
+   "identifier": "getPost",
+   "definedIn": [
+    "0267.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP268",
+   "query": "Fetch an item from POST data with fallback to GET.\n\n@param string|array|null $index  Index for item to fetch from $_POST or $_GET\n@param integer|null      $filter A filter name to apply\n@param mixed             $flags\n\n@return mixed",
+   "identifier": "getPostGet",
+   "definedIn": [
+    "0268.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP269",
+   "query": "Fetch an item from GET data with fallback to POST.\n\n@param string|array|null $index  Index for item to be fetched from $_GET or $_POST\n@param integer|null      $filter A filter name to apply\n@param mixed             $flags\n\n@return mixed",
+   "identifier": "getGetPost",
+   "definedIn": [
+    "0269.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP270",
+   "query": "Fetch an item from the COOKIE array.\n\n@param string|array|null $index  Index for item to be fetched from $_COOKIE\n@param integer|null      $filter A filter name to be applied\n@param mixed             $flags\n\n@return mixed",
+   "identifier": "getCookie",
+   "definedIn": [
+    "0270.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP271",
+   "query": "Attempts to get old Input data that has been flashed to the session\nwith redirect_with_input(). It first checks for the data in the old\nPOST data, then the old GET data and finally check for dot arrays\n\n@param string $key\n\n@return mixed",
+   "identifier": "getOldInput",
+   "definedIn": [
+    "0271.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP272",
+   "query": "Returns an array of all files that have been uploaded with this\nrequest. Each file is represented by an UploadedFile instance.\n\n@return array",
+   "identifier": "getFiles",
+   "definedIn": [
+    "0272.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP273",
+   "query": "Retrieves a single file by the name of the input field used\nto upload it.\n\n@param string $fileID\n\n@return UploadedFile|null",
+   "identifier": "getFile",
+   "definedIn": [
+    "0273.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP274",
+   "query": "Sets up our URI object based on the information we have. This is\neither provided by the user in the baseURL Config setting, or\ndetermined from the environment as needed.\n\n@param string $protocol\n@param string $baseURL",
+   "identifier": "detectURI",
+   "definedIn": [
+    "0274.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP275",
+   "query": "Based on the URIProtocol Config setting, will attempt to\ndetect the path portion of the current URI.\n\n@param string $protocol\n\n@return string",
+   "identifier": "detectPath",
+   "definedIn": [
+    "0275.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP276",
+   "query": "Provides a convenient way to work with the Negotiate class\nfor content negotiation.\n\n@param string  $type\n@param array   $supported\n@param boolean $strictMatch\n\n@return string",
+   "identifier": "negotiate",
+   "definedIn": [
+    "0276.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP277",
+   "query": "Will parse the REQUEST_URI and automatically detect the URI from it,\nfixing the query string if necessary.\n\n@return string The URI it found.",
+   "identifier": "parseRequestURI",
+   "definedIn": [
+    "0277.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP278",
+   "query": "Parse QUERY_STRING\n\nWill parse QUERY_STRING and automatically detect the URI from it.\n\n@return string",
+   "identifier": "parseQueryString",
+   "definedIn": [
+    "0278.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP279",
+   "query": "Remove relative directory (../) and multi slashes (///)\n\nDo some final cleaning of the URI and return it, currently only used in static::_parse_request_uri()\n\n@param string $uri\n\n@return string",
+   "identifier": "removeRelativeDirectory",
+   "definedIn": [
+    "0279.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP280",
+   "query": "Open\n\nSanitizes save_path and initializes connection.\n\n@param  string $save_path Server path\n@param  string $name      Session cookie name, unused\n@return boolean",
+   "identifier": "open",
+   "definedIn": [
+    "0280.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP281",
+   "query": "Read\n\nReads session data and acquires a lock\n\n@param string $sessionID Session ID\n\n@return string|false\tSerialized session data",
+   "identifier": "read",
+   "definedIn": [
+    "0281.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP282",
+   "query": "Write\n\nWrites (create / update) session data\n\n@param string $sessionID   Session ID\n@param string $sessionData Serialized session data\n\n@return boolean",
+   "identifier": "write",
+   "definedIn": [
+    "0282.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP283",
+   "query": "Close\n\nReleases locks and closes connection.\n\n@return boolean",
+   "identifier": "close",
+   "definedIn": [
+    "0283.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP284",
+   "query": "Destroy\n\nDestroys the current session.\n\n@param string $sessionID\n\n@return boolean",
+   "identifier": "destroy",
+   "definedIn": [
+    "0284.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP285",
+   "query": "Get lock\n\nAcquires an (emulated) lock.\n\n@param string $sessionID Session ID\n\n@return boolean",
+   "identifier": "lockSession",
+   "definedIn": [
+    "0285.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP286",
+   "query": "Release lock\n\nReleases a previously acquired lock\n\n@return boolean",
+   "identifier": "releaseLock",
+   "definedIn": [
+    "0286.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP287",
+   "query": "Prepares the query against the database, and saves the connection\ninfo necessary to execute the query later.\n\nNOTE: This version is based on SQL code. Child classes should\noverride this method.\n\n@param string $sql\n@param array  $options Passed to the connection's prepare statement.\nUnused in the MySQLi driver.\n\n@return mixed",
+   "identifier": "_prepare",
+   "definedIn": [
+    "0287.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP288",
+   "query": "Takes a new set of data and runs it against the currently\nprepared query. Upon success, will return a Results object.\n\n@todo finalize()\n\n@param array $data\n\n@return boolean",
+   "identifier": "_execute",
+   "definedIn": [
+    "0288.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP289",
+   "query": "Child classes should implement this to return the timeline data\nformatted for correct usage.\n\n@return array",
+   "identifier": "formatTimelineData",
+   "definedIn": [
+    "0289.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP290",
+   "query": "Connect to the database.\n\n@param  boolean $persistent\n@return mixed",
+   "identifier": "connect",
+   "definedIn": [
+    "0290.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP291",
+   "query": "Returns a string containing the version of the database being used.\n\n@return string",
+   "identifier": "getVersion",
+   "definedIn": [
+    "0291.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP292",
+   "query": "\"Smart\" Escape String\n\nEscapes data based on type\n\n@param  mixed $str\n@return mixed",
+   "identifier": "escape",
+   "definedIn": [
+    "0292.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP293",
+   "query": "Platform-dependant string escape\n\n@param  string $str\n@return string",
+   "identifier": "_escapeString",
+   "definedIn": [
+    "0293.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP294",
+   "query": "Generates a platform-specific query string so that the column names can be fetched.\n\n@param string $table\n\n@return string",
+   "identifier": "_listColumns",
+   "definedIn": [
+    "0294.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP295",
+   "query": "Returns an array of objects with field data\n\n@param  string $table\n@return \\stdClass[]\n@throws DatabaseException",
+   "identifier": "_fieldData",
+   "definedIn": [
+    "0295.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP296",
+   "query": "Returns an array of objects with index data\n\n@param  string $table\n@return \\stdClass[]\n@throws DatabaseException",
+   "identifier": "_indexData",
+   "definedIn": [
+    "0296.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP297",
+   "query": "Returns an array of objects with Foreign key data\n\n@param  string $table\n@return \\stdClass[]\n@throws DatabaseException",
+   "identifier": "_foreignKeyData",
+   "definedIn": [
+    "0297.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP298",
+   "query": "Insert ID\n\n@return integer",
+   "identifier": "insertID",
+   "definedIn": [
+    "0298.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP299",
+   "query": "Build a DSN from the provided parameters\n\n@return void",
+   "identifier": "buildDSN",
+   "definedIn": [
+    "0299.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP300",
+   "query": "A Factory method to return the appropriate formatter for the given mime type.\n\n@param string $mime\n\n@return \\CodeIgniter\\Format\\FormatterInterface",
+   "identifier": "getFormatter",
+   "definedIn": [
+    "0300.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP301",
+   "query": "Checks if Honeypot field is empty; if not\nthen the requester is a bot\n\n@param \\CodeIgniter\\HTTP\\RequestInterface $request\n\n@return void\n\n@throws \\CodeIgniter\\Honeypot\\Exceptions\\HoneypotException",
+   "identifier": "before",
+   "definedIn": [
+    "0301.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP302",
+   "query": "Attach a honeypot to the current response.\n\n@param  \\CodeIgniter\\HTTP\\RequestInterface  $request\n@param  \\CodeIgniter\\HTTP\\ResponseInterface $response\n\n@return void",
+   "identifier": "after",
+   "definedIn": [
+    "0302.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP303",
+   "query": "Handles the actual resizing of the image.\n\n@param boolean $maintainRatio\n\n@return ImageMagickHandler\n@throws \\Exception",
+   "identifier": "_resize",
+   "definedIn": [
+    "0303.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP304",
+   "query": "Crops the image.\n\n@return boolean|\\CodeIgniter\\Images\\Handlers\\ImageMagickHandler\n@throws \\Exception",
+   "identifier": "_crop",
+   "definedIn": [
+    "0304.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP305",
+   "query": "Handles the rotation of an image resource.\nDoesn't save the image, but replaces the current resource.\n\n@param integer $angle\n\n@return $this\n@throws \\Exception",
+   "identifier": "_rotate",
+   "definedIn": [
+    "0305.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP306",
+   "query": "Flattens transparencies, default white background\n\n@param integer $red\n@param integer $green\n@param integer $blue\n\n@return $this\n@throws \\Exception",
+   "identifier": "_flatten",
+   "definedIn": [
+    "0306.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP307",
+   "query": "Flips an image along it's vertical or horizontal axis.\n\n@param string $direction\n\n@return $this\n@throws \\Exception",
+   "identifier": "_flip",
+   "definedIn": [
+    "0307.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP308",
+   "query": "Get GD version\n\n@return string",
+   "identifier": "getVersion",
+   "definedIn": [
+    "0308.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP309",
+   "query": "Handles all of the grunt work of resizing, etc.\n\n@param string  $action\n@param integer $quality\n\n@return ImageMagickHandler|boolean",
+   "identifier": "process",
+   "definedIn": [
+    "0309.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP310",
+   "query": "Saves any changes that have been made to file. If no new filename is\nprovided, the existing image is overwritten, otherwise a copy of the\nfile is made at $target.\n\nExample:\n$image->resize(100, 200, true)\n->save();\n\n@param string|null $target\n@param integer     $quality\n\n@return boolean",
+   "identifier": "save",
+   "definedIn": [
+    "0310.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP311",
+   "query": "Get Image Resource\n\nThis simply creates an image resource handle\nbased on the type of image being processed.\nSince ImageMagick is used on the cli, we need to\nensure we have a temporary file on the server\nthat we can use.\n\nTo ensure we can use all features, like transparency,\nduring the process, we'll use a PNG as the temp file type.\n\n@return resource|boolean\n@throws \\Exception",
+   "identifier": "getResourcePath",
+   "definedIn": [
+    "0311.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP312",
+   "query": "Handler-specific method for overlaying text on an image.\n\n@param string $text\n@param array  $options\n\n@throws \\Exception",
+   "identifier": "_text",
+   "definedIn": [
+    "0312.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP313",
+   "query": "Runs all of the migrations in reverse order, until they have\nall been un-applied.\n\n@param array $params",
+   "identifier": "run",
+   "definedIn": [
+    "0313.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP314",
+   "query": "Create database\n\n@param string $db_name\n\n@return boolean\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "createDatabase",
+   "definedIn": [
+    "0314.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP315",
+   "query": "Drop database\n\n@param string $db_name\n\n@return boolean\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "dropDatabase",
+   "definedIn": [
+    "0315.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP316",
+   "query": "Add Key\n\n@param string|array $key\n@param boolean      $primary\n@param boolean      $unique\n\n@return Forge",
+   "identifier": "addKey",
+   "definedIn": [
+    "0316.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP317",
+   "query": "Add Field\n\n@param array|string $field\n\n@return Forge",
+   "identifier": "addField",
+   "definedIn": [
+    "0317.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP318",
+   "query": "Add Foreign Key\n\n@param string  $fieldName\n@param string  $tableName\n@param string  $tableField\n@param string  $onUpdate\n@param string  $onDelete\n\n@return \\CodeIgniter\\Database\\Forge\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "addForeignKey",
+   "definedIn": [
+    "0318.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP319",
+   "query": "Foreign Key Drop\n\n@param string $table        Table name\n@param string $foreign_name Foreign name\n\n@return boolean|\\CodeIgniter\\Database\\BaseResult|\\CodeIgniter\\Database\\Query|false|mixed\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "dropForeignKey",
+   "definedIn": [
+    "0319.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP320",
+   "query": "Create Table\n\n@param string  $table         Table name\n@param boolean $if_not_exists Whether to add IF NOT EXISTS condition\n@param array   $attributes    Associative array of table attributes\n\n@return mixed\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "createTable",
+   "definedIn": [
+    "0320.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP321",
+   "query": "Create Table\n\n@param string  $table         Table name\n@param boolean $if_not_exists Whether to add 'IF NOT EXISTS' condition\n@param array   $attributes    Associative array of table attributes\n\n@return mixed",
+   "identifier": "_createTable",
+   "definedIn": [
+    "0321.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP322",
+   "query": "CREATE TABLE attributes\n\n@param array $attributes Associative array of table attributes\n\n@return string",
+   "identifier": "_createTableAttributes",
+   "definedIn": [
+    "0322.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP323",
+   "query": "Drop Table\n\n@param string  $table_name Table name\n@param boolean $if_exists  Whether to add an IF EXISTS condition\n@param boolean $cascade    Whether to add an CASCADE condition\n\n@return mixed\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "dropTable",
+   "definedIn": [
+    "0323.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP324",
+   "query": "Drop Table\n\nGenerates a platform-specific DROP TABLE string\n\n@param string  $table     Table name\n@param boolean $if_exists Whether to add an IF EXISTS condition\n@param boolean $cascade   Whether to add an CASCADE condition\n\n@return string",
+   "identifier": "_dropTable",
+   "definedIn": [
+    "0324.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP325",
+   "query": "Rename Table\n\n@param string $table_name     Old table name\n@param string $new_table_name New table name\n\n@return mixed\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "renameTable",
+   "definedIn": [
+    "0325.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP326",
+   "query": "Column Add\n\n@param string        $table Table name\n@param string|array  $field Column definition\n\n@return boolean\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "addColumn",
+   "definedIn": [
+    "0326.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP327",
+   "query": "Column Drop\n\n@param string $table       Table name\n@param string $column_name Column name\n\n@return mixed\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "dropColumn",
+   "definedIn": [
+    "0327.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP328",
+   "query": "ALTER TABLE\n\n@param string $alter_type ALTER type\n@param string $table      Table name\n@param mixed  $field      Column definition\n\n@return string|string[]",
+   "identifier": "_alterTable",
+   "definedIn": [
+    "0328.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP329",
+   "query": "Process fields\n\n@param boolean $create_table\n\n@return array",
+   "identifier": "_processFields",
+   "definedIn": [
+    "0329.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP330",
+   "query": "Field attribute UNSIGNED\n\nDepending on the unsigned property value:\n\n- TRUE will always set $field['unsigned'] to 'UNSIGNED'\n- FALSE will always set $field['unsigned'] to ''\n- array(TYPE) will set $field['unsigned'] to 'UNSIGNED',\nif $attributes['TYPE'] is found in the array\n- array(TYPE => UTYPE) will change $field['type'],\nfrom TYPE to UTYPE in case of a match\n\n@param array &$attributes\n@param array &$field\n\n@return null|void",
+   "identifier": "_attributeUnsigned",
+   "definedIn": [
+    "0330.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP331",
+   "query": "Field attribute DEFAULT\n\n@param array &$attributes\n@param array &$field\n\n@return null|void",
+   "identifier": "_attributeDefault",
+   "definedIn": [
+    "0331.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP332",
+   "query": "Field attribute AUTO_INCREMENT\n\n@param array &$attributes\n@param array &$field\n\n@return void",
+   "identifier": "_attributeAutoIncrement",
+   "definedIn": [
+    "0332.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP333",
+   "query": "Process primary keys\n\n@param string $table Table name\n\n@return string",
+   "identifier": "_processPrimaryKeys",
+   "definedIn": [
+    "0333.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP334",
+   "query": "Process indexes\n\n@param string $table\n\n@return array",
+   "identifier": "_processIndexes",
+   "definedIn": [
+    "0334.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP335",
+   "query": "Process foreign keys\n\n@param string $table Table name\n\n@return string",
+   "identifier": "_processForeignKeys",
+   "definedIn": [
+    "0335.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP336",
+   "query": "Reset\n\nResets table creation vars\n\n@return void",
+   "identifier": "reset",
+   "definedIn": [
+    "0336.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP337",
+   "query": "Sets the current locale to use when performing string lookups.\n\n@param string $locale\n\n@return $this",
+   "identifier": "setLocale",
+   "definedIn": [
+    "0337.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP338",
+   "query": "Parses the language string for a file, loads the file, if necessary,\ngetting the line.\n\n@param string $line Line.\n@param array  $args Arguments.\n\n@return string|string[] Returns line.",
+   "identifier": "getLine",
+   "definedIn": [
+    "0338.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP339",
+   "query": "Parses the language string which should include the\nfilename as the first segment (separated by period).\n\n@param string $line\n@param string $locale\n\n@return array",
+   "identifier": "parseLine",
+   "definedIn": [
+    "0339.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP340",
+   "query": "Advanced message formatting.\n\n@param string|array $message Message.\n@param array\t       $args    Arguments.\n\n@return string|array Returns formatted message.",
+   "identifier": "formatMessage",
+   "definedIn": [
+    "0340.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP341",
+   "query": "Loads a language file in the current locale. If $return is true,\nwill return the file's contents, otherwise will merge with\nthe existing language lines.\n\n@param string  $file\n@param string  $locale\n@param boolean $return\n\n@return array|null",
+   "identifier": "load",
+   "definedIn": [
+    "0341.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP342",
+   "query": "A simple method for including files that can be\noverridden during testing.\n\n@param string $path\n\n@return array",
+   "identifier": "requireFile",
+   "definedIn": [
+    "0342.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP343",
+   "query": "Adds a new base_uri value. Can be either a URI class or a simple string.\n\nbase_uri restricts the URLs that can appear in a page’s <base> element.\n\n@see http://www.w3.org/TR/CSP/#directive-base-uri\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addBaseURI",
+   "definedIn": [
+    "0343.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP344",
+   "query": "Adds a new valid endpoint for a form's action. Can be either\na URI class or a simple string.\n\nchild-src lists the URLs for workers and embedded frame contents.\nFor example: child-src https://youtube.com would enable embedding\nvideos from YouTube but not from other origins.\n\n@see http://www.w3.org/TR/CSP/#directive-child-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addChildSrc",
+   "definedIn": [
+    "0344.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP345",
+   "query": "Adds a new valid endpoint for a form's action. Can be either\na URI class or a simple string.\n\nconnect-src limits the origins to which you can connect\n(via XHR, WebSockets, and EventSource).\n\n@see http://www.w3.org/TR/CSP/#directive-connect-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addConnectSrc",
+   "definedIn": [
+    "0345.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP346",
+   "query": "Adds a new valid endpoint for a form's action. Can be either\na URI class or a simple string.\n\ndefault_src is the URI that is used for many of the settings when\nno other source has been set.\n\n@see http://www.w3.org/TR/CSP/#directive-default-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "setDefaultSrc",
+   "definedIn": [
+    "0346.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP347",
+   "query": "Adds a new valid endpoint for a form's action. Can be either\na URI class or a simple string.\n\nfont-src specifies the origins that can serve web fonts.\n\n@see http://www.w3.org/TR/CSP/#directive-font-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addFontSrc",
+   "definedIn": [
+    "0347.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP348",
+   "query": "Adds a new valid endpoint for a form's action. Can be either\na URI class or a simple string.\n\n@see http://www.w3.org/TR/CSP/#directive-form-action\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addFormAction",
+   "definedIn": [
+    "0348.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP349",
+   "query": "Adds a new resource that should allow embedding the resource using\n<frame>, <iframe>, <object>, <embed>, or <applet>\n\n@see http://www.w3.org/TR/CSP/#directive-frame-ancestors\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addFrameAncestor",
+   "definedIn": [
+    "0349.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP350",
+   "query": "Adds a new valid endpoint for valid image sources. Can be either\na URI class or a simple string.\n\n@see http://www.w3.org/TR/CSP/#directive-img-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addImageSrc",
+   "definedIn": [
+    "0350.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP351",
+   "query": "Adds a new valid endpoint for valid video and audio. Can be either\na URI class or a simple string.\n\n@see http://www.w3.org/TR/CSP/#directive-media-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addMediaSrc",
+   "definedIn": [
+    "0351.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP352",
+   "query": "Adds a new valid endpoint for manifest sources. Can be either\na URI class or simple string.\n\n@see https://www.w3.org/TR/CSP/#directive-manifest-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addManifestSrc",
+   "definedIn": [
+    "0352.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP353",
+   "query": "Adds a new valid endpoint for Flash and other plugin sources. Can be either\na URI class or a simple string.\n\n@see http://www.w3.org/TR/CSP/#directive-object-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addObjectSrc",
+   "definedIn": [
+    "0353.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP354",
+   "query": "Limits the types of plugins that can be used. Can be either\na URI class or a simple string.\n\n@see http://www.w3.org/TR/CSP/#directive-plugin-types\n\n@param string|array $mime              One or more plugin mime types, separate by spaces\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addPluginType",
+   "definedIn": [
+    "0354.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP355",
+   "query": "specifies an HTML sandbox policy that the user agent applies to\nthe protected resource.\n\n@see http://www.w3.org/TR/CSP/#directive-sandbox\n\n@param string|array $flags             An array of sandbox flags that can be added to the directive.\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addSandbox",
+   "definedIn": [
+    "0355.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP356",
+   "query": "Adds a new valid endpoint for javascript file sources. Can be either\na URI class or a simple string.\n\n@see http://www.w3.org/TR/CSP/#directive-connect-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addScriptSrc",
+   "definedIn": [
+    "0356.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP357",
+   "query": "Adds a new valid endpoint for CSS file sources. Can be either\na URI class or a simple string.\n\n@see http://www.w3.org/TR/CSP/#directive-connect-src\n\n@param string|array $uri\n@param boolean|null $explicitReporting\n\n@return $this",
+   "identifier": "addStyleSrc",
+   "definedIn": [
+    "0357.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP358",
+   "query": "DRY method to add an string or array to a class property.\n\n@param string|array $options\n@param string       $target\n@param boolean|null $explicitReporting",
+   "identifier": "addOption",
+   "definedIn": [
+    "0358.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP359",
+   "query": "Scans the body of the request message and replaces any nonce\nplaceholders with actual nonces, that we'll then add to our\nheaders.\n\n@param ResponseInterface|\\CodeIgniter\\HTTP\\Response $response",
+   "identifier": "generateNonces",
+   "definedIn": [
+    "0359.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP360",
+   "query": "Based on the current state of the elements, will add the appropriate\nContent-Security-Policy and Content-Security-Policy-Report-Only headers\nwith their values to the response object.\n\n@param ResponseInterface|\\CodeIgniter\\HTTP\\Response $response",
+   "identifier": "buildHeaders",
+   "definedIn": [
+    "0360.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP361",
+   "query": "Adds a directive and it's options to the appropriate header. The $values\narray might have options that are geared toward either the regular or the\nreportOnly header, since it's viable to have both simultaneously.\n\n@param string            $name\n@param array|string|null $values",
+   "identifier": "addToHeader",
+   "definedIn": [
+    "0361.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP362",
+   "query": "Prepares the query against the database, and saves the connection\ninfo necessary to execute the query later.\n\nNOTE: This version is based on SQL code. Child classes should\noverride this method.\n\n@param string $sql\n@param array  $options Passed to the connection's prepare statement.\nUnused in the MySQLi driver.\n\n@return mixed\n@throws \\Exception",
+   "identifier": "_prepare",
+   "definedIn": [
+    "0362.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP363",
+   "query": "Takes a new set of data and runs it against the currently\nprepared query. Upon success, will return a Results object.\n\n@param array $data\n\n@return boolean",
+   "identifier": "_execute",
+   "definedIn": [
+    "0363.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP364",
+   "query": "Replaces the ? placeholders with $1, $2, etc parameters for use\nwithin the prepared query.\n\n@param string $sql\n\n@return string",
+   "identifier": "parameterize",
+   "definedIn": [
+    "0364.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP365",
+   "query": "Gets the Collector's title.\n\n@param  boolean $safe\n@return string",
+   "identifier": "getTitle",
+   "definedIn": [
+    "0365.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP366",
+   "query": "Clean Path\n\nThis makes nicer looking paths for the error output.\n\n@param string $file\n\n@return string",
+   "identifier": "cleanPath",
+   "definedIn": [
+    "0366.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP367",
+   "query": "Ensures the data has been collected.",
+   "identifier": "collectLogs",
+   "definedIn": [
+    "0367.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP368",
+   "query": "@param string      $library\n@param null        $params\n@param integer     $ttl\n@param string|null $cacheName\n\n@return string\n@throws \\ReflectionException",
+   "identifier": "render",
+   "definedIn": [
+    "0368.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP369",
+   "query": "Parses the params attribute. If an array, returns untouched.\nIf a string, it should be in the format \"key1=value key2=value\".\nIt will be split and returned as an array.\n\n@param $params\n\n@return array|null",
+   "identifier": "prepareParams",
+   "definedIn": [
+    "0369.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP370",
+   "query": "Given the library string, attempts to determine the class and method\nto call.\n\n@param string $library\n\n@return array",
+   "identifier": "determineClass",
+   "definedIn": [
+    "0370.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP371",
+   "query": "Retrieve the results of the query. Typically an array of\nindividual data rows, which can be either an 'array', an\n'object', or a custom class name.\n\n@param string $type The row type. Either 'array', 'object', or a class name to use\n\n@return array",
+   "identifier": "getResult",
+   "definedIn": [
+    "0371.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP372",
+   "query": "Returns the results as an array of custom objects.\n\n@param string $className The name of the class to use.\n\n@return mixed",
+   "identifier": "getCustomResultObject",
+   "definedIn": [
+    "0372.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP373",
+   "query": "Returns the results as an array of arrays.\n\nIf no results, an empty array is returned.\n\n@return array",
+   "identifier": "getResultArray",
+   "definedIn": [
+    "0373.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP374",
+   "query": "Returns the results as an array of objects.\n\nIf no results, an empty array is returned.\n\n@return array",
+   "identifier": "getResultObject",
+   "definedIn": [
+    "0374.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP375",
+   "query": "Wrapper object to return a row as either an array, an object, or\na custom class.\n\nIf row doesn't exist, returns null.\n\n@param mixed   $n    The index of the results to return\n@param string  $type The type of result object. 'array', 'object' or class name.\n\n@return mixed",
+   "identifier": "getRow",
+   "definedIn": [
+    "0375.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP376",
+   "query": "Returns a row as a custom class instance.\n\nIf row doesn't exists, returns null.\n\n@param integer $n\n@param string  $className\n\n@return mixed",
+   "identifier": "getCustomRowObject",
+   "definedIn": [
+    "0376.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP377",
+   "query": "Returns a single row from the results as an array.\n\nIf row doesn't exist, returns null.\n\n@param integer $n\n\n@return mixed",
+   "identifier": "getRowArray",
+   "definedIn": [
+    "0377.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP378",
+   "query": "Returns a single row from the results as an object.\n\nIf row doesn't exist, returns null.\n\n@param integer $n\n\n@return mixed",
+   "identifier": "getRowObject",
+   "definedIn": [
+    "0378.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP379",
+   "query": "Assigns an item into a particular column slot.\n\n@param mixed $key\n@param mixed $value\n\n@return mixed",
+   "identifier": "setRow",
+   "definedIn": [
+    "0379.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP380",
+   "query": "Returns the \"first\" row of the current results.\n\n@param string $type\n\n@return mixed",
+   "identifier": "getFirstRow",
+   "definedIn": [
+    "0380.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP381",
+   "query": "Returns the \"last\" row of the current results.\n\n@param string $type\n\n@return mixed",
+   "identifier": "getLastRow",
+   "definedIn": [
+    "0381.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP382",
+   "query": "Returns the \"next\" row of the current results.\n\n@param string $type\n\n@return mixed",
+   "identifier": "getNextRow",
+   "definedIn": [
+    "0382.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP383",
+   "query": "Returns an unbuffered row and move the pointer to the next row.\n\n@param string $type\n\n@return mixed",
+   "identifier": "getUnbufferedRow",
+   "definedIn": [
+    "0383.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP384",
+   "query": "Determines the best content-type to use based on the $supported\ntypes the application says it supports, and the types requested\nby the client.\n\nIf no match is found, the first, highest-ranking client requested\ntype is returned.\n\n@param array   $supported\n@param boolean $strictMatch If TRUE, will return an empty string when no match found.\nIf FALSE, will return the first supported element.\n\n@return string",
+   "identifier": "media",
+   "definedIn": [
+    "0384.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP385",
+   "query": "Determines the best charset to use based on the $supported\ntypes the application says it supports, and the types requested\nby the client.\n\nIf no match is found, the first, highest-ranking client requested\ntype is returned.\n\n@param array $supported\n\n@return string",
+   "identifier": "charset",
+   "definedIn": [
+    "0385.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP386",
+   "query": "Determines the best encoding type to use based on the $supported\ntypes the application says it supports, and the types requested\nby the client.\n\nIf no match is found, the first, highest-ranking client requested\ntype is returned.\n\n@param array $supported\n\n@return string",
+   "identifier": "encoding",
+   "definedIn": [
+    "0386.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP387",
+   "query": "Does the grunt work of comparing any of the app-supported values\nagainst a given Accept* header string.\n\nPortions of this code base on Aura.Accept library.\n\n@param array   $supported    App-supported values\n@param string  $header       header string\n@param boolean $enforceTypes If TRUE, will compare media types and sub-types.\n@param boolean $strictMatch  If TRUE, will return empty string on no match.\nIf FALSE, will return the first supported element.\n\n@return string Best match",
+   "identifier": "getBestMatch",
+   "definedIn": [
+    "0387.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP388",
+   "query": "Parses an Accept* header into it's multiple values.\n\nThis is based on code from Aura.Accept library.\n\n@param string $header\n\n@return array",
+   "identifier": "parseHeader",
+   "definedIn": [
+    "0388.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP389",
+   "query": "Match-maker\n\n@param  array   $acceptable\n@param  string  $supported\n@param  boolean $enforceTypes\n@return boolean",
+   "identifier": "match",
+   "definedIn": [
+    "0389.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP390",
+   "query": "Checks two Accept values with matching 'values' to see if their\n'params' are the same.\n\n@param array $acceptable\n@param array $supported\n\n@return boolean",
+   "identifier": "matchParameters",
+   "definedIn": [
+    "0390.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP391",
+   "query": "Compares the types/subtypes of an acceptable Media type and\nthe supported string.\n\n@param array $acceptable\n@param array $supported\n\n@return boolean",
+   "identifier": "matchTypes",
+   "definedIn": [
+    "0391.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP392",
+   "query": "Generates an array of column names in the result set.\n\n@return array",
+   "identifier": "getFieldNames",
+   "definedIn": [
+    "0392.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP393",
+   "query": "Generates an array of objects representing field meta-data.\n\n@return array",
+   "identifier": "getFieldData",
+   "definedIn": [
+    "0393.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP394",
+   "query": "Frees the current result.\n\n@return void",
+   "identifier": "freeResult",
+   "definedIn": [
+    "0394.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP395",
+   "query": "Runs the current command discovered on the CLI.\n\n@param boolean $useSafeOutput\n\n@return \\CodeIgniter\\HTTP\\RequestInterface|\\CodeIgniter\\HTTP\\Response|\\CodeIgniter\\HTTP\\ResponseInterface|mixed\n@throws \\Exception",
+   "identifier": "run",
+   "definedIn": [
+    "0395.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP396",
+   "query": "Displays basic information about the Console.",
+   "identifier": "showHeader",
+   "definedIn": [
+    "0396.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP397",
+   "query": "Handles creating and displaying the\n\n@param string $group\n@param string $template The output template alias to render.\n\n@return string",
+   "identifier": "links",
+   "definedIn": [
+    "0397.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP398",
+   "query": "Creates simple Next/Previous links, instead of full pagination.\n\n@param string $group\n@param string $template\n\n@return string",
+   "identifier": "simpleLinks",
+   "definedIn": [
+    "0398.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP399",
+   "query": "Allows for a simple, manual, form of pagination where all of the data\nis provided by the user. The URL is the current URI.\n\n@param integer $page\n@param integer $perPage\n@param integer $total\n@param string  $template The output template alias to render.\n@param integer $segment  (if page number is provided by URI segment)\n\n@return string",
+   "identifier": "makeLinks",
+   "definedIn": [
+    "0399.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP400",
+   "query": "Does the actual work of displaying the view file. Used internally\nby links(), simpleLinks(), and makeLinks().\n\n@param string $group\n@param string $template\n\n@return string",
+   "identifier": "displayLinks",
+   "definedIn": [
+    "0400.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP401",
+   "query": "Stores a set of pagination data for later display. Most commonly used\nby the model to automate the process.\n\n@param string  $group\n@param integer $page\n@param integer $perPage\n@param integer $total\n@param integer $segment\n\n@return $this",
+   "identifier": "store",
+   "definedIn": [
+    "0401.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP402",
+   "query": "Sets the path that an aliased group of links will use.\n\n@param string $group\n@param string $path\n\n@return mixed",
+   "identifier": "setPath",
+   "definedIn": [
+    "0402.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP403",
+   "query": "Returns the total number of pages.\n\n@param string|null $group\n\n@return integer",
+   "identifier": "getPageCount",
+   "definedIn": [
+    "0403.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP404",
+   "query": "Returns the number of the current page of results.\n\n@param string|null $group\n\n@return integer",
+   "identifier": "getCurrentPage",
+   "definedIn": [
+    "0404.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP405",
+   "query": "Tells whether this group of results has any more pages of results.\n\n@param string|null $group\n\n@return boolean",
+   "identifier": "hasMore",
+   "definedIn": [
+    "0405.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP406",
+   "query": "Returns the last page, if we have a total that we can calculate with.\n\n@param string $group\n\n@return integer|null",
+   "identifier": "getLastPage",
+   "definedIn": [
+    "0406.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP407",
+   "query": "Returns the URI for a specific page for the specified group.\n\n@param integer|null $page\n@param string       $group\n@param boolean      $returnObject\n\n@return string|\\CodeIgniter\\HTTP\\URI",
+   "identifier": "getPageURI",
+   "definedIn": [
+    "0407.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP408",
+   "query": "Returns the full URI to the next page of results, or null.\n\n@param string  $group\n@param boolean $returnObject\n\n@return string|null",
+   "identifier": "getNextPageURI",
+   "definedIn": [
+    "0408.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP409",
+   "query": "Returns the full URL to the previous page of results, or null.\n\n@param string  $group\n@param boolean $returnObject\n\n@return string|null",
+   "identifier": "getPreviousPageURI",
+   "definedIn": [
+    "0409.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP410",
+   "query": "Returns the number of results per page that should be shown.\n\n@param string $group\n\n@return integer",
+   "identifier": "getPerPage",
+   "definedIn": [
+    "0410.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP411",
+   "query": "Returns an array with details about the results, including\ntotal, per_page, current_page, last_page, next_url, prev_url, from, to.\nDoes not include the actual data. This data is suitable for adding\na 'data' object to with the result set and converting to JSON.\n\n@param string $group\n\n@return array",
+   "identifier": "getDetails",
+   "definedIn": [
+    "0411.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP412",
+   "query": "Ensures that an array exists for the group specified.\n\n@param string $group",
+   "identifier": "ensureGroup",
+   "definedIn": [
+    "0412.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP413",
+   "query": "Returns the number of years of difference between the two.\n\n@param boolean $raw\n\n@return float|integer",
+   "identifier": "getYears",
+   "definedIn": [
+    "0413.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP414",
+   "query": "Returns the number of months difference between the two dates.\n\n@param boolean $raw\n\n@return float|integer",
+   "identifier": "getMonths",
+   "definedIn": [
+    "0414.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP415",
+   "query": "Returns the number of weeks difference between the two dates.\n\n@param boolean $raw\n\n@return float|integer",
+   "identifier": "getWeeks",
+   "definedIn": [
+    "0415.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP416",
+   "query": "Returns the number of days difference between the two dates.\n\n@param boolean $raw\n\n@return float|integer",
+   "identifier": "getDays",
+   "definedIn": [
+    "0416.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP417",
+   "query": "Returns the number of hours difference between the two dates.\n\n@param boolean $raw\n\n@return float|integer",
+   "identifier": "getHours",
+   "definedIn": [
+    "0417.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP418",
+   "query": "Returns the number of minutes difference between the two dates.\n\n@param boolean $raw\n\n@return float|integer",
+   "identifier": "getMinutes",
+   "definedIn": [
+    "0418.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP419",
+   "query": "Returns the number of seconds difference between the two dates.\n\n@param boolean $raw\n\n@return integer",
+   "identifier": "getSeconds",
+   "definedIn": [
+    "0419.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP420",
+   "query": "Convert the time to human readable format\n\n@param string|null $locale\n\n@return string",
+   "identifier": "humanize",
+   "definedIn": [
+    "0420.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP421",
+   "query": "Parses the connection binds and returns an instance of\nthe driver ready to go.\n\n@param array  $params\n@param string $alias\n\n@return   mixed\n@internal param bool $useBuilder",
+   "identifier": "load",
+   "definedIn": [
+    "0421.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP422",
+   "query": "Creates a new Forge instance for the current database type.\n\n@param ConnectionInterface|BaseConnection $db\n\n@return mixed",
+   "identifier": "loadForge",
+   "definedIn": [
+    "0422.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP423",
+   "query": "Takes an array of key/value pairs and sets them as\nclass properties, using any `setCamelCasedProperty()` methods\nthat may or may not exist.\n\n@param array $data\n\n@return \\CodeIgniter\\Entity",
+   "identifier": "fill",
+   "definedIn": [
+    "0423.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP424",
+   "query": "General method that will return all public and protected\nvalues of this entity as an array. All values are accessed\nthrough the __get() magic method so will have any casts, etc\napplied to them.\n\n@param boolean $onlyChanged If true, only return values that have changed since object creation\n@param boolean $cast        If true, properties will be casted.\n\n@return array\n@throws \\Exception",
+   "identifier": "toArray",
+   "definedIn": [
+    "0424.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP425",
+   "query": "Converts the properties of this class into an array. Unlike toArray()\nthis will not cast the data or use any magic accessors. It simply\nreturns the raw data for use when saving to the model, etc.\n\n@param boolean $onlyChanged\n\n@return array",
+   "identifier": "toRawArray",
+   "definedIn": [
+    "0425.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP426",
+   "query": "Checks a property to see if it has changed since the entity was created.\n\n@param string $key\n@param null   $value\n\n@return boolean",
+   "identifier": "hasPropertyChanged",
+   "definedIn": [
+    "0426.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP427",
+   "query": "Returns true if a property exists names $key, or a getter method\nexists named like for __get().\n\n@param string $key\n\n@return boolean",
+   "identifier": "__isset",
+   "definedIn": [
+    "0427.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP428",
+   "query": "Checks the datamap to see if this column name is being mapped,\nand returns the mapped name, if any, or the original name.\n\n@param string $key\n\n@return mixed|string",
+   "identifier": "mapProperty",
+   "definedIn": [
+    "0428.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP429",
+   "query": "Converts the given string|timestamp|DateTime|Time instance\ninto a \\CodeIgniter\\I18n\\Time object.\n\n@param $value\n\n@return \\CodeIgniter\\I18n\\Time\n@throws \\Exception",
+   "identifier": "mutateDate",
+   "definedIn": [
+    "0429.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP430",
+   "query": "Provides the ability to cast an item as a specific data type.\nAdd ? at the beginning of $type  (i.e. ?string) to get NULL instead of casting $value if $value === null\n\n@param $value\n@param string $type\n\n@return mixed\n@throws \\Exception",
+   "identifier": "castAs",
+   "definedIn": [
+    "0430.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP431",
+   "query": "Cast as JSON\n\n@param mixed   $value\n@param boolean $asArray\n\n@return mixed\n@throws \\CodeIgniter\\Exceptions\\CastException",
+   "identifier": "castAsJson",
+   "definedIn": [
+    "0431.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP432",
+   "query": "Should the application auto-discover the requested resources.\n\nValid values are:\n- events\n- registrars\n- routes\n- services\n\n@param string $alias\n\n@return boolean",
+   "identifier": "shouldDiscover",
+   "definedIn": [
+    "0432.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP433",
+   "query": "Fetches the row of database from $this->table with a primary key\nmatching $id.\n\n@param mixed|array|null $id One primary key or an array of primary keys\n\n@return array|object|null    The resulting row of data, or null.",
+   "identifier": "find",
+   "definedIn": [
+    "0433.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP434",
+   "query": "Fetches the column of database from $this->table\n\n@param string $columnName\n\n@return array|null   The resulting row of data, or null if no data found.",
+   "identifier": "findColumn",
+   "definedIn": [
+    "0434.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP435",
+   "query": "Works with the current Query Builder instance to return\nall results, while optionally limiting them.\n\n@param integer $limit\n@param integer $offset\n\n@return array|null",
+   "identifier": "findAll",
+   "definedIn": [
+    "0435.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP436",
+   "query": "Returns the first row of the result set. Will take any previous\nQuery Builder calls into account when determining the result set.\n\n@return array|object|null",
+   "identifier": "first",
+   "definedIn": [
+    "0436.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP437",
+   "query": "Captures the builder's set() method so that we can validate the\ndata here. This allows it to be used with any of the other\nbuilder methods and still get validated data, like replace.\n\n@param mixed        $key\n@param string       $value\n@param boolean|null $escape\n\n@return $this",
+   "identifier": "set",
+   "definedIn": [
+    "0437.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP438",
+   "query": "A convenience method that will attempt to determine whether the\ndata should be inserted or updated. Will work with either\nan array or object. When using with custom class objects,\nyou must ensure that the class will provide access to the class\nvariables, even if through a magic method.\n\n@param array|object $data\n\n@return boolean\n@throws \\ReflectionException",
+   "identifier": "save",
+   "definedIn": [
+    "0438.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP439",
+   "query": "Takes a class an returns an array of it's public and protected\nproperties as an array suitable for use in creates and updates.\n\n@param string|object $data\n@param string|null   $primaryKey\n@param string        $dateFormat\n@param boolean       $onlyChanged\n\n@return array\n@throws \\ReflectionException",
+   "identifier": "classToArray",
+   "definedIn": [
+    "0439.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP440",
+   "query": "Inserts data into the current table. If an object is provided,\nit will attempt to convert it to an array.\n\n@param array|object $data\n@param boolean      $returnID Whether insert ID should be returned or not.\n\n@return integer|string|boolean\n@throws \\ReflectionException",
+   "identifier": "insert",
+   "definedIn": [
+    "0440.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP441",
+   "query": "Compiles batch insert strings and runs the queries, validating each row prior.\n\n@param array   $set       An associative array of insert values\n@param boolean $escape    Whether to escape values and identifiers\n\n@param integer $batchSize\n@param boolean $testing\n\n@return integer|boolean Number of rows inserted or FALSE on failure",
+   "identifier": "insertBatch",
+   "definedIn": [
+    "0441.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP442",
+   "query": "Updates a single record in $this->table. If an object is provided,\nit will attempt to convert it into an array.\n\n@param integer|array|string $id\n@param array|object         $data\n\n@return boolean\n@throws \\ReflectionException",
+   "identifier": "update",
+   "definedIn": [
+    "0442.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP443",
+   "query": "Update_Batch\n\nCompiles an update string and runs the query\n\n@param array   $set       An associative array of update values\n@param string  $index     The where key\n@param integer $batchSize The size of the batch to run\n@param boolean $returnSQL True means SQL is returned, false will execute the query\n\n@return mixed    Number of rows affected or FALSE on failure\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "updateBatch",
+   "definedIn": [
+    "0443.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP444",
+   "query": "Deletes a single record from $this->table where $id matches\nthe table's primaryKey\n\n@param integer|array|null $id    The rows primary key(s)\n@param boolean            $purge Allows overriding the soft deletes setting.\n\n@return mixed\n@throws \\CodeIgniter\\Database\\Exceptions\\DatabaseException",
+   "identifier": "delete",
+   "definedIn": [
+    "0444.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP445",
+   "query": "Permanently deletes all rows that have been marked as deleted\nthrough soft deletes (deleted = 1)\n\n@return boolean|mixed",
+   "identifier": "purgeDeleted",
+   "definedIn": [
+    "0445.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP446",
+   "query": "Works with the find* methods to return only the rows that\nhave been deleted.\n\n@return Model",
+   "identifier": "onlyDeleted",
+   "definedIn": [
+    "0446.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP447",
+   "query": "Replace\n\nCompiles an replace into string and runs the query\n\n@param null    $data\n@param boolean $returnSQL\n\n@return mixed",
+   "identifier": "replace",
+   "definedIn": [
+    "0447.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP448",
+   "query": "Loops over records in batches, allowing you to operate on them.\nWorks with $this->builder to get the Compiled select to\ndetermine the rows to operate on.\n\n@param integer  $size\n@param \\Closure $userFunc\n\n@throws \\CodeIgniter\\Database\\Exceptions\\DataException",
+   "identifier": "chunk",
+   "definedIn": [
+    "0448.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP449",
+   "query": "Works with $this->builder to get the Compiled Select to operate on.\nExpects a GET variable (?page=2) that specifies the page of results\nto display.\n\n@param integer $perPage\n@param string  $group   Will be used by the pagination library\nto identify a unique pagination set.\n@param integer $page    Optional page number (useful when the page number is provided in different way)\n\n@return array|null",
+   "identifier": "paginate",
+   "definedIn": [
+    "0449.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP450",
+   "query": "Provides a shared instance of the Query Builder.\n\n@param string $table\n\n@return BaseBuilder",
+   "identifier": "builder",
+   "definedIn": [
+    "0450.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP451",
+   "query": "Ensures that only the fields that are allowed to be updated\nare in the data array.\n\nUsed by insert() and update() to protect against mass assignment\nvulnerabilities.\n\n@param array $data\n\n@return array\n@throws \\CodeIgniter\\Database\\Exceptions\\DataException",
+   "identifier": "doProtectFields",
+   "definedIn": [
+    "0451.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP452",
+   "query": "A utility function to allow child models to use the type of\ndate/time format that they prefer. This is primarily used for\nsetting created_at and updated_at values, but can be used\nby inheriting classes.\n\nThe available time formats are:\n- 'int'      - Stores the date as an integer timestamp\n- 'datetime' - Stores the data in the SQL datetime format\n- 'date'     - Stores the date (only) in the SQL date format.\n\n@param integer $userData An optional PHP timestamp to be converted.\n\n@return mixed",
+   "identifier": "setDate",
+   "definedIn": [
+    "0452.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP453",
+   "query": "Grabs the last error(s) that occurred. If data was validated,\nit will first check for errors there, otherwise will try to\ngrab the last error from the Database connection.\n\n@param boolean $forceDB Always grab the db error, not validation\n\n@return array|null",
+   "identifier": "errors",
+   "definedIn": [
+    "0453.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP454",
+   "query": "Validate the data against the validation rules (or the validation group)\nspecified in the class property, $validationRules.\n\n@param array|object $data\n\n@return boolean",
+   "identifier": "validate",
+   "definedIn": [
+    "0454.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP455",
+   "query": "Removes any rules that apply to fields that have not been set\ncurrently so that rules don't block updating when only updating\na partial row.\n\n@param array      $rules\n\n@param array|null $data\n\n@return array",
+   "identifier": "cleanValidationRules",
+   "definedIn": [
+    "0455.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP456",
+   "query": "Replace any placeholders within the rules with the values that\nmatch the 'key' of any properties being set. For example, if\nwe had the following $data array:\n\n[ 'id' => 13 ]\n\nand the following rule:\n\n'required|is_unique[users,email,id,{id}]'\n\nThe value of {id} would be replaced with the actual id in the form data:\n\n'required|is_unique[users,email,id,13]'\n\n@param array $rules\n@param array $data\n\n@return array",
+   "identifier": "fillPlaceholders",
+   "definedIn": [
+    "0456.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP457",
+   "query": "Returns the model's defined validation rules so that they\ncan be used elsewhere, if needed.\n\n@param array $options\n\n@return array",
+   "identifier": "getValidationRules",
+   "definedIn": [
+    "0457.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP458",
+   "query": "Override countAllResults to account for soft deleted accounts.\n\n@param boolean $reset\n@param boolean $test\n\n@return mixed",
+   "identifier": "countAllResults",
+   "definedIn": [
+    "0458.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP459",
+   "query": "A simple event trigger for Model Events that allows additional\ndata manipulation within the model. Specifically intended for\nusage by child models this can be used to format data,\nsave/load related classes, etc.\n\nIt is the responsibility of the callback methods to return\nthe data itself.\n\nEach $data array MUST have a 'data' key with the relevant\ndata for callback methods (like an array of key/value pairs to insert\nor update, an array of results, etc)\n\n@param string $event\n@param array  $data\n\n@return mixed\n@throws \\CodeIgniter\\Database\\Exceptions\\DataException",
+   "identifier": "trigger",
+   "definedIn": [
+    "0459.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP460",
+   "query": "Sends an HTTP request to the specified $url. If this is a relative\nURL, it will be merged with $this->baseURI to form a complete URL.\n\n@param $method\n@param string $url\n@param array  $options\n\n@return \\CodeIgniter\\HTTP\\ResponseInterface",
+   "identifier": "request",
+   "definedIn": [
+    "0460.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP461",
+   "query": "Set the HTTP Authentication.\n\n@param string $username\n@param string $password\n@param string $type     basic or digest\n\n@return $this",
+   "identifier": "setAuth",
+   "definedIn": [
+    "0461.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP462",
+   "query": "Set form data to be sent.\n\n@param array   $params\n@param boolean $multipart Set TRUE if you are sending CURLFiles\n\n@return $this",
+   "identifier": "setForm",
+   "definedIn": [
+    "0462.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP463",
+   "query": "Sets the correct settings based on the options array\npassed in.\n\n@param array $options",
+   "identifier": "parseOptions",
+   "definedIn": [
+    "0463.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP464",
+   "query": "If the $url is a relative URL, will attempt to create\na full URL by prepending $this->baseURI to it.\n\n@param string $url\n\n@return string",
+   "identifier": "prepareURL",
+   "definedIn": [
+    "0464.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP465",
+   "query": "Get the request method. Overrides the Request class' method\nsince users expect a different answer here.\n\n@param boolean|false $upper Whether to return in upper or lower case.\n\n@return string",
+   "identifier": "getMethod",
+   "definedIn": [
+    "0465.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP466",
+   "query": "Fires the actual cURL request.\n\n@param string $method\n@param string $url\n\n@return \\CodeIgniter\\HTTP\\ResponseInterface",
+   "identifier": "send",
+   "definedIn": [
+    "0466.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP467",
+   "query": "Takes all headers current part of this request and adds them\nto the cURL request.\n\n@param array $curl_options\n\n@return array",
+   "identifier": "applyRequestHeaders",
+   "definedIn": [
+    "0467.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP468",
+   "query": "Apply method\n\n@param string $method\n@param array  $curl_options\n\n@return array",
+   "identifier": "applyMethod",
+   "definedIn": [
+    "0468.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP469",
+   "query": "Apply body\n\n@param array $curl_options\n\n@return array",
+   "identifier": "applyBody",
+   "definedIn": [
+    "0469.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP470",
+   "query": "Parses the header retrieved from the cURL response into\nour Response object.\n\n@param array $headers",
+   "identifier": "setResponseHeaders",
+   "definedIn": [
+    "0470.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP471",
+   "query": "Set CURL options\n\n@param  array $curl_options\n@param  array $config\n@return array\n@throws \\InvalidArgumentException",
+   "identifier": "setCURLOptions",
+   "definedIn": [
+    "0471.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP472",
+   "query": "Does the actual work of initializing cURL, setting the options,\nand grabbing the output.\n\n@codeCoverageIgnore\n\n@param array $curl_options\n\n@return string",
+   "identifier": "sendRequest",
+   "definedIn": [
+    "0472.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP473",
+   "query": "Creates a new migration file with the current timestamp.\n\n@param array $params",
+   "identifier": "run",
+   "definedIn": [
+    "0473.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP474",
+   "query": "Handles logging the message.\nIf the handler returns false, then execution of handlers\nwill stop. Any handlers that have not run, yet, will not\nbe run.\n\n@param $level\n@param $message\n\n@return boolean\n@throws \\Exception",
+   "identifier": "handle",
+   "definedIn": [
+    "0474.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP475",
+   "query": "Migrate to a schema version\n\nCalls each migration step required to get to the schema version of\nchoice\n\n@param string      $targetVersion Target schema version\n@param string|null $namespace\n@param string|null $group\n\n@return mixed Current version string on success, FALSE on failure or no migrations are found\n@throws ConfigException",
+   "identifier": "version",
+   "definedIn": [
+    "0475.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP476",
+   "query": "Sets the (APP_NAMESPACE) schema to $currentVersion in migration config file\n\n@param string|null $group\n\n@return mixed    Current version string on success, FALSE on failure or no migrations are found",
+   "identifier": "current",
+   "definedIn": [
+    "0476.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP477",
+   "query": "Retrieves list of available migration scripts for one namespace\n\n@return array    list of migrations as $version for one namespace",
+   "identifier": "findMigrations",
+   "definedIn": [
+    "0477.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP478",
+   "query": "checks if the list of available migration scripts list are consistent\nif sequential check if no gaps and check if all consistent with migrations table if downgrading\nif timestamp check if consistent with migrations table if downgrading\n\n@param array  $migrations\n@param string $method\n@param string $targetVersion\n\n@return boolean",
+   "identifier": "checkMigrations",
+   "definedIn": [
+    "0478.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP479",
+   "query": "Grabs the full migration history from the database.\n\n@param string $group\n\n@return array",
+   "identifier": "getHistory",
+   "definedIn": [
+    "0479.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP480",
+   "query": "Extracts the migration class name from a filename\n\n@param string $migration\n\n@return string    text portion of a migration filename",
+   "identifier": "getMigrationName",
+   "definedIn": [
+    "0480.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP481",
+   "query": "Retrieves current schema version\n\n@return string    Current migration version",
+   "identifier": "getVersion",
+   "definedIn": [
+    "0481.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP482",
+   "query": "Stores the current schema version.\n\n@param string $version\n\n@internal param string $migration Migration reached\n\n@return void",
+   "identifier": "addHistory",
+   "definedIn": [
+    "0482.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP483",
+   "query": "Removes a single history\n\n@param string $version\n@return void",
+   "identifier": "removeHistory",
+   "definedIn": [
+    "0483.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP484",
+   "query": "Ensures that we have created our migrations table\nin the database.",
+   "identifier": "ensureTable",
+   "definedIn": [
+    "0484.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP485",
+   "query": "Runs the validation process, returning true/false determining whether\nvalidation was successful or not.\n\n@param array  $data  The array of data to validate.\n@param string $group The pre-defined group of rules to apply.\n\n@return boolean",
+   "identifier": "run",
+   "definedIn": [
+    "0485.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP486",
+   "query": "Check; runs the validation process, returning true or false\ndetermining whether validation was successful or not.\n\n@param mixed    $value  Value to validation.\n@param string   $rule   Rule.\n@param string[] $errors Errors.\n\n@return boolean True if valid, else false.",
+   "identifier": "check",
+   "definedIn": [
+    "0486.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP487",
+   "query": "Runs all of $rules against $field, until one fails, or\nall of them have been processed. If one fails, it adds\nthe error to $this->errors and moves on to the next,\nso that we can collect all of the first errors.\n\n@param string      $field\n@param string|null $label\n@param string      $value\n@param array|null  $rules\n@param array       $data  // All of the fields to check.\n\n@return boolean",
+   "identifier": "processRules",
+   "definedIn": [
+    "0487.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP488",
+   "query": "Takes a Request object and grabs the input data to use from its\narray values.\n\n@param \\CodeIgniter\\HTTP\\RequestInterface|\\CodeIgniter\\HTTP\\IncomingRequest $request\n\n@return \\CodeIgniter\\Validation\\ValidationInterface",
+   "identifier": "withRequest",
+   "definedIn": [
+    "0488.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP489",
+   "query": "Sets an individual rule and custom error messages for a single field.\n\nThe custom error message should be just the messages that apply to\nthis field, like so:\n\n[\n'rule' => 'message',\n'rule' => 'message'\n]\n\n@param string      $field\n@param string|null $label\n@param string      $rules\n@param array       $errors\n\n@return $this",
+   "identifier": "setRule",
+   "definedIn": [
+    "0489.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP490",
+   "query": "Stores the rules that should be used to validate the items.\nRules should be an array formatted like:\n\n[\n'field' => 'rule1|rule2'\n]\n\nThe $errors array should be formatted like:\n[\n'field' => [\n'rule' => 'message',\n'rule' => 'message\n],\n]\n\n@param array $rules\n@param array $errors // An array of custom error messages\n\n@return \\CodeIgniter\\Validation\\ValidationInterface",
+   "identifier": "setRules",
+   "definedIn": [
+    "0490.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP491",
+   "query": "Get rule group.\n\n@param string $group Group.\n\n@return string[] Rule group.\n\n@throws \\InvalidArgumentException If group not found.",
+   "identifier": "getRuleGroup",
+   "definedIn": [
+    "0491.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP492",
+   "query": "Set rule group.\n\n@param string $group Group.\n\n@throws \\InvalidArgumentException If group not found.",
+   "identifier": "setRuleGroup",
+   "definedIn": [
+    "0492.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP493",
+   "query": "Returns the rendered HTML of the errors as defined in $template.\n\n@param string $template\n\n@return string",
+   "identifier": "listErrors",
+   "definedIn": [
+    "0493.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP494",
+   "query": "Displays a single error in formatted HTML as defined in the $template view.\n\n@param string $field\n@param string $template\n\n@return string",
+   "identifier": "showError",
+   "definedIn": [
+    "0494.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP495",
+   "query": "Loads all of the rulesets classes that have been defined in the\nConfig\\Validation and stores them locally so we can use them.",
+   "identifier": "loadRuleSets",
+   "definedIn": [
+    "0495.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP496",
+   "query": "Loads custom rule groups (if set) into the current rules.\n\nRules can be pre-defined in Config\\Validation and can\nbe any name, but must all still be an array of the\nsame format used with setRules(). Additionally, check\nfor {group}_errors for an array of custom error messages.\n\n@param string|null $group\n\n@return array|ValidationException|null",
+   "identifier": "loadRuleGroup",
+   "definedIn": [
+    "0496.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP497",
+   "query": "Returns the error(s) for a specified $field (or empty string if not\nset).\n\n@param string $field Field.\n\n@return string Error(s).",
+   "identifier": "getError",
+   "definedIn": [
+    "0497.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP498",
+   "query": "Returns the array of errors that were encountered during\na run() call. The array should be in the following format:\n\n[\n'field1' => 'error message',\n'field2' => 'error message',\n]\n\n@return array\n\nExcluded from code coverage because that it always run as cli\n\n@codeCoverageIgnore",
+   "identifier": "getErrors",
+   "definedIn": [
+    "0498.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  },
+  {
+   "id": "CSN_PHP499",
+   "query": "Sets the error for a specific field. Used by custom validation methods.\n\n@param string $field\n@param string $error\n\n@return \\CodeIgniter\\Validation\\ValidationInterface",
+   "identifier": "setError",
+   "definedIn": [
+    "0499.php"
+   ],
+   "source": "codeigniter4/CodeIgniter4"
+  }
+ ]
+}

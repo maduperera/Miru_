@@ -1,0 +1,39 @@
+{
+ "repo": "ab-fastapi",
+ "language": "python",
+ "commit": "b2ce629ace6bdd152d577e5f5e256a079ac1e4fd",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_FASTAPI0",
+   "query": "FastAPI application routing path operations",
+   "identifier": "",
+   "definedIn": [
+    "fastapi/routing.py",
+    "fastapi/applications.py"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_FASTAPI1",
+   "query": "dependency injection Depends",
+   "identifier": "",
+   "definedIn": [
+    "fastapi/dependencies/utils.py",
+    "fastapi/param_functions.py"
+   ],
+   "category": "semantic"
+  },
+  {
+   "id": "AB_FASTAPI2",
+   "query": "OpenAPI schema generation",
+   "identifier": "",
+   "definedIn": [
+    "fastapi/openapi/utils.py",
+    "fastapi/openapi/models.py"
+   ],
+   "category": "semantic"
+  }
+ ]
+}

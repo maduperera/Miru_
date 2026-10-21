@@ -1,0 +1,37 @@
+{
+ "repo": "ab-flask",
+ "language": "python",
+ "commit": "d086db856be187255b8ec61ef409357393020f32",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_FLASK0",
+   "query": "Flask application class request handling WSGI",
+   "identifier": "",
+   "definedIn": [
+    "src/flask/app.py"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_FLASK1",
+   "query": "blueprint route registration",
+   "identifier": "",
+   "definedIn": [
+    "src/flask/blueprints.py",
+    "src/flask/app.py"
+   ],
+   "category": "semantic"
+  },
+  {
+   "id": "AB_FLASK2",
+   "query": "Flask CLI command line interface",
+   "identifier": "",
+   "definedIn": [
+    "src/flask/cli.py"
+   ],
+   "category": "entry"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "repo": "ab-gin",
+ "language": "go",
+ "commit": "0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646",
+ "source": "miru-code scripts/search-ab-queries.ts",
+ "metric": "relevant file in top 3 (file-level labels only)",
+ "queries": [
+  {
+   "id": "AB_GIN0",
+   "query": "gin HTTP router middleware engine",
+   "identifier": "",
+   "definedIn": [
+    "gin.go",
+    "routergroup.go"
+   ],
+   "category": "architecture"
+  },
+  {
+   "id": "AB_GIN1",
+   "query": "request context binding JSON",
+   "identifier": "",
+   "definedIn": [
+    "context.go",
+    "binding.go"
+   ],
+   "category": "semantic"
+  }
+ ]
+}
